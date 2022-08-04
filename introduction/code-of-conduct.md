@@ -93,7 +93,7 @@ anything else pertaining to the incident.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the project CoC team at `mods@qubes-os.org`. The project
 CoC team is the [Marek
-Marczykowski-Górecki](/team/#marek-marczykowski-g%C3%B3recki), [Andrew David
+Marczykowski-Górecki](/team/#marek-marczykowski-górecki), [Andrew David
 Wong](/team/#andrew-david-wong), and [Michael Carbone](/team/#michael-carbone).
 All complaints will be reviewed and investigated and will result in a response
 that is deemed necessary and appropriate to the circumstances. The project team

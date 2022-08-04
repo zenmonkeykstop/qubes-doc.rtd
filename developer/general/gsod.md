@@ -81,9 +81,9 @@ within the times allotted. The past Google Season of Docs projects have given us
 
 ## Past Projects
 
-You can view the project we had in 2019 in the [2019 GSoD archive](https://developers.google.com/season-of-docs/docs/2019/participants/project-qubes) and the [2019 writer's report](https://refre.ch/report-qubesos/).
+You can view the project we had in 2019 in the [2019 GSoD archive](https://developers.google.com/season-of-docs/docs/2019/participants/project-qubes) and the [2019 writer's report](https://web.archive.org/web/20200928002746/https://refre.ch/report-qubesos/).
 
-You can also view the project we had in 2020 in the [2020 GSoD archive](https://developers.google.com/season-of-docs/docs/2020/participants/project-qubesos-c1e0) and the [2020 writer's report](https://gist.github.com/PROTechThor/bfe9b8b28295d88c438b6f6c754ae733).
+You can also view the project we had in 2020 in the [2020 GSoD archive](https://developers.google.com/season-of-docs/docs/2020/participants/project-qubesos-c1e0) and the [2020 writer's report](https://web.archive.org/web/20210723170547/https://gist.github.com/PROTechThor/bfe9b8b28295d88c438b6f6c754ae733).
 
 Here are some successful projects which have been implemented in the past by Google Season of Docs participants. 
 

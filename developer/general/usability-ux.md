@@ -212,7 +212,7 @@ This change means you should use [GTK](https://www.gtk.org/) rather than Qt for 
 
 All three of these mentioned desktop environments have their own [human interface guidelines](https://en.wikipedia.org/wiki/Human_interface_guidelines), and we suggest you familiarize yourself with the platform you developing for.
 
-- [GNOME Human Interface Guidelines](https://developer.gnome.org/hig/3.18/)
+- [GNOME Human Interface Guidelines](https://developer.gnome.org/hig/)
 - [KDE HIG](https://techbase.kde.org/Projects/Usability/HIG)
 - [Xfce UI Guidlines](https://wiki.xfce.org/dev/hig/general)
 
