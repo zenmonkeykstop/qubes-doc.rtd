@@ -627,7 +627,7 @@ would override all the user changes there). More details:
    - template metadata, templates repository - enable the user to browse
      available templates (probably should be done in dedicated VM, or DisposableVM)
    - manual template removal by users (without it, see problems such
-     as [#5509](https://github.com/QubesOS/qubes-issues/issues/5509)
+     as [#5509](https://web.archive.org/web/20210526123932/https://github.com/QubesOS/qubes-issues/issues/5509)
  - Implement the above mechanism:
    - tool to download named template - should perform download operation in
      some VM (as dom0 have no network access), then transfer the data to dom0,
