@@ -106,4 +106,4 @@ qvm-shutdown qube1
 sudo lvresize --size 1024M /dev/qubes_dom0/vm-qube1-private
 ```
 
-If you have a SSD see [here](/doc/disk-trim) for information on using fstrim.
+If you have a SSD see [here](https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md) for information on using fstrim.
