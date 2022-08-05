@@ -381,7 +381,7 @@ this context: the same as their template filesystem, of course.
 
 * `qvm-trim-template` is no longer necessary or available in Qubes 4.0 and
   higher. All qubes are created in a thin pool and trimming is handled
-  automatically. No user action is required. See [Disk Trim](/doc/disk-trim)
+  automatically. No user action is required. See [Disk Trim](https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md)
   for more information.
 
 * RPM-installed templates are "system managed" and therefore cannot be backed
