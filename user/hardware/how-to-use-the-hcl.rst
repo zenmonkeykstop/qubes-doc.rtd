@@ -2,15 +2,14 @@
 How to use the hardware compatibility list (HCL)
 ================================================
 
-The `HCL </hcl>`__ is a compilation of reports generated and submitted
+The :doc:`HCL </user/hardware/hcl>` is a compilation of reports generated and submitted
 by users across various Qubes versions about their hardware’s
 compatibility with Qubes.
 
 **Note:** Except in the case of developer-reported entries, the Qubes
 team has not independently verified the accuracy of these reports.
 Please first consult the data sheets (CPU, chipset, motherboard) prior
-to buying new hardware for Qubes. Make sure it meets the `System
-Requirements </doc/system-requirements/>`__ and search in particular for
+to buying new hardware for Qubes. Make sure it meets the :doc:`System Requirements </user/hardware/system-requirements>` and search in particular for
 support of:
 
 -  HVM (“AMD virtualization (AMD-V)”, “Intel virtualization (VT-x)”,
@@ -28,7 +27,7 @@ choose hardware with:
 -  and general machine compatibility (green columns in Qubes version,
    dom0 kernel, remarks).
 
-Also see `Certified Hardware </doc/certified-hardware/>`__.
+Also see :doc:`Certified Hardware </user/hardware/certified-hardware>`.
 
 Generating and Submitting New Reports
 =====================================
@@ -42,11 +41,8 @@ You are encouraged to submit your HCL report for the benefit of further
 Qubes development and other users. When submitting reports, test the
 hardware yourself, if possible. If you would like to submit your HCL
 report, please copy and paste the contents of the **HCL Info** ``.yml``
-file into an email to the `qubes-users mailing
-list </support/#qubes-users>`__ with the subject
-``HCL - <your machine model name>``, or create a post in the `HCL
-Reports
-category <https://forum.qubes-os.org/c/user-support/hcl-reports/23>`__
+file into an email to the :ref:`qubes-users mailing list <introduction/support:qubes users>` with the subject
+``HCL - <your machine model name>``, or create a post in the `HCL Reports category <https://forum.qubes-os.org/c/user-support/hcl-reports/23>`__
 of the forum. Pasting the contents into the email or post has the
 advantage that members of the mailing list and the forum can see the
 report without downloading and opening a file. In addition, new forum

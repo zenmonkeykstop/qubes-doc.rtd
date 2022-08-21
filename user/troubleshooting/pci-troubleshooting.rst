@@ -7,8 +7,7 @@ DMA errors
 
 VMs with attached PCI devices in Qubes have allocated a small buffer for
 DMA operations (called swiotlb). By default, it is 2MB, but some devices
-(such as the `Realtek RTL8111DL Gigabit Ethernet
-Controller <https://groups.google.com/group/qubes-devel/browse_thread/thread/631c4a3a9d1186e3>`__)
+(such as the `Realtek RTL8111DL Gigabit Ethernet Controller <https://groups.google.com/group/qubes-devel/browse_thread/thread/631c4a3a9d1186e3>`__)
 need a larger DMA buffer size. Without a larger buffer, you will face
 DMA errors such as ``Failed to map TX DMA``.
 
@@ -28,17 +27,11 @@ PCI Passthrough Issues
 ======================
 
 Sometimes the PCI arbitrator is too strict, which may cause errors such
-as ``Unable to reset PCI device`` and other PCI-related errors. There is
-a way to enable permissive mode for it. See also: `this
-thread <https://groups.google.com/forum/#!topic/qubes-users/Fs94QAc3vQI>`__
-and the Xen wiki’s `PCI
-passthrough <https://wiki.xen.org/wiki/Xen_PCI_Passthrough>`__ page.
+as ``Unable to reset PCI device and other PCI-related errors. There is a way to enable permissive mode for it. See also: `this thread <https://groups.google.com/forum/#!topic/qubes-users/Fs94QAc3vQI>`__ and the Xen wiki’s `PCI passthrough <https://wiki.xen.org/wiki/Xen_PCI_Passthrough>`__ page.
 Other times, you may instead need to disable the FLR requirement on a
 device.
 
-Both can be achieved during attachment with ``qvm-pci`` as described
-`PCI Devices
-documentation </doc/how-to-use-pci-devices/#additional-attach-options>`__.
+Both can be achieved during attachment with ``qvm-pci`` as described :ref:`PCI Devices documentation <user/how-to-guides/how-to-use-pci-devices:additional attach options>`.
 
 “Unable to reset PCI device” errors
 ===================================
@@ -122,16 +115,10 @@ Using the command line
 Domain […] has failed to start: internal error: Unable to reset PCI device […]: no FLR, PM reset or bus reset available
 -----------------------------------------------------------------------------------------------------------------------
 
-This is a `PCI passthrough
-issue </doc/pci-troubleshooting/#pci-passthrough-issues>`__, which
+This is a :ref:`PCI passthrough issue <user/troubleshooting/pci-troubleshooting:pci passthrough issues>`, which
 occurs when PCI arbitrator is too strict. There is a way to enable
 permissive mode for it. Sometimes, you may instead need to disable the
-FLR requirement on a device. Both can be achieved during attachment with
-``qvm-pci`` as described below.
-
-NOTE: The ``permissive`` flag increases attack surface and possibility
-of `side channel
-attacks <https://en.wikipedia.org/wiki/Side-channel_attack>`__. While
+FLR requirement on a device. Both can be achieved during attachment with ``qvm-pci as described below.  NOTE: The ``permissive flag increases attack surface and possibility of `side channel attacks <https://en.wikipedia.org/wiki/Side-channel_attack>`__. While
 using the ``no-strict-reset`` flag, do not require PCI device to be
 reset before attaching it to another VM. This may leak usage data even
 without malicious intent. Both ``permissive`` and ``no-strict-reset``
@@ -163,8 +150,7 @@ Broadcom BCM43602 Wi-Fi card causes system freeze
 
 You may face the problem where the BCM43602 Wi-Fi chip causes a system
 freeze whenever it is attached to a VM. To fix this problem on a
-Macbook, follow the steps in `Macbook
-Troubleshooting <https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/macbook-troubleshooting.md#system-freezes-after-attaching-broadcom-bcm43602-wi-fi-card>`__.
+Macbook, follow the steps in `Macbook Troubleshooting <https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/macbook-troubleshooting.md#system-freezes-after-attaching-broadcom-bcm43602-wi-fi-card>`__.
 
 For other non-Macbook machines, it is advisable to replace the Broadcom
 BCM43602 with one known to work on Qubes, such as the Atheros AR9462.
@@ -189,9 +175,7 @@ Attached devices in Windows HVM stop working on suspend/resume
 ==============================================================
 
 After the whole system gets suspended into S3 sleep and subsequently
-resumed, some attached devices may stop working. Refer to
-`Suspend/Resume
-Troubleshooting </doc/suspend-resume-troubleshooting/#attached-devices-in-windows-hvm-stop-working-on-suspendresume>`__
+resumed, some attached devices may stop working. Refer to :ref:`Suspend/Resume Troubleshooting <user/troubleshooting/resume-suspend-troubleshooting:attached devices in windows hvm stop working on suspendresume>`
 for a solution.
 
 PCI device not available in dom0 after being unassigned from a qube
@@ -200,8 +184,7 @@ PCI device not available in dom0 after being unassigned from a qube
 After you assign a PCI device to a qube, then unassign it/shut down the
 qube, the device is not available in dom0. This is an intended feature.
 A device which was previously assigned to a less trusted qube could
-attack dom0 if it were automatically reassigned there. Look at the
-`FAQs </faq/#i-assigned-a-pci-device-to-a-qube-then-unassigned-itshut-down-the-qube-why-isnt-the-device-available-in-dom0>`__
+attack dom0 if it were automatically reassigned there. Look at the :ref:`FAQs <introduction/faq:i assigned a pci device to a qube then unassigned itshut down the qube why isnt the device available in dom0>`
 to learn how to re-enable the device in dom0.
 
 Network adapter does not work

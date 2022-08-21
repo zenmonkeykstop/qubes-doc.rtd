@@ -13,8 +13,7 @@ Qubes installation.
 Trouble installing from USB stick
 =================================
 
-If you are facing issues when booting using UEFI mode, see the `UEFI
-troubleshooting guide </doc/uefi-troubleshooting/>`__.
+If you are facing issues when booting using UEFI mode, see the :doc:`UEFI troubleshooting guide </user/troubleshooting/uefi-troubleshooting>`.
 
 There are a variety of other problems that could arise when using a USB
 installation medium, and some of the issues can be fixed by doing one or
@@ -31,10 +30,8 @@ more of the following:
    can not boot from a bigger USB, it may be too old to run Qubes.
 -  **Verify your Qubes ISO:** Errors will occur if the Qubes installer
    is corrupted. Ensure that the installer is correct and complete
-   before writing it to a flash drive by `verifying the
-   ISO </security/verifying-signatures/>`__.
--  **Change the method you used to**\ `write your ISO to a USB
-   key </doc/installation-guide/#copying-the-iso-onto-the-installation-medium>`__\ **:**
+   before writing it to a flash drive by :doc:`verifying the    ISO </project-security/verifying-signatures>`.
+-  **Change the method you used to**\ :ref:`write your ISO to a USB    key <user/downloading-installing-upgrading/installation-guide:copying the iso onto the installation medium>`\ **:**
    Some people use the ``dd`` command (recommended), others use tools
    like Rufus, balenaEtcher or the GNOME Disk Utility. If installation
    fails after using one tool, try a different one. For example, if you
@@ -49,9 +46,7 @@ more of the following:
 
 This error message is related to the faulty creation of the USB
 installation medium. If you receive this error message during
-installation, please make sure you have followed the instructions on
-`how to write your ISO to a USB
-key </doc/installation-guide/#copying-the-iso-onto-the-installation-medium>`__.
+installation, please make sure you have followed the instructions on :ref:`how to write your ISO to a USB key <user/downloading-installing-upgrading/installation-guide:copying the iso onto the installation medium>`.
 Specifically, the ``dd`` command listed on that page has been verified
 to solve this issue on multiple Qubes installation versions.
 
@@ -74,17 +69,14 @@ The process to change the boot order varies depending on the currently
 installed system and the motherboard manufacturer.
 
 If **Windows 10** is installed on your machine, you may need to follow
-specific instructions to change the boot order. This may require an
-`advanced
-reboot <https://support.microsoft.com/en-us/help/4026206/windows-10-find-safe-mode-and-other-startup-settings>`__.
+specific instructions to change the boot order. This may require an `advanced reboot <https://support.microsoft.com/en-us/help/4026206/windows-10-find-safe-mode-and-other-startup-settings>`__.
 
 “Not asking for VNC because we don’t have a network” / “X startup failed, aborting installation” / “Pane is dead” error during installation
 ===========================================================================================================================================
 
 The boot mode in use may be causing these error messages. Try to install
 after enabling both UEFI and legacy boot modes. If that doesn’t help,
-then disable one and try the other. Visit the `UEFI Troubleshooting
-guide </doc/uefi-troubleshooting/>`__ if other errors arise during UEFI
+then disable one and try the other. Visit the :doc:`UEFI Troubleshooting guide </user/troubleshooting/uefi-troubleshooting>` if other errors arise during UEFI
 booting.
 
 These errors may also occur due to an incompatible Nvidia graphics card.
@@ -104,21 +96,15 @@ line, add:
 
    ```   
    noexitboot=1 modprobe.blacklist=nouveau rd.driver.blacklist=nouveau --- intitrd.img
-   ```
-
-For more information, look at the `Nvidia Troubleshooting
-guide <https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/nvidia-troubleshooting.md#disabling-nouveau>`__.
+   `  For more information, look at the `Nvidia Troubleshooting guide <https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/nvidia-troubleshooting.md#disabling-nouveau>`__.
 
 Installation freezes at “Setting up Networking”
 ===============================================
 
-If you are facing this problem on an Apple computer, check out the
-`Macbook Troubleshooting
-guide <https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/macbook-troubleshooting.md>`__.
+If you are facing this problem on an Apple computer, check out the `Macbook Troubleshooting guide <https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/macbook-troubleshooting.md>`__.
 
 If you are installing Qubes 4.0 on an external storage device, you may
-have forgotten to disable ``sys-usb`` during the `initial
-setup </doc/installation-guide/#initial-setup>`__, which is generally
+have forgotten to disable ``sys-usb`` during the :ref:`initial setup <user/downloading-installing-upgrading/installation-guide:initial setup>`, which is generally
 required for that setup to work.
 
 This issue occurs due to the network card, which may be missing some
@@ -145,8 +131,7 @@ IOMMU/VT-d/AMD-Vi, Interrupt Remapping. Without these features, Qubes OS
 will not function normally”.
 
 This error message indicates that IOMMU-virtualization hasn’t been
-activated in the BIOS. Return to the `hardware
-requirements </doc/installation-guide/#hardware-requirements>`__ section
+activated in the BIOS. Return to the :ref:`hardware requirements <user/downloading-installing-upgrading/installation-guide:hardware requirements>` section
 to learn how to activate it. If the setting is not configured correctly,
 it means that your hardware won’t be able to leverage some Qubes
 security features, such as a strict isolation of the networking and USB
@@ -173,8 +158,7 @@ following error message in ``/var/log/libvirt/libxl/libxl-driver.log``:
    2022-03-01 13:27:17.117+0000: libxl: libxl_create.c:1146:libxl__domain_config_setdefault: passthrough not supported on this platform
 
 Here are the steps to fix this. Note that this allows sys-net and
-sys-usb to take complete control of the system, as described in the `FAQ
-here </faq/#why-is-vt-damd-viamd-iommu-important>`__:
+sys-usb to take complete control of the system, as described in the :ref:`FAQ here <introduction/faq:why is vt damd viamd iommu important>`:
 
 1. Change the virtualization mode of sys-net and sys-usb to “PV”
 2. Add ``qubes.enable_insecure_pv_passthrough`` to

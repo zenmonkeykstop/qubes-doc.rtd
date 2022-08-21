@@ -8,11 +8,11 @@ Table of contents
 Introduction
 ------------
 
--  `Getting started </doc/getting-started/>`__
--  `Frequently asked questions (FAQ) </faq/>`__
--  `Issue tracking </doc/issue-tracking/>`__
--  `Help, support, mailing lists, and forum </support/>`__
--  `How to contribute </doc/contributing/>`__
+-  :doc:`Getting started </introduction/getting-started>`
+-  :doc:`Frequently asked questions (FAQ) </introduction/faq>`
+-  :doc:`Issue tracking </introduction/issue-tracking>`
+-  :doc:`Help, support, mailing lists, and forum </introduction/support>`
+-  :doc:`How to contribute </introduction/contributing>`
 
 User Documentation
 ------------------
@@ -22,8 +22,8 @@ Core documentation for Qubes users.
 Choosing Your Hardware
 ~~~~~~~~~~~~~~~~~~~~~~
 
--  `System requirements </doc/system-requirements/>`__
--  `Certified hardware </doc/certified-hardware/>`__
+-  :doc:`System requirements </user/hardware/system-requirements>`
+-  :doc:`Certified hardware </user/hardware/certified-hardware>`
 -  `Community-recommended
    hardware <https://forum.qubes-os.org/t/5560>`__
 -  `Hardware compatibility list (HCL) <https://www.qubes-os.org/hcl/>`__
@@ -32,116 +32,109 @@ Downloading, Installing, and Upgrading Qubes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  `Download Qubes OS <https://www.qubes-os.org/downloads/>`__
--  `Installation guide </doc/installation-guide/>`__
--  `Upgrade guides </doc/upgrade/>`__
--  `Supported releases </doc/supported-releases/>`__
--  `Testing new releases and updates </doc/testing/>`__
+-  :doc:`Installation guide </user/downloading-installing-upgrading/installation-guide>`
+-  :doc:`Upgrade guides </user/downloading-installing-upgrading/upgrade/upgrade>`
+-  :doc:`Supported releases </user/downloading-installing-upgrading/supported-releases>`
+-  :doc:`Testing new releases and updates </user/downloading-installing-upgrading/testing>`
 
 How-to guides
 ~~~~~~~~~~~~~
 
--  `How to update </doc/how-to-update/>`__
--  `How to back up, restore, and
-   migrate </doc/how-to-back-up-restore-and-migrate/>`__
--  `How to copy and paste text </doc/how-to-copy-and-paste-text/>`__
--  `How to copy and move files </doc/how-to-copy-and-move-files/>`__
--  `How to copy from dom0 </doc/how-to-copy-from-dom0/>`__
--  `How to install software </doc/how-to-install-software/>`__
--  `How to use disposables </doc/how-to-use-disposables/>`__
--  `How to enter fullscreen mode </doc/how-to-enter-fullscreen-mode/>`__
--  `How to use devices </doc/how-to-use-devices/>`__
--  `How to use block storage
-   device </doc/how-to-use-block-storage-devices/>`__
--  `How to use USB devices </doc/how-to-use-usb-devices/>`__
--  `How to use PCI devices </doc/how-to-use-pci-devices/>`__
--  `How to use optical discs </doc/how-to-use-optical-discs/>`__
+-  :doc:`How to update </user/how-to-guides/how-to-update>`
+-  :doc:`How to back up, restore, and    migrate </user/how-to-guides/how-to-back-up-restore-and-migrate>`
+-  :doc:`How to copy and paste text </user/how-to-guides/how-to-copy-and-paste-text>`
+-  :doc:`How to copy and move files </user/how-to-guides/how-to-copy-and-move-files>`
+-  :doc:`How to copy from dom0 </user/how-to-guides/how-to-copy-from-dom0>`
+-  :doc:`How to install software </user/how-to-guides/how-to-install-software>`
+-  :doc:`How to use disposables </user/how-to-guides/how-to-use-disposables>`
+-  :doc:`How to enter fullscreen mode </user/how-to-guides/how-to-enter-fullscreen-mode>`
+-  :doc:`How to use devices </user/how-to-guides/how-to-use-devices>`
+-  :doc:`How to use block storage    device </user/how-to-guides/how-to-use-block-storage-devices>`
+-  :doc:`How to use USB devices </user/how-to-guides/how-to-use-usb-devices>`
+-  :doc:`How to use PCI devices </user/how-to-guides/how-to-use-pci-devices>`
+-  :doc:`How to use optical discs </user/how-to-guides/how-to-use-optical-discs>`
 
 Templates
 ~~~~~~~~~
 
--  `Templates </doc/templates/>`__
--  `Fedora templates </doc/templates/fedora/>`__
--  `Debian templates </doc/templates/debian/>`__
--  `Minimal templates </doc/templates/minimal/>`__
--  `Xfce templates </doc/templates/xfce/>`__
+-  :doc:`Templates </user/templates/templates>`
+-  :doc:`Fedora templates </user/templates/fedora/fedora>`
+-  :doc:`Debian templates </user/templates/debian/debian>`
+-  :doc:`Minimal templates </user/templates/minimal-templates>`
+-  :doc:`Xfce templates </user/templates/xfce-templates>`
 
 Troubleshooting
 ~~~~~~~~~~~~~~~
 
--  `Installation troubleshooting </doc/installation-troubleshooting/>`__
--  `Update troubleshooting </doc/update-troubleshooting/>`__
--  `Hardware troubleshooting </doc/hardware-troubleshooting/>`__
--  `UEFI troubleshooting </doc/uefi-troubleshooting/>`__
--  `Autostart troubleshooting </doc/autostart-troubleshooting/>`__
--  `Suspend/resume
-   troubleshooting </doc/suspend-resume-troubleshooting/>`__
--  `App menu shortcut
-   troubleshooting </doc/app-menu-shortcut-troubleshooting/>`__
--  `Qube troubleshooting </doc/vm-troubleshooting/>`__
--  `HVM troubleshooting </doc/hvm-troubleshooting/>`__
--  `Disk troubleshooting </doc/disk-troubleshooting/>`__
--  `PCI troubleshooting </doc/pci-troubleshooting/>`__
--  `USB troubleshooting </doc/usb-troubleshooting/>`__
--  `GUI troubleshooting </doc/gui-troubleshooting/>`__
--  `Media troubleshooting </doc/media-troubleshooting/>`__
--  `VPN troubleshooting </doc/vpn-troubleshooting/>`__
+-  :doc:`Installation troubleshooting </user/troubleshooting/installation-troubleshooting>`
+-  :doc:`Update troubleshooting </user/troubleshooting/update-troubleshooting>`
+-  :doc:`Hardware troubleshooting </user/troubleshooting/hardware-troubleshooting>`
+-  :doc:`UEFI troubleshooting </user/troubleshooting/uefi-troubleshooting>`
+-  :doc:`Autostart troubleshooting </user/troubleshooting/autostart-troubleshooting>`
+-  :doc:`Suspend/resume    troubleshooting </user/troubleshooting/resume-suspend-troubleshooting>`
+-  :doc:`App menu shortcut    troubleshooting </user/troubleshooting/app-menu-shortcut-troubleshooting>`
+-  :doc:`Qube troubleshooting </user/troubleshooting/vm-troubleshooting>`
+-  :doc:`HVM troubleshooting </user/troubleshooting/hvm-troubleshooting>`
+-  :doc:`Disk troubleshooting </user/troubleshooting/disk-troubleshooting>`
+-  :doc:`PCI troubleshooting </user/troubleshooting/pci-troubleshooting>`
+-  :doc:`USB troubleshooting </user/troubleshooting/usb-troubleshooting>`
+-  :doc:`GUI troubleshooting </user/troubleshooting/gui-troubleshooting>`
+-  :doc:`Media troubleshooting </user/troubleshooting/media-troubleshooting>`
+-  :doc:`VPN troubleshooting </user/troubleshooting/vpn-troubleshooting>`
 
 Security in Qubes
 ~~~~~~~~~~~~~~~~~
 
--  `Firewall </doc/firewall/>`__
--  `Data leaks </doc/data-leaks/>`__
--  `Passwordless root access in qubes </doc/vm-sudo/>`__
--  `Device handling security </doc/device-handling-security/>`__
--  `Anti evil maid (AEM) </doc/anti-evil-maid/>`__
--  `Split GPG </doc/split-gpg/>`__
--  `U2F proxy </doc/u2f-proxy/>`__
--  `YubiKey </doc/yubi-key/>`__
+-  :doc:`Firewall </user/security-in-qubes/firewall>`
+-  :doc:`Data leaks </user/security-in-qubes/data-leaks>`
+-  :doc:`Passwordless root access in qubes </user/security-in-qubes/vm-sudo>`
+-  :doc:`Device handling security </user/security-in-qubes/device-handling-security>`
+-  :doc:`Anti evil maid (AEM) </user/security-in-qubes/anti-evil-maid>`
+-  :doc:`Split GPG </user/security-in-qubes/split-gpg>`
+-  :doc:`U2F proxy </user/security-in-qubes/u2f-proxy>`
+-  :doc:`YubiKey </user/security-in-qubes/yubi-key>`
 
 Advanced Configuration
 ~~~~~~~~~~~~~~~~~~~~~~
 
--  `How to install software in
-   dom0 </doc/how-to-install-software-in-dom0/>`__
--  `Volume backup and revert </doc/volume-backup-revert/>`__
--  `Standalones and HVMs </doc/standalones-and-hvms/>`__
--  `Config files </doc/config-files/>`__
--  `Secondary storage </doc/secondary-storage/>`__
--  `RPC policies </doc/rpc-policy/>`__
--  `USB qubes </doc/usb-qubes/>`__
--  `Managing qube kernels </doc/managing-vm-kernel/>`__
--  `Salt (management software) </doc/salt/>`__
--  `GuiVM Configuration </doc/guivm-configuration/>`__
--  `Disposable customization </doc/disposablevm-customization/>`__
--  `Installing contributed
-   packages </doc/installing-contributed-packages/>`__
--  `How to make any file persistent (bind-dirs) </doc/bind-dirs/>`__
--  `GUI configuration </doc/gui-configuration/>`__
--  `Resize disk images </doc/resize-disk-image/>`__
--  `Qubes service </doc/qubes-service/>`__
--  `How to mount a Qubes partition from another
-   OS </doc/mount-from-other-os/>`__
--  `KDE (desktop environment) </doc/kde/>`__
--  `i3 (window manager) </doc/i3/>`__
--  `AwesomeWM (window manager) </doc/awesomewm/>`__
+-  :doc:`How to install software in    dom0 </user/advanced-topics/how-to-install-software-in-dom0>`
+-  :doc:`Volume backup and revert </user/advanced-topics/volume-backup-revert>`
+-  :doc:`Standalones and HVMs </user/advanced-topics/standalones-and-hvms>`
+-  :doc:`Config files </user/advanced-topics/config-files>`
+-  :doc:`Secondary storage </user/advanced-topics/secondary-storage>`
+-  :doc:`RPC policies </user/advanced-topics/rpc-policy>`
+-  :doc:`USB qubes </user/advanced-topics/usb-qubes>`
+-  :doc:`Managing qube kernels </user/advanced-topics/managing-vm-kernels>`
+-  :doc:`Salt (management software) </user/advanced-topics/salt>`
+-  :doc:`GuiVM Configuration </user/advanced-topics/guivm>`
+-  :doc:`Disposable customization </user/advanced-topics/disposable-customization>`
+-  :doc:`Installing contributed    packages </user/advanced-topics/installing-contributed-packages>`
+-  :doc:`How to make any file persistent (bind-dirs) </user/advanced-topics/bind-dirs>`
+-  :doc:`GUI configuration </user/advanced-topics/gui-configuration>`
+-  :doc:`Resize disk images </user/advanced-topics/resize-disk-image>`
+-  :doc:`Qubes service </user/advanced-topics/qubes-service>`
+-  :doc:`How to mount a Qubes partition from another    OS </user/advanced-topics/mount-from-other-os>`
+-  :doc:`KDE (desktop environment) </user/advanced-topics/kde>`
+-  :doc:`i3 (window manager) </user/advanced-topics/i3>`
+-  :doc:`AwesomeWM (window manager) </user/advanced-topics/awesomewm>`
 
 Reference
 ~~~~~~~~~
 
--  `Command-line tools </doc/tools/>`__
--  `Glossary </doc/glossary/>`__
+-  :doc:`Command-line tools </user/reference/tools>`
+-  :doc:`Glossary </user/reference/glossary>`
 
 Project Security
 ----------------
 
--  `Qubes OS project security center </security/>`__
--  `Qubes security pack (qubes-secpack) </security/pack/>`__
+-  :doc:`Qubes OS project security center </project-security/security>`
+-  :doc:`Qubes security pack (qubes-secpack) </project-security/security-pack>`
 -  `Qubes security bulletins
    (QSBs) <https://www.qubes-os.org/security/qsb/>`__
 -  `Qubes canaries <https://www.qubes-os.org/security/canary/>`__
 -  `Xen security advisory (XSA)
    tracker <https://www.qubes-os.org/security/xsa/>`__
--  `Verifying signatures </security/verifying-signatures/>`__
+-  :doc:`Verifying signatures </project-security/verifying-signatures>`
 -  `PGP keys <https://www.qubes-os.org/security/pgp-keys/>`__
 
 Developer Documentation
@@ -152,84 +145,83 @@ Core documentation for Qubes developers and advanced users.
 General
 ~~~~~~~
 
--  `Package contributions </doc/package-contributions/>`__
--  `Google Summer of Code (GSoC) </gsoc/>`__
--  `Google Season of Docs (GSoD) </gsod/>`__
--  `How to edit the
-   documentation </doc/how-to-edit-the-documentation/>`__
--  `Documentation style guide </doc/documentation-style-guide/>`__
--  `Website style guide </doc/website-style-guide/>`__
--  `Continuous integration (CI) </doc/continuous-integration/>`__
--  `Usability & UX </doc/usability-ux/>`__
--  `Visual style guide </doc/visual-style-guide/>`__
--  `Research </research/>`__
--  `Developer books </doc/devel-books/>`__
+-  :doc:`Package contributions </developer/general/package-contributions>`
+-  :doc:`Google Summer of Code (GSoC) </developer/general/gsoc>`
+-  :doc:`Google Season of Docs (GSoD) </developer/general/gsod>`
+-  :doc:`How to edit the    documentation </developer/general/how-to-edit-the-documentation>`
+-  :doc:`Documentation style guide </developer/general/documentation-style-guide>`
+-  :doc:`Website style guide </developer/general/website-style-guide>`
+-  :doc:`Continuous integration (CI) </developer/general/continuous-integration>`
+-  :doc:`Usability & UX </developer/general/usability-ux>`
+-  :doc:`Visual style guide </developer/general/visual-style-guide>`
+-  :doc:`Research </developer/general/research>`
+-  :doc:`Developer books </developer/general/devel-books>`
 
 Code
 ~~~~
 
--  `Source code </doc/source-code/>`__
--  `Software license </doc/license/>`__
--  `Coding style </doc/coding-style/>`__
--  `Code signing </doc/code-signing/>`__
+-  :doc:`Source code </developer/code/source-code>`
+-  :doc:`Software license </developer/code/license>`
+-  :doc:`Coding style </developer/code/coding-style>`
+-  :doc:`Code signing </developer/code/code-signing>`
 
 System
 ~~~~~~
 
--  `Architecture </doc/architecture/>`__
--  `Security design goals </doc/security-design-goals/>`__
--  `Security-critical code </doc/security-critical-code/>`__
+-  :doc:`Architecture </developer/system/architecture>`
+-  :doc:`Security design goals </developer/system/security-design-goals>`
+-  :doc:`Security-critical code </developer/system/security-critical-code>`
 -  `Qubes core
    admin <https://dev.qubes-os.org/projects/core-admin/en/latest/>`__
 -  `Qubes core admin
    client <https://dev.qubes-os.org/projects/core-admin-client/en/latest/>`__
 -  `Qubes core
    stack <https://www.qubes-os.org/news/2017/10/03/core3/>`__
--  `GUI virtualization </doc/gui/>`__
--  `Networking </doc/networking/>`__
--  `Template implementation </doc/template-implementation/>`__
--  `Storage pools </doc/storage-pools/>`__
--  `Audio virtualization </doc/audio-virtualization/>`__
--  `Template manager </doc/template-manager/>`__
+-  :doc:`GUI virtualization </developer/system/gui>`
+-  :doc:`Networking </developer/system/networking>`
+-  :doc:`Template implementation </developer/system/template-implementation>`
+-  :doc:`Storage pools </developer/system/storage-pools>`
+-  :doc:`Audio virtualization </developer/system/audio>`
+-  :doc:`Template manager </developer/system/template-manager>`
 
 Services
 ~~~~~~~~
 
--  `Inter-qube file copying (qfilecopy) </doc/qfilecopy/>`__
--  `Qubes memory manager (qmemman) </doc/qmemman/>`__
--  `Dom0 secure updates </doc/dom0-secure-updates/>`__
--  `Qrexec: secure communication across domains </doc/qrexec/>`__
--  `Qrexec: Qubes RPC internals </doc/qrexec-internals/>`__
--  `Qrexec: Socket-based services </doc/qrexec-socket-services/>`__
--  `Admin API </doc/admin-api/>`__
+-  :doc:`Inter-qube file copying (qfilecopy) </developer/services/qfilecopy>`
+-  :doc:`Qubes memory manager (qmemman) </developer/services/qmemman>`
+-  :doc:`Dom0 secure updates </developer/services/dom0-secure-updates>`
+-  :doc:`Qrexec: secure communication across domains </developer/services/qrexec>`
+-  :doc:`Qrexec: Qubes RPC internals </developer/services/qrexec-internals>`
+-  :doc:`Qrexec: Socket-based services </developer/services/qrexec-socket-services>`
+-  :doc:`Admin API </developer/services/admin-api>`
 
 Debugging
 ~~~~~~~~~
 
--  `How to set up a test bench </doc/test-bench/>`__
--  `Automated tests </doc/automated-tests/>`__
--  `Python profiling </doc/profiling/>`__
--  `Qube configuration interface </doc/vm-interface/>`__
--  `Windows debugging </doc/windows-debugging/>`__
--  `Safe remote dom0 terminals </doc/safe-remote-ttys/>`__
--  `How to mount LVM images </doc/mount-lvm-image/>`__
+-  :doc:`How to set up a test bench </developer/debugging/test-bench>`
+-  :doc:`Automated tests </developer/debugging/automated-tests>`
+-  :doc:`Python profiling </developer/debugging/profiling>`
+-  :doc:`Qube configuration interface </developer/debugging/vm-interface>`
+-  :doc:`Windows debugging </developer/debugging/windows-debugging>`
+-  :doc:`Safe remote dom0 terminals </developer/debugging/safe-remote-ttys>`
+-  :doc:`How to mount LVM images </developer/debugging/mount-lvm-image>`
 
 Building
 ~~~~~~~~
 
--  `Qubes builder </doc/qubes-builder/>`__
--  `Development workflow </doc/development-workflow/>`__
--  `Qubes ISO building </doc/qubes-iso-building/>`__
+-  :doc:`Qubes builder </developer/building/qubes-builder>`
+-  :doc:`Development workflow </developer/building/development-workflow>`
+-  :doc:`Qubes ISO building </developer/building/qubes-iso-building>`
 -  `Qubes template
    configs <https://github.com/QubesOS/qubes-template-configs>`__
 
 Releases
 ~~~~~~~~
 
--  `Release notes </doc/releases/notes/>`__
--  `Release schedules </doc/releases/schedules/>`__
--  `Release checklist </doc/releases/todo/>`__
--  `Version scheme </doc/version-scheme/>`__
+-  :doc:`Release notes </developer/releases/notes>`
+-  :doc:`Release schedules </developer/releases/schedules>`
+-  :doc:`Release checklist </developer/releases/todo>`
+-  :doc:`Version scheme </developer/releases/version-scheme>`
 
 External Documentation
 ----------------------

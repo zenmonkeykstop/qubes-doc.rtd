@@ -3,8 +3,7 @@ Upgrading to R3.1
 =================
 
 **Before attempting either an in-place upgrade or a clean installation,
-we strongly recommend that users**\ `back up their
-systems </doc/backup-restore/>`__\ **.**
+we strongly recommend that users**\ :doc:`back up their systems </user/how-to-guides/how-to-back-up-restore-and-migrate>`\ **.**
 
 Current Qubes R3.0 systems can be upgraded in-place to the latest R3.1
 by following the procedure below.
@@ -15,7 +14,7 @@ Upgrade all Template and Standalone VM(s)
 By default, in Qubes R3.0, there is only one template. However, users
 are free to create more templates for special purposes, as well as
 standalones. More information on using multiple templates, as well as
-standalones, can be found `here </doc/software-update-vm/>`__. The steps
+standalones, can be found :doc:`here </user/how-to-guides/how-to-install-software>`. The steps
 described in this section should be repeated in **all** the user’s
 Template and Standalone VMs.
 
@@ -101,18 +100,16 @@ after the entire in-place upgrade procedure is complete.
    power button down until the machine shuts off, wait a moment, then
    press it again to start it back up).
 
-Please note that if you use `Anti Evil Maid </doc/anti-evil-maid>`__, it
+Please note that if you use :doc:`Anti Evil Maid </user/security-in-qubes/anti-evil-maid>`, it
 won’t be able to unseal the passphrase the first time the system boots
 after performing this in-place upgrade procedure since the Xen, kernel,
 and initramfs binaries will have changed. Once the system boots up
 again, you can reseal your Anti Evil Maid passphrase to the new
-configuration. Please consult the Anti Evil Maid
-`documentation </doc/anti-evil-maid>`__ for instructions on how to do
+configuration. Please consult the Anti Evil Maid :doc:`documentation </user/security-in-qubes/anti-evil-maid>` for instructions on how to do
 that.
 
 If you use USB VM, you may encounter problem with starting it on updated
-Xen version (because of strict default settings). Take a look at `User
-FAQ </faq/#i-created-a-usb-vm-and-assigned-usb-controllers-to-it-now-the-usb-vm-wont-boot>`__
+Xen version (because of strict default settings). Take a look at :ref:`User FAQ <introduction/faq:i created a usb vm and assigned usb controllers to it now the usb vm wont boot>`
 for details.
 
 Once you have upgraded dom0, you can install new templates from Qubes

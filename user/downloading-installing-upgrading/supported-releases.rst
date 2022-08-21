@@ -9,11 +9,9 @@ Qubes OS
 ========
 
 Qubes OS releases are supported for **six months** after each subsequent
-major or minor release (see `Version Scheme </doc/version-scheme/>`__).
-The current release and past major releases are always available on the
-`Downloads </downloads/>`__ page, while all ISOs, including past minor
-releases, are available from our `download
-mirrors </downloads/#mirrors>`__.
+major or minor release (see :doc:`Version Scheme </developer/releases/version-scheme>`).
+The current release and past major releases are always available on the :doc:`Downloads </user/downloading-installing-upgrading/downloads>` page, while all ISOs, including past minor
+releases, are available from our :ref:`download mirrors <user/downloading-installing-upgrading/downloads:mirrors>`.
 
 +-------------+------------+------------+---------------------------+
 | Qubes OS    | Start Date | End Date   | Status                    |
@@ -74,7 +72,7 @@ Note on dom0 and EOL
 Dom0 is isolated from domUs. DomUs can access only a few interfaces,
 such as Xen, device backends (in the dom0 kernel and in other VMs, such
 as the NetVM), and Qubes tools (gui-daemon, qrexec-daemon, etc.). These
-components are `security-critical </doc/security-critical-code/>`__, and
+components are :doc:`security-critical </developer/system/security-critical-code>`, and
 we provide updates for all of them (when necessary), regardless of the
 support status of the base distribution. For this reason, we consider it
 safe to continue using a given base distribution in dom0 even after it
@@ -83,13 +81,9 @@ has reached end-of-life (EOL).
 Templates
 =========
 
-The following table shows select `template </doc/templates/>`__ releases
-that are currently supported. Currently, only
-`Fedora </doc/templates/fedora/>`__ and
-`Debian </doc/templates/debian/>`__ templates are officially supported
-by the Qubes OS Project. `Whonix <https://www.whonix.org/wiki/Qubes>`__
-templates are supported by our partner, the `Whonix
-Project <https://www.whonix.org/>`__. Qubes support for each template
+The following table shows select :doc:`template </user/templates/templates>` releases
+that are currently supported. Currently, only :doc:`Fedora </user/templates/fedora/fedora>` and :doc:`Debian </user/templates/debian/debian>` templates are officially supported
+by the Qubes OS Project. `Whonix <https://www.whonix.org/wiki/Qubes>`__ templates are supported by our partner, the `Whonix Project <https://www.whonix.org/>`__. Qubes support for each template
 ends when that upstream release reaches end-of-life (EOL), even if that
 release is included in the table below. Please see below for
 distribution-specific notes.
@@ -100,14 +94,12 @@ to heed these notices by upgrading to supported releases. As a courtesy
 to Qubes users, we attempt to pass along any upstream EOL notices we
 receive for officially-supported templates, but our ability to do this
 reliably is dependent on the upstream distribution’s practices. If a
-distribution provides a mailing list similar to
-`qubes-announce </support/#qubes-announce>`__, which allows us to
+distribution provides a mailing list similar to :ref:`qubes-announce <introduction/support:qubes announce>`, which allows us to
 receive only very important, infrequent messages, including EOL
 announcements, we are much more likely to be able to pass along EOL
 notices to Qubes users reliably. Qubes users can always check the EOL
 status of an upstream release on the upstream distribution’s website
-(see `Fedora EOL <https://fedoraproject.org/wiki/End_of_life>`__ and
-`Debian Releases <https://wiki.debian.org/DebianReleases>`__).
+(see `Fedora EOL <https://fedoraproject.org/wiki/End_of_life>`__ and `Debian Releases <https://wiki.debian.org/DebianReleases>`__).
 
 =========== ====== ========================== ======
 Qubes OS    Fedora Debian                     Whonix
@@ -118,18 +110,14 @@ Release 4.1 35, 36 10 (Buster), 11 (Bullseye) 16
 Note on Debian support
 ----------------------
 
-Debian releases have two EOL dates: regular and `long-term support
-(LTS) <https://wiki.debian.org/LTS>`__. See `Debian Production
-Releases <https://wiki.debian.org/DebianReleases#Production_Releases>`__
+Debian releases have two EOL dates: regular and `long-term support (LTS) <https://wiki.debian.org/LTS>`__. See `Debian Production Releases <https://wiki.debian.org/DebianReleases#Production_Releases>`__
 for a chart that illustrates this. Qubes support ends at the *regular*
 EOL date, *not* the LTS EOL date, unless a specific exception has been
 made.
 
 Note on Whonix support
 ----------------------
-
-`Whonix <https://www.whonix.org/wiki/Qubes>`__ templates are supported
-by our partner, the `Whonix Project <https://www.whonix.org/>`__. The
+ `Whonix <https://www.whonix.org/wiki/Qubes>`__ templates are supported by our partner, the `Whonix Project <https://www.whonix.org/>`__. The
 Whonix Project has set its own support policy for Whonix templates in
 Qubes.
 

@@ -3,11 +3,10 @@ RPC policies
 ============
 
 *Qubes OS 4.1 introduced a new qrexec policy system and policy format.
-Please see*\ `this
-article </news/2020/06/22/new-qrexec-policy-system/>`__\ *for details.*
+Please see*\ `this article <https://www.qubes-os.org/news/2020/06/22/new-qrexec-policy-system/>`__\ *for details.*
 
 This document explains the basics of RPC policies in Qubes. For more
-information, see `Qrexec: command execution in VMs </doc/qrexec3/>`__.
+information, see :doc:`Qrexec: command execution in VMs </developer/services/qrexec>`.
 
 Here’s an example of an RPC policy file in dom0:
 
@@ -89,8 +88,7 @@ from copying files to other VMs (without the “work” tag), and other VMs
 fifth rule means that the user gets prompted for any situation not
 already covered.
 
-Further details about how this system works can be found in `Qrexec:
-command execution in VMs </doc/qrexec3/>`__.
+Further details about how this system works can be found in :doc:`Qrexec: command execution in VMs </developer/services/qrexec>`.
 
 (**Note**\ *: the ``$`` character is deprecated in qrexec keywords –
 please use ``@`` instead (e.g. ``@anyvm``). For more information, see

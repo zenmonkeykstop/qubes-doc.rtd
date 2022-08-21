@@ -12,27 +12,21 @@ No operating system, not even Qubes, can help you if you’re installing
 it on hardware that is already compromised. This includes CPUs, GPUs,
 SSDs, HDDs, the motherboard, BIOS/EFI/UEFI, and all relevant firmware.
 Unfortunately, in today’s world of undetectable supply chain attacks,
-there are no easy solutions. (Tools like `Anti Evil Maid
-(AEM) </doc/anti-evil-maid/>`__ can help with *maintaining* the
+there are no easy solutions. (Tools like :doc:`Anti Evil Maid (AEM) </user/security-in-qubes/anti-evil-maid>` can help with *maintaining* the
 trustworthiness of your hardware, but not with establishing it in the
-first place.) Some users have chosen to use tools like
-`Coreboot <https://www.coreboot.org/>`__,
-`Heads <http://osresearch.net/>`__, and
-`Skulls <https://github.com/merge/skulls>`__.
+first place.) Some users have chosen to use tools like `Coreboot <https://www.coreboot.org/>`__, `Heads <http://osresearch.net/>`__, and `Skulls <https://github.com/merge/skulls>`__.
 
 Verifying the Qubes ISO
 =======================
 
-You should `verify </security/verifying-signatures/>`__ the PGP
+You should :doc:`verify </project-security/verifying-signatures>` the PGP
 signature on your Qubes ISO before you install from it. However, if the
 machine on which you attempt the verification process is already
 compromised, it could falsely claim that a malicious ISO has a good
 signature. Therefore, in order to be certain that your Qubes ISO is
 trustworthy, you require a trustworthy machine. But how can you be
 certain *that* machine is trustworthy? Only by using another trusted
-machine, and so forth. This is a `classic
-problem <https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf>`__.
-While various `solutions <https://www.dwheeler.com/trusting-trust/>`__
+machine, and so forth. This is a `classic problem <https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf>`__. While various `solutions <https://www.dwheeler.com/trusting-trust/>`__
 have been proposed, the point is that each user must ultimately make a
 choice about whether to trust that a file is non-malicious.
 
@@ -50,7 +44,7 @@ USB drives
 
 Pros:
 
--  Works via USB, including with a `USB qube </doc/usb-qubes/>`__.
+-  Works via USB, including with a :doc:`USB qube </user/advanced-topics/usb-qubes>`.
 -  Non-fixed capacity. (Easy to find one on which the ISO can fit.)
 
 Cons:
@@ -60,8 +54,7 @@ Cons:
    drive.)
 -  Untrustworthy firmware. (Firmware can be malicious even if the drive
    is new. Plugging a drive with rewritable firmware into a compromised
-   machine can also `compromise the
-   drive <https://opensource.srlabs.de/projects/badusb>`__. Installing
+   machine can also `compromise the    drive <https://opensource.srlabs.de/projects/badusb>`__. Installing
    from a compromised drive could compromise even a brand new Qubes
    installation.)
 

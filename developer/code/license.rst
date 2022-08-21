@@ -12,5 +12,4 @@ code is made available under GPLv2, unless there is a ``LICENSE`` file
 in the root of the containing repository that specifies a different
 license.
 
-The full text of the GPLv2 license can be found
-`here <https://www.gnu.org/licenses/gpl-2.0.html>`__.
+The full text of the GPLv2 license can be found `here <https://www.gnu.org/licenses/gpl-2.0.html>`__.

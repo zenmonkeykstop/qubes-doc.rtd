@@ -14,11 +14,7 @@ it is an attempt to find a reasonable middle ground among the inevitable
 disagreements regarding free expression that arise in a large, diverse
 community of people from around the world. It is intended to be a
 practical means of serving the best interests of our users,
-contributors, and the project itself. We welcome you to view the
-`history of
-changes <https://github.com/QubesOS/qubes-doc/commits/master/about/code-of-conduct.md>`__
-to this document and the
-`discussion <https://github.com/QubesOS/qubes-issues/issues/2163>`__
+contributors, and the project itself. We welcome you to view the `history of changes <https://github.com/QubesOS/qubes-doc/commits/master/about/code-of-conduct.md>`__ to this document and the `discussion <https://github.com/QubesOS/qubes-issues/issues/2163>`__
 leading to its creation.
 
 Our Pledge
@@ -52,15 +48,13 @@ Examples of unacceptable behavior by participants include:
    attacks
 -  Reinforcing stereotypical models for illustration of non-technical
    users (e.g. our mothers/grandmothers, etc.)
--  Public or private harassment, as defined by the `Citizen Code of
-   Conduct <https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md>`__
+-  Public or private harassment, as defined by the `Citizen Code of    Conduct <https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md>`__
 -  Publishing others’ private information, such as a physical or
    electronic address, without explicit permission
 -  Other conduct which could reasonably be considered inappropriate in a
    professional setting
 
-(Please also see our `discussion
-guidelines </support/#discussion-guidelines>`__.)
+(Please also see our :ref:`discussion guidelines <introduction/support:discussion guidelines>`.)
 
 Our Responsibilities
 ====================
@@ -85,7 +79,7 @@ offline event. Representation of a project may be further defined and
 clarified by project maintainers.
 
 In all other cases, this Code of Conduct applies only in the official
-project venues specified on `this page </support/>`__; it does not apply
+project venues specified on :doc:`this page </introduction/support>`; it does not apply
 to unofficial venues, community-run venues, or any other public or
 private place. For example, if a Qubes user decides to create an
 unofficial discussion space on a third-party platform, and someone
@@ -98,11 +92,7 @@ Enforcement
 ===========
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may
-be reported by contacting the project CoC team at ``mods@qubes-os.org``.
-The project CoC team is the `Marek
-Marczykowski-Górecki </team/#marek-marczykowski-górecki>`__, `Andrew
-David Wong </team/#andrew-david-wong>`__, and `Michael
-Carbone </team/#michael-carbone>`__. All complaints will be reviewed and
+be reported by contacting the project CoC team at ``mods@qubes-os.org``. The project CoC team is the `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/#marek-marczykowski-górecki>`__, `Andrew David Wong <https://www.qubes-os.org/team/#andrew-david-wong>`__, and `Michael Carbone <https://www.qubes-os.org/team/#michael-carbone>`__. All complaints will be reviewed and
 investigated and will result in a response that is deemed necessary and
 appropriate to the circumstances. The project team is obligated to
 maintain confidentiality with regard to the reporter of an incident, and
@@ -131,6 +121,4 @@ Attribution
 ===========
 
 The initial published version of this Code of Conduct was adapted from
-the `Contributor Covenant, version
-1.4 <https://contributor-covenant.org/version/1/4>`__ and the `Rust Code
-of Conduct <https://www.rust-lang.org/en-US/conduct.html>`__.
+the `Contributor Covenant, version 1.4 <https://contributor-covenant.org/version/1/4>`__ and the `Rust Code of Conduct <https://www.rust-lang.org/en-US/conduct.html>`__.

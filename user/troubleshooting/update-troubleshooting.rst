@@ -30,19 +30,13 @@ applied in recent versions of Qubes.
 Run ``systemctl enable NetworkManager-dispatcher.service`` in the
 template upon which your NetVM is based. You may have to reboot
 afterward for the change to take effect. (Note: This is an upstream
-problem. See `this Redhat
-ticket <https://bugzilla.redhat.com/show_bug.cgi?id=974811>`__). For
-details, see the qubes-users mailing list threads
-`here <https://groups.google.com/d/topic/qubes-users/xPLGsAJiDW4/discussion>`__
-and
-`here <https://groups.google.com/d/topic/qubes-users/uN9G8hjKrGI/discussion>`__.)
+problem. See `this Redhat ticket <https://bugzilla.redhat.com/show_bug.cgi?id=974811>`__). For details, see the qubes-users mailing list threads `here <https://groups.google.com/d/topic/qubes-users/xPLGsAJiDW4/discussion>`__ and `here <https://groups.google.com/d/topic/qubes-users/uN9G8hjKrGI/discussion>`__.)
 
 Windows update is stuck
 =======================
 
 This has nothing to do with Qubes. It’s a longstanding Windows bug. More
-information about this issue and solutions can be found
-`here <https://superuser.com/questions/951960/windows-7-sp1-windows-update-stuck-checking-for-updates>`__.
+information about this issue and solutions can be found `here <https://superuser.com/questions/951960/windows-7-sp1-windows-update-stuck-checking-for-updates>`__.
 
 Dom0 and/or template update stalls when updating via the GUI tool
 =================================================================

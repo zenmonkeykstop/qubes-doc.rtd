@@ -5,13 +5,10 @@ Qubes security pack (qubes-secpack)
 The **Qubes security pack (qubes-secpack)** is a Git repository that
 contains:
 
--  `Qubes security bulletins (QSBs) </security/qsb/>`__
--  `Qubes canaries </security/canary/>`__
--  `Qubes ISO cryptographic hash
-   values </security/verifying-signatures/#how-to-verify-the-cryptographic-hash-values-of-qubes-isos>`__
--  `Qubes fund
-   information <https://github.com/QubesOS/qubes-secpack/tree/master/fund>`__
--  `Qubes PGP keys <https://keys.qubes-os.org/keys/>`__
+-  :doc:`Qubes security bulletins (QSBs) </project-security/qsb>`
+-  :doc:`Qubes canaries </project-security/canary>`
+-  :ref:`Qubes ISO cryptographic hash    values <project-security/verifying-signatures:how to verify the cryptographic hash values of qubes isos>`
+-  `Qubes fund    information <https://github.com/QubesOS/qubes-secpack/tree/master/fund>`__ -  `Qubes PGP keys <https://keys.qubes-os.org/keys/>`__
 -  Security-related information and announcements (e.g., key
    revocations)
 
@@ -24,8 +21,7 @@ How to obtain and authenticate
 ==============================
 
 The following example demonstrates one method of obtaining the
-qubes-secpack and verifying its authenticity. This requires Git and
-`OpenPGP software </security/verifying-signatures/#openpgp-software>`__.
+qubes-secpack and verifying its authenticity. This requires Git and :ref:`OpenPGP software <project-security/verifying-signatures:openpgp software>`.
 
 1. Use Git to clone the qubes-secpack repo.
 
@@ -39,8 +35,7 @@ qubes-secpack and verifying its authenticity. This requires Git and
       Resolving deltas: 100% (47/47), done.
       Checking connectivity... done.
 
-2. Import the included PGP keys. See our `PGP key
-   policies <#pgp-key-policies>`__ for important information about these
+2. Import the included PGP keys. See our :ref:`PGP key    policies <project-security/security-pack:pgp key policies>` for important information about these
    keys.
 
    .. code:: shell_session
@@ -73,8 +68,7 @@ qubes-secpack and verifying its authenticity. This requires Git and
       gpg:               imported: 17  (RSA: 17)
       gpg: no ultimately trusted keys found
 
-3. `Authenticate and set the trust level of the Qubes Master Signing Key
-   (QMSK). </security/verifying-signatures/#how-to-import-and-authenticate-the-qubes-master-signing-key>`__
+3. :ref:`Authenticate and set the trust level of the Qubes Master Signing Key    (QMSK). <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>`
 
 4. Verify signed Git tags.
 
@@ -125,8 +119,7 @@ PGP key policies
    qubes-secpack’s own files and Git tags (security team keys again).
    This means that email keys are generally not included, even for
    official project email addresses. There is one exception to this
-   rule: the official `Qubes security
-   team </security/#qubes-security-team>`__ email address, which is used
+   rule: the official :ref:`Qubes security    team <project-security/security:qubes security team>` email address, which is used
    to report security vulnerabilities in Qubes OS to our security team.
 
 -  **Key signing (certification).** Only some keys in the qubes-secpack
@@ -139,8 +132,7 @@ History and rationale
 =====================
 
 On 2013-01-05, Joanna Rutkowska announced the qubes-secpack and
-explained its rationale in an
-`email <https://groups.google.com/d/msg/qubes-devel/twkOEaMLtNI/lZyGx6_jFCEJ>`__
+explained its rationale in an `email <https://groups.google.com/d/msg/qubes-devel/twkOEaMLtNI/lZyGx6_jFCEJ>`__
 to the Qubes mailing lists:
 
 ::

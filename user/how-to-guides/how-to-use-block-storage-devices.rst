@@ -2,8 +2,7 @@
 How to use block storage devices
 ================================
 
-*This page is part of*\ `device handling in
-qubes </doc/how-to-use-devices/>`__\ *.*
+*This page is part of*\ :doc:`device handling in qubes </user/how-to-guides/how-to-use-devices>`\ *.*
 
 If you don’t know what a “block device” is, just think of it as a fancy
 way to say “something that stores data”.
@@ -11,9 +10,7 @@ way to say “something that stores data”.
 Using the Devices Widget to Attach a Drive
 ==========================================
 
-(**Note:** In the present context, the term “USB drive” denotes any `USB
-mass storage
-device <https://en.wikipedia.org/wiki/USB_mass_storage_device_class>`__.
+(**Note:** In the present context, the term “USB drive” denotes any `USB mass storage device <https://en.wikipedia.org/wiki/USB_mass_storage_device_class>`__.
 In addition to smaller flash memory sticks, this includes things like
 USB external hard drives.)
 
@@ -25,8 +22,7 @@ Attaching USB drives is integrated into the Devices Widget: |device
 manager icon| Simply insert your USB drive and click on the widget. You
 will see multiple entries for your USB drive; typically,
 ``sys-usb:sda``, ``sys-usb:sda1``, and ``sys-usb:2-1`` for example.
-Entries starting with a number (e.g. here ``2-1``) are the `whole
-usb-device </doc/how-to-use-usb-devices/>`__. Entries without a number
+Entries starting with a number (e.g. here ``2-1``) are the :doc:`whole usb-device </user/how-to-guides/how-to-use-usb-devices>`. Entries without a number
 (e.g. here ``sda``) are the whole block-device. Other entries are
 partitions of that block-device (e.r. here ``sda1``).
 
@@ -69,7 +65,7 @@ after ``xvdi`` the next device will be named ``xvdj``, the next
 ``xvdk``, and so on.
 
 To specify this device node name, you need to use the command line tool
-and its ```frontend-dev``-option <#frontend-dev>`__.
+and its ```frontend-dev` :ref:`-option <user/how-to-guides/how-to-use-block-storage-devices:frontend-dev>`.
 
 Command Line Tool Guide
 =======================
@@ -153,8 +149,7 @@ Recovering From Premature Device Destruction
 ============================================
 
 If the you fail to detach the device before it’s destroyed in the
-sourceVM (e.g. by physically detaching the thumbdrive), `there will be
-problems <https://github.com/QubesOS/qubes-issues/issues/1082>`__.
+sourceVM (e.g. by physically detaching the thumbdrive), `there will be problems <https://github.com/QubesOS/qubes-issues/issues/1082>`__.
 
 To recover from this error state, in dom0 run
 
@@ -163,8 +158,7 @@ To recover from this error state, in dom0 run
    virsh detach-disk targetVM xvdi
 
 (where ``targetVM`` is to be replaced with the VM name you attached the
-device to and ``xvdi`` is to be replaced with the used `frontend device
-node <#frontend-dev>`__.)
+device to and ``xvdi`` is to be replaced with the used :ref:`frontend device node <user/how-to-guides/how-to-use-block-storage-devices:frontend-dev>`.)
 
 However, if the block device originated in dom0, you will have to refer
 to the next section.
@@ -172,8 +166,7 @@ to the next section.
 What if I removed the device before detaching it from the VM?
 -------------------------------------------------------------
 
-Currently (until issue
-`1082 <https://github.com/QubesOS/qubes-issues/issues/1082>`__ gets
+Currently (until issue `1082 <https://github.com/QubesOS/qubes-issues/issues/1082>`__ gets
 implemented), if you remove the device before detaching it from the
 qube, Qubes OS (more precisely, ``libvirtd``) will think that the device
 is still attached to the qube and will not allow attaching further
@@ -260,9 +253,7 @@ Additional Attach Options
 =========================
 
 Attaching a block device through the command line offers additional
-customisation options, specifiable via the ``--option``/``-o`` option.
-(Yes, confusing wording, there’s an `issue for
-that <https://github.com/QubesOS/qubes-issues/issues/4530>`__.)
+customisation options, specifiable via the ``--option``/``-o option. (Yes, confusing wording, there’s an `issue for that <https://github.com/QubesOS/qubes-issues/issues/4530>`__.)
 
 frontend-dev
 ------------

@@ -26,7 +26,7 @@ manager.
 Development
 ===========
 
-To `contribute code </doc/contributing/>`__ you may clone the AwesomeWM
+To :doc:`contribute code </introduction/contributing>` you may clone the AwesomeWM
 repository as follows:
 
 .. code:: shell_session
@@ -41,8 +41,7 @@ Common customizations
 =====================
 
 This section focuses on Qubes-specific customizations. For generic
-AwesomeWM customizations you might want to have a look at the `AwesomeWM
-website <https://awesomewm.org>`__.
+AwesomeWM customizations you might want to have a look at the `AwesomeWM website <https://awesomewm.org>`__.
 
 Customizations for AwesomeWM are usually done at
 ``~/.config/awesome/rc.lua``. The default file can be found at

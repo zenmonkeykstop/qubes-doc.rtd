@@ -23,8 +23,7 @@ How is the userbase estimated?
 ------------------------------
 
 We simply count the number of unique IPv4 addresses that connect to the
-Qubes update servers each month (except for Tor connections; see
-`below <#how-are-tor-users-counted>`__). (Note: Users who have manually
+Qubes update servers each month (except for Tor connections; see :ref:`below <introduction/statistics:how are tor users counted?>`). (Note: Users who have manually
 configured their systems to bypass the metalink and connect directly to
 a mirror are not counted.)
 
@@ -51,9 +50,7 @@ Where:
 -  ``plain_requests`` is the total number of requests the Qubes update
    servers receive from clearnet IPv4 addresses each month.
 
-We cross-reference the list of connecting IP addresses with `TorDNSEL’s
-exit
-lists <https://metrics.torproject.org/collector.html#type-tordnsel>`__
+We cross-reference the list of connecting IP addresses with `TorDNSEL’s exit lists <https://metrics.torproject.org/collector.html#type-tordnsel>`__
 in order to distinguish Tor and clearnet IPs and requests. For this
 purpose, we count an IP address as belonging to a Tor exit node if there
 was a Tor exit node active for that address within the 24-hour periods
@@ -62,13 +59,12 @@ before or after it connected to the Qubes update servers.
 What kinds of data do you collect about Qubes users?
 ----------------------------------------------------
 
-Please see our `Privacy Policy </privacy/>`__.
+Please see our :doc:`Privacy Policy </introduction/privacy>`.
 
 Where can I find the raw data and source code?
 ----------------------------------------------
 
-The raw data is available
-`here <https://tools.qubes-os.org/counter/stats.json>`__. (This does not
+The raw data is available `here <https://tools.qubes-os.org/counter/stats.json>`__. (This does not
 include any personally-identifying user data.) Please note that the
 format of this data is not documented and may change any time if the
 developers feel the need to include something else. The source code is

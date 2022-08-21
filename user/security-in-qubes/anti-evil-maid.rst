@@ -5,48 +5,34 @@ Anti evil maid (AEM)
 Background
 ==========
 
-Please read `this blog
-article <https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html>`__.
+Please read `this blog article <https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html>`__.
 
 Requirements
 ============
 
 The current package requires a TPM 1.2 interface and a working Intel TXT
 engine. If you cleaned your Intel Management Engine with
-e.g. `me_cleaner <https://github.com/corna/me_cleaner>`__ while
-installing `CoreBoot <https://www.coreboot.org/>`__ then you are out of
+e.g. `me_cleaner <https://github.com/corna/me_cleaner>`__ while installing `CoreBoot <https://www.coreboot.org/>`__ then you are out of
 luck. For now you have to choose between cleaning your BIOS and
 deploying Anti Evil Maid.
-
-`Discussion <https://groups.google.com/d/msg/qubes-users/sEmZfOZqYXM/j5rHeex1BAAJ>`__
+ `Discussion <https://groups.google.com/d/msg/qubes-users/sEmZfOZqYXM/j5rHeex1BAAJ>`__
 
 Installing
 ==========
 
-In Dom0 install ``anti-evil-maid``:
-
-::
-
-   sudo qubes-dom0-update anti-evil-maid
-
-For more information, see the
-`qubes-antievilmaid <https://github.com/QubesOS/qubes-antievilmaid>`__
+In Dom0 install ``anti-evil-maid``:  ::     sudo qubes-dom0-update anti-evil-maid  For more information, see the `qubes-antievilmaid <https://github.com/QubesOS/qubes-antievilmaid>`__
 repository, which includes a ``README``.
 
 Security Considerations
 =======================
-
-`Qubes security
-guidelines <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md>`__
+ `Qubes security guidelines <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md>`__
 dictate that USB devices should never be attached directly to dom0,
 since this can result in the entire system being compromised. However,
 in its default configuration, installing and using AEM requires
-attaching a USB drive (i.e., `mass storage
-device <https://en.wikipedia.org/wiki/USB_mass_storage_device_class>`__)
+attaching a USB drive (i.e., `mass storage device <https://en.wikipedia.org/wiki/USB_mass_storage_device_class>`__)
 directly to dom0. (The other option is to install AEM to an internal
 disk. However, this carries significant security implications, as
-explained
-`here <https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html>`__.)
+explained `here <https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html>`__.)
 This presents us with a classic security trade-off: each Qubes user must
 make a choice between protecting dom0 from a potentially malicious USB
 drive, on the one hand, and protecting the system from Evil Maid
@@ -70,15 +56,10 @@ higher probability that any USB drive she purchases is already
 compromised, in which case she might reasonably opt never to attach any
 USB devices directly to dom0. (In either case, users can–and
 should–secure dom0 against further USB-related attacks through the use
-of a `USB
-VM <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md#creating-and-using-a-usbvm>`__.)
-
-For more information, please see `this discussion
-thread <https://groups.google.com/d/msg/qubes-devel/EBc4to5IBdg/n1hfsHSfbqsJ>`__.
+of a `USB VM <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md#creating-and-using-a-usbvm>`__.)  For more information, please see `this discussion thread <https://groups.google.com/d/msg/qubes-devel/EBc4to5IBdg/n1hfsHSfbqsJ>`__.
 
 Known issues
 ============
 
 -  USB 3.0 isn’t supported yet
--  `AEM is not compatible with having an SSD
-   cache <https://groups.google.com/d/msgid/qubes-users/70021590-fb3a-4f95-9ce5-4b340530ddbf%40petaramesh.org>`__
+-  `AEM is not compatible with having an SSD    cache <https://groups.google.com/d/msgid/qubes-users/70021590-fb3a-4f95-9ce5-4b340530ddbf%40petaramesh.org>`__

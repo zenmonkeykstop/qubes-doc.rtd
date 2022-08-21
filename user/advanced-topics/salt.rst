@@ -17,8 +17,7 @@ Understanding Salt
 This document is not meant to be comprehensive Salt documentation;
 however, before writing anything it is required you have at least *some*
 understanding of basic Salt-related vocabulary. For more exhaustive
-documentation, visit `official
-site <https://docs.saltproject.io/en/latest/>`__, though we must warn
+documentation, visit `official site <https://docs.saltproject.io/en/latest/>`__, though we must warn
 you that it is not easy to read if you just start working with Salt and
 know nothing.
 
@@ -81,28 +80,15 @@ The stateid has to be unique throughout all states running for a minion
 and can be used to order the execution of the references state.
 ``cmd.run`` is an execution module. It executes a command on behalf of
 the administrator. ``name: echo 'hello world'`` is a parameter for the
-execution module ``cmd.run``. The module used defines which parameters
-can be passed to it.
-
-There is a list of `officially available
-states <https://docs.saltproject.io/en/latest/ref/states/all/>`__. There
-are many very useful states:
-
--  For `managing
-   files <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html>`__:
+execution module ``cmd.run``. The module used defines which parameters can be passed to it.  There is a list of `officially available states <https://docs.saltproject.io/en/latest/ref/states/all/>`__. There are many very useful states:  -  For `managing    files <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html>`__:
    Use this to create files or directories and change them (append
    lines, replace text, set their content etc.)
--  For `installing and
-   uninstalling <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html>`__
-   packages.
--  For `executing shell
-   commands <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html>`__.
+-  For `installing and    uninstalling <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html>`__    packages. -  For `executing shell    commands <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html>`__.
 
 With these three states you can define most of the configuration of a
 VM.
 
-You can also `order the
-execution <https://docs.saltproject.io/en/latest/ref/states/ordering.html>`__
+You can also `order the execution <https://docs.saltproject.io/en/latest/ref/states/ordering.html>`__
 of your states:
 
 ::
@@ -126,11 +112,7 @@ of your states:
      - name: echo 1
      - order: 1
 
-The order of execution will be ``A, B, C, D``. The official
-documentation has more details on the
-`require <https://docs.saltproject.io/en/latest/ref/states/requisites.html>`__
-and
-`order <https://docs.saltproject.io/en/latest/ref/states/ordering.html#the-order-option>`__
+The order of execution will be ``A, B, C, D``. The official documentation has more details on the `require <https://docs.saltproject.io/en/latest/ref/states/requisites.html>`__ and `order <https://docs.saltproject.io/en/latest/ref/states/ordering.html#the-order-option>`__
 arguments.
 
 State Files
@@ -146,8 +128,7 @@ Top Files
 ~~~~~~~~~
 
 After you have several state files, you need something to assign them to
-a VM. This is done by ``*.top`` files (`official
-documentation <https://docs.saltproject.io/en/latest/ref/states/top.html>`__).
+a VM. This is done by ``*.top files (`official documentation <https://docs.saltproject.io/en/latest/ref/states/top.html>`__).
 Their structure looks like this:
 
 ::
@@ -214,12 +195,9 @@ commonly done with `Jinja <http://jinja.pocoo.org/>`__. Jinja is similar
 to Python and in many cases behaves in a similar fashion, but there are
 sometimes differences when, for example, you set some variable inside a
 loop: the variable outside will not get changed. Instead, to get this
-behavior, you would use a ``do`` statement. So you should take a look at
-the `Jinja API
-documentation <http://jinja.pocoo.org/docs/2.9/templates/>`__.
+behavior, you would use a ``do statement. So you should take a look at the `Jinja API documentation <http://jinja.pocoo.org/docs/2.9/templates/>`__.
 Documentation about using Jinja to directly call Salt functions and get
-data about your system can be found in the official `Salt
-documentation <https://docs.saltproject.io/en/getstarted/config/jinja.html#get-data-using-salt>`__.
+data about your system can be found in the official `Salt documentation <https://docs.saltproject.io/en/getstarted/config/jinja.html#get-data-using-salt>`__.
 
 Salt Configuration, QubesOS layout
 ==================================
@@ -279,8 +257,7 @@ doesn’t directly interact with potentially malicious target VMs; and in
 the case of a compromised Salt VM, because they are temporary, the
 compromise cannot spread from one VM to another.
 
-Beginning with Qubes 4.0 and after `QSB
-#45 </news/2018/12/03/qsb-45/>`__, we implemented two changes:
+Beginning with Qubes 4.0 and after `QSB #45 <https://www.qubes-os.org/news/2018/12/03/qsb-45/>`__, we implemented two changes:
 
 1. Added the ``management_dispvm`` VM property, which specifies the
    disposable Template that should be used for management, such as Salt
@@ -677,17 +654,4 @@ solution is to shut down the updateVM between each install:
 Further Reading
 ===============
 
--  `Salt documentation <https://docs.saltproject.io/en/latest/>`__
--  `Salt
-   states <https://docs.saltproject.io/en/latest/ref/states/all/>`__
-   (`files <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html>`__,
-   `commands <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html>`__,
-   `packages <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html>`__,
-   `ordering <https://docs.saltproject.io/en/latest/ref/states/ordering.html>`__)
--  `Top
-   files <https://docs.saltproject.io/en/latest/ref/states/top.html>`__
--  `Jinja templates <http://jinja.pocoo.org/>`__
--  `Qubes specific
-   modules <https://github.com/QubesOS/qubes-mgmt-salt-dom0-qvm/blob/master/README.rst>`__
--  `Formulas for default Qubes
-   VMs <https://github.com/QubesOS/qubes-mgmt-salt-dom0-virtual-machines/tree/master/qvm>`__
+-  `Salt documentation <https://docs.saltproject.io/en/latest/>`__ -  `Salt    states <https://docs.saltproject.io/en/latest/ref/states/all/>`__    (`files <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html>`__,    `commands <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html>`__,    `packages <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html>`__,    `ordering <https://docs.saltproject.io/en/latest/ref/states/ordering.html>`__) -  `Top    files <https://docs.saltproject.io/en/latest/ref/states/top.html>`__ -  `Jinja templates <http://jinja.pocoo.org/>`__ -  `Qubes specific    modules <https://github.com/QubesOS/qubes-mgmt-salt-dom0-qvm/blob/master/README.rst>`__ -  `Formulas for default Qubes    VMs <https://github.com/QubesOS/qubes-mgmt-salt-dom0-virtual-machines/tree/master/qvm>`__

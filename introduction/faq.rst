@@ -69,7 +69,7 @@ for doing online banking. This way, if your untrusted browsing qube gets
 compromised by a malware-laden website, your online banking activities
 won’t be at risk. Similarly, if you’re concerned about malicious email
 attachments, Qubes can make it so that every attachment gets opened in
-its own single-use `disposable qube </doc/dispvm/>`__. In this way,
+its own single-use :doc:`disposable qube </user/how-to-guides/how-to-use-disposables>`. In this way,
 Qubes allows you to do everything on the same physical computer without
 having to worry about a single successful cyberattack taking down your
 entire digital life in one fell swoop.
@@ -80,18 +80,14 @@ all windows are displayed in a single, unified desktop environment with
 unforgeable colored window borders so that you can easily identify
 windows from different security levels. Common attack vectors like
 network cards and USB controllers are isolated in their own hardware
-qubes while their functionality is preserved through secure
-`networking </doc/networking/>`__, `firewalls </doc/firewall>`__, and
-`USB device management </doc/usb-devices>`__. Integrated
-`file </doc/copying-files>`__ and `clipboard </doc/copy-paste>`__ copy
+qubes while their functionality is preserved through secure :doc:`networking </developer/system/networking>`, :doc:`firewalls </user/security-in-qubes/firewall>`, and :doc:`USB device management </user/how-to-guides/how-to-use-usb-devices>`. Integrated :doc:`file </user/how-to-guides/how-to-copy-and-move-files>` and :doc:`clipboard </user/how-to-guides/how-to-copy-and-paste-text>` copy
 and paste operations make it easy to work across various qubes without
-compromising security. The innovative
-`Template </doc/template-implementation>`__ system separates software
+compromising security. The innovative :doc:`Template </developer/system/template-implementation>` system separates software
 installation from software use, allowing qubes to share a root
 filesystem without sacrificing security (and saving disk space, to
 boot). Qubes even allows you to sanitize PDFs and images in a few
 clicks. Those concerned about physical hardware attacks will benefit
-from `Anti Evil Maid </doc/anti-evil-maid/>`__.
+from :doc:`Anti Evil Maid </user/security-in-qubes/anti-evil-maid>`.
 
 How does Qubes OS provide privacy?
 ----------------------------------
@@ -100,27 +96,19 @@ There can be no privacy without security, since security vulnerabilities
 allow privacy measures to be circumvented. This makes Qubes
 exceptionally well-suited for implementing effective privacy tools.
 
-Users concerned about privacy will appreciate the `integration of Whonix
-into Qubes <https://www.whonix.org/wiki/Qubes>`__, which makes it easy
-to use `Tor <https://www.torproject.org/>`__ securely. For more
-information about how to use this powerful tool correctly and safely,
-please see `Qubes-Whonix
-Guides <https://www.whonix.org/wiki/Qubes#Guides>`__.
+Users concerned about privacy will appreciate the `integration of Whonix into Qubes <https://www.whonix.org/wiki/Qubes>`__, which makes it easy to use `Tor <https://www.torproject.org/>`__ securely. For more information about how to use this powerful tool correctly and safely, please see `Qubes-Whonix Guides <https://www.whonix.org/wiki/Qubes#Guides>`__.
 
 For the privacy policies covering our website, repositories, Qubes OS
-itself, and more, please see `Privacy Policy </privacy/>`__.
+itself, and more, please see :doc:`Privacy Policy </introduction/privacy>`.
 
 What about privacy in non-Whonix qubes?
 ---------------------------------------
 
-The main way Qubes OS `provides
-privacy <#how-does-qubes-os-provide-privacy>`__ is via its `integration
-with Whonix <https://www.whonix.org/wiki/Qubes>`__. Qubes OS does not
+The main way Qubes OS :ref:`provides privacy <introduction/faq:how does qubes os provide privacy?>` is via its `integration with Whonix <https://www.whonix.org/wiki/Qubes>`__. Qubes OS does not
 claim to provide special privacy (as opposed to security) properties in
-non-Whonix qubes. This includes
-`disposables </doc/how-to-use-disposables/>`__.
+non-Whonix qubes. This includes :doc:`disposables </user/how-to-guides/how-to-use-disposables>`.
 
-For example, a standard `Fedora </doc/templates/fedora/>`__ qube is
+For example, a standard :doc:`Fedora </user/templates/fedora/fedora>` qube is
 expected to have basically the same privacy properties as that upstream
 Fedora distribution, enhanced to some degree by the control Qubes
 provides over that qube. For most users, this level of privacy may be
@@ -128,16 +116,7 @@ good enough for many common activities. However, users seeking more
 advanced privacy features should use Whonix qubes.
 
 Privacy is far more difficult than is commonly understood. In addition
-to the `web
-browser <https://www.torproject.org/projects/torbrowser/design/>`__,
-there is also `VM
-fingerprinting <https://www.whonix.org/wiki/VM_Fingerprinting>`__ and
-`advanced deanonymization
-attacks <https://www.whonix.org/wiki/Advanced_Deanonymization_Attacks>`__
-that most users have never considered (and this is just to mention a few
-examples). The `Whonix Project <https://www.whonix.org/>`__ specializes
-in `protecting against these
-risks <https://www.whonix.org/wiki/Protocol-Leak-Protection_and_Fingerprinting-Protection>`__.
+to the `web browser <https://www.torproject.org/projects/torbrowser/design/>`__, there is also `VM fingerprinting <https://www.whonix.org/wiki/VM_Fingerprinting>`__ and `advanced deanonymization attacks <https://www.whonix.org/wiki/Advanced_Deanonymization_Attacks>`__ that most users have never considered (and this is just to mention a few examples). The `Whonix Project <https://www.whonix.org/>`__ specializes in `protecting against these risks <https://www.whonix.org/wiki/Protocol-Leak-Protection_and_Fingerprinting-Protection>`__.
 
 In order to achieve the same results in non-Whonix qubes (including
 disposables), one would have to reinvent Whonix. Such duplication of
@@ -146,8 +125,7 @@ integrated into Qubes OS.
 
 Therefore, when you need privacy, you should use Whonix qubes. Remember,
 though, that privacy is difficult to achieve and maintain. Whonix is a
-powerful tool, but no tool is perfect. Read the
-`documentation <https://www.whonix.org/wiki/Documentation>`__ thoroughly
+powerful tool, but no tool is perfect. Read the `documentation <https://www.whonix.org/wiki/Documentation>`__ thoroughly
 and exercise care when using it.
 
 How does Qubes OS compare to using a “live CD” OS?
@@ -156,8 +134,7 @@ How does Qubes OS compare to using a “live CD” OS?
 Booting your computer from a live CD (or DVD) when you need to perform
 sensitive activities can certainly be more secure than simply using your
 main OS, but this method still preserves many of the risks of
-conventional OSes. For example, popular live OSes (such as
-`Tails <https://tails.boum.org/>`__ and other Linux distributions) are
+conventional OSes. For example, popular live OSes (such as `Tails <https://tails.boum.org/>`__ and other Linux distributions) are
 still **monolithic** in the sense that all software is still running in
 the same OS. This means, once again, that if your session is
 compromised, then all the data and activities performed within that same
@@ -178,8 +155,7 @@ that they’re really only as secure as the host OS itself. If the host OS
 is ever compromised, then any VMs it hosts are also effectively
 compromised.
 
-By contrast, Qubes uses a “Type 1” or “bare-metal” hypervisor called
-`Xen <https://www.xenproject.org/>`__. Instead of running inside an OS,
+By contrast, Qubes uses a “Type 1” or “bare-metal” hypervisor called `Xen <https://www.xenproject.org/>`__. Instead of running inside an OS,
 Type 1 hypervisors run directly on the “bare metal” of the hardware.
 This means that an attacker must be capable of subverting the hypervisor
 itself in order to compromise the entire system, which is vastly more
@@ -231,9 +207,7 @@ some of the main pros and cons of this approach relative to Qubes:
 -  Malware which can bridge air gaps has existed for several years now
    and is becoming increasingly common.
 
-(For more on this topic, please see the paper `Software
-compartmentalization vs. physical
-separation <https://invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf>`__.)
+(For more on this topic, please see the paper `Software compartmentalization vs. physical separation <https://invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf>`__.)
 
 What is the main concept behind Qubes?
 --------------------------------------
@@ -244,8 +218,7 @@ Isolation)” principle.
 What about other approaches to security?
 ----------------------------------------
 
-The other two popular
-`approaches <https://blog.invisiblethings.org/2008/09/02/three-approaches-to-computer-security.html>`__
+The other two popular `approaches <https://blog.invisiblethings.org/2008/09/02/three-approaches-to-computer-security.html>`__
 are “Security by Correctness” and “Security by Obscurity.” We don’t
 believe either of these approaches are capable of providing reasonable
 security today, nor do we believe that they will be capable of doing so
@@ -254,8 +227,7 @@ in the foreseeable future.
 How is Qubes different from other security solutions?
 -----------------------------------------------------
 
-Please see this
-`article <https://blog.invisiblethings.org/2012/09/12/how-is-qubes-os-different-from.html>`__
+Please see this `article <https://blog.invisiblethings.org/2012/09/12/how-is-qubes-os-different-from.html>`__
 for a thorough discussion.
 
 Is Qubes just another Linux distribution?
@@ -272,7 +244,7 @@ What about safe languages and formally verified microkernels?
 
 In short: these are non-realistic solutions today. We discuss this in
 further depth in our `Architecture Specification
-document </attachment/doc/arch-spec-0.3.pdf>`__.
+document </_static/arch-spec-0.3.pdf>`__.
 
 Why does Qubes use virtualization?
 ----------------------------------
@@ -285,16 +257,13 @@ Does Qubes use full disk encryption (FDE)?
 ------------------------------------------
 
 Yes, of course! Full disk encryption is enabled by default.
-Specifically, we use
-`LUKS <https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup>`__/`dm-crypt <https://en.wikipedia.org/wiki/Dm-crypt>`__.
-You can even `manually configure your encryption
-parameters </doc/custom-install/>`__ if you like!
+Specifically, we use `LUKS <https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup>`__/`dm-crypt <https://en.wikipedia.org/wiki/Dm-crypt>`__.
+You can even :doc:`manually configure your encryption parameters </user/downloading-installing-upgrading/custom-install>` if you like!
 
 What do all these terms mean?
 -----------------------------
 
-All Qubes-specific terms are defined in the
-`glossary </doc/glossary/>`__
+All Qubes-specific terms are defined in the :doc:`glossary </user/reference/glossary>`
 
 Does Qubes run every app in a separate VM?
 ------------------------------------------
@@ -311,12 +280,12 @@ In short: we believe the Xen architecture allows for the creation of
 more secure systems (i.e. with a much smaller TCB, which translates to a
 smaller attack surface). We discuss this in much greater depth in our
 `Architecture Specification
-document </attachment/doc/arch-spec-0.3.pdf>`__.
+document </_static/arch-spec-0.3.pdf>`__.
 
 How is Qubes affected by Xen Security Advisories (XSAs)?
 --------------------------------------------------------
 
-See the `XSA Tracker </security/xsa/>`__.
+See the :doc:`XSA Tracker </project-security/xsa>`.
 
 What about this other/new (micro)kernel/hypervisor?
 ---------------------------------------------------
@@ -384,26 +353,21 @@ applications really feel as if they were executed natively.
 Why passwordless sudo?
 ----------------------
 
-Please refer to `this page </doc/vm-sudo/>`__.
+Please refer to :doc:`this page </user/security-in-qubes/vm-sudo>`.
 
 Why is dom0 so old?
 -------------------
 
 Please see:
 
--  `Installing and updating software in
-   dom0 </doc/how-to-install-software-in-dom0/>`__
--  `Note on dom0 and
-   EOL </doc/supported-releases/#note-on-dom0-and-eol>`__
+-  :doc:`Installing and updating software in    dom0 </user/advanced-topics/how-to-install-software-in-dom0>`
+-  :ref:`Note on dom0 and    EOL <user/downloading-installing-upgrading/supported-releases:note on dom0 and eol>`
 
 Do you recommend coreboot as an alternative to vendor BIOS?
 -----------------------------------------------------------
 
 Yes, where it is possible to use it an open source boot firmware ought
-to be more trustable than a closed source implementation.
-`coreboot <https://www.coreboot.org/>`__ is as a result a requirement
-for `Qubes Certified
-Hardware </news/2016/07/21/new-hw-certification-for-q4/>`__. The number
+to be more trustable than a closed source implementation. `coreboot <https://www.coreboot.org/>`__ is as a result a requirement for `Qubes Certified Hardware <https://www.qubes-os.org/news/2016/07/21/new-hw-certification-for-q4/>`__. The number
 of machines coreboot currently supports is limited and the use of some
 vendor supplied blobs is generally still required. Where coreboot does
 support your machine and is not already installed, you will generally
@@ -413,9 +377,8 @@ their IRC channel for further information.
 How should I report documentation issues?
 -----------------------------------------
 
-If you can fix the problem yourself, please see `how to edit the
-documentation </doc/how-to-edit-the-documentation>`__. If not, please
-see `issue tracking </doc/issue-tracking>`__.
+If you can fix the problem yourself, please see :doc:`how to edit the documentation </developer/general/how-to-edit-the-documentation>`. If not, please
+see :doc:`issue tracking </introduction/issue-tracking>`.
 
 Will Qubes seek to get certified under the GNU Free System Distribution Guidelines (GNU FSDG)?
 ----------------------------------------------------------------------------------------------
@@ -431,44 +394,28 @@ Instead, Qubes aims to be as free as possible *without sacrificing
 security*. All of the code created by the Qubes OS Project itself is
 100% free. However, in order for users to actually run that code
 securely on their hardware, we must pair it with a small number of
-non-free blobs, which disqualifies Qubes, `along with the vast majority
-of open-source Linux
-distributions <https://www.gnu.org/distros/common-distros.html>`__, from
-GNU FSDG certification.
-
-The `four essential
-freedoms <https://www.gnu.org/philosophy/free-sw.html>`__ are part of
+non-free blobs, which disqualifies Qubes, `along with the vast majority of open-source Linux distributions <https://www.gnu.org/distros/common-distros.html>`__, from GNU FSDG certification.  The `four essential freedoms <https://www.gnu.org/philosophy/free-sw.html>`__ are part of
 the core of our philosophy, but so is security. Together, they inform
 our decisions and motivate our actions. Qubes aims to maximize both
 security and software freedom to the extent that they are compatible in
 the world today.
 
-Also see the Qubes OS `software license </doc/license/>`__.
+Also see the Qubes OS :doc:`software license </developer/code/license>`.
 
 Should I trust this website?
 ----------------------------
 
 This website is hosted on `GitHub Pages <https://pages.github.com/>`__
-(`why? <#why-do-you-use-github>`__). Therefore, it is largely outside of
+ ( :ref:`why? <introduction/faq:why do you use github?>`). Therefore, it is largely outside of
 our control. We don’t consider this a problem, however, since we
-explicitly `distrust the
-infrastructure <#what-does-it-mean-to-distrust-the-infrastructure>`__.
+explicitly :ref:`distrust the infrastructure <introduction/faq:what does it mean to “distrust the infrastructure”?>`.
 For this reason, we don’t think that anyone should place undue trust in
 the live version of this site on the Web. Instead, if you want to obtain
 your own trustworthy copy of this website in a secure way, you should
-clone our `website
-repo <https://github.com/QubesOS/qubesos.github.io>`__, `verify the PGP
-signatures on the commits and/or
-tags </security/verifying-signatures/#how-to-verify-signatures-on-git-repository-tags-and-commits>`__
-signed by the `doc-signing
-keys <https://github.com/QubesOS/qubes-secpack/tree/master/keys/doc-signing>`__
-(which indicates that the content has undergone
-`review </doc/how-to-edit-the-documentation/#security>`__), then either
-`render the site on your local
-machine <https://github.com/QubesOS/qubesos.github.io/blob/master/README.md#instructions>`__
-or simply read the source, the vast majority of which was `intentionally
-written in Markdown so as to be readable as plain text for this very
-reason </doc/documentation-style-guide/#markdown-conventions>`__. We’ve
+clone our `website repo <https://github.com/QubesOS/qubesos.github.io>`__, :ref:`verify the PGP signatures on the commits and/or tags <project-security/verifying-signatures:how to verify signatures on git repository tags and commits>`
+signed by the `doc-signing keys <https://github.com/QubesOS/qubes-secpack/tree/master/keys/doc-signing>`__
+(which indicates that the content has undergone :ref:`review <developer/general/how-to-edit-the-documentation:security>`), then either `render the site on your local machine <https://github.com/QubesOS/qubesos.github.io/blob/master/README.md#instructions>`__
+or simply read the source, the vast majority of which was :ref:`intentionally written in Markdown so as to be readable as plain text for this very reason <developer/general/documentation-style-guide:markdown conventions>`. We’ve
 gone to special effort to set all of this up so that no one has to trust
 the infrastructure and so that the contents of this website are
 maximally available and accessible.
@@ -496,33 +443,27 @@ security and are ultimately a disservice to real users. Since we don’t
 want to encourage or endorse this, we make our distrust of the
 infrastructure explicit.
 
-Also see: `Should I trust this
-website? <#should-i-trust-this-website>`__
+Also see: :ref:`Should I trust this website? <introduction/faq:should i trust this website?>`
 
 Why do you use GitHub?
 ----------------------
 
 Three main reasons:
 
-1. We `distrust the
-   infrastructure <#what-does-it-mean-to-distrust-the-infrastructure>`__
-   including GitHub (though there are aspects we’re still `working
-   on <https://github.com/QubesOS/qubes-issues/issues/3958>`__).
+1. We :ref:`distrust the    infrastructure <introduction/faq:what does it mean to “distrust the infrastructure”?>`
+   including GitHub (though there are aspects we’re still `working    on <https://github.com/QubesOS/qubes-issues/issues/3958>`__).
 2. It’s free (as in beer). We’d have to spend either time or money to
    implement a solution ourselves or pay someone to do so, and we can’t
    spare either one right now.
 3. It has low admin/overhead requirements, which is very important,
    given how little time we have to spare.
 
-Also see: `Should I trust this
-website? <#should-i-trust-this-website>`__
+Also see: :ref:`Should I trust this website? <introduction/faq:should i trust this website?>`
 
 Why doesn’t this website have security feature X?
 -------------------------------------------------
 
-Although we caution users against `placing undue trust in this
-website <#should-i-trust-this-website>`__ because we `distrust the
-infrastructure <#what-does-it-mean-to-distrust-the-infrastructure>`__,
+Although we caution users against :ref:`placing undue trust in this website <introduction/faq:should i trust this website?>` because we :ref:`distrust the infrastructure <introduction/faq:what does it mean to “distrust the infrastructure”?>`,
 we have no objection to enabling website security features when doing so
 is relatively costless and provides some marginal benefit to website
 visitors. So, if feature X isn’t enabled, it’s most likely for one of
@@ -533,8 +474,7 @@ three reasons:
 3. Our platform supports it, but we’re not aware that we can enable it
    or have forgotten to do so.
 
-If it seems like a feature that we can and should enable, please `let us
-know </doc/issue-tracking/>`__!
+If it seems like a feature that we can and should enable, please :doc:`let us know </introduction/issue-tracking>`!
 
 Users
 =====
@@ -559,38 +499,29 @@ games and applications.
 For further discussion about the potential for GPU passthrough on
 Xen/Qubes, please see the following threads:
 
--  `GPU passing to
-   HVM <https://groups.google.com/group/qubes-devel/browse_frm/thread/31f1f2da39978573?scoring=d&q=GPU&>`__
--  `Clarifications on GPU
-   security <https://groups.google.com/group/qubes-devel/browse_frm/thread/31e2d8a47c8b4474?scoring=d&q=GPU&>`__
+-  `GPU passing to    HVM <https://groups.google.com/group/qubes-devel/browse_frm/thread/31f1f2da39978573?scoring=d&q=GPU&>`__ -  `Clarifications on GPU    security <https://groups.google.com/group/qubes-devel/browse_frm/thread/31e2d8a47c8b4474?scoring=d&q=GPU&>`__
 
 Is Qubes a multi-user system?
 -----------------------------
 
 No. Qubes does not pretend to be a multi-user system. Qubes assumes that
 the user who controls Dom0 controls the whole system. It is very
-difficult to **securely** implement multi-user support. See
-`here <https://groups.google.com/group/qubes-devel/msg/899f6f3efc4d9a06>`__
-for details.
-
-However, in Qubes 4.x we will be implementing management functionality.
-See `Admin API </news/2017/06/27/qubes-admin-api/>`__ and `Core
-Stack </news/2017/10/03/core3/>`__ for more details.
+difficult to **securely** implement multi-user support. See `here <https://groups.google.com/group/qubes-devel/msg/899f6f3efc4d9a06>`__ for details.  However, in Qubes 4.x we will be implementing management functionality. See `Admin API <https://www.qubes-os.org/news/2017/06/27/qubes-admin-api/>`__ and `Core Stack <https://www.qubes-os.org/news/2017/10/03/core3/>`__ for more details.
 
 What are the system requirements for Qubes OS?
 ----------------------------------------------
 
-See the `system requirements </doc/system-requirements/>`__.
+See the :doc:`system requirements </user/hardware/system-requirements>`.
 
 Is there a list of hardware that is compatible with Qubes OS?
 -------------------------------------------------------------
 
-See the `Hardware Compatibility List </hcl/>`__.
+See the :doc:`Hardware Compatibility List </user/hardware/hcl>`.
 
 Is there any certified hardware for Qubes OS?
 ---------------------------------------------
 
-See `Certified Hardware </doc/certified-hardware/>`__.
+See :doc:`Certified Hardware </user/hardware/certified-hardware>`.
 
 How much disk space does each qube require?
 -------------------------------------------
@@ -606,20 +537,19 @@ restarted in order for the update to take effect in them.)
 How much memory is recommended for Qubes?
 -----------------------------------------
 
-Please see the `system requirements </doc/system-requirements/>`__.
+Please see the :doc:`system requirements </user/hardware/system-requirements>`.
 
 Can I install Qubes on a system without VT-x/AMD-V or VT-d/AMD-Vi/AMD IOMMU?
 ----------------------------------------------------------------------------
 
-Please see the `system requirements </doc/system-requirements/>`__ for
+Please see the :doc:`system requirements </user/hardware/system-requirements>` for
 the latest information. If you are receiving an error message on install
 saying your “hardware lacks the features required to proceed”, check to
 make sure the virtualization options are enabled in your BIOS/UEFI
 configuration. You may be able to install without the required CPU
 features for testing purposes only, but VMs (in particular, sys-net) may
 not function correctly and there will be no security isolation. For more
-information, see `Qubes-certified
-hardware </doc/certified-hardware/>`__.
+information, see :doc:`Qubes-certified hardware </user/hardware/certified-hardware>`.
 
 Why is VT-x/AMD-V important?
 ----------------------------
@@ -635,7 +565,7 @@ Why is VT-d/AMD-Vi/AMD IOMMU important?
 
 On a system without VT-d/AMD-Vi/AMD IOMMU, there will be no real
 security benefit to having a separate NetVM, as an attacker could always
-use a simple `DMA attack <#what-is-a-dma-attack>`__ to go from the NetVM
+use a simple :ref:`DMA attack <introduction/faq:what is a dma attack?>` to go from the NetVM
 to Dom0. Nonetheless, all of Qubes’ other security mechanisms, such as
 qube separation, work without VT-d/AMD-Vi/AMD IOMMU. Therefore, a system
 running Qubes without VT-d/AMD-Vi/AMD IOMMU would still be significantly
@@ -668,8 +598,7 @@ having physical access to a USB port.
 Can I use AMD-v instead of VT-x?
 --------------------------------
 
-Yes, and see `this
-message <https://groups.google.com/group/qubes-devel/msg/6412170cfbcb4cc5>`__.
+Yes, and see `this message <https://groups.google.com/group/qubes-devel/msg/6412170cfbcb4cc5>`__.
 
 Can I install Qubes in a virtual machine (e.g., on VMware)?
 -----------------------------------------------------------
@@ -681,20 +610,9 @@ own bare-metal hypervisor!)
 What is a terminal?
 -------------------
 
-A `terminal
-emulator <https://en.wikipedia.org/wiki/Terminal_emulator>`__, nowadays
+A `terminal emulator <https://en.wikipedia.org/wiki/Terminal_emulator>`__, nowadays
 often referred to as just a *terminal*, is a program which provides a
-text window. Inside that window, a
-`shell <https://en.wikipedia.org/wiki/Shell_(computing)>`__ is typically
-running in it. A shell provides a `command-line
-interface <https://en.wikipedia.org/wiki/Command-line_interface>`__
-where the user can enter and run
-`commands <https://en.wikipedia.org/wiki/Command_(computing)>`__.
-
-See introductions on Wikibooks:
-`here <https://en.wikibooks.org/wiki/Fedora_And_Red_Hat_System_Administration/Shell_Basics>`__,
-`here <https://en.wikibooks.org/wiki/A_Quick_Introduction_to_Unix>`__
-and `here <https://en.wikibooks.org/wiki/Bash_Shell_Scripting>`__.
+text window. Inside that window, a `shell <https://en.wikipedia.org/wiki/Shell_(computing)>`__ is typically running in it. A shell provides a `command-line interface <https://en.wikipedia.org/wiki/Command-line_interface>`__ where the user can enter and run `commands <https://en.wikipedia.org/wiki/Command_(computing)>`__.  See introductions on Wikibooks: `here <https://en.wikibooks.org/wiki/Fedora_And_Red_Hat_System_Administration/Shell_Basics>`__, `here <https://en.wikibooks.org/wiki/A_Quick_Introduction_to_Unix>`__ and `here <https://en.wikibooks.org/wiki/Bash_Shell_Scripting>`__.
 
 Why does my network adapter not work?
 -------------------------------------
@@ -711,27 +629,23 @@ Can I install Qubes OS together with other operating system (dual-boot/multi-boo
 -----------------------------------------------------------------------------------
 
 You shouldn’t do that, because it poses a security risk for your Qubes
-OS installation. But if you understand the risk and accept it, read
-`documentation on
-multibooting <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/multiboot.md>`__.
+OS installation. But if you understand the risk and accept it, read `documentation on multibooting <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/multiboot.md>`__.
 It begins with an explanation of the risks with such a setup.
 
 Which version of Qubes am I running?
 ------------------------------------
 
-See `here </doc/version-scheme/#check-installed-version>`__.
+See :ref:`here <developer/releases/version-scheme:check installed version>`.
 
 My qubes lost internet access after a template update. What should I do?
 ------------------------------------------------------------------------
 
-See `Update
-Troubleshooting </doc/update-troubleshooting/#lost-internet-access-after-a-template-update>`__.
+See :ref:`Update Troubleshooting <user/troubleshooting/update-troubleshooting:lost internet access after a template update>`.
 
 My keyboard layout settings are not behaving correctly. What should I do?
 -------------------------------------------------------------------------
 
-See `Hardware
-Troubleshooting </doc/hardware-troubleshooting/#keyboard-layout-settings-not-behaving-correctly>`__.
+See :ref:`Hardware Troubleshooting <user/troubleshooting/hardware-troubleshooting:keyboard layout settings not behaving correctly>`.
 
 My dom0 and/or template update stalls when attempting to update via the GUI tool. What should I do?
 ---------------------------------------------------------------------------------------------------
@@ -753,8 +667,7 @@ I created a USB VM and assigned USB controllers to it. Now the USB VM won’t bo
 ---------------------------------------------------------------------------------
 
 This is probably because one of the controllers does not support reset.
-See the `USB Troubleshooting
-guide </doc/usb-troubleshooting/#usb-vm-does-not-boot-after-creating-and-assigning-usb-controllers-to-it>`__.
+See the :ref:`USB Troubleshooting guide <user/troubleshooting/usb-troubleshooting:usb vm does not boot after creating and assigning usb controllers to it>`.
 
 I assigned a PCI device to a qube, then unassigned it/shut down the qube. Why isn’t the device available in dom0?
 -----------------------------------------------------------------------------------------------------------------
@@ -778,7 +691,7 @@ or
       MOD=`modprobe -R $MODALIAS | head -n 1`
       echo 0000:<BDF> > /sys/bus/pci/drivers/$MOD/bind
 
-See also `here </doc/assigning-devices/>`__.
+See also :doc:`here </user/how-to-guides/how-to-use-pci-devices>`.
 
 How do I play video files?
 --------------------------
@@ -804,8 +717,7 @@ For Fedora:
 
 1. (Recommended) Clone an existing Fedora template
 
-2. `Enable the appropriate RPMFusion repos in the desired Fedora
-   template </doc/how-to-install-software/#rpmfusion-for-fedora-templates>`__.
+2. :ref:`Enable the appropriate RPMFusion repos in the desired Fedora    template <user/how-to-guides/how-to-install-software:rpmfusion for fedora templates>`.
 
 3. Install VLC in that template:
 
@@ -819,7 +731,7 @@ How do I access my external drive?
 ----------------------------------
 
 The recommended approach is to pass only the specific partition you
-intend to use from ```sys-usb`` </doc/usb/>`__ to another qube via
+intend to use from :doc:`\`sys-usb\` </user/how-to-guides/how-to-use-usb-devices>` to another qube via
 ``qvm-block``. They will show up in the destination qube as
 ``/dev/xvd*`` and must be mounted manually. Another approach is to
 attach the entire USB drive to your destination qube. However, this
@@ -838,8 +750,7 @@ surface.
 
 Although external media such as external hard drives or flash drives
 plugged in via USB are available in the USB qube, it is not recommended
-to access them directly from inside the USB qube. See `Block (Storage)
-Devices </doc/how-to-use-block-storage-devices/>`__ for more
+to access them directly from inside the USB qube. See :doc:`Block (Storage) Devices </user/how-to-guides/how-to-use-block-storage-devices>` for more
 information.
 
 My encrypted drive doesn’t appear in Debian qube.
@@ -872,8 +783,7 @@ finished using it unmount and close the drive.
 Windows Update is stuck.
 ------------------------
 
-This has nothing to do with Qubes. `It’s a longstanding Windows
-bug. <https://superuser.com/questions/951960/windows-7-sp1-windows-update-stuck-checking-for-updates>`__
+This has nothing to do with Qubes. `It’s a longstanding Windows bug. <https://superuser.com/questions/951960/windows-7-sp1-windows-update-stuck-checking-for-updates>`__
 
 Fullscreen Firefox is frozen.
 -----------------------------
@@ -883,8 +793,7 @@ Press ``F11`` twice.
 I have weird graphics glitches like the screen turning partially black.
 -----------------------------------------------------------------------
 
-If it seems like the issue described in `this
-thread <https://github.com/QubesOS/qubes-issues/issues/2399>`__, try
+If it seems like the issue described in `this thread <https://github.com/QubesOS/qubes-issues/issues/2399>`__, try
 disabling the window compositor:
 
 -  Q → System Tools → Window Manager Tweaks → Compositor → uncheck
@@ -908,14 +817,12 @@ From a ``dom0`` prompt, enter:
 When I try to install a template, it says no match is found.
 ------------------------------------------------------------
 
-See `VM
-Troubleshooting </doc/vm-troubleshooting/#no-match-found-when-trying-to-install-a-template>`__.
+See :ref:`VM Troubleshooting <user/troubleshooting/vm-troubleshooting:no match found when trying to install a template>`.
 
 I keep getting “Failed to synchronize cache for repo” errors when trying to update my Fedora templates
 ------------------------------------------------------------------------------------------------------
 
-See `Update
-Troubleshooting </doc/update-troubleshooting/#failed-to-synchronize-cache-for-repo-errors-when-updating-fedora-templates>`__.
+See :ref:`Update Troubleshooting <user/troubleshooting/update-troubleshooting:failed to synchronize cache for repo errors when updating fedora templates>`.
 
 I see a “Failed to start Load Kernel Modules” message on boot
 -------------------------------------------------------------
@@ -948,7 +855,7 @@ could just install Qubes without having to install any programs in it or
 adjust any settings! You might even think that if a particular program
 or setting works so well for *you*, it would work well for *everyone*,
 so you’d actually be doing everyone a favor! The problem is that Qubes
-has `tens of thousands of different users </statistics/>`__ with
+has :doc:`tens of thousands of different users </introduction/statistics>` with
 radically different needs and purposes. There is no particular
 configuration that will be ideal for everyone (despite how much you
 might feel that your preference would be better for everyone), so the
@@ -964,8 +871,7 @@ share your preferences.
 Software installed in a qube is gone after restarting. Why?
 -----------------------------------------------------------
 
-Software must be `installed in the
-template </doc/how-to-install-software/>`__ on which your qube is based.
+Software must be :doc:`installed in the template </user/how-to-guides/how-to-install-software>` on which your qube is based.
 
 Developers
 ==========
@@ -975,19 +881,17 @@ Are there restrictions on the software that the Qubes developers are willing to 
 
 Yes. In general, the Qubes developers will not use a piece of software
 unless there is an *easy* way to verify both its **integrity** and
-**authenticity**, preferably via PGP signatures (see `Verifying
-Signatures </security/verifying-signatures/>`__). Specifically:
+**authenticity**, preferably via PGP signatures (see :doc:`Verifying Signatures </project-security/verifying-signatures>`). Specifically:
 
 -  If PGP signatures are used, the signing key(s) should have
    well-publicized fingerprint(s) verifiable via multiple independent
    channels or be accessible to the developers through a web of trust.
 -  If the software is security-sensitive and requires communication with
    the outside world, a “split” implementation is highly preferred (for
-   examples, see `Split GPG </doc/split-gpg/>`__ and `Split
-   Bitcoin </doc/split-bitcoin/>`__).
+   examples, see :doc:`Split GPG </user/security-in-qubes/split-gpg>` and `Split
+   Bitcoin <https://github.com/Qubes-Community/Contents/blob/master/docs/security/split-bitcoin.md>`__).
 -  If the software has dependencies, these should be packaged and
-   available in repos for a `current, Qubes-supported
-   version </doc/supported-releases/#templates>`__ of Fedora (preferred)
+   available in repos for a :ref:`current, Qubes-supported    version <user/downloading-installing-upgrading/supported-releases:templates>` of Fedora (preferred)
    or Debian (unless all the insecure dependencies can run in an
    untrusted VM in a “split” implementation).
 -  If the software must be built from source, the source code and any
@@ -998,8 +902,7 @@ Signatures </security/verifying-signatures/>`__). Specifically:
 Why does dom0 need to be 64-bit?
 --------------------------------
 
-Since 2013 `Xen has not supported 32-bit x86
-architecture <https://wiki.xenproject.org/wiki/Xen_Project_Release_Features>`__
+Since 2013 `Xen has not supported 32-bit x86 architecture <https://wiki.xenproject.org/wiki/Xen_Project_Release_Features>`__
 and Intel VT-d, which Qubes uses to isolate devices and drivers, is
 available on Intel 64-bit processors only.
 
@@ -1026,19 +929,18 @@ Any rpm-based, 64-bit environment, the preferred OS being Fedora.
 How do I build Qubes from sources?
 ----------------------------------
 
-See `these instructions </doc/qubes-builder/>`__.
+See :doc:`these instructions </developer/building/qubes-builder>`.
 
 How do I submit a patch?
 ------------------------
 
-See the `Qubes Source Code Repositories </doc/source-code/>`__ article.
+See the :doc:`Qubes Source Code Repositories </developer/code/source-code>` article.
 
 What is Qubes’ attitude toward changing guest distros?
 ------------------------------------------------------
 
 We try to respect each distro’s culture, where possible. See the
-discussion on issue
-`#1014 <https://github.com/QubesOS/qubes-issues/issues/1014>`__ for an
+discussion on issue `#1014 <https://github.com/QubesOS/qubes-issues/issues/1014>`__ for an
 example.
 
 The policy is there mostly to ease maintenance, on several levels:
@@ -1084,8 +986,7 @@ compilation of many different pieces of open-source software.
 Now, let’s get to the original question: Why don’t we fix upstream bugs
 that affect Qubes OS? This question can come up in different ways. For
 example, many people, especially those who aren’t familiar with how
-open-source software development works, wonder why we sometimes close
-`issues </doc/issue-tracking/>`__ as “not our bug.” Don’t we care about
+open-source software development works, wonder why we sometimes close :doc:`issues </introduction/issue-tracking>` as “not our bug.” Don’t we care about
 the Qubes users who are affected by these bugs? Are we really so cold
 and heartless?
 
@@ -1143,7 +1044,7 @@ downstream users of that software!
 
 (Note: If you’re wondering about cases in which a bug has already been
 fixed upstream but hasn’t yet arrived in your Qubes OS release, please
-see `backports </doc/issue-tracking/#backports>`__. These are *not*
+see :ref:`backports <introduction/issue-tracking:backports>`. These are *not*
 cases in which an issue is closed as “not our bug.”)
 
 Is the I/O emulation component (QEMU) part of the Trusted Computing Base (TCB)?
@@ -1152,8 +1053,7 @@ Is the I/O emulation component (QEMU) part of the Trusted Computing Base (TCB)?
 No. Unlike many other virtualization systems, Qubes takes special effort
 to keep QEMU *outside* of the TCB. This has been achieved thanks to the
 careful use of Xen’s stub domain feature. For more details about how we
-improved on Xen’s native stub domain use, see
-`here <https://blog.invisiblethings.org/2012/03/03/windows-support-coming-to-qubes.html>`__.
+improved on Xen’s native stub domain use, see `here <https://blog.invisiblethings.org/2012/03/03/windows-support-coming-to-qubes.html>`__.
 
 Is Secure Boot supported?
 -------------------------
@@ -1162,9 +1062,7 @@ UEFI Secure Boot is not supported out of the box as UEFI support in Xen
 is very basic. Arguably secure boot reliance on UEFI integrity is not
 the best design. The relevant binaries (shim.efi, xen.efi, kernel /
 initramfs) are not signed by the Qubes Team and secure boot has not been
-tested. Intel TXT (used in `Anti Evil Maid </doc/anti-evil-maid/>`__) at
-least tries to avoid or limit trust in BIOS. See the Heads project
-`[1] <https://trmm.net/Heads>`__ `[2] <http://osresearch.net/>`__ for a
+tested. Intel TXT (used in :doc:`Anti Evil Maid </user/security-in-qubes/anti-evil-maid>`) at least tries to avoid or limit trust in BIOS. See the Heads project `[1] <https://trmm.net/Heads>`__ `[2] <http://osresearch.net/>`__ for a
 better-designed non-UEFI-based secure boot scheme with very good support
 for Qubes.
 
@@ -1180,9 +1078,6 @@ not-fully-updated systems, check for the existence of
 Is there a way to automate tasks for continuous integration or DevOps?
 ----------------------------------------------------------------------
 
-Yes, Qubes natively supports automation via `Salt
-(SaltStack) </doc/salt/>`__. There is also the unofficial `ansible-qubes
-toolkit <https://github.com/Rudd-O/ansible-qubes>`__. (**Warning:**
+Yes, Qubes natively supports automation via :doc:`Salt (SaltStack) </user/advanced-topics/salt>`. There is also the unofficial `ansible-qubes toolkit <https://github.com/Rudd-O/ansible-qubes>`__. (**Warning:**
 Since this is an external project that has not been reviewed or endorsed
-by the Qubes team, `allowing it to manage dom0 may be a security
-risk <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md#dom0-precautions>`__.)
+by the Qubes team, `allowing it to manage dom0 may be a security risk <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md#dom0-precautions>`__.)

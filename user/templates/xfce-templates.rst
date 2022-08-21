@@ -4,9 +4,8 @@ Xfce templates
 
 If you would like to use Xfce (more lightweight compared to GNOME
 desktop environment) Linux distribution in your qubes, you can install
-one of the available Xfce templates for
-`Fedora </doc/templates/fedora/>`__, `CentOS </doc/templates/centos/>`__
-or `Gentoo </doc/templates/gentoo/>`__.
+one of the available Xfce templates for :doc:`Fedora </user/templates/fedora/fedora>`, `CentOS <https://github.com/Qubes-Community/Contents/blob/master/docs/os/centos.md>`__
+or `Gentoo <https://github.com/Qubes-Community/Contents/blob/master/docs/os/gentoo.md>`__.
 
 Installation
 ============
@@ -18,8 +17,7 @@ The Fedora Xfce templates can be installed with the following command
 
    [user@dom0 ~]$ sudo qubes-dom0-update qubes-template-X-xfce
 
-If your desired version is not found, it may still be in
-`testing </doc/testing/>`__. You may wish to try again with the testing
+If your desired version is not found, it may still be in :doc:`testing </user/downloading-installing-upgrading/testing>`. You may wish to try again with the testing
 repository enabled:
 
 ::
@@ -33,8 +31,7 @@ Gentoo, try the install command by enabling the community repository:
 
    [user@dom0 ~]$ sudo qubes-dom0-update --enablerepo=qubes-templates-community qubes-template-X-xfce
 
-If your desired version is not found, it may still be in
-`testing </doc/testing/>`__. You may wish to try again with the testing
+If your desired version is not found, it may still be in :doc:`testing </user/downloading-installing-upgrading/testing>`. You may wish to try again with the testing
 repository enabled:
 
 ::
@@ -44,4 +41,4 @@ repository enabled:
 The download may take a while depending on your connection speed.
 
 To reinstall a Xfce template that is already installed in your system,
-see `How to Reinstall a template </doc/reinstall-template/>`__.
+see :doc:`How to Reinstall a template </user/templates/how-to-reinstall-a-template>`.

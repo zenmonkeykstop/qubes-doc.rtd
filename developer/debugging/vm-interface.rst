@@ -236,16 +236,15 @@ Other Qrexec services installed by default:
 
 -  ``qubes.Backup`` - store Qubes backup. The service receives location
    chosen by the user (one line, terminated by ``\n``), the backup
-   archive (`description of backup
-   format </doc/BackupEmergencyRestoreV2/>`__)
+   archive (( :doc:`description of backup    format </user/how-to-guides/backup-emergency-restore-v2>`)
 -  ``qubes.DetachPciDevice`` - service called in reaction to
    ``qvm-pci -d`` call on running VM. The service receives one word -
    BDF of device to detach. When the service call ends, the device will
    be detached
 -  ``qubes.Filecopy`` - receive some files from other VM. Files sent in
-   `qfile format </doc/qfilecopy/>`__
+   :doc:`qfile format </developer/services/qfilecopy>`
 -  ``qubes.OpenInVM`` - open a file in called VM. Service receives a
-   single file on stdin (in `qfile format </doc/qfilecopy/>`__. After a
+   single file on stdin (in :doc:`qfile format </developer/services/qfilecopy>`. After a
    file viewer/editor is terminated, if the file was modified, can be
    sent back (just raw content, without any headers); otherwise service
    should just terminate without sending anything. This service is used
@@ -253,8 +252,7 @@ Other Qrexec services installed by default:
    in DispVM, service termination will trigger DispVM cleanup.
 -  ``qubes.Restore`` - retrieve Qubes backup. The service receives
    backup location entered by the user (one line, terminated by ``\n``),
-   then should output backup archive in `qfile
-   format </doc/qfilecopy/>`__ (core-agent-linux component contains
+   then should output backup archive in :doc:`qfile    format </developer/services/qfilecopy>` (core-agent-linux component contains
    ``tar2qfile`` utility to do the conversion)
 -  ``qubes.SelectDirectory``, ``qubes.SelectFile`` - services which
    should show file/directory selection dialog and return (to stdout) a
@@ -296,8 +294,7 @@ Other Qrexec services installed by default:
 Services called in GuiVM:
 
 -  ``policy.Ask``, ``policy.Notify`` - confirmation prompt and
-   notifications for Qubes RPC calls, see `qrexec-policy
-   implementation </doc/qrexec-internals/#qrexec-policy-implementation>`__
+   notifications for Qubes RPC calls, see :ref:`qrexec-policy    implementation <developer/services/qrexec-internals:qrexec policy implementation>`
    for a detailed description.
 
 Currently Qubes still calls few tools in VM directly, not using service
@@ -316,7 +313,7 @@ abstraction. This will change in the future. Those tools are:
    updates in a TemplateVM
 -  ``systemctl start qubes-update-check.timer`` (and similarly stop) -
    called when enabling/disabling updates checking in given VM
-   (``qubes-update-check`` `qvm-service </doc/qubes-service/>`__)
+   (``qubes-update-check`` :doc:`qvm-service </user/advanced-topics/qubes-service>`)
 
 Additionally, automatic tests extensively run various commands directly
 in VMs. We do not plan to change that.

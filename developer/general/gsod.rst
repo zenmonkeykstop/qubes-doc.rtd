@@ -2,12 +2,7 @@
 Google Season of Docs (GSoD)
 ============================
 
-Thank you for your interest in participating in the `2021 Google Season
-of Docs <https://developers.google.com/season-of-docs/>`__ program with
-the `Qubes OS team </team/>`__. You can read more about the Google
-Season of Docs in the official
-`guides <https://developers.google.com/season-of-docs/docs/>`__ and
-`FAQ <https://developers.google.com/season-of-docs/docs/faq>`__.
+Thank you for your interest in participating in the `2021 Google Season of Docs <https://developers.google.com/season-of-docs/>`__ program with the `Qubes OS team <https://www.qubes-os.org/team/>`__. You can read more about the Google Season of Docs in the official `guides <https://developers.google.com/season-of-docs/docs/>`__ and `FAQ <https://developers.google.com/season-of-docs/docs/faq>`__.
 
 2021 Project Idea
 =================
@@ -24,11 +19,9 @@ to enable a user to define different security environments (“qubes”) on
 their computer and visually manage their interaction with each other and
 the world.
 
-Qubes OS was launched in 2011 and has `received praise from security
-experts <https://www.qubes-os.org/endorsements/>`__ like Edward Snowden,
+Qubes OS was launched in 2011 and has `received praise from security experts <https://www.qubes-os.org/endorsements/>`__ like Edward Snowden,
 Bill Buddington (EFF), Isis Lovecruft (Tor Project), and Kenn White
-(Open Crypto Audit), and has over `30,000 active
-users <https://www.qubes-os.org/statistics/>`__.
+(Open Crypto Audit), and has over `30,000 active users <https://www.qubes-os.org/statistics/>`__.
 
 From network-level to software-level protections, as well as protections
 against firmware and hardware attacks, Qubes OS is trying to protect the
@@ -141,15 +134,7 @@ technical writers can to our project
 Past Projects
 =============
 
-You can view the project we had in 2019 in the `2019 GSoD
-archive <https://developers.google.com/season-of-docs/docs/2019/participants/project-qubes>`__
-and the `2019 writer’s
-report <https://web.archive.org/web/20200928002746/https://refre.ch/report-qubesos/>`__.
-
-You can also view the project we had in 2020 in the `2020 GSoD
-archive <https://developers.google.com/season-of-docs/docs/2020/participants/project-qubesos-c1e0>`__
-and the `2020 writer’s
-report <https://web.archive.org/web/20210723170547/https://gist.github.com/PROTechThor/bfe9b8b28295d88c438b6f6c754ae733>`__.
+You can view the project we had in 2019 in the `2019 GSoD archive <https://developers.google.com/season-of-docs/docs/2019/participants/project-qubes>`__ and the `2019 writer’s report <https://web.archive.org/web/20200928002746/https://refre.ch/report-qubesos/>`__.  You can also view the project we had in 2020 in the `2020 GSoD archive <https://developers.google.com/season-of-docs/docs/2020/participants/project-qubesos-c1e0>`__ and the `2020 writer’s report <https://web.archive.org/web/20210723170547/https://gist.github.com/PROTechThor/bfe9b8b28295d88c438b6f6c754ae733>`__.
 
 Here are some successful projects which have been implemented in the
 past by Google Season of Docs participants.
@@ -167,7 +152,7 @@ symptom-action layout.
 
 **Expected results**:
 
--  Review existing `troubleshooting guides </doc/#troubleshooting>`__
+-  Review existing :ref:`troubleshooting guides <developer/general/gsod:troubleshooting>`
 -  Review
    `issues <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+doc%22>`__
    containing common troubleshooting steps (checking specific logs etc)
@@ -178,20 +163,18 @@ symptom-action layout.
 
 -  `Markdown <https://daringfireball.net/projects/markdown/>`__
 
-**Mentor**: `Marek Marczykowski-Górecki </team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Improve Getting Started page
 ----------------------------
 
 **Project**: Improve Getting Started page
 
-**Brief explanation**: The `Getting Started
-page <https://www.qubes-os.org/doc/getting-started/>`__ is the place a
+**Brief explanation**: The `Getting Started page <https://www.qubes-os.org/doc/getting-started/>`__ is the place a
 new user would go to understand better how to use Qubes. It is currently
 has old screenshots not using the default desktop environment and could
 have much better flow. In addition, this improved page content may end
-up being served more directly to the user via the `offline
-documentation <https://github.com/QubesOS/qubes-issues/issues/1019>`__
+up being served more directly to the user via the `offline documentation <https://github.com/QubesOS/qubes-issues/issues/1019>`__
 or the firstboot guide.
 
 **Expected results**:
@@ -204,7 +187,7 @@ or the firstboot guide.
 -  basic Qubes OS knowledge
 -  `Markdown <https://daringfireball.net/projects/markdown/>`__
 
-**Mentor**: `Michael Carbone </team/>`__
+**Mentor**: `Michael Carbone <https://www.qubes-os.org/team/>`__
 
 Rewrite qrexec documentation
 ----------------------------
@@ -223,10 +206,7 @@ the issue with its current shape).
 
 **Expected results**:
 
--  Review existing `qrexec
-   documentation <https://www.qubes-os.org/doc/qrexec3/>`__ and an
-   `issue about
-   it <https://github.com/QubesOS/qubes-issues/issues/1392>`__
+-  Review existing `qrexec    documentation <https://www.qubes-os.org/doc/qrexec3/>`__ and an    `issue about    it <https://github.com/QubesOS/qubes-issues/issues/1392>`__
 -  Propose updated, consolidated admin documentation (policy writing,
    adding services)
 -  Propose consolidated protocol specification, based on the current
@@ -236,4 +216,4 @@ the issue with its current shape).
 
 -  `Markdown <https://daringfireball.net/projects/markdown/>`__
 
-**Mentor**: `Marek Marczykowski-Górecki </team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__

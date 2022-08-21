@@ -2,33 +2,24 @@
 How to use USB devices
 ======================
 
-*This page is part of*\ `device handling in
-qubes </doc/how-to-use-devices/>`__\ *.*
+*This page is part of*\ :doc:`device handling in qubes </user/how-to-guides/how-to-use-devices>`\ *.*
 
 If you are looking to handle USB *storage* devices (thumbdrives or
-USB-drives), please have a look at the `block
-device </doc/how-to-use-block-storage-devices/>`__ page.
+USB-drives), please have a look at the :doc:`block device </user/how-to-guides/how-to-use-block-storage-devices>` page.
 
-**Note:** Attaching USB devices to VMs requires a `USB
-qube </doc/usb-qubes/>`__.
+**Note:** Attaching USB devices to VMs requires a :doc:`USB qube </user/advanced-topics/usb-qubes>`.
 
 **Important security warning:** USB passthrough comes with many security
-implications. Please make sure you carefully read and understand the
-`security
-considerations </doc/device-handling-security/#usb-security>`__.
-Whenever possible, attach a `block
-device </doc/how-to-use-block-storage-devices/>`__ instead.
+implications. Please make sure you carefully read and understand the :ref:`security considerations <user/security-in-qubes/device-handling-security:usb security>`.
+Whenever possible, attach a :doc:`block device </user/how-to-guides/how-to-use-block-storage-devices>` instead.
 
 Examples of valid cases for USB-passthrough:
 
--  `microcontroller
-   programming <https://www.arduino.cc/en/Main/Howto>`__
--  `external audio devices </doc/external-audio/>`__
--  `optical drives </doc/recording-optical-discs/>`__ for recording
+-  `microcontroller    programming <https://www.arduino.cc/en/Main/Howto>`__
+-  `external audio devices <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/external-audio.md>`__
+-  :doc:`optical drives </user/how-to-guides/how-to-use-optical-discs>` for recording
 
-(If you are thinking to use a two-factor-authentication device, `there
-is an app for that </doc/u2f-proxy/>`__. But it has some
-`issues <https://github.com/QubesOS/qubes-issues/issues/4661>`__.)
+(If you are thinking to use a two-factor-authentication device, :doc:`there is an app for that </user/security-in-qubes/u2f-proxy>`. But it has some `issues <https://github.com/QubesOS/qubes-issues/issues/4661>`__.)
 
 Attaching And Detaching a USB Device
 ====================================
@@ -80,7 +71,7 @@ Attaching selected USB device:
 Now, you can use your USB device (camera in this case) in the ``work``
 qube. If you see the error
 ``ERROR: qubes-usb-proxy not installed in the VM`` instead, please refer
-to the `Installation Section <#installation-of-qubes-usb-proxy>`__.
+to the :ref:`Installation Section <user/how-to-guides/how-to-use-usb-devices:installation of qubes-usb-proxy>`.
 
 When you finish, detach the device.
 
@@ -101,8 +92,7 @@ Creating And Using a USB qube
 
 If you’ve selected to install a usb-qube during system installation,
 everything is already set up for you in ``sys-usb``. If you’ve later
-decided to create a usb-qube, please follow `this
-guide </doc/usb-qubes/>`__.
+decided to create a usb-qube, please follow :doc:`this guide </user/advanced-topics/usb-qubes>`.
 
 Installation Of ``qubes-usb-proxy``
 -----------------------------------
@@ -136,12 +126,10 @@ Using USB Keyboards And Other Input Devices
 
 **Warning:** especially keyboards need to be accepted by default when
 using them to login! Please make sure you carefully read and understood
-the `security
-considerations </doc/device-handling-security/#usb-security>`__ before
+the :ref:`security considerations <user/security-in-qubes/device-handling-security:usb security>` before
 continuing!
 
-Mouse and keyboard setup are part of `setting up a USB
-qube </doc/usb-qubes/>`__.
+Mouse and keyboard setup are part of :doc:`setting up a USB qube </user/advanced-topics/usb-qubes>`.
 
 Finding The Right USB Controller
 --------------------------------
@@ -187,9 +175,7 @@ This should output something like:
 
    ../../../devices/pci-0/pci0000:00/0000:00:1a.0/usb3
 
-Now you see the path and the text between ``/pci0000:00/0000:`` and
-``/usb3`` i.e. ``00:1a.0`` is the BDF address. Strip the address and
-pass it to the ```qvm-pci`` tool </doc/how-to-use-pci-devices/>`__ to
+Now you see the path and the text between :doc:``/pci0000:00/0000: and ``/usb3 i.e. ``00:1a.0 is the BDF address. Strip the address and pass it to the `qvm-pci tool </user/how-to-guides/how-to-use-pci-devices>` to
 attach the controller to the targetVM.
 
 For example, On R 4.0 the command would look something like

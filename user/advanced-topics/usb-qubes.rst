@@ -5,11 +5,8 @@ USB qubes
 A USB qube acts as a secure handler for potentially malicious USB
 devices, preventing them from coming into contact with dom0 (which could
 otherwise be fatal to the security of the whole system). It thereby
-mitigates some of the `security risks of using USB
-devices </doc/device-handling-security/#usb-security>`__. Nonetheless,
-we strongly recommend carefully reading the `security warning on USB
-input
-devices </doc/device-handling-security/#security-warning-on-usb-input-devices>`__
+mitigates some of the :ref:`security risks of using USB devices <user/security-in-qubes/device-handling-security:usb security>`. Nonetheless,
+we strongly recommend carefully reading the :ref:`security warning on USB input devices <user/security-in-qubes/device-handling-security:security warning on usb input devices>`
 before proceeding.
 
 With a USB qube, every time you connect an untrusted USB device to a USB
@@ -51,12 +48,10 @@ not allow you to create a USB qube automatically because you’re using a
 USB keyboard. This section will explain how to create a USB qube that
 you can use with your USB keyboard. This section assumes that you have
 only a single USB controller. If you have more than one USB controller,
-see `how to enable a USB keyboard on a separate USB
-controller <#qubes-41-how-to-enable-a-usb-keyboard-on-a-separate-usb-controller>`__.
+see :ref:`how to enable a USB keyboard on a separate USB controller <user/advanced-topics/usb-qubes:qubes 41 how to enable a usb keyboard on a separate usb controller>`.
 
 First, make sure you have the latest
-``qubes-mgmt-salt-dom0-virtual-machines`` package by `updating
-dom0 </doc/how-to-install-software-in-dom0/#how-to-update-dom0>`__.
+``qubes-mgmt-salt-dom0-virtual-machines`` package by :ref:`updating dom0 <user/advanced-topics/how-to-install-software-in-dom0:how to update dom0>`.
 Then, enter the following command in dom0:
 
 ::
@@ -71,8 +66,7 @@ initialized at this stage, users are advised to physically disconnect
 other devices from the system during this vulnerable window in order to
 minimize the risk.
 
-To undo these changes, see `how to remove a USB
-qube <#how-to-remove-a-usb-qube>`__.
+To undo these changes, see :ref:`how to remove a USB qube <user/advanced-topics/usb-qubes:how to remove a usb qube>`.
 
 If you wish to perform only a subset of this configuration (for example,
 you do not wish to enable the USB keyboard during boot), see the manual
@@ -112,8 +106,7 @@ the previous line to:
    sys-usb dom0 ask,default_target=dom0
 
 If you wish to use a USB keyboard to enter your LUKS passphrase, you
-cannot `hide its USB controller from
-dom0 <#how-to-hide-usb-controllers-from-dom0>`__. If you’ve already
+cannot :ref:`hide its USB controller from dom0 <user/advanced-topics/usb-qubes:how to hide usb controllers from dom0>`. If you’ve already
 hidden that USB controller from dom0, you must revert the procedure by
 removing the ``rd.qubes.hide_all_usb`` option and employ an alternative
 strategy for protecting your system by physically disconnecting other
@@ -136,8 +129,7 @@ additional USB controllers can be plugged in as PCIe cards. In this
 case, the designated controller for input devices should remain in dom0
 but be limited to input devices only. To set it up:
 
-1. `Find the controller used for input
-   devices </doc/how-to-use-usb-devices/#finding-the-right-usb-controller>`__.
+1. :ref:`Find the controller used for input    devices <user/how-to-guides/how-to-use-usb-devices:finding the right usb controller>`.
 2. Open the file ``/etc/default/grub`` in dom0.
 3. Find the line that begins with ``GRUB_CMDLINE_LINUX``.
 4. Add ``usbcore.authorized_default=0`` and ``rd.qubes.dom0_usb=<BDF>``
@@ -147,7 +139,7 @@ but be limited to input devices only. To set it up:
    boot) or ``grub2-mkconfig -o /boot/efi/EFI/qubes/grub.cfg`` (EFI) in
    dom0.
 7. Reboot.
-8. Proceed with `creating a USB qube <#how-to-create-a-usb-qube>`__
+8. Proceed with :ref:`creating a USB qube <user/advanced-topics/usb-qubes:how to create a usb qube>`
    normally. The selected USB controller will remain in dom0.
 
 These options can be added during installation. (When the installer
@@ -196,8 +188,7 @@ of the file:
 How to create a USB qube
 ========================
 
-If `automatically creating a USB qube for use with a USB
-keyboard <#how-to-create-a-usb-qube-for-use-with-a-usb-keyboard>`__ does
+If :ref:`automatically creating a USB qube for use with a USB keyboard <user/advanced-topics/usb-qubes:how to create a usb qube for use with a usb keyboard>` does
 not apply to your situation, then you may be interested in more general
 methods for creating USB qubes.
 
@@ -213,7 +204,7 @@ Manual creation
 
 You can create a USB qube manually as follows:
 
-1. Read the `PCI devices </doc/how-to-use-pci-devices/>`__ page to learn
+1. Read the :doc:`PCI devices </user/how-to-guides/how-to-use-pci-devices>` page to learn
    how to list and identify your USB controllers. Carefully check
    whether you have a USB controller that would be appropriate to assign
    to a USB qube. Note that it should be free of input devices,
@@ -235,15 +226,14 @@ You can create a USB qube manually as follows:
    someone forces your system to reboot, then plugs in a malicious USB
    device.)
 
-If the USB qube will not start, please have a look at `this FAQ
-entry </faq/#i-created-a-usb-vm-and-assigned-usb-controllers-to-it-now-the-usb-vm-wont-boot>`__.
+If the USB qube will not start, please have a look at :ref:`this FAQ entry <introduction/faq:i created a usb vm and assigned usb controllers to it now the usb vm wont boot>`.
 
 How to hide USB controllers from dom0
 =====================================
 
 USB controllers are automatically hidden from dom0 if you opt to create
 a USB qube during installation. This also occurs automatically if you
-choose to `create a USB qube <#how-to-create-a-usb-qube>`__ using the
+choose to :ref:`create a USB qube <user/advanced-topics/usb-qubes:how to create a usb qube>` using the
 ``qubesctl`` method. However, if you create a USB qube manually and do
 not hide USB controllers from dom0, there will be a brief period of time
 during the boot process when dom0 will be exposed to your USB
@@ -255,8 +245,7 @@ in dom0 being compromised. There are two approaches to this problem:
 2. Hide (i.e., blacklist) all USB controllers from dom0.
 
 **Warning:** If you use a USB keyboard, hiding your USB controllers from
-dom0 could lock you out of your system. See `USB
-keyboards <#usb-keyboards>`__ for more information.
+dom0 could lock you out of your system. See :ref:`USB keyboards <user/advanced-topics/usb-qubes:usb keyboards>` for more information.
 
 **Warning:** Using a USB AEM device requires dom0 to have access to the
 USB controller to which your USB AEM device is attached. If dom0 cannot

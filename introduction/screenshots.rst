@@ -34,8 +34,7 @@ running in Dom0, and apps running in domains cannot fake them:
 Qubes Release 2 can also run Windows AppVMs in seamless mode, integrated
 onto the common Qubes trusted desktop, just like Linux AppVMs! The
 seamless GUI integration has been introduced in Qubes R2 Beta 3. This
-requires `Qubes Windows
-Tools <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-tools.md>`__
+requires `Qubes Windows Tools <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-tools.md>`__
 to be installed in the Windows VMs first.
 
 --------------
@@ -143,8 +142,7 @@ this is planned for the R2 Beta 3 release.
 
 Qubes provides an advanced infrastructure for programming inter-VM
 services, such as a PDF converter for untrusted files (which is
-described in `this
-article <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__).
+described in `this article <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__).
 
 --------------
 

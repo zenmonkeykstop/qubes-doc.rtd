@@ -3,9 +3,9 @@ Qrexec: Qubes RPC internals
 ===========================
 
 (*This page details the current implementation of qrexec (qrexec3).
-A*\ `general introduction </doc/qrexec/>`__\ *to qrexec is also
+A*\ :doc:`general introduction </developer/services/qrexec>`\ *to qrexec is also
 available. For the implementation of qrexec2,
-see*\ `here </doc/qrexec2/#qubes-rpc-internals>`__\ *.*)
+see*\ :ref:`here <developer/services/qrexec2:qubes rpc internals>`\ *.*)
 
 The qrexec framework consists of a number of processes communicating
 with each other using a common IPC protocol, described in detail below.
@@ -14,8 +14,7 @@ Components residing in the same domain (``qrexec-client-vm`` to
 ``qrexec-agent``, ``qrexec-client`` to ``qrexec-daemon``) use local
 sockets as the underlying transport medium. Components in separate
 domains (``qrexec-daemon`` to ``qrexec-agent``, data channel between
-``qrexec-agent``\ s) use vchan links. Because of `vchan
-limitation <https://github.com/qubesos/qubes-issues/issues/951>`__, it
+``qrexec-agent``\ s) use vchan links. Because of `vchan limitation <https://github.com/qubesos/qubes-issues/issues/951>`__, it
 is not possible to establish qrexec connection back to the source
 domain.
 
@@ -357,8 +356,7 @@ domX: invoke execution of qubes service ``qubes.Service`` in domY
 ================================
 
 ``qrexec-policy`` is a mechanism for evaluating whether an RPC call
-should be allowed. For introduction, see `Qubes RPC
-administration </doc/qrexec/#qubes-rpc-administration>`__.
+should be allowed. For introduction, see :ref:`Qubes RPC administration <developer/services/qrexec:qubes rpc administration>`.
 
 ``qrexec-policy-daemon``
 ------------------------
@@ -367,9 +365,7 @@ This is a service running in dom0. It is called by ``qrexec-daemon`` and
 is responsible for evaluating the request and possibly launching an
 action.
 
-The daemon listens on a socket (``/var/run/qubes/policy.sock``). It
-accepts requests in the format described in
-`qrexec-policy-daemon.rst <https://github.com/QubesOS/qubes-core-qrexec/blob/master/doc/qrexec-policy-daemon.rst>`__
+The daemon listens on a socket (``/var/run/qubes/policy.sock``). It accepts requests in the format described in `qrexec-policy-daemon.rst <https://github.com/QubesOS/qubes-core-qrexec/blob/master/doc/qrexec-policy-daemon.rst>`__
 and replies with ``result=allow/deny``.
 
 A standalone version is called ``qrexec-policy-exec`` and is available
@@ -382,15 +378,11 @@ This is a service running in the GuiVM. It is called by
 ``qrexec-policy-daemon`` in order to display prompts and notifications
 to the user.
 
-It is a `socket-based Qubes RPC
-service </doc/qrexec-socket-services/>`__. Requests are in JSON format,
+It is a :doc:`socket-based Qubes RPC service </developer/services/qrexec-socket-services>`. Requests are in JSON format,
 and response is simple ASCII.
 
 There are two endpoints:
 
 -  ``policy.Ask`` - ask the user about whether to execute a given action
--  ``policy.Notify`` - notify the user about about an action.
-
-See
-`qrexec-policy-agent.rst <https://github.com/QubesOS/qubes-core-qrexec/blob/master/Documentation/qrexec-policy-agent.rst>`__
+-  ``policy.Notify - notify the user about about an action.  See `qrexec-policy-agent.rst <https://github.com/QubesOS/qubes-core-qrexec/blob/master/Documentation/qrexec-policy-agent.rst>`__
 for protocol details.

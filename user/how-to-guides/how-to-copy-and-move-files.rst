@@ -4,9 +4,7 @@ How to copy and move files
 
 *This page is about copying and moving files. If you wish to simply copy
 and paste text, that can be done more easily using the inter-qube
-clipboard. See*\ `copying and pasting text between
-qubes </doc/how-to-copy-and-paste-text/>`__\ *. For dom0, see*\ `copying
-from (and to) dom0 </doc/how-to-copy-from-dom0/>`__\ *.*
+clipboard. See*\ :doc:`copying and pasting text between qubes </user/how-to-guides/how-to-copy-and-paste-text>`\ *. For dom0, see*\ :doc:`copying from (and to) dom0 </user/how-to-guides/how-to-copy-from-dom0>`\ *.*
 
 Qubes OS supports the secure copying and moving of files and directories
 (folders) between qubes.
@@ -60,9 +58,7 @@ file copy. Instead, we use Xen shared memory, which eliminates a lot of
 processing of untrusted data. For example, the receiving qube is *not*
 forced to parse untrusted partitions or file systems. In this respect,
 the inter-qube file copy system provides even more security than file
-copy between two physically separated (air-gapped) machines! (See
-`Software compartmentalization vs. physical
-separation <https://invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf>`__
+copy between two physically separated (air-gapped) machines! (See `Software compartmentalization vs. physical separation <https://invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf>`__
 for more on this.)
 
 However, one should keep in mind that performing a data transfer from
@@ -77,7 +73,6 @@ general problem and applies to any data transfer from *less trusted* to
 between air-gapped machines. Therefore, you should always copy data only
 from *more trusted* to *less trusted* qubes.
 
-See also `this
-article <https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html>`__
+See also `this article <https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html>`__
 for more information on this topic, and some ideas of how we might solve
 this problem in some future version of Qubes.

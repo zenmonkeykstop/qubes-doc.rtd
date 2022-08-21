@@ -19,8 +19,7 @@ Upgrade all Template and Standalone VM(s)
 By default, in Qubes R1, there is only one template, however users are
 free to create more templates for special purposes, as well as
 Standalone VMs. More information on using multiple templates, as well as
-Standalone VMs, can be found `here </doc/templates/>`__ and
-`here </doc/standalone-and-hvm/>`__. The steps described in this section
+Standalone VMs, can be found :doc:`here </user/templates/templates>` and :doc:`here </user/advanced-topics/standalones-and-hvms>`. The steps described in this section
 should be repeated in *all* user’s Template and Standalone VMs.
 
 1. Open terminal in the template (or standalone VM). E.g. use the Qubes

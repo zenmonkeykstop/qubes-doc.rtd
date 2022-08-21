@@ -4,26 +4,25 @@ Qubes builder details
 
 Components Makefile.builder file
 ================================
-
-`QubesBuilder </doc/qubes-builder/>`__ expects that each component have
+ :doc:`QubesBuilder </developer/building/qubes-builder>` expects that each component have
 *Makefile.builder* file in its root directory. This file specifies what
 should be done to build the package. As name suggests, this is normal
 makefile, which is included by builder as its configuration. Its main
 purpose is to set some variables. Generally all available
 variables/settings are described as comments at the beginning of
-Makefile.\* in `QubesBuilder </doc/qubes-builder/>`__.
+Makefile.\* in :doc:`QubesBuilder </developer/building/qubes-builder>`.
 
 Variables for Linux build:
 
 -  ``RPM_SPEC_FILES`` List (space separated) of spec files for RPM
    package build. Path should be relative to component root directory.
-   `QubesBuilder </doc/qubes-builder/>`__ will install all BuildRequires
+   :doc:`QubesBuilder </developer/building/qubes-builder>` will install all BuildRequires
    (in chroot environment) before the build. In most Qubes components
    all spec files are kept in *rpm_spec* directory. This is mainly used
    for Fedora packages build.
 -  ``ARCH_BUILD_DIRS`` List (space separated) of directories with
    PKGBUILD files for Archlinux package build. Similar to RPM build,
-   `QubesBuilder </doc/qubes-builder/>`__ will install all makedepends,
+   :doc:`QubesBuilder </developer/building/qubes-builder>` will install all makedepends,
    then build the package.
 
 Most components uses *archlinux* directory for this purpose, so its good
@@ -68,12 +67,12 @@ Variables for Windows build:
 -  ``WIN_OUTPUT_LIBS`` Directory (relative to ``WIN_SOURCE_SUBDIRS``
    element) with libraries (both DLL and implib) of the package - for
    use in other components. Note that
-   `QubesBuilder </doc/qubes-builder/>`__ will copy files specified as
+   :doc:`QubesBuilder </developer/building/qubes-builder>` will copy files specified as
    *$(WIN_OUTPUT_LIBS)/*/\** to match WDK directory layout (*<specified
    directory>/<arch directory>/<actual libraries>*), so you in mingw
    build you need to place libraries in some additional subdirectory.
 -  ``WIN_BUILD_DEPS`` List of components required to build this one.
-   `QubesBuilder </doc/qubes-builder/>`__ will copy files specified with
+   :doc:`QubesBuilder </developer/building/qubes-builder>` will copy files specified with
    ``WIN_OUTPUT_HEADERS`` and ``WIN_OUTPUT_LIBS`` of those components to
    some directory and provide its path with ``QUBES_INCLUDES`` and
    ``QUBES_LIBS`` variables. Use those variables in your build scripts
@@ -93,4 +92,4 @@ Notes
 =====
 
 -  For a list of custom TemplateVMs available in QubesBuilder look at
-   `Supported Versions page </doc/supported-releases/>`__.
+   :doc:`Supported Versions page </user/downloading-installing-upgrading/supported-releases>`.

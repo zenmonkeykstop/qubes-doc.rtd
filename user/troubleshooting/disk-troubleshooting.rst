@@ -122,8 +122,7 @@ login to graphical UI.
 
 Can’t resize VM storage / “resize2fs: Permission denied” error
 ==============================================================
-
-`Resizing a volume </doc/resize-disk-image/>`__ in the Qubes interface
+ :doc:`Resizing a volume </user/advanced-topics/resize-disk-image>` in the Qubes interface
 should be a straightforward process. But sometimes, an attempt to resize
 will look like it worked, when it in fact fails silently. If you then
 try the same operation in the dom0 console using the

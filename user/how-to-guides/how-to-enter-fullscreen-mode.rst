@@ -9,8 +9,7 @@ Normally, the Qubes GUI virtualization daemon restricts the VM from
 “owning” the full screen, ensuring that there are always clearly marked
 decorations drawn by the trusted Window Manager around each of the VMs
 window. This allows the user to easily realize to which domain a
-specific window belongs. See the
-`screenshots </doc/QubesScreenshots/>`__ page for examples.
+specific window belongs. See the :doc:`screenshots </introduction/screenshots>` page for examples.
 
 Why is fullscreen mode potentially dangerous?
 =============================================
@@ -74,9 +73,7 @@ The string ‘personal’ above is an example only and should be replaced by
 the actual name of the VM for which you want to enable this
 functionality.
 
-**Note:** There should be only one ``VM: {}`` block in the file (or you
-will `get into
-problems <https://groups.google.com/d/msg/qubes-users/-Yf9yNvTsVI/xXsEm8y2lrYJ>`__).
+**Note:** There should be only one ``VM: {} block in the file (or you will `get into problems <https://groups.google.com/d/msg/qubes-users/-Yf9yNvTsVI/xXsEm8y2lrYJ>`__).
 
 One can also enable this functionality for all the VMs globally in the
 same file, by modifying the ‘global’ section:

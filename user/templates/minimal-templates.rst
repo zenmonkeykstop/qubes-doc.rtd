@@ -2,7 +2,7 @@
 Minimal templates
 =================
 
-The minimal `templates </doc/templates/>`__ are lightweight versions of
+The minimal :doc:`templates </user/templates/templates>` are lightweight versions of
 their standard template counterparts. They have only the most vital
 packages installed, including a minimal X and xterm installation. When
 properly configured and used, minimal templates can be less
@@ -14,23 +14,18 @@ of common use cases.
 Important
 =========
 
-1. `The minimal templates are intended only for advanced
-   users. <https://forum.qubes-os.org/t/9717/15>`__ If you encounter
+1. `The minimal templates are intended only for advanced    users. <https://forum.qubes-os.org/t/9717/15>`__ If you encounter
    problems with the minimal templates, we recommend that you use their
    standard template counterparts instead.
 
 2. If something works with a standard template but not the minimal
    version, this is most likely due to user error (e.g., a missing
    package or misconfiguration) rather than a bug. In such cases, please
-   do *not* file a bug report. Instead, please see `Help, Support,
-   Mailing Lists, and Forum </support/>`__ for the appropriate place to
+   do *not* file a bug report. Instead, please see :doc:`Help, Support,    Mailing Lists, and Forum </introduction/support>` for the appropriate place to
    ask for help. Once you have learned how to solve your problem, please
-   `contribute what you learned to the
-   documentation </doc/how-to-edit-the-documentation/>`__.
+   :doc:`contribute what you learned to the    documentation </developer/general/how-to-edit-the-documentation>`.
 
-3. The minimal templates are intentionally *minimal*. `Do not ask for
-   your favorite package to be added to the minimal template by
-   default. </faq/#could-you-please-make-my-preference-the-default>`__
+3. The minimal templates are intentionally *minimal*. :ref:`Do not ask for    your favorite package to be added to the minimal template by    default. <introduction/faq:could you please make my preference the default>`
 
 4. In order to reduce unnecessary risk, unused repositories have been
    disabled by default. If you wish to install or update any packages
@@ -46,8 +41,7 @@ Minimal templates of the following distros are available:
 -  CentOS
 -  Gentoo
 
-A list of all available templates can also be obtained with the
-`Template Manager </doc/template-manager/>`__ tool.
+A list of all available templates can also be obtained with the :doc:`Template Manager </developer/system/template-manager>` tool.
 
 Installation
 ============
@@ -59,8 +53,7 @@ command:
 
    [user@dom0 ~]$ sudo qubes-dom0-update qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>-minimal
 
-If your desired version is not found, it may still be in
-`testing </doc/testing/>`__. You may wish to try again with the testing
+If your desired version is not found, it may still be in :doc:`testing </user/downloading-installing-upgrading/testing>`. You may wish to try again with the testing
 repository enabled:
 
 ::
@@ -79,8 +72,7 @@ The download may take a while depending on your connection speed.
 Passwordless root
 =================
 
-It is an intentional design choice for `Passwordless Root Access in
-VMs </doc/vm-sudo/>`__ to be optional in minimal templates. Since the
+It is an intentional design choice for :doc:`Passwordless Root Access in VMs </user/security-in-qubes/vm-sudo>` to be optional in minimal templates. Since the
 minimal templates are *minimal*, they are not configured for
 passwordless root by default. To update or install packages, execute the
 following command in dom0:
@@ -136,7 +128,7 @@ with a space-delimited list of packages to be installed):
 -  Audio: ``pulseaudio-qubes``.
 -  Networking: ``qubes-core-agent-networking``, and whatever network
    tools you want. N.B. minimal templates do not include any browser.
--  `FirewallVM </doc/firewall/>`__, such as the template for
+-  :doc:`FirewallVM </user/security-in-qubes/firewall>`, such as the template for
    ``sys-firewall``: at least ``qubes-core-agent-networking`` and
    ``iproute``, and also ``qubes-core-agent-dom0-updates`` if you want
    to use it as the ``UpdateVM`` (which is normally ``sys-firewall``).
@@ -151,18 +143,14 @@ with a space-delimited list of packages to be installed):
    needed packages and then install them. If you need utilities for
    debugging and analyzing network connections, install ``tcpdump``
    ``telnet`` ``nmap`` ``nmap-ncat``.
--  `USB qube </doc/usb-qubes/>`__, such as the template for ``sys-usb``:
+-  :doc:`USB qube </user/advanced-topics/usb-qubes>`, such as the template for ``sys-usb``:
    ``qubes-usb-proxy`` to provide USB devices to other Qubes and
-   ``qubes-input-proxy-sender`` to provide keyboard or mouse input to
-   dom0.
--  `VPN
-   qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
+   ``qubes-input-proxy-sender to provide keyboard or mouse input to    dom0. -  `VPN    qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
    Use the ``dnf search "NetworkManager VPN plugin"`` command to look up
    the VPN packages you need, based on the VPN technology you’ll be
    using, and install them. Some GNOME related packages may be needed as
    well. After creation of a machine based on this template, follow the
-   `VPN
-   instructions <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager>`__
+   `VPN    instructions <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager>`__
    to configure it.
 -  ``default-mgmt-dvm``: requires ``qubes-core-agent-passwordless-root``
    and ``qubes-mgmt-salt-vm-connector``.
@@ -206,11 +194,7 @@ Also, there are packages to provide additional services:
 -  ``qubes-mgmt-salt-vm-connector``: If you want to use salt management
    on the template and qubes.
 
-You may also wish to consider additional packages from the
-``qubes-core-agent`` suite.
-
-See
-`here <https://github.com/Qubes-Community/Contents/blob/master/docs/customization/fedora-minimal-template-customization.md>`__
+You may also wish to consider additional packages from the ``qubes-core-agent suite.  See `here <https://github.com/Qubes-Community/Contents/blob/master/docs/customization/fedora-minimal-template-customization.md>`__
 for further information on customizing ``fedora-minimal``.
 
 Logging
@@ -234,17 +218,11 @@ with a space-delimited list of packages to be installed):
 
    [user@your-new-clone ~]$ sudo apt install packages
 
--  Commonly used utilities: ``pciutils`` ``vim-minimal`` ``less``
-   ``psmisc`` ``gnome-keyring``
--  The ``zenity`` package is required for interactive dialogs, e.g.,
-   file selection
-   (`#5202 <https://github.com/QubesOS/qubes-issues/issues/5202>`__) and
-   for using the Nautilus menu option to copy some files to other qubes
-   (`#6801 <https://github.com/QubesOS/qubes-issues/issues/6801>`__).
+-  Commonly used utilities: ``pciutils ``vim-minimal ``less    ``psmisc ``gnome-keyring -  The ``zenity package is required for interactive dialogs, e.g.,    file selection    (`#5202 <https://github.com/QubesOS/qubes-issues/issues/5202>`__) and    for using the Nautilus menu option to copy some files to other qubes    (`#6801 <https://github.com/QubesOS/qubes-issues/issues/6801>`__).
 -  Audio: ``pulseaudio-qubes``
 -  Networking: ``qubes-core-agent-networking``, and whatever network
    tools you want. N.B. minimal templates do not include any browser.
--  `FirewallVM </doc/firewall/>`__, such as the template for
+-  :doc:`FirewallVM </user/security-in-qubes/firewall>`, such as the template for
    ``sys-firewall``: at least ``qubes-core-agent-networking``, and also
    ``qubes-core-agent-dom0-updates`` if you want to use it as the
    ``UpdateVM`` (which is normally ``sys-firewall``).
@@ -255,21 +233,15 @@ with a space-delimited list of packages to be installed):
    provides necessary firmware and install it. If you need utilities for
    debugging and analyzing network connections, install the following
    packages: ``tcpdump`` ``telnet`` ``nmap`` ``ncat``.
--  `USB qube </doc/usb-qubes/>`__, such as the template for ``sys-usb``:
+-  :doc:`USB qube </user/advanced-topics/usb-qubes>`, such as the template for ``sys-usb``:
    ``qubes-usb-proxy`` to provide USB devices to other Qubes and
-   ``qubes-input-proxy-sender`` to provide keyboard or mouse input to
-   dom0.
--  Qubes to which USB devices are attached: ``libpam-systemd`` (Until
-   `#7689 <https://github.com/QubesOS/qubes-issues/issues/7689>`__ is
+   ``qubes-input-proxy-sender to provide keyboard or mouse input to    dom0. -  Qubes to which USB devices are attached: ``libpam-systemd (Until    `#7689 <https://github.com/QubesOS/qubes-issues/issues/7689>`__ is
    fixed, either pair it with ``qubes-core-agent-passwordless-root`` or
    manually activate the user session with
-   ``loginctl activate <USER_SESSION_ID>``.)
--  `VPN
-   qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
+   ``loginctl activate <USER_SESSION_ID>``.) -  `VPN    qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
    You may need to install network-manager VPN packages, depending on
    the VPN technology you’ll be using. After creating a machine based on
-   this template, follow the `VPN
-   howto <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager>`__
+   this template, follow the `VPN    howto <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager>`__
    to configure it.
 -  ``default-mgmt-dvm``: requires ``qubes-core-agent-passwordless-root``
    and ``qubes-mgmt-salt-vm-connector``.
@@ -304,7 +276,7 @@ Also, there are packages to provide additional services:
 -  ``qubes-mgmt-salt-vm-connector``: If you want to use salt management
    on the template and qubes.
 
-Documentation on all of these can be found in the `docs </doc/>`__.
+Documentation on all of these can be found in the `docs </>`__.
 
 You could, of course, use ``qubes-vm-recommended`` to automatically
 install many of these, but in that case you are well on the way to a
@@ -327,7 +299,7 @@ with a space-delimited list of packages to be installed):
 -  Audio: ``pulseaudio-qubes``.
 -  Networking: ``qubes-core-agent-networking``, and whatever network
    tools you want. N.B. minimal templates do not include any browser.
--  `FirewallVM </doc/firewall/>`__, such as the template for
+-  :doc:`FirewallVM </user/security-in-qubes/firewall>`, such as the template for
    ``sys-firewall``: at least ``qubes-core-agent-networking``, and also
    ``qubes-core-agent-dom0-updates`` if you want to use it as the
    ``UpdateVM`` (which is normally ``sys-firewall``).
@@ -340,16 +312,12 @@ with a space-delimited list of packages to be installed):
    firnware and install it. If you need utilities for debugging and
    analyzing network connections, install the following packages:
    ``tcpdump`` ``telnet`` ``nmap`` ``nmap-ncat``
--  `USB qube </doc/usb-qubes/>`__, such as the template for ``sys-usb``:
+-  :doc:`USB qube </user/advanced-topics/usb-qubes>`, such as the template for ``sys-usb``:
    ``qubes-usb-proxy`` to provide USB devices to other Qubes and
-   ``qubes-input-proxy-sender`` to provide keyboard or mouse input to
-   dom0.
--  `VPN
-   qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
+   ``qubes-input-proxy-sender to provide keyboard or mouse input to    dom0. -  `VPN    qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
    You may need to install network-manager VPN packages, depending on
    the VPN technology you’ll be using. After creating a machine based on
-   this template, follow the `VPN
-   howto <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager>`__
+   this template, follow the `VPN    howto <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager>`__
    to configure it.
 -  ``default-mgmt-dvm``: requires ``qubes-core-agent-passwordless-root``
    and ``qubes-mgmt-salt-vm-connector``.
@@ -380,7 +348,7 @@ Also, there are packages to provide additional services:
 -  ``qubes-mgmt-salt-vm-connector``: If you want to use salt management
    on the template and qubes.
 
-Documentation on all of these can be found in the `docs </doc/>`__.
+Documentation on all of these can be found in the `docs </>`__.
 
 You could, of course, use ``qubes-vm-recommended`` to automatically
 install many of these, but in that case you are well on the way to a

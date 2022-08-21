@@ -3,14 +3,11 @@ How to use devices
 ==================
 
 This is an overview of device handling in Qubes OS. For specific devices
-(`block </doc/how-to-use-block-storage-devices/>`__,
-`USB </doc/how-to-use-usb-devices/>`__ and
-`PCI </doc/how-to-use-pci-devices/>`__ devices), please visit their
+(( :doc:`block </user/how-to-guides/how-to-use-block-storage-devices>`, :doc:`USB </user/how-to-guides/how-to-use-usb-devices>` and :doc:`PCI </user/how-to-guides/how-to-use-pci-devices>` devices), please visit their
 respective pages.
 
 **Important security warning:** Device handling comes with many security
-implications. Please make sure you carefully read and understand the
-`security considerations </doc/device-handling-security/>`__.
+implications. Please make sure you carefully read and understand the :doc:`security considerations </user/security-in-qubes/device-handling-security>`.
 
 Introduction
 ============
@@ -61,8 +58,7 @@ Only ``mic`` should be attached to more than one running VM. You may
 *assign* a device to more than one VM (using the ``--persistent``
 option), however, only one of them can be started at the same time.
 
-But be careful: There is a `bug in ``qvm-device block`` or
-``qvm-block`` <https://github.com/QubesOS/qubes-issues/issues/4692>`__
+But be careful: There is a `bug in ``qvm-device block or ``qvm-block <https://github.com/QubesOS/qubes-issues/issues/4692>`__
 which will allow you to *attach* a block device to two running VMs.
 Don’t do that!
 

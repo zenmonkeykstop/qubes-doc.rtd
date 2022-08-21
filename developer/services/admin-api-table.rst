@@ -2,8 +2,7 @@
 Admin API table
 ===============
 
-This page displays the fullscreen table from `Admin
-API </doc/admin-api/>`__.
+This page displays the fullscreen table from :doc:`Admin API </developer/services/admin-api>`.
 
 +---------------+---+---+-----------------+-------------------------+---+
 | call          | d | a | inside          | return                  | n |

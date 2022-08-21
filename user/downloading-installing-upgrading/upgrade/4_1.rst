@@ -11,8 +11,7 @@ Back up
 =======
 
 Before attempting either an in-place upgrade or a clean installation, we
-strongly recommend that you first `back up your
-system </doc/how-to-back-up-restore-and-migrate/>`__ so that you don’t
+strongly recommend that you first :doc:`back up your system </user/how-to-guides/how-to-back-up-restore-and-migrate>` so that you don’t
 lose any data.
 
 Clean installation
@@ -22,13 +21,12 @@ If you would prefer to perform a clean installation rather than
 upgrading in-place:
 
 1. Create a
-   `backup </doc/how-to-back-up-restore-and-migrate/#creating-a-backup>`__
+   :ref:`backup <user/how-to-guides/how-to-back-up-restore-and-migrate:creating a backup>`
    of your current installation.
-2. `Download </downloads/>`__ the latest 4.1 release.
-3. Follow the `installation guide </doc/installation-guide/>`__ to
+2. :doc:`Download </user/downloading-installing-upgrading/downloads>` the latest 4.1 release.
+3. Follow the :doc:`installation guide </user/downloading-installing-upgrading/installation-guide>` to
    install Qubes 4.1.
-4. `Restore from your
-   backup </doc/how-to-back-up-restore-and-migrate/#restoring-from-a-backup>`__
+4. :ref:`Restore from your    backup <user/how-to-guides/how-to-back-up-restore-and-migrate:restoring from a backup>`
    on your new 4.1 installation.
 
 In-place upgrade
@@ -36,8 +34,7 @@ In-place upgrade
 
 **Warning:** It is not possible to upgrade directly from releases
 earlier than 4.0. If you’re still on an earlier release, please either
-perform a `clean installation of 4.1 <#clean-installation>`__ or
-`upgrade to 4.0 </doc/upgrade/4.0/>`__ first.
+perform a :ref:`clean installation of 4.1 <user/downloading-installing-upgrading/upgrade/4_1:clean installation>` or :doc:`upgrade to 4.0 </user/downloading-installing-upgrading/upgrade/4_0>` first.
 
 The upgrade may take several hours, and will download several gigabytes
 of data.
@@ -134,4 +131,4 @@ Update
 ======
 
 After upgrading or performing a clean installation, we strongly
-recommend `updating your system </doc/how-to-update/>`__.
+recommend :doc:`updating your system </user/how-to-guides/how-to-update>`.

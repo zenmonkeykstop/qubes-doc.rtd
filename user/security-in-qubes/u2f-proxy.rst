@@ -5,18 +5,15 @@ U2F proxy
 The `Qubes U2F Proxy <https://github.com/QubesOS/qubes-app-u2f>`__ is a
 secure proxy intended to make use of U2F two-factor authentication
 devices with web browsers without exposing the browser to the full USB
-stack, not unlike the `USB keyboard and mouse proxies </doc/usb/>`__
+stack, not unlike the :doc:`USB keyboard and mouse proxies </user/how-to-guides/how-to-use-usb-devices>`
 implemented in Qubes.
 
 What is U2F?
 ============
-
-`U2F <https://en.wikipedia.org/wiki/U2F>`__, which stands for “Universal
+ `U2F <https://en.wikipedia.org/wiki/U2F>`__, which stands for “Universal
 2nd Factor”, is a framework for authentication using hardware devices
 (U2F tokens) as “second factors”, i.e. *what you have* as opposed to
-*what you know*, like a passphrase. This additional control provides
-`good
-protection <https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/>`__
+*what you know*, like a passphrase. This additional control provides `good protection <https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/>`__
 in cases in which the passphrase is stolen (e.g. by phishing or
 keylogging). While passphrase compromise may not be obvious to the user,
 a physical device that cannot be duplicated must be stolen to be used
@@ -48,10 +45,7 @@ because they do not always know who is really requesting the code.) In
 the U2F model, by contrast, the browser ensures that the token receives
 valid information about the web application requesting authentication,
 so the token knows which application it is authenticating (for details,
-see
-`here <https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html#site-specific-public-private-key-pairs>`__).
-Nonetheless, `some attacks are still
-possible <https://www.wired.com/story/chrome-yubikey-phishing-webusb/>`__
+see `here <https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html#site-specific-public-private-key-pairs>`__). Nonetheless, `some attacks are still possible <https://www.wired.com/story/chrome-yubikey-phishing-webusb/>`__
 even with U2F (more on this below).
 
 The Qubes approach to U2F
@@ -66,8 +60,7 @@ services. If any of the browsers are compromised, it should be assumed
 that all of the token’s keys have been compromised. (This problem can be
 mitigated, however, if the U2F device has a special display to show the
 user what’s being authenticated.) Moreover, since the USB stack is in
-the same monolithic OS, the system is vulnerable to attacks like
-`BadUSB <https://www.blackhat.com/us-14/briefings.html#badusb-on-accessories-that-turn-evil>`__.
+the same monolithic OS, the system is vulnerable to attacks like `BadUSB <https://www.blackhat.com/us-14/briefings.html#badusb-on-accessories-that-turn-evil>`__.
 
 In Qubes OS, by contrast, it is possible to securely compartmentalise
 the browser in one qube and the USB stack in another so that they are
@@ -87,15 +80,13 @@ The Qubes U2F Proxy has two parts: the frontend and the backend. The
 frontend runs in the same qube as the browser and presents a fake
 USB-like HID device using ``uhid``. The backend runs in ``sys-usb`` and
 behaves like a browser. This is done using the ``u2flib_host`` reference
-library. All of our code was written in Python. The standard
-`qrexec </doc/qrexec3/>`__ policy is responsible for directing calls to
+library. All of our code was written in Python. The standard :doc:`qrexec </developer/services/qrexec>` policy is responsible for directing calls to
 the appropriate domains.
 
 The ``vault`` qube with a dashed line in the bottom portion of the
 diagram depicts future work in which we plan to implement the Qubes U2F
 Proxy with a software token in an isolated qube rather than a physical
-hardware token. This is similar to the manner in which `Split
-GPG </doc/split-gpg/>`__ allows us to emulate the smart card model
+hardware token. This is similar to the manner in which :doc:`Split GPG </user/security-in-qubes/split-gpg>` allows us to emulate the smart card model
 without physical smart cards.
 
 One very important assumption of U2F is that the browser verifies every
@@ -104,8 +95,7 @@ sending an authentication request matches the application that would be
 authenticated by answering that request (in order to prevent, e.g., a
 phishing site from sending an authentication request for your bank’s
 site). With the WebUSB feature in Chrome, however, a malicious website
-can
-`bypass <https://www.wired.com/story/chrome-yubikey-phishing-webusb/>`__
+can `bypass <https://www.wired.com/story/chrome-yubikey-phishing-webusb/>`__
 this safeguard by connecting directly to the token instead of using the
 browser’s U2F API.
 
@@ -117,11 +107,9 @@ means that if anything in your ``twitter`` qube were compromised — the
 browser or even the OS itself — it would still not be able to access the
 U2F keys on your token for any other websites or services, like your
 email and bank accounts. This is another significant security advantage
-over monolithic systems. (For details and instructions, see the
-`Advanced usage <#advanced-usage-per-qube-key-access>`__ section below.)
+over monolithic systems. (For details and instructions, see the :ref:`Advanced usage <user/security-in-qubes/u2f-proxy:advanced usage: per-qube key access>` section below.)
 
-For even more protection, you can combine this with the `Qubes
-firewall </doc/firewall/>`__ to ensure, for example, that the browser in
+For even more protection, you can combine this with the :doc:`Qubes firewall </user/security-in-qubes/firewall>` to ensure, for example, that the browser in
 your ``banking`` qube accesses only one website (your bank’s website).
 By configuring the Qubes firewall to prevent your ``banking`` qube from
 accessing any other websites, you reduce the risk of another website
@@ -161,8 +149,7 @@ In Debian templates:
 
 As usual with software updates, shut down the templates after
 installation, then restart ``sys-usb`` and all qubes that use the proxy.
-After that, you may use your U2F token (but see `Browser
-support <#template-and-browser-support>`__ below).
+After that, you may use your U2F token (but see :ref:`Browser support <user/security-in-qubes/u2f-proxy:template and browser support>` below).
 
 Advanced usage: per-qube key access
 ===================================
@@ -224,8 +211,7 @@ to test every combination that users are likely to attempt with the
 Qubes U2F Proxy. In some cases, you may be the first person to try a
 particular combination. Consequently (and as with any new feature),
 users will inevitably encounter bugs. We ask for your patience and
-understanding in this regard. As always, please `report any bugs you
-encounter </doc/issue-tracking/>`__.
+understanding in this regard. As always, please :doc:`report any bugs you encounter </introduction/issue-tracking>`.
 
 .. |Qubes U2F Proxy diagram| image:: /attachment/doc/u2f.svg
    :target: /attachment/doc/u2f.svg

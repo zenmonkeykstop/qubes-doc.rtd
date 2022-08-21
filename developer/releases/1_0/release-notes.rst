@@ -2,8 +2,7 @@
 Qubes R1.0 release notes
 ========================
 
-Detailed release notes in `this blog
-post <https://blog.invisiblethings.org/2012/09/03/introducing-qubes-10.html>`__.
+Detailed release notes in `this blog post <https://blog.invisiblethings.org/2012/09/03/introducing-qubes-10.html>`__.
 
 Known issues
 ============
@@ -17,9 +16,7 @@ Known issues
    might get ugly (e.g. half of it might be black). This is some KDE bug
    that we don’t plan to fix.
 
--  Some keyboard layout set by KDE System Settings can cause `keyboard
-   not working at
-   all <https://groups.google.com/group/qubes-devel/browse_thread/thread/77d076b65dda7226>`__.
+-  Some keyboard layout set by KDE System Settings can cause `keyboard    not working at    all <https://groups.google.com/group/qubes-devel/browse_thread/thread/77d076b65dda7226>`__.
    If you hit this issue, you can switch to console (by console login
    option) and manually edit
    ``/etc/X11/xorg.conf.d/00-system-setup-keyboard.conf`` (and
@@ -49,12 +46,12 @@ Known issues
 Downloads
 =========
 
-See `Qubes Downloads </doc/QubesDownloads/>`__.
+See :doc:`Qubes Downloads </user/downloading-installing-upgrading/downloads>`.
 
 Installation instructions
 =========================
 
-See `Installation Guide </doc/installation-guide/>`__.
+See :doc:`Installation Guide </user/downloading-installing-upgrading/installation-guide>`.
 
 Upgrading
 =========
@@ -75,7 +72,7 @@ If you have Qubes Beta 3 currently installed on your system, you must
 reinstall from scratch, as we offer no direct upgrade option in the
 installer (sorry). However, we do offer tools for smooth migration of
 your AppVMs. In order to do that, please backup your AppVMs using the
-``qvm-backup`` tool `as usual </doc/backup-restore/>`__. Then, after you
+``qvm-backup`` tool :doc:`as usual </user/how-to-guides/how-to-back-up-restore-and-migrate>`. Then, after you
 install Qubes 1.0 rc1, you can restore them using ``qvm-backup-restore``
 tool. However, because we have changed the default template in RC1, you
 should tell qvm-back-restore about that by passing

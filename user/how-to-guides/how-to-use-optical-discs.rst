@@ -13,12 +13,9 @@ Currently, the only options for reading and recording optical discs
 2. Attach a SATA optical drive to a secondary SATA controller, then
    assign this secondary SATA controller to a VM.
 3. Use a SATA optical drive attached to dom0. (**Caution:** This option
-   is `potentially
-   dangerous <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md#dom0-precautions>`__.)
+   is `potentially    dangerous <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md#dom0-precautions>`__.)
 
-To access an optical disc via USB follow the `typical procedure for
-attaching a USB
-device </doc/how-to-use-usb-devices/#with-the-command-line-tool>`__,
+To access an optical disc via USB follow the :ref:`typical procedure for attaching a USB device <user/how-to-guides/how-to-use-usb-devices:with the command line tool>`,
 then check with the **Qubes Devices** widget to see what device in the
 target qube the USB optical drive was attached to. Typically this would
 be ``sr0``. For example, if ``sys-usb`` has device ``3-2`` attached to

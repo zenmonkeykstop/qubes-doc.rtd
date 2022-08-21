@@ -2,8 +2,7 @@
 Suspend/resume troubleshooting
 ==============================
 
-First check if there are any remarks for similar devices in the
-`Hardware Compatibility List (HCL) </hcl/>`__.
+First check if there are any remarks for similar devices in the :doc:`Hardware Compatibility List (HCL) </user/hardware/hcl>`.
 
 Network-Manager says “Device not ready” on suspend/resume
 =========================================================
@@ -137,8 +136,7 @@ Power consumption increases on suspend/resume
 
 This problem is related to the software method used to disable sibling
 threads and how it interacts with suspend/resume. To solve the problem,
-disable hyper-threading in the BIOS. This `external
-guide <https://www.pcmag.com/news/how-to-disable-hyperthreading>`__
+disable hyper-threading in the BIOS. This `external guide <https://www.pcmag.com/news/how-to-disable-hyperthreading>`__
 explains how to disable hyper-threading. Since Qubes does disable
 hyperthreading by default (by not using secondary threads), you won’t
 pay any performance cost.

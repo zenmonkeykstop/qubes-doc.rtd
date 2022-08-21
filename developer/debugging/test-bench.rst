@@ -8,8 +8,7 @@ branch of ``core-admin.git`` repo, but some ideas are universal.
 
 We will set up a spare machine (bare metal, not a virtual) that will be
 hosting our experimental Dom0. We will communicate with it via Ethernet
-and SSH. This tutorial assumes you are familiar with
-`QubesBuilder </doc/qubes-builder/>`__ and you have it set up and
+and SSH. This tutorial assumes you are familiar with :doc:`QubesBuilder </developer/building/qubes-builder>` and you have it set up and
 running flawlessly.
 
    **Notice:** This setup intentionally weakens some security properties
@@ -22,9 +21,7 @@ Setting up the Machine
 Install ISO
 -----------
 
-First, do a clean install from the ``.iso`` `you
-built </doc/qubes-iso-building/>`__ or grabbed elsewhere (for example
-`here <https://forum.qubes-os.org/t/qubesos-4-1-alpha-signed-weekly-builds/3601>`__).
+First, do a clean install from the ``.iso`` :doc:`you built </developer/building/qubes-iso-building>` or grabbed elsewhere (for example `here <https://forum.qubes-os.org/t/qubesos-4-1-alpha-signed-weekly-builds/3601>`__).
 
 Enabling Network Access in Dom0
 -------------------------------
@@ -126,20 +123,17 @@ Install Tests and Their Dependencies
 ------------------------------------
 
 A regular Qubes installation isn’t ready to run the full suite of tests.
-For example, in order to run the `Split GPG
-tests <https://github.com/QubesOS/qubes-app-linux-split-gpg/blob/4bc201bb70c011119eed19df25dc5b46120d04ed/tests/splitgpg/tests.py>`__
+For example, in order to run the `Split GPG tests <https://github.com/QubesOS/qubes-app-linux-split-gpg/blob/4bc201bb70c011119eed19df25dc5b46120d04ed/tests/splitgpg/tests.py>`__
 you need to have the ``qubes-gpg-split-tests`` package installed in your
 app qubes.
 
 Because of the above reason, some additional configurations need to be
 done to your testing environment. This can be done in an automated
-manner with the help of the `Salt </doc/salt>`__ configuration that
-provisions the `automated testing
-environment </doc/automated-tests/>`__.
+manner with the help of the :doc:`Salt </user/advanced-topics/salt>` configuration that
+provisions the :doc:`automated testing environment </developer/debugging/automated-tests>`.
 
 The following commands should work for you, but do keep in mind that the
-provisioning scripts are designed for the `openQA
-environment <https://openqa.qubes-os.org/>`__ and not your specific
+provisioning scripts are designed for the `openQA environment <https://openqa.qubes-os.org/>`__ and not your specific
 local testing system. Run the following in ``dom0``:
 
 .. code:: bash

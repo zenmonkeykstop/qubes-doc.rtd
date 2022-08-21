@@ -16,15 +16,12 @@ geography, cost, and availability.
    nor can we control whether physical hardware is modified (whether
    maliciously or otherwise) en route to the user.
 
-You may also be interested in the `community-recommended
-hardware <https://forum.qubes-os.org/t/5560>`__ list and the `hardware
-compatibility list (HCL) </hcl/>`__.
+You may also be interested in the `community-recommended hardware <https://forum.qubes-os.org/t/5560>`__ list and the :doc:`hardware compatibility list (HCL) </user/hardware/hcl>`.
 
 Qubes-certified Laptops
 =======================
 
-Qubes-certified laptops are certified for a `major
-release </doc/version-scheme/>`__ and regularly tested by the Qubes
+Qubes-certified laptops are certified for a :doc:`major release </developer/releases/version-scheme>` and regularly tested by the Qubes
 developers to ensure compatibility with all of Qubes’ features within
 that major release. The developers test all new updates within that
 major release to ensure that no regressions are introduced.
@@ -34,11 +31,7 @@ Insurgo PrivacyBeast X230
 
 |insurgo-privacybeast-x230.png|
 
-The `Insurgo PrivacyBeast
-X230 <https://insurgo.ca/produit/qubesos-certified-privacybeast_x230-reasonably-secured-laptop/>`__
-meets and exceeds our hardware certification requirements for Qubes 4.
-Read our
-`announcement </news/2019/07/18/insurgo-privacybeast-qubes-certification/>`__
+The `Insurgo PrivacyBeast X230 <https://insurgo.ca/produit/qubesos-certified-privacybeast_x230-reasonably-secured-laptop/>`__ meets and exceeds our hardware certification requirements for Qubes 4. Read our `announcement <https://www.qubes-os.org/news/2019/07/18/insurgo-privacybeast-qubes-certification/>`__
 of the certification for further details!
 
 NitroPad X230
@@ -46,11 +39,7 @@ NitroPad X230
 
 |nitropad-x230.jpg|
 
-The `NitroPad
-X230 <https://shop.nitrokey.com/shop/product/nitropad-x230-67>`__
-satisfies all hardware certification requirements for Qubes 4, offering
-users extensive hardware security options. Read our
-`announcement </news/2020/03/04/nitropad-x230-qubes-certification/>`__
+The `NitroPad X230 <https://shop.nitrokey.com/shop/product/nitropad-x230-67>`__ satisfies all hardware certification requirements for Qubes 4, offering users extensive hardware security options. Read our `announcement <https://www.qubes-os.org/news/2020/03/04/nitropad-x230-qubes-certification/>`__
 of the certification for further details!
 
 NitroPad T430
@@ -58,11 +47,7 @@ NitroPad T430
 
 |nitropad-t-430.jpg|
 
-The `NitroPad
-T430 <https://shop.nitrokey.com/shop/product/nitropad-t430-119>`__
-satisfies all hardware certification requirements for Qubes 4, offering
-users extensive hardware security options. Read our
-`announcement </news/2021/06/01/nitropad-t430-qubes-certification/>`__
+The `NitroPad T430 <https://shop.nitrokey.com/shop/product/nitropad-t430-119>`__ satisfies all hardware certification requirements for Qubes 4, offering users extensive hardware security options. Read our `announcement <https://www.qubes-os.org/news/2021/06/01/nitropad-t430-qubes-certification/>`__
 of the certification for further details!
 
 Become Hardware Certified
@@ -89,8 +74,7 @@ Hardware Certification Requirements
 
 (Please note that these are the requirements for hardware
 *certification*, *not* the requirements for *running* Qubes OS. For the
-latter, please see the `system
-requirements </doc/system-requirements/>`__.)
+latter, please see the :doc:`system requirements </user/hardware/system-requirements>`.)
 
 A basic requirement is that all Qubes-certified devices must be be
 available for purchase with Qubes OS preinstalled. Customers may be
@@ -103,38 +87,25 @@ release of Qubes 4.0 was to replace paravirtualization (PV) technology
 with **hardware-enforced memory virtualization**, which recent
 processors have made possible thanks to so-called Second Level Address
 Translation
-(`SLAT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation>`__),
-also known as
-`EPT <https://ark.intel.com/Search/FeatureFilter?productType=processors&ExtendedPageTables=true&MarketSegment=Mobile>`__
+(`SLAT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation>`__), also known as `EPT <https://ark.intel.com/Search/FeatureFilter?productType=processors&ExtendedPageTables=true&MarketSegment=Mobile>`__
 in Intel parlance. SLAT (EPT) is an extension to Intel VT-x
 virtualization, which originally was capable of only CPU virtualization
 but not memory virtualization and hence required a complex Shadow Page
 Tables approach. We hope that embracing SLAT-based memory virtualization
-will allow us to prevent disastrous security bugs, such as the infamous
-`XSA-148 <https://xenbits.xen.org/xsa/advisory-148.html>`__, which —
-unlike many other major Xen bugs — regrettably did
-`affect <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-022-2015.txt>`__
+will allow us to prevent disastrous security bugs, such as the infamous `XSA-148 <https://xenbits.xen.org/xsa/advisory-148.html>`__, which —
+unlike many other major Xen bugs — regrettably did `affect <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-022-2015.txt>`__
 Qubes OS. Consequently, we require SLAT support of all certified
 hardware beginning with Qubes OS 4.0.
 
 Another important requirement is that Qubes-certified hardware should
-run only **open-source boot firmware** (aka “the BIOS”), such as
-`coreboot <https://www.coreboot.org/>`__. The only exception is the use
-of (properly authenticated) CPU-vendor-provided blobs for silicon and
-memory initialization (see `Intel
-FSP <https://firmware.intel.com/learn/fsp/about-intel-fsp>`__) as well
-as other internal operations (see `Intel
-ME <https://www.apress.com/9781430265719>`__). However, we specifically
+run only **open-source boot firmware** (aka “the BIOS”), such as `coreboot <https://www.coreboot.org/>`__. The only exception is the use of (properly authenticated) CPU-vendor-provided blobs for silicon and memory initialization (see `Intel FSP <https://firmware.intel.com/learn/fsp/about-intel-fsp>`__) as well as other internal operations (see `Intel ME <https://www.apress.com/9781430265719>`__). However, we specifically
 require all code used for and dealing with the System Management Mode
 (SMM) to be open-source.
 
-While we
-`recognize <https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf>`__
+While we `recognize <https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf>`__
 the potential problems that proprietary CPU-vendor code can cause, we
 are also pragmatic enough to realize that we need to take smaller steps
-first, before we can implement even stronger countermeasures such as a
-`stateless
-laptop <https://blog.invisiblethings.org/papers/2015/state_harmful.pdf>`__.
+first, before we can implement even stronger countermeasures such as a `stateless laptop <https://blog.invisiblethings.org/papers/2015/state_harmful.pdf>`__.
 A switch to open source boot firmware is one such important step. To be
 compatible with Qubes OS, the BIOS must properly expose all the VT-x,
 VT-d, and SLAT functionality that the underlying hardware offers (and
@@ -163,8 +134,7 @@ less effective on a microphone).
 Similarly, we don’t consider physical kill switches on Wi-Fi and
 Bluetooth devices to be mandatory. Users who plan on using Qubes in an
 air-gap scenario would do best if they manually remove all such devices
-persistently (as well as the builtin
-`speakers <https://github.com/romanz/amodem/>`__!), rather than rely on
+persistently (as well as the builtin `speakers <https://github.com/romanz/amodem/>`__!), rather than rely on
 easy-to-flip-by-mistake switches, while others should benefit from the
 Qubes default sandboxing of all networking devices in dedicated VMs.
 
@@ -186,8 +156,7 @@ To have hardware certified, the vendor must:
 
 It is the vendor’s responsibility to ensure the hardware they wish to
 have certified can run Qubes OS, at the very least the latest stable
-version. This could be done by consulting the `Hardware Compatibility
-List </hcl/>`__ or trying to install it themselves before shipping any
+version. This could be done by consulting the :doc:`Hardware Compatibility List </user/hardware/hcl>` or trying to install it themselves before shipping any
 units to us. While we are willing to troubleshoot simple issues, we will
 need to charge a consulting fee for more in-depth work.
 

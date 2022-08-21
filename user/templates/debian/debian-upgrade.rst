@@ -9,14 +9,9 @@ How to upgrade a Debian template in-place
    Learn more about the two options here.
 
 This page provides instructions for performing an in-place upgrade of an
-installed `Debian Template </doc/templates/debian/>`__. If you wish to
+installed :doc:`Debian Template </user/templates/debian/debian>`. If you wish to
 install a new, unmodified Debian template instead of upgrading a
-template that is already installed in your system, please see the
-`Debian Template </doc/templates/debian/>`__ page instead. (`Learn more
-about the two options. </doc/templates/debian/#upgrading>`__) In
-general, upgrading a Debian template follows the same process as
-`upgrading a native Debian
-system <https://wiki.debian.org/DebianUpgrade>`__.
+template that is already installed in your system, please see the :doc:`Debian Template </user/templates/debian/debian>` page instead.  :ref:`Learn more about the two options. <user/templates/debian/debian:upgrading>`) In general, upgrading a Debian template follows the same process as `upgrading a native Debian system <https://wiki.debian.org/DebianUpgrade>`__.
 
 Summary instructions for Debian templates
 =========================================
@@ -25,8 +20,7 @@ Summary instructions for Debian templates
 should be entered: ``dom0``, ``debian-<old>``, or ``debian-<new>``,
 where ``<old>`` is the Debian version number *from* which you are
 upgrading, and ``<new>`` is the Debian version number *to* which you are
-upgrading. The instructions may differ for certain releases. See
-`release-specific notes <#release-specific-notes>`__ for any
+upgrading. The instructions may differ for certain releases. See :ref:`release-specific notes <user/templates/debian/debian-upgrade:release-specific notes>` for any
 instructions specific to your particular release.
 
 ::
@@ -40,8 +34,7 @@ instructions specific to your particular release.
    [user@debian-<new> ~]$ sudo apt dist-upgrade
    [user@dom0 ~]$ qvm-shutdown debian-<new>
 
-**Recommended:** `Switch everything that was set to the old template to
-the new template. </doc/templates/#switching>`__
+**Recommended:** :ref:`Switch everything that was set to the old template to the new template. <user/templates/templates:switching>`
 
 Detailed instructions for Debian templates
 ==========================================
@@ -54,8 +47,7 @@ standard Debian template.
 should be entered: ``dom0``, ``debian-<old>``, or ``debian-<new>``,
 where ``<old>`` is the Debian version number *from* which you are
 upgrading, and ``<new>`` is the Debian version number *to* which you are
-upgrading. The instructions may differ for certain releases. See
-`release-specific notes <#release-specific-notes>`__ for any
+upgrading. The instructions may differ for certain releases. See :ref:`release-specific notes <user/templates/debian/debian-upgrade:release-specific notes>` for any
 instructions specific to your particular release.
 
 1.  Ensure the existing template is not running.
@@ -105,10 +97,7 @@ instructions specific to your particular release.
 
        [user@debian-<new> ~]$ sudo apt-get clean
 
-7.  (Optional) Trim the new template. (This should `no longer be
-    necessary </doc/templates/#important-notes>`__, but it does not
-    hurt. Some users have
-    `reported <https://github.com/QubesOS/qubes-issues/issues/5055>`__
+7.  (Optional) Trim the new template. (This should :ref:`no longer be     necessary <user/templates/templates:important notes>`, but it does not     hurt. Some users have     `reported <https://github.com/QubesOS/qubes-issues/issues/5055>`__
     that it makes a difference.)
 
     ::
@@ -124,8 +113,7 @@ instructions specific to your particular release.
 
        [user@dom0 ~]$ qvm-shutdown debian-<new>
 
-9.  (Recommended) `Switch everything that was set to the old template to
-    the new template. </doc/templates/#switching>`__
+9.  (Recommended) :ref:`Switch everything that was set to the old template to     the new template. <user/templates/templates:switching>`
 
 10. (Optional) Make the new template the global default.
 
@@ -133,15 +121,13 @@ instructions specific to your particular release.
 
        [user@dom0 ~]$ qubes-prefs --set default_template debian-<new>
 
-11. (Optional) `Uninstall the old
-    template. </doc/templates/#uninstalling>`__ Make sure that the
+11. (Optional) :ref:`Uninstall the old     template. <user/templates/templates:uninstalling>` Make sure that the
     template you’re uninstalling is the old one, not the new one!
 
 Standalones
 ===========
 
-The procedure for upgrading a Debian
-`standalone </doc/standalone-and-hvm/>`__ is the same as for a template.
+The procedure for upgrading a Debian :doc:`standalone </user/advanced-topics/standalones-and-hvms>` is the same as for a template.
 
 Release-specific notes
 ======================
@@ -151,13 +137,10 @@ This section contains notes about upgrading to specific releases.
 Debian 11 (“Bullseye”)
 ----------------------
 
-Please see `Debian’s Bullseye upgrade
-instructions <https://www.debian.org/releases/bullseye/amd64/release-notes/ch-upgrading.en.html>`__.
+Please see `Debian’s Bullseye upgrade instructions <https://www.debian.org/releases/bullseye/amd64/release-notes/ch-upgrading.en.html>`__.
 In particular: for APT source lines referencing the security archive,
 the format has changed slightly along with the release name, going from
-buster/updates to bullseye-security; see `Section 5.1.2, “Changed
-security archive
-layout” <https://www.debian.org/releases/stable/mips64el/release-notes/ch-information.en.html#security-archive>`__.
+buster/updates to bullseye-security; see `Section 5.1.2, “Changed security archive layout” <https://www.debian.org/releases/stable/mips64el/release-notes/ch-information.en.html#security-archive>`__.
 
 This means that, when upgrading from Buster to Bullseye, an additional
 ``sed`` command is required:
@@ -177,8 +160,7 @@ This means that, when upgrading from Buster to Bullseye, an additional
 Debian 10 (“Buster”)
 --------------------
 
-Please see `Debian’s Buster upgrade
-instructions <https://www.debian.org/releases/buster/amd64/release-notes/ch-upgrading.en.html>`__.
+Please see `Debian’s Buster upgrade instructions <https://www.debian.org/releases/buster/amd64/release-notes/ch-upgrading.en.html>`__.
 
 Debian 9 (“Stretch”)
 --------------------
@@ -196,43 +178,14 @@ Debian 9 (“Stretch”)
 -  User-initiated updates/upgrades may not run when a template first
    starts. This is due to a new Debian config setting that attempts to
    update automatically; it should be disabled with
-   ``sudo systemctl disable   apt-daily.{service,timer}``.
-
-Relevant discussions:
-
--  `Stretch Template
-   Installation <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/4rdayBF_UTc>`__
--  `Stretch availability in
-   3.2 <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/cekPfBqQMOI>`__
--  `Fixing sound in Debian
-   Stretch <https://groups.google.com/forum/#!topic/qubes-users/JddCE54GFiU>`__
--  `User apt commands blocked on
-   startup <https://github.com/QubesOS/qubes-issues/issues/2621>`__
-
-Also see `Debian’s Stretch upgrade
-instructions <https://www.debian.org/releases/stretch/amd64/release-notes/ch-upgrading.en.html>`__.
-
-Debian 8 (“Jessie”)
--------------------
-
-Please see `Debian’s Jessie upgrade
-instructions <https://www.debian.org/releases/jessie/amd64/release-notes/ch-upgrading.en.html>`__.
-
-End-of-life (EOL) releases
---------------------------
-
-We strongly recommend against using any Debian release that has reached
-`end-of-life
-(EOL) <https://wiki.debian.org/DebianReleases#Production_Releases>`__.
+   ``sudo systemctl disable   apt-daily.{service,timer}``.  Relevant discussions:  -  `Stretch Template    Installation <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/4rdayBF_UTc>`__ -  `Stretch availability in    3.2 <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/cekPfBqQMOI>`__ -  `Fixing sound in Debian    Stretch <https://groups.google.com/forum/#!topic/qubes-users/JddCE54GFiU>`__ -  `User apt commands blocked on    startup <https://github.com/QubesOS/qubes-issues/issues/2621>`__  Also see `Debian’s Stretch upgrade instructions <https://www.debian.org/releases/stretch/amd64/release-notes/ch-upgrading.en.html>`__.  Debian 8 (“Jessie”) -------------------  Please see `Debian’s Jessie upgrade instructions <https://www.debian.org/releases/jessie/amd64/release-notes/ch-upgrading.en.html>`__.  End-of-life (EOL) releases --------------------------  We strongly recommend against using any Debian release that has reached `end-of-life (EOL) <https://wiki.debian.org/DebianReleases#Production_Releases>`__.
 
 Additional information
 ======================
 
 -  Please note that, if you installed packages from one of the
-   `testing </doc/testing/>`__ repositories, you must make sure that the
-   repository is enabled in ``/etc/apt/sources.list.d/qubes-r4.list``
-   before attempting the upgrade. Otherwise, your upgrade will
-   `break <https://github.com/QubesOS/qubes-issues/issues/2418>`__.
+   :doc:`testing </user/downloading-installing-upgrading/testing>` repositories, you must make sure that the
+   repository is enabled in ``/etc/apt/sources.list.d/qubes-r4.list    before attempting the upgrade. Otherwise, your upgrade will    `break <https://github.com/QubesOS/qubes-issues/issues/2418>`__.
 
 -  By default, Qubes uses code names in the ``apt`` sources files,
    although the templates are referred to by release number. Check the

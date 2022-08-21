@@ -2,12 +2,11 @@
 Templates
 =========
 
-In `Getting Started </doc/getting-started/>`__, we covered the
+In :doc:`Getting Started </introduction/getting-started>`, we covered the
 distinction in Qubes OS between where you *install* your software and
-where you *run* your software. Your software is installed in
-`templates </doc/glossary/#template>`__. Each template shares its root
+where you *run* your software. Your software is installed in :ref:`templates <user/reference/glossary:template>`. Each template shares its root
 filesystem (i.e., all of its programs and system files) with all the
-qubes based on it. `App qubes </doc/glossary/#app-qube>`__ are where you
+qubes based on it. :ref:`App qubes <user/reference/glossary:app qube>` are where you
 run your software and store your data.
 
 The template system has significant benefits:
@@ -29,8 +28,7 @@ The template system has significant benefits:
 
 An important side effect of this system is that any software installed
 in an app qube (rather than in the template on which it is based) will
-disappear after the app qube reboots (see `Inheritance and
-Persistence <#inheritance-and-persistence>`__). For this reason, we
+disappear after the app qube reboots (see :ref:`Inheritance and Persistence <user/templates/templates:inheritance and persistence>`). For this reason, we
 recommend installing most of your software in templates, not app qubes.
 
 The default template in Qubes is based on Fedora, but there are
@@ -51,11 +49,11 @@ These are the official Qubes OS Project templates. We build and release
 updates for these templates. We guarantee that the binary updates are
 compiled from exactly the same source code as we publish.
 
--  `Fedora </doc/templates/fedora/>`__ (default)
--  `Fedora Minimal </doc/templates/minimal/>`__
--  `Fedora Xfce </doc/templates/xfce>`__
--  `Debian </doc/templates/debian/>`__
--  `Debian Minimal </doc/templates/minimal/>`__
+-  :doc:`Fedora </user/templates/fedora/fedora>` (default)
+-  :doc:`Fedora Minimal </user/templates/minimal-templates>`
+-  :doc:`Fedora Xfce </user/templates/xfce-templates>`
+-  :doc:`Debian </user/templates/debian/debian>`
+-  :doc:`Debian Minimal </user/templates/minimal-templates>`
 
 Community
 =========
@@ -72,13 +70,13 @@ developers and the distribution maintainers, but also the template
 maintainer. In addition, these templates may be somewhat less stable,
 since the Qubes developers do not test them.
 
--  `Whonix </doc/templates/whonix/>`__
--  `Ubuntu </doc/templates/ubuntu/>`__
--  `Arch Linux </doc/building-archlinux-template/>`__
--  `CentOS </doc/templates/centos/>`__
--  `CentOS Minimal </doc/templates/minimal/>`__
--  `Gentoo </doc/templates/gentoo/>`__
--  `Gentoo Minimal </doc/templates/minimal/>`__
+-  `Whonix <https://github.com/Qubes-Community/Contents/blob/master/docs/privacy/whonix.md>`__
+-  `Ubuntu <https://github.com/Qubes-Community/Contents/blob/master/docs/os/ubuntu.md>`__
+-  `Arch Linux <https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-archlinux-template.md>`__
+-  `CentOS <https://github.com/Qubes-Community/Contents/blob/master/docs/os/centos.md>`__
+-  :doc:`CentOS Minimal </user/templates/minimal-templates>`
+-  `Gentoo <https://github.com/Qubes-Community/Contents/blob/master/docs/os/gentoo.md>`__
+-  :doc:`Gentoo Minimal </user/templates/minimal-templates>`
 
 Installing
 ==========
@@ -88,9 +86,9 @@ times when you wish to install a fresh template from the Qubes
 repositories, e.g.:
 
 -  When a template version you’re using reaches
-   `end-of-life </doc/how-to-update/#upgrading-to-avoid-eol>`__.
+   :ref:`end-of-life <user/how-to-guides/how-to-update:upgrading to avoid eol>`.
 -  When a new version of a template that you wish to use becomes
-   `supported </doc/supported-releases/>`__.
+   :doc:`supported </user/downloading-installing-upgrading/supported-releases>`.
 -  When you suspect your template has been compromised.
 -  When you have made modifications to your template that you no longer
    want.
@@ -103,8 +101,7 @@ installation method is to execute the following type of command in dom0:
    $ sudo qubes-dom0-update qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>
 
 ``qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>`` is the name of the
-desired template package. Advanced users can install a
-`minimal </doc/templates/minimal/>`__ version of the template, if one
+desired template package. Advanced users can install a :doc:`minimal </user/templates/minimal-templates>` version of the template, if one
 exists, by appending ``-minimal`` directly to the end of the template
 package name.
 
@@ -116,11 +113,9 @@ community template repo:
    $ sudo qubes-dom0-update --enablerepo=qubes-templates-community qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>
 
 If you receive the message that no match is found for
-``qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>``, see
-`here </faq/#when-i-try-to-install-a-template-it-says-no-match-is-found>`__.
+``qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>``, see :ref:`here <introduction/faq:when i try to install a template it says no match is found>`.
 
-If you wish to install a template that is in testing, please see
-`here </doc/testing/#templates>`__.
+If you wish to install a template that is in testing, please see :ref:`here <user/downloading-installing-upgrading/testing:templates>`.
 
 After Installing
 ================
@@ -128,22 +123,21 @@ After Installing
 After installing a fresh template, we recommend performing the following
 steps:
 
-1. `Update the template <#updating>`__.
+1. :ref:`Update the template <user/templates/templates:updating>`.
 
-2. `Switch any app qubes that are based on the old template to the new
-   one <#switching>`__.
+2. :ref:`Switch any app qubes that are based on the old template to the new    one <user/templates/templates:switching>`.
 
-3. If desired, `uninstall the old template <#uninstalling>`__.
+3. If desired, :ref:`uninstall the old template <user/templates/templates:uninstalling>`.
 
 Updating
 ========
 
-Please see `How to Update </doc/how-to-update/>`__.
+Please see :doc:`How to Update </user/how-to-guides/how-to-update>`.
 
 Installing Software
 ===================
 
-Please see `How to Install Software </doc/how-to-install-software>`__.
+Please see :doc:`How to Install Software </user/how-to-guides/how-to-install-software>`.
 
 Uninstalling
 ============
@@ -161,8 +155,7 @@ you’re not sure, you can safely try this method first to see if it
 works.)
 
 If, on the other hand, the template came pre-installed or was installed
-by installing a template package in dom0, per the instructions
-`above <#installing>`__, then you must execute the following type of
+by installing a template package in dom0, per the instructions :ref:`above <user/templates/templates:installing>`, then you must execute the following type of
 command in dom0 in order to uninstall it:
 
 ::
@@ -196,8 +189,7 @@ required to address these warnings.
 
 If the uninstallation command doesn’t work, pay close attention to any
 error message: it may tell you what qube is using the template, or if
-the template is default. In other cases, please see `VM
-Troubleshooting </doc/vm-troubleshooting/>`__.
+the template is default. In other cases, please see :doc:`VM Troubleshooting </user/troubleshooting/vm-troubleshooting>`.
 
 If the Applications Menu entry doesn’t go away after you uninstall a
 template, execute the following type of command in dom0:
@@ -216,7 +208,7 @@ in ``/usr/local/share/applications/`` of dom0.
 Reinstalling
 ============
 
-Please see `How to Reinstall a Template </doc/reinstall-template/>`__.
+Please see :doc:`How to Reinstall a Template </user/templates/how-to-reinstall-a-template>`.
 
 Switching
 =========
@@ -246,7 +238,7 @@ to the new template:
 
       Applications Menu -> System Tools -> Qubes Template Manager
 
-4. Base the `disposable template </doc/glossary/#disposable-template>`__
+4. Base the :ref:`disposable template <user/reference/glossary:disposable template>`
    on the new template.
 
    ::
@@ -299,8 +291,7 @@ changes in the parent template.
 
 | 1Upon creation
 | 2Following shutdown
-| 3Includes `disposable
-  templates </doc/glossary/#disposable-template>`__
+| 3Includes :ref:`disposable   templates <user/reference/glossary:disposable template>`
 
 Trusting your templates
 -----------------------
@@ -318,11 +309,11 @@ There are several ways to deal with this problem:
    pre-configured Fedora repositories. All those packages are signed by
    Fedora, and we expect that at least the package’s installation
    scripts are not malicious. This is enforced by default (at the
-   `firewall qube level </doc/firewall/>`__), by not allowing any
+   :doc:`firewall qube level </user/security-in-qubes/firewall>`), by not allowing any
    networking connectivity in the default template, except for access to
    the Fedora repos.
 
--  Use `standalones </doc/glossary/#standalone>`__ (see below) for
+-  Use :ref:`standalones <user/reference/glossary:standalone>` (see below) for
    installation of untrusted software packages.
 
 -  Use multiple templates (see below) for different classes of domains,
@@ -343,8 +334,7 @@ in the rpm.spec) are benign or not. A template should be used only for
 installation of packages, and nothing more, so it should never get a
 chance to actually run ``/usr/bin/firefox`` and get infected from it, in
 case it was compromised. Also, some of your more trusted app qubes would
-have networking restrictions enforced by the `firewall
-qube </doc/firewall/>`__, and again they should not fear this proverbial
+have networking restrictions enforced by the :doc:`firewall qube </user/security-in-qubes/firewall>`, and again they should not fear this proverbial
 ``/usr/bin/firefox`` being potentially buggy and easy to compromise.
 
    But why trust Fedora?
@@ -419,8 +409,7 @@ Important Notes
 
 -  ``qvm-trim-template`` is no longer necessary or available in Qubes
    4.0 and higher. All qubes are created in a thin pool and trimming is
-   handled automatically. No user action is required. See `Disk
-   Trim <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md>`__
+   handled automatically. No user action is required. See `Disk    Trim <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md>`__
    for more information.
 
 -  RPM-installed templates are “system managed” and therefore cannot be
@@ -432,9 +421,8 @@ Important Notes
 
 -  Some templates are available in ready-to-use binary form, but some of
    them are available only as source code, which can be built using the
-   `Qubes Builder </doc/qubes-builder/>`__. In particular, some template
+   :doc:`Qubes Builder </developer/building/qubes-builder>`. In particular, some template
    “flavors” are available in source code form only. For the technical
-   details of the template system, please see `Template
-   Implementation </doc/template-implementation/>`__. Take a look at the
-   `Qubes Builder </doc/qubes-builder/>`__ documentation for
+   details of the template system, please see :doc:`Template    Implementation </developer/system/template-implementation>`. Take a look at the
+   :doc:`Qubes Builder </developer/building/qubes-builder>` documentation for
    instructions on how to compile them.

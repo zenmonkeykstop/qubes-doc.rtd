@@ -5,11 +5,7 @@ Automated tests
 Unit and Integration Tests
 ==========================
 
-Starting with Qubes R3 we use `python
-unittest <https://docs.python.org/3/library/unittest.html>`__ to perform
-automatic tests of Qubes OS. Despite the name, we use it for both `unit
-tests <https://en.wikipedia.org/wiki/Unit_tests>`__ and `integration
-tests <https://en.wikipedia.org/wiki/Integration_tests>`__. The main
+Starting with Qubes R3 we use `python unittest <https://docs.python.org/3/library/unittest.html>`__ to perform automatic tests of Qubes OS. Despite the name, we use it for both `unit tests <https://en.wikipedia.org/wiki/Unit_tests>`__ and `integration tests <https://en.wikipedia.org/wiki/Integration_tests>`__. The main
 purpose is, of course, to deliver much more stable releases.
 
 The integration tests must be run in dom0, but some unit tests can run
@@ -136,8 +132,7 @@ instead:
    sudo systemctl stop qubesd; sudo -E nose2 -v --plugin nose2.plugins.loader.loadtests qubes.tests; sudo systemctl start qubesd
 
 This may be especially useful together with various nose2 plugins to
-store tests results (for example ``nose2.plugins.junitxml``), to ease
-presenting results. This is what we use on `OpenQA <http://open.qa/>`__.
+store tests results (for example ``nose2.plugins.junitxml``), to ease presenting results. This is what we use on `OpenQA <http://open.qa/>`__.
 
 Unit testing inside a VM
 ------------------------
@@ -146,21 +141,15 @@ Many unit tests will also work inside a VM. However all of the tests
 requiring a dedicated VM to be run (mostly the integration tests) will
 be skipped.
 
-Whereas integration tests are mostly stored in the
-`qubes-core-admin <https://github.com/QubesOS/qubes-core-admin>`__
+Whereas integration tests are mostly stored in the `qubes-core-admin <https://github.com/QubesOS/qubes-core-admin>`__
 repository, unit tests can be found in each of the Qubes OS
 repositories.
 
-To for example run the ``qubes-core-admin`` unit tests, you currently
-have to clone at least
-`qubes-core-admin <https://github.com/QubesOS/qubes-core-admin>`__ and
-its dependency
-`qubes-core-qrexec <https://github.com/QubesOS/qubes-core-qrexec>`__
+To for example run the ``qubes-core-admin unit tests, you currently have to clone at least `qubes-core-admin <https://github.com/QubesOS/qubes-core-admin>`__ and its dependency `qubes-core-qrexec <https://github.com/QubesOS/qubes-core-qrexec>`__
 repository in the branches that you want to test.
 
 The below example however will assume that you set up a build
-environment as described in the `Qubes Builder
-documentation </doc/qubes-builder/>`__.
+environment as described in the :doc:`Qubes Builder documentation </developer/building/qubes-builder>`.
 
 Assuming you cloned the ``qubes-builder`` repository to your home
 directory inside a fedora VM, you can use the following commands to run
@@ -207,16 +196,7 @@ Test runs can be altered using environment variables:
    tests on; if not set, all installed templates are tested
 -  ``QUBES_TEST_LOAD_ALL`` - load all tests (including tests for all
    templates) when relevant test modules are imported; this needs to be
-   set for test runners not supporting `load_tests
-   protocol <https://docs.python.org/3/library/unittest.html#load-tests-protocol>`__
-
-Adding a new test to core-admin
--------------------------------
-
-After adding a new unit test to
-`core-admin/qubes/tests <https://github.com/QubesOS/qubes-core-admin/tree/master/qubes/tests>`__
-you’ll have to include it in
-`core-admin/qubes/tests/__init__.py <https://github.com/QubesOS/qubes-core-admin/tree/master/qubes/tests/__init__.py>`__
+   set for test runners not supporting `load_tests    protocol <https://docs.python.org/3/library/unittest.html#load-tests-protocol>`__  Adding a new test to core-admin -------------------------------  After adding a new unit test to `core-admin/qubes/tests <https://github.com/QubesOS/qubes-core-admin/tree/master/qubes/tests>`__ you’ll have to include it in `core-admin/qubes/tests/__init__.py <https://github.com/QubesOS/qubes-core-admin/tree/master/qubes/tests/__init__.py>`__
 
 Editing ``__init__.py``
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -321,8 +301,7 @@ for Qubes’ openQA system with hardware that meets these requirements.
 Looking for patterns in tests
 -----------------------------
 
-In order to better visualize patterns in tests the
-```openqa_investigator`` <https://github.com/QubesOS/openqa-tests-qubesos/blob/master/utils/openqa_investigator.py>`__
+In order to better visualize patterns in tests the `openqa_investigator <https://github.com/QubesOS/openqa-tests-qubesos/blob/master/utils/openqa_investigator.py>`__
 script can be used. It feeds off of the openQA test data to make graph
 plots. Here is an example:
 

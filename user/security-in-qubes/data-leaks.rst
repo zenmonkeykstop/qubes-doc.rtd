@@ -4,8 +4,7 @@ Data leaks
 
 The Role of the Firewall
 ========================
-
-`Firewalling in Qubes </doc/firewall/>`__\ **is not intended to be a
+ :doc:`Firewalling in Qubes </user/security-in-qubes/firewall>`\ **is not intended to be a
 leak-prevention mechanism.**
 
 There are several reasons for this, which will be explained below.
@@ -39,9 +38,7 @@ Note that physically air-gapped machines are not necessarily immune to
 this problem. Covert channels can potentially take many forms (e.g.,
 sneakernet thumb drive, bluetooth, or even microphone and speakers).
 
-For a further discussion of covert channels, see `this
-thread <https://groups.google.com/d/topic/qubes-users/AqZV65yZLuU/discussion>`__
-and `#817 <https://github.com/QubesOS/qubes-issues/issues/817>`__.
+For a further discussion of covert channels, see `this thread <https://groups.google.com/d/topic/qubes-users/AqZV65yZLuU/discussion>`__ and `#817 <https://github.com/QubesOS/qubes-issues/issues/817>`__.
 
 Types of Data Leaks
 ===================
@@ -82,5 +79,4 @@ must distinguish among three different types of relevant data leaks:
    while performing sensitive operations in the target VM(s) (such as
    key generation).
 
-For further discussion, see `this
-thread <https://groups.google.com/d/topic/qubes-users/t0cmNfuVduw/discussion>`__.
+For further discussion, see `this thread <https://groups.google.com/d/topic/qubes-users/t0cmNfuVduw/discussion>`__.

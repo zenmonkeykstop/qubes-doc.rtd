@@ -11,8 +11,7 @@ machine. Just duplicate your normal debugging environment in the VM.
 Things get complicated if you need to perform kernel debugging or
 troubleshoot problems that only manifest on system boot, user logoff or
 similar. For that you need two Windows VMs: the *host* and the *target*.
-The *host* will contain
-`WinDbg <https://msdn.microsoft.com/en-us/library/windows/hardware/ff551063(v=vs.85).aspx>`__
+The *host* will contain `WinDbg <https://msdn.microsoft.com/en-us/library/windows/hardware/ff551063(v=vs.85).aspx>`__
 installation, your source code and private symbols. The *target* will
 run the code being debugged. Both will be linked by virtual serial
 ports.
@@ -25,9 +24,7 @@ ports.
    ``serial = 'pty'``. This will make Xen connect VM’s serial ports to
    dom0’s ptys.
 -  From now on you need to start both VMs like this:
-   ``qvm-start --custom-config=/your/edited/host.conf host``
--  To connect both VM serial ports together you will either need
-   `socat <http://www.dest-unreach.org/socat/>`__ or a custom utility
+   ``qvm-start --custom-config=/your/edited/host.conf host -  To connect both VM serial ports together you will either need    `socat <http://www.dest-unreach.org/socat/>`__ or a custom utility
    described later.
 -  To determine which dom0 pty corresponds to VM’s serial port you need
    to read xenstore, example script below:

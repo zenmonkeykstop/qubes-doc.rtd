@@ -2,8 +2,7 @@
 Qubes R4.0 release schedule
 ===========================
 
-This schedule is based on `Version
-Scheme </doc/version-scheme/#release-schedule>`__.
+This schedule is based on :ref:`Version Scheme <developer/releases/version-scheme:release schedule>`.
 
 +---------------+------------------------------------------------------+
 | Date          | Stage                                                |

@@ -11,9 +11,7 @@ integrity of the rest of the system.
 
 |qubes-schema-v2.png|
 
-Qubes lets the user define many secure compartments known as
-`qubes </doc/glossary/#qube>`__, which are implemented as lightweight
-`virtual machines (VMs) </doc/glossary/#vm>`__. For example, the user
+Qubes lets the user define many secure compartments known as :ref:`qubes <user/reference/glossary:qube>`, which are implemented as lightweight :ref:`virtual machines (VMs) <user/reference/glossary:vm>`. For example, the user
 can have “personal,” “work,” “shopping,” “bank,” and “random” app qubes
 and can use the applications within those qubes just as if they were
 executing on the local machine. At the same time, however, these
@@ -37,10 +35,10 @@ Key architecture features
 -  Secure system boot based (optional)
 
 (For those interested in the history of the project, `Architecture Spec
-v0.3 [PDF] </attachment/doc/arch-spec-0.3.pdf>`__ is the original 2009
+v0.3 [PDF] </_static/arch-spec-0.3.pdf>`__ is the original 2009
 document that started this all. Please note that this document is for
 historical interest only. For the latest information, please see the
-rest of the `System Documentation </doc/#system>`__.)
+rest of the :ref:`System Documentation <developer/system/architecture:system>`.)
 
 Qubes Core Stack
 ================

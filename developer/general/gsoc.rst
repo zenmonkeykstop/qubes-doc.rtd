@@ -5,12 +5,7 @@ Google Summer of Code (GSoC)
 Information for Students
 ========================
 
-Thank you for your interest in participating in the `Google Summer of
-Code program <https://summerofcode.withgoogle.com/>`__ with the `Qubes
-OS team </team/>`__. You can read more about the Google Summer of Code
-program at the `official
-website <https://summerofcode.withgoogle.com/>`__ and the `official
-FAQ <https://developers.google.com/open-source/gsoc/faq>`__.
+Thank you for your interest in participating in the `Google Summer of Code program <https://summerofcode.withgoogle.com/>`__ with the `Qubes OS team <https://www.qubes-os.org/team/>`__. You can read more about the Google Summer of Code program at the `official website <https://summerofcode.withgoogle.com/>`__ and the `official FAQ <https://developers.google.com/open-source/gsoc/faq>`__.
 
 Being accepted as a Google Summer of Code contributor is quite
 competitive. If you are interested in participating in the Summer of
@@ -22,16 +17,11 @@ work and be proactive in communicating with your mentor.
 
 You don’t have to be a proven developer – in fact, this whole program is
 meant to facilitate joining Qubes and other free and open source
-communities. The Qubes community maintains information about
-`contributing to Qubes
-development </doc/contributing/#contributing-code>`__ and `how to send
-patches </doc/source-code/#how-to-send-patches>`__. In order to
-contribute code to the Qubes project, you must be able to `sign your
-code </doc/code-signing/>`__.
+communities. The Qubes community maintains information about :ref:`contributing to Qubes development <introduction/contributing:contributing code>` and :ref:`how to send patches <developer/code/source-code:how to send patches>`. In order to
+contribute code to the Qubes project, you must be able to :doc:`sign your code </developer/code/code-signing>`.
 
 You should start learning the components that you plan on working on
-before the start date. Qubes developers are available on the `mailing
-lists </support/#qubes-devel>`__ for help. The GSoC timeline reserves a
+before the start date. Qubes developers are available on the :ref:`mailing lists <introduction/support:qubes devel>` for help. The GSoC timeline reserves a
 lot of time for bonding with the project – use that time wisely. Good
 communication is key, you should plan to communicate with your team
 daily and formally report progress and plans weekly. Students who
@@ -40,20 +30,16 @@ neglect active communication will be failed.
 Overview of Steps
 -----------------
 
--  Join the `qubes-devel list </support/#qubes-devel>`__ and introduce
+-  Join the :ref:`qubes-devel list <introduction/support:qubes devel>` and introduce
    yourself, and meet your fellow developers
--  Read `Google’s instructions for
-   participating <https://developers.google.com/open-source/gsoc/>`__
-   and the `GSoC Student
-   Manual <https://google.github.io/gsocguides/student/>`__
+-  Read `Google’s instructions for    participating <https://developers.google.com/open-source/gsoc/>`__    and the `GSoC Student    Manual <https://google.github.io/gsocguides/student/>`__
 -  Take a look at the list of ideas below
 -  Come up with a project that you are interested in (and feel free to
    propose your own! Don’t feel limited by the list below.)
 -  Read the Contributor Proposal guidelines below
 -  Write a first draft proposal and send it to the qubes-devel mailing
    list for review
--  Submit proposal using `Google’s web
-   interface <https://summerofcode.withgoogle.com/>`__ ahead of the
+-  Submit proposal using `Google’s web    interface <https://summerofcode.withgoogle.com/>`__ ahead of the
    deadline (this requires a Google Account!)
 -  Submit proof of enrollment well ahead of the deadline
 
@@ -70,14 +56,11 @@ Qubes as your primary OS as soon as possible! Also, it is encouraged
 that you become familiar and comfortable with the Qubes development
 workflow sooner than later. A good way to do this (and also a great way
 to stand out as an awesome applicant and make us want to accept you!)
-might be to pick up some issues from
-`qubes-issues <https://github.com/QubesOS/qubes-issues/issues>`__ (our
+might be to pick up some issues from `qubes-issues <https://github.com/QubesOS/qubes-issues/issues>`__ (our
 issue-tracking repo) and submit some patches addressing them. Some
-suitable issues might be those with tags `“help wanted” and “P:
-minor” <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22P%3A%20minor%22%20label%3A%22help%20wanted%22>`__
+suitable issues might be those with tags `“help wanted” and “P: minor” <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22P%3A%20minor%22%20label%3A%22help%20wanted%22>`__
 (although more significant things are also welcome, of course). Doing
-this will get you some practice with
-`qubes-builder </doc/qubes-builder/>`__, our code-signing policies, and
+this will get you some practice with :doc:`qubes-builder </developer/building/qubes-builder>`, our code-signing policies, and
 some familiarity with our code base in general so you are ready to hit
 the ground running come summer.
 
@@ -129,8 +112,7 @@ Project Ideas
 
 These project ideas were contributed by our developers and may be
 incomplete. If you are interested in submitting a proposal based on
-these ideas, you should contact the `qubes-devel mailing
-list </support/#qubes-devel>`__ and associated GitHub issue to learn
+these ideas, you should contact the :ref:`qubes-devel mailing list <introduction/support:qubes devel>` and associated GitHub issue to learn
 more about the idea.
 
 ::
@@ -162,16 +144,13 @@ an image that uses Docker as isolation provider and running Docker in a
 qube, or downloading the Vagrantfile and manually setting up a qube
 according to the Vagrantfile. This project aims at simplifying this
 workflow. Since introduction of Admin API, it’s possible for a qube to
-provision another qube - which is exactly what is needed for Vagrant.
-`Related
-discussion <https://groups.google.com/d/msgid/qubes-devel/535299ca-d16a-4a70-8223-a4ac6be4be41%40googlegroups.com>`__
+provision another qube - which is exactly what is needed for Vagrant. `Related discussion <https://groups.google.com/d/msgid/qubes-devel/535299ca-d16a-4a70-8223-a4ac6be4be41%40googlegroups.com>`__
 
 **Expected results**:
 
 -  Design how Vagrant Qubes provider should look like, including:
 
-   -  `box
-      format <https://www.vagrantup.com/docs/plugins/providers.html#box-format>`__
+   -  `box       format <https://www.vagrantup.com/docs/plugins/providers.html#box-format>`__
    -  method for running commands inside (ssh vs qvm-run)
 
 -  Write a Vagrant provider able to create/start/stop/etc a VM
@@ -188,8 +167,7 @@ discussion <https://groups.google.com/d/msgid/qubes-devel/535299ca-d16a-4a70-822
 
 **Size of the project**: 350 hours
 
-**Mentor**: `Wojtek Porczyk </team/>`__, `Marek
-Marczykowski-Górecki </team/>`__
+**Mentor**: `Wojtek Porczyk <https://www.qubes-os.org/team/>`__, `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 System health monitor
 ---------------------
@@ -198,9 +176,7 @@ System health monitor
 
 **Brief explanation**: A tool that informs the user about common system
 and configuration issues. Some of this is already available, but
-scattered across different places. See related issues:
-`6663 <https://github.com/QubesOS/qubes-issues/issues/6663>`__,
-`2134 <https://github.com/QubesOS/qubes-issues/issues/2134>`__
+scattered across different places. See related issues: `6663 <https://github.com/QubesOS/qubes-issues/issues/6663>`__, `2134 <https://github.com/QubesOS/qubes-issues/issues/2134>`__
 
 **Expected results**:
 
@@ -226,7 +202,7 @@ scattered across different places. See related issues:
 
 **Size of the project**: 350 hours
 
-**Mentor**: `Marta Marczykowska-Górecka </team/>`__
+**Mentor**: `Marta Marczykowska-Górecka <https://www.qubes-os.org/team/>`__
 
 Mechanism for maintaining in-VM configuration
 ---------------------------------------------
@@ -257,7 +233,7 @@ configuration in user home directory, which is not synchronized.
 
 **Size of the project**: 175 hours
 
-**Mentor**: `Frédéric Pierret </team/>`__
+**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
 
 .. raw:: html
 
@@ -313,9 +289,7 @@ multiple VMs, so a lot more data to save) and few more. Additionally in
 Qubes 3.2 we have so many default VMs that default installation does not
 fit in 16GB image (default value) - some subset of those VMs should be
 chosen. Ideally we’d like to have just one image being both live system
-and installation image. More details:
-`#1552 <https://github.com/QubesOS/qubes-issues/issues/1552>`__,
-`#1965 <https://github.com/QubesOS/qubes-issues/issues/1965>`__.
+and installation image. More details: `#1552 <https://github.com/QubesOS/qubes-issues/issues/1552>`__, `#1965 <https://github.com/QubesOS/qubes-issues/issues/1965>`__.
 
 **Expected results**:
 
@@ -342,7 +316,7 @@ and installation image. More details:
 
 **Size of the project**: 350 hours
 
-**Mentor**: `Frédéric Pierret </team/>`__
+**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
 
 .. raw:: html
 
@@ -374,8 +348,7 @@ LogVM(s)
 **Brief explanation**: Qubes AppVMs do not have persistent /var (on
 purpose). It would be useful to send logs generated by various VMs to a
 dedicated log-collecting VM. This way logs will not only survive VM
-shutdown, but also be immune to altering past entries. See
-`#830 <https://github.com/QubesOS/qubes-issues/issues/830>`__ for
+shutdown, but also be immune to altering past entries. See `#830 <https://github.com/QubesOS/qubes-issues/issues/830>`__ for
 details.
 
 **Expected results**:
@@ -401,7 +374,7 @@ details.
 
 **Size of the project**: 175 hours
 
-**Mentor**: `Frédéric Pierret </team/>`__
+**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
 
 Whonix IPv6 and nftables support
 --------------------------------
@@ -417,11 +390,7 @@ Whonix IPv6 and nftables support
    page was the origin of Whonix. Update that page for nftables / IPv6
    support without mentioning Whonix. Then discuss that on the tor-talk
    mailing list for wider input.
-   `here <https://trac.torproject.org/projects/tor/ticket/21397>`__
--  implement corridor feature request add IPv6 support / port to
-   nftables -
-   `issue <https://github.com/rustybird/corridor/issues/39>`__
--  port `whonix-firewall <https://github.com/Whonix/whonix-firewall>`__
+   `here <https://trac.torproject.org/projects/tor/ticket/21397>`__ -  implement corridor feature request add IPv6 support / port to    nftables -    `issue <https://github.com/rustybird/corridor/issues/39>`__ -  port `whonix-firewall <https://github.com/Whonix/whonix-firewall>`__
    to nftables
 -  make connections to IPv6 Tor relays work
 -  make connections to IPv6 destinations work
@@ -436,7 +405,7 @@ Whonix IPv6 and nftables support
 
 **Size of the project**: 175 hours
 
-**Mentor**: `Patrick Schleizer </team/>`__
+**Mentor**: `Patrick Schleizer <https://www.qubes-os.org/team/>`__
 
 GUI agent for Windows 8/10
 --------------------------
@@ -453,8 +422,7 @@ has been made to create a full WDDM driver that *doesn’t* require a GPU
 device, but the driver isn’t working correctly yet. Alternatively, WDDM
 model supports display-only drivers which are much simpler but don’t
 have access to system video memory and rendering surfaces (a key feature
-that would simplify seamless GUI mode).
-`#1861 <https://github.com/QubesOS/qubes-issues/issues/1861>`__
+that would simplify seamless GUI mode). `#1861 <https://github.com/QubesOS/qubes-issues/issues/1861>`__
 
 **Expected results**: Working display-only WDDM video driver or
 significant progress towards making the full WDDM driver work correctly.
@@ -467,7 +435,7 @@ familiarity with the WDDM display driver model.
 
 **Size of the project**: 175 hours
 
-**Mentor**: `Rafał Wojdyła </team/>`__
+**Mentor**: `Rafał Wojdyła <https://www.qubes-os.org/team/>`__
 
 GNOME support in dom0 / GUI VM
 ------------------------------
@@ -512,8 +480,7 @@ GNOME support in dom0 / GUI VM
 
 **Size of the project**: 175 hours
 
-**Mentor**: `Frédéric Pierret </team/>`__, `Marek
-Marczykowski-Górecki </team/>`__
+**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__, `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Generalize the Qubes PDF Converter to other types of files
 ----------------------------------------------------------
@@ -523,9 +490,7 @@ Generalize the Qubes PDF Converter to other types of files
 **Brief explanation**: One of the pioneering ideas of Qubes is to use
 disposable virtual machines to convert untrustworthy files (such as
 documents given to journalists by unknown and potentially malicious
-whistleblowers) into trustworthy files. See `Joanna’s blog on the Qubes
-PDF
-Convert <https://theinvisiblethings.blogspot.co.uk/2013/02/converting-untrusted-pdfs-into-trusted.html>`__
+whistleblowers) into trustworthy files. See `Joanna’s blog on the Qubes PDF Convert <https://theinvisiblethings.blogspot.co.uk/2013/02/converting-untrusted-pdfs-into-trusted.html>`__
 for details of the idea. Joanna has implemented a prototype for PDF
 documents. The goal of this project would be to generalize beyond the
 simple prototype to accommodate a wide variety of file formats,
@@ -562,11 +527,7 @@ Progress towards reproducible builds
 entire OS and installation media in a completely bit-wise deterministic
 manner, but there are many baby steps to be taken along that path. See:
 
--  “`Security challenges for the Qubes build
-   process </news/2016/05/30/build-security/>`__”
--  `This mailing list
-   post <https://groups.google.com/d/msg/qubes-devel/gq-wb9wTQV8/mdliS4P2BQAJ>`__
--  and `reproducible-builds.org <https://reproducible-builds.org/>`__
+-  “`Security challenges for the Qubes build    process <https://www.qubes-os.org/news/2016/05/30/build-security/>`__” -  `This mailing list    post <https://groups.google.com/d/msg/qubes-devel/gq-wb9wTQV8/mdliS4P2BQAJ>`__ -  and `reproducible-builds.org <https://reproducible-builds.org/>`__
 
 for more information and qubes-specific background.
 
@@ -577,16 +538,14 @@ variability.
 
 **Difficulty**: medium
 
-**Knowledge prerequisite**: qubes-builder `[1] </doc/qubes-builder/>`__
-`[2] </doc/qubes-builder-details/>`__
-`[3] <https://github.com/QubesOS/qubes-builder/tree/master/doc>`__, and
+**Knowledge prerequisite**: qubes-builder :doc:`[1] </developer/building/qubes-builder>` :doc:`[2] </developer/building/qubes-builder-details>` `[3] <https://github.com/QubesOS/qubes-builder/tree/master/doc>`__, and
 efficient at introspecting complex systems: comfortable with tracing and
 debugging tools, ability to quickly identify and locate issues within a
 large codebase (upstream build tools), etc.
 
 **Size of the project**: 350 hours
 
-**Mentor**: `Marek Marczykowski-Górecki </team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Porting Qubes to ARM/aarch64
 ----------------------------
@@ -604,9 +563,7 @@ architectures.
 
 Some related discussion:
 
--  `#4318 <https://github.com/QubesOS/qubes-issues/issues/4318>`__ on
-   porting to ppc64.
--  `#3894 <https://github.com/QubesOS/qubes-issues/issues/3894>`__ on
+-  `#4318 <https://github.com/QubesOS/qubes-issues/issues/4318>`__ on    porting to ppc64. -  `#3894 <https://github.com/QubesOS/qubes-issues/issues/3894>`__ on
    porting to L4 microkernel.
 
 **Expected results**:
@@ -629,7 +586,7 @@ Some related discussion:
 
 **Size of the project**: 350 hours
 
-**Mentor**: `Marek Marczykowski-Górecki </team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 .. raw:: html
 
@@ -680,8 +637,7 @@ connecting it to Android Studio
 **Brief explanation**: The goal is to enable Android development (and
 testing!) on Qubes OS. Currently it’s only possible using qemu-emulated
 Android for ARM. Since it’s software emulation it’s rather slow.
-Details, reference:
-`#2233 <https://github.com/QubesOS/qubes-issues/issues/2233>`__
+Details, reference: `#2233 <https://github.com/QubesOS/qubes-issues/issues/2233>`__
 
 **Expected results**:
 
@@ -698,24 +654,21 @@ Details, reference:
 
 **Size of the project**: 350 hours
 
-**Mentor**: Inquire on `qubes-devel </support/#qubes-devel>`__.
+**Mentor**: Inquire on :ref:`qubes-devel <introduction/support:qubes devel>`.
 
 Admin API Fuzzer
 ----------------
 
-**Project**: Develop a
-`Fuzzer <https://en.wikipedia.org/wiki/Fuzzing>`__ for the `Qubes OS
-Admin API </doc/admin-api/>`__.
+**Project**: Develop a `Fuzzer <https://en.wikipedia.org/wiki/Fuzzing>`__ for the :doc:`Qubes OS Admin API </developer/services/admin-api>`.
 
-**Brief explanation**: The `Qubes OS Admin API </doc/admin-api/>`__
+**Brief explanation**: The :doc:`Qubes OS Admin API </developer/services/admin-api>`
 enables VMs to execute privileged actions on other VMs or dom0 - if
 allowed by the Qubes OS RPC policy. Programming errors in the Admin API
 however may cause these access rights to be more permissive than
 anticipated by the programmer.
 
 Since the Admin API is continuously growing and changing, continuous
-security assessments are required. A
-`Fuzzer <https://en.wikipedia.org/wiki/Fuzzing>`__ would help to
+security assessments are required. A `Fuzzer <https://en.wikipedia.org/wiki/Fuzzing>`__ would help to
 automate part of these assessments.
 
 **Expected results**: - fully automated & extensible Fuzzer for parts of
@@ -730,7 +683,7 @@ fuzzing & existing fuzzing frameworks
 
 **Size of the project**: 175 hours
 
-**Mentor**: Inquire on `qubes-devel </support/#qubes-devel>`__.
+**Mentor**: Inquire on :ref:`qubes-devel <introduction/support:qubes devel>`.
 
 Secure Boot support
 -------------------
@@ -743,8 +696,7 @@ which allows to sign not only Xen binary itself, but also dom0 kernel
 and their parameters. While the base technology is there, enabling it is
 a painful and complex process. The goal of this project is to integrate
 configuration of this feature into Qubes, automating as much as
-possible. See discussion in `issue
-#4371 <https://github.com/QubesOS/qubes-issues/issues/4371>`__
+possible. See discussion in `issue #4371 <https://github.com/QubesOS/qubes-issues/issues/4371>`__
 
 **Expected results**: - a tool to prepare relevant boot files for
 unified Xen EFI boot - this includes collecting Xen, dom0 kernel,
@@ -762,7 +714,7 @@ and Python scripting
 
 **Size of the project**: 175 hours
 
-**Mentor**: `Marek Marczykowski-Górecki </team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Reduce logging of Disposable VMs
 --------------------------------
@@ -774,8 +726,7 @@ the dom0 filesystem. This applies to various logs, GUI status files etc.
 There should be an option to hide as much of that as possible -
 including bypassing some logging, and removing various state files, or
 at the very least obfuscating any hints what is running inside
-DisposableVM. More details at `issue
-#4972 <https://github.com/QubesOS/qubes-issues/issues/4972>`__
+DisposableVM. More details at `issue #4972 <https://github.com/QubesOS/qubes-issues/issues/4972>`__
 
 **Expected results**: A DisposableVM should not leave logs hinting what
 was running inside.
@@ -787,18 +738,14 @@ Linux system services management (systemd, syslog etc)
 
 **Size of the project**: 350 hours
 
-**Mentor**: `Marek Marczykowski-Górecki </team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Past Projects
 =============
 
-You can view the projects we had in 2017 in the `GSoC 2017
-archive <https://summerofcode.withgoogle.com/archive/2017/organizations/5074771758809088/>`__.
+You can view the projects we had in 2017 in the `GSoC 2017 archive <https://summerofcode.withgoogle.com/archive/2017/organizations/5074771758809088/>`__.
 We also participated in GSoC 2020 and GSoC 2021, and you can see the
-project in the `GSoC 2020
-archive <https://summerofcode.withgoogle.com/archive/2020/organizations/4924517870206976/>`__
-and `GSoC 2021
-archive <https://summerofcode.withgoogle.com/archive/2021/organizations/5682513023860736>`__.
+project in the `GSoC 2020 archive <https://summerofcode.withgoogle.com/archive/2020/organizations/4924517870206976/>`__ and `GSoC 2021 archive <https://summerofcode.withgoogle.com/archive/2021/organizations/5682513023860736>`__.
 
 Here are some successful projects which have been implemented in the
 past by Google Summer of Code participants.
@@ -814,10 +761,7 @@ static nature of RPM package (what files belong to the package). This
 means such Template VM cannot be renamed, migrated to another storage
 (like LVM), etc. Also we don’t want RPM to automatically update template
 package itself (which would override all the user changes there). More
-details:
-`#2064 <https://github.com/QubesOS/qubes-issues/issues/2064>`__,
-`#2534 <https://github.com/QubesOS/qubes-issues/issues/2534>`__,
-`#3573 <https://github.com/QubesOS/qubes-issues/issues/3573>`__.
+details: `#2064 <https://github.com/QubesOS/qubes-issues/issues/2064>`__, `#2534 <https://github.com/QubesOS/qubes-issues/issues/2534>`__, `#3573 <https://github.com/QubesOS/qubes-issues/issues/3573>`__.
 
 **Expected results**:
 
@@ -864,9 +808,4 @@ details:
 -  PyGTK
 -  RPM package format, (yum) repository basics
 
-**Mentor**: `Marek Marczykowski-Górecki </team/>`__
-
---------------
-
-We adapted some of the language here about GSoC from the `KDE GSoC
-page <https://community.kde.org/GSoC>`__.
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__  --------------  We adapted some of the language here about GSoC from the `KDE GSoC page <https://community.kde.org/GSoC>`__.

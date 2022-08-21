@@ -2,8 +2,8 @@
 Standalones and HVMs
 ====================
 
-A `standalone </doc/glossary/#standalone>`__ is a type of qube that is
-created by cloning a `template </doc/glossary/#template>`__. Unlike
+A :ref:`standalone <user/reference/glossary:standalone>` is a type of qube that is
+created by cloning a :ref:`template <user/reference/glossary:template>`. Unlike
 templates, however, standalones do not supply their root filesystems to
 other qubes. Examples of situations in which standalones can be useful
 include:
@@ -17,8 +17,7 @@ include:
    install some packages from less trusted sources, or unsigned, then
    using a dedicated (untrusted) standalone might be a better way.
 
-Meanwhile, a `Hardware-assisted Virtual Machine
-(HVM) </doc/glossary/#hvm>`__, also known as a “Fully-Virtualized
+Meanwhile, a :ref:`Hardware-assisted Virtual Machine (HVM) <user/reference/glossary:hvm>`, also known as a “Fully-Virtualized
 Virtual Machine,” utilizes the virtualization extensions of the host
 CPU. These are typically contrasted with Paravirtualized (PV) VMs.
 
@@ -28,10 +27,7 @@ or any Linux distribution. You can also use HVMs to run “live” distros.
 
 By default, every qube runs in PVH mode (which has security advantages
 over both PV and HVM), except for those with attached PCI devices, which
-run in HVM mode. See
-`here <https://blog.invisiblethings.org/2017/07/31/qubes-40-rc1.html>`__
-for a discussion of the switch from PV to HVM and
-`here </news/2018/01/11/qsb-37/>`__ for the announcement about the
+run in HVM mode. See `here <https://blog.invisiblethings.org/2017/07/31/qubes-40-rc1.html>`__ for a discussion of the switch from PV to HVM and `here <https://www.qubes-os.org/news/2018/01/11/qsb-37/>`__ for the announcement about the
 change to using PVH as default.
 
 The standalone/template distinction and the HVM/PV/PVH distinctions are
@@ -65,8 +61,7 @@ complete clone of the template, including the entire filesystem. After
 the moment of creation, the standalone becomes completely independent
 from the template. Therefore, the standalone will not be updated merely
 by updating the template from which it was originally cloned. Rather, it
-must be updated as an independent qube. See `How to
-Update </doc/how-to-update/>`__.
+must be updated as an independent qube. See :doc:`How to Update </user/how-to-guides/how-to-update>`.
 
 Creating an HVM
 ===============
@@ -86,7 +81,7 @@ newly-created qube’s Settings GUI and, in the “Advanced” tab, select
 Command line
 ------------
 
-Qubes are template-based (i.e., `app qubes </doc/glossary/#app-qube>`__
+Qubes are template-based (i.e., :ref:`app qubes <user/reference/glossary:app qube>`
 by default, so you must set the ``--class StandaloneVM`` option to
 create a standalone. The name and label color used below are for
 illustration purposes.
@@ -147,10 +142,8 @@ Just like standard app qubes, an HVM gets a fixed IP addresses centrally
 assigned by Qubes. Normally, Qubes agent scripts (or services on
 Windows) running within each app qube are responsible for setting up
 networking within the qube according to the configuration created by
-Qubes (through `keys </doc/vm-interface/#qubesdb>`__ exposed by dom0 to
-the qube). Such centrally-managed networking infrastructure allows for
-`advanced networking
-configurations <https://blog.invisiblethings.org/2011/09/28/playing-with-qubes-networking-for-fun.html>`__.
+Qubes (through :ref:`keys <developer/debugging/vm-interface:qubesdb>` exposed by dom0 to
+the qube). Such centrally-managed networking infrastructure allows for `advanced networking configurations <https://blog.invisiblethings.org/2011/09/28/playing-with-qubes-networking-for-fun.html>`__.
 
 A generic HVM such as a standard Windows or Ubuntu installation,
 however, has no Qubes agent scripts running inside it initially and thus
@@ -162,8 +155,7 @@ untrusted stub domain to make the manual network configuration
 unnecessary for many qubes, this won’t work for most modern Linux
 distributions, which contain Xen networking PV drivers (but not Qubes
 tools), which bypass the stub-domain networking. (Their net frontends
-connect directly to the net backend in the `net
-qube </doc/glossary/#net-qube>`__.) In this instance, our DHCP server is
+connect directly to the net backend in the :ref:`net qube <user/reference/glossary:net qube>`.) In this instance, our DHCP server is
 not useful.
 
 In order to manually configure networking in a qube, one should first
@@ -179,8 +171,7 @@ properties:
 Alternatively, one can use the ``qvm-ls -n`` command to obtain the same
 information (IP/netmask/gateway).
 
-The DNS IP addresses are ``10.139.1.1`` and ``10.139.1.2``. There is
-`opt-in support </doc/networking/#ipv6>`__ for IPv6 forwarding.
+The DNS IP addresses are ``10.139.1.1`` and ``10.139.1.2``. There is :ref:`opt-in support <developer/system/networking:ipv6>` for IPv6 forwarding.
 
 Using template-based HVMs
 =========================
@@ -206,8 +197,7 @@ Template as is, then any HVMs based on it it will effectively be
 disposables. All file system changes will be wiped when the HVM is shut
 down.
 
-Please see `this
-page <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-tools.md>`__
+Please see `this page <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-tools.md>`__
 for specific advice on installing and using Windows-based templates.
 
 Cloning HVMs
@@ -353,8 +343,7 @@ address:
 Assigning PCI devices to HVMs
 =============================
 
-HVMs (including Windows qubes) can be `assigned PCI
-devices </doc/how-to-use-pci-devices/>`__ just like normal app qubes.
+HVMs (including Windows qubes) can be :doc:`assigned PCI devices </user/how-to-guides/how-to-use-pci-devices>` just like normal app qubes.
 For example, you can assign a USB controller to a Windows qube, and you
 should be able to use various devices that require Windows software,
 such as phones, electronic devices that are configured via FTDI, etc.
@@ -377,9 +366,7 @@ Converting VirtualBox VMs to Qubes HVMs
 
 You can convert any VirtualBox VM to a Qubes HVM using this method.
 
-For example, Microsoft provides `free 90-day evaluation VirtualBox VMs
-for browser
-testing <https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/>`__.
+For example, Microsoft provides `free 90-day evaluation VirtualBox VMs for browser testing <https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/>`__.
 
 About 60 GB of disk space is required for conversion. Use an external
 hard drive if needed. The final ``root.img`` size is 40 GB.
@@ -462,7 +449,4 @@ Further reading
 
 Other documents related to HVMs:
 
--  `Windows
-   VMs <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-vm.md>`__
--  `Linux HVM
-   Tips <https://github.com/Qubes-Community/Contents/blob/master/docs/os/linux-hvm-tips.md>`__
+-  `Windows    VMs <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-vm.md>`__ -  `Linux HVM    Tips <https://github.com/Qubes-Community/Contents/blob/master/docs/os/linux-hvm-tips.md>`__

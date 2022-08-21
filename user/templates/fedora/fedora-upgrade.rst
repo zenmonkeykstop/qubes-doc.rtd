@@ -9,11 +9,9 @@ How to upgrade a Fedora template in-place
    Learn more about the two options here.
 
 This page provides instructions for performing an in-place upgrade of an
-installed `Fedora Template </doc/templates/fedora/>`__. If you wish to
+installed :doc:`Fedora Template </user/templates/fedora/fedora>`. If you wish to
 install a new, unmodified Fedora template instead of upgrading a
-template that is already installed in your system, please see the
-`Fedora Template </doc/templates/fedora/>`__ page instead. (`Learn more
-about the two options. </doc/templates/fedora/#upgrading>`__)
+template that is already installed in your system, please see the :doc:`Fedora Template </user/templates/fedora/fedora>` page instead.  :ref:`Learn more about the two options. <user/templates/fedora/fedora:upgrading>`)
 
 Summary instructions for standard Fedora templates
 ==================================================
@@ -38,8 +36,7 @@ and ``<new>`` is the Fedora version number *to* which you are upgrading.
    [user@dom0 ~]$ sudo losetup -d $dev
    [user@dom0 ~]$ rm /var/tmp/template-upgrade-cache.img
 
-**Recommended:** `Switch everything that was set to the old template to
-the new template. </doc/templates/#switching>`__
+**Recommended:** :ref:`Switch everything that was set to the old template to the new template. <user/templates/templates:switching>`
 
 Detailed instructions for standard Fedora templates
 ===================================================
@@ -119,10 +116,8 @@ and ``<new>`` is the Fedora version number *to* which you are upgrading.
 
        ``At least X MB more space needed on the / filesystem.``
 
-       In this case, one option is to `resize the template’s disk
-       image </doc/resize-disk-image/>`__ before reattempting the
-       upgrade process. (See `Additional
-       Information <#additional-information>`__ below for other
+       In this case, one option is to :doc:`resize the template’s disk        image </user/advanced-topics/resize-disk-image>` before reattempting the
+       upgrade process. (See :ref:`Additional        Information <user/templates/fedora/fedora-upgrade:additional information>` below for other
        options.)
 
 4.  Check that you are on the correct (new) Fedora release. Do this
@@ -135,10 +130,7 @@ and ``<new>`` is the Fedora version number *to* which you are upgrading.
 
        [user@fedora-<new> ~]$ cat /etc/fedora-release
 
-5.  (Optional) Trim the new template. (This should `no longer be
-    necessary </doc/templates/#important-notes>`__, but it does not
-    hurt. Some users have
-    `reported <https://github.com/QubesOS/qubes-issues/issues/5055>`__
+5.  (Optional) Trim the new template. (This should :ref:`no longer be     necessary <user/templates/templates:important notes>`, but it does not     hurt. Some users have     `reported <https://github.com/QubesOS/qubes-issues/issues/5055>`__
     that it makes a difference.)
 
     ::
@@ -161,8 +153,7 @@ and ``<new>`` is the Fedora version number *to* which you are upgrading.
        [user@dom0 ~]$ sudo losetup -d $dev
        [user@dom0 ~]$ rm /var/tmp/template-upgrade-cache.img
 
-8.  (Recommended) `Switch everything that was set to the old template to
-    the new template. </doc/templates/#switching>`__
+8.  (Recommended) :ref:`Switch everything that was set to the old template to     the new template. <user/templates/templates:switching>`
 
 9.  (Optional) Make the new template the global default.
 
@@ -170,8 +161,7 @@ and ``<new>`` is the Fedora version number *to* which you are upgrading.
 
        [user@dom0 ~]$ qubes-prefs --set default_template fedora-<new>
 
-10. (Optional) `Uninstall the old
-    template. </doc/templates/#uninstalling>`__ Make sure that the
+10. (Optional) :ref:`Uninstall the old     template. <user/templates/templates:uninstalling>` Make sure that the
     template you’re uninstalling is the old one, not the new one!
 
 Summary instructions for Fedora Minimal templates
@@ -198,21 +188,19 @@ methods described for the standard template above.)
 Standalones
 ===========
 
-The procedure for upgrading a Fedora
-`standalone </doc/standalone-and-hvm/>`__ is the same as for a template.
+The procedure for upgrading a Fedora :doc:`standalone </user/advanced-topics/standalones-and-hvms>` is the same as for a template.
 
 Release-specific notes
 ======================
 
-See the `news </news/>`__ announcement for each specific template
+See the `news <https://www.qubes-os.org/news/>`__ announcement for each specific template
 release for any important notices about that particular release.
 
 End-of-life (EOL) releases
 --------------------------
 
-We strongly recommend against using any Fedora release that has reached
-`end-of-life (EOL) <https://fedoraproject.org/wiki/End_of_life>`__. Also
-see `supported releases </doc/supported-releases/>`__.
+We strongly recommend against using any Fedora release that has reached `end-of-life (EOL) <https://fedoraproject.org/wiki/End_of_life>`__. Also
+see :doc:`supported releases </user/downloading-installing-upgrading/supported-releases>`.
 
 Additional information
 ======================
@@ -225,8 +213,7 @@ As mentioned above, you may encounter the following ``dnf`` error:
 
 In this case, you have several options:
 
-1. `Increase the template’s disk image
-   size </doc/resize-disk-image/>`__. This is the solution mentioned in
+1. :doc:`Increase the template’s disk image    size </user/advanced-topics/resize-disk-image>`. This is the solution mentioned in
    the main instructions above.
 2. Delete files in order to free up space. One way to do this is by
    uninstalling packages. You may then reinstall them again after you
@@ -234,5 +221,4 @@ In this case, you have several options:
    having to increase the disk image size anyway (see previous option).
 3. Do the upgrade in parts, e.g., by using package groups. (First
    upgrade ``@core`` packages, then the rest.)
-4. Do not perform an in-place upgrade, see `Upgrading Fedora
-   templates </doc/templates/fedora/#upgrading>`__.
+4. Do not perform an in-place upgrade, see :ref:`Upgrading Fedora    templates <user/templates/fedora/fedora:upgrading>`.

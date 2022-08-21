@@ -2,8 +2,7 @@
 Qubes R2.0 release notes
 ========================
 
-Detailed release notes in `this blog
-post <https://blog.invisiblethings.org/2014/09/26/announcing-qubes-os-release-2.html>`__
+Detailed release notes in `this blog post <https://blog.invisiblethings.org/2014/09/26/announcing-qubes-os-release-2.html>`__
 
 New features since 1.0
 ======================
@@ -54,8 +53,7 @@ Known issues
 -  System shutdown sometimes is very slow (#903). To mitigate the
    problem, shutdown all the VMs first.
 
--  For other known issues take a look at `our trac
-   tickets <https://wiki.qubes-os.org/query?status=accepted&status=assigned&status=new&status=reopened&type=defect&milestone=Release+2.1+(post+R2)&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&order=priority>`__
+-  For other known issues take a look at `our trac    tickets <https://wiki.qubes-os.org/query?status=accepted&status=assigned&status=new&status=reopened&type=defect&milestone=Release+2.1+(post+R2)&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&order=priority>`__
 
 It is advised to install updates just after system installation to apply
 bug fixes for (some of) the above problems.
@@ -63,12 +61,12 @@ bug fixes for (some of) the above problems.
 Downloads
 =========
 
-See `Qubes Downloads </doc/QubesDownloads/>`__.
+See :doc:`Qubes Downloads </user/downloading-installing-upgrading/downloads>`.
 
 Installation instructions
 =========================
 
-See `Installation Guide </doc/installation-guide/>`__.
+See :doc:`Installation Guide </user/downloading-installing-upgrading/installation-guide>`.
 
 Upgrading
 =========
@@ -77,19 +75,16 @@ From Qubes R2 rc1
 -----------------
 
 Upgrading from Qubes R2 rc1 should be a simple matter of installing
-updates for `dom0 </doc/how-to-install-software-in-dom0/>`__ and
-`VMs </doc/software-update-vm/>`__.
+updates for :doc:`dom0 </user/advanced-topics/how-to-install-software-in-dom0>` and :doc:`VMs </user/how-to-guides/how-to-install-software>`.
 
 From Qubes R2 beta 3 and older
 ------------------------------
 
 The easiest and safest way to upgrade to Qubes R2 (especially from older
-releases) is to install it from scratch and use `qubes backup and
-restore tools </doc/backup-restore/>`__ for migrating of all of the user
+releases) is to install it from scratch and use :doc:`qubes backup and restore tools </user/how-to-guides/how-to-back-up-restore-and-migrate>` for migrating of all of the user
 VMs.
 
-Users of R2 beta 3 can upgrade using procedure that has been described
-`here </doc/upgrade-to-r2/>`__.
+Users of R2 beta 3 can upgrade using procedure that has been described :doc:`here </user/downloading-installing-upgrading/upgrade/2>`.
 
 Note: if the user has custom Template VMs (i.e. other than the default
 template, e.g. created from it by cloning), or Standalone VMs, then the
@@ -104,29 +99,26 @@ From Qubes R1 to R2 beta1
 
 If you’re already running Qubes Release 1, you don’t need to reinstall,
 it’s just enough to update the packages in your Dom0 and the template
-VM(s). This procedure is described `here? </doc/upgrade-to-r2/>`__.
+VM(s). This procedure is described :doc:`here? </user/downloading-installing-upgrading/upgrade/2>`.
 
 From Qubes R1 or R2 Beta 1 to R2 beta2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Because of the distribution change in R2B2 (from fc13 to fc18) it’s
-preferred that users reinstall Qubes R2B2 from scratch, and use `qubes
-backup and restore tools </doc/backup-restore/>`__ for migrating of all
+preferred that users reinstall Qubes R2B2 from scratch, and use :doc:`qubes backup and restore tools </user/how-to-guides/how-to-back-up-restore-and-migrate>` for migrating of all
 of the user VMs.
 
 Advanced users (and advanced users only) can also try a manual upgrade
-procedure that has been described `here </doc/upgrade-to-r2b2/>`__. It’s
+procedure that has been described :doc:`here </user/downloading-installing-upgrading/upgrade/2b2>`. It’s
 advisable to backup your VMs before proceeding anyway!
 
 Upgrading from Qubes R1 or R2 Beta 2 to R2 beta 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The easiest and safest way to upgrade to Qubes R2B3 is to install it
-from scratch and use `qubes backup and restore
-tools </doc/backup-restore/>`__ for migrating of all of the user VMs.
+from scratch and use :doc:`qubes backup and restore tools </user/how-to-guides/how-to-back-up-restore-and-migrate>` for migrating of all of the user VMs.
 
-Users can also try a manual upgrade procedure that has been described
-`here </doc/upgrade-to-r2b3/>`__.
+Users can also try a manual upgrade procedure that has been described :doc:`here </user/downloading-installing-upgrading/upgrade/2b3>`.
 
 Note: if the user has custom Template VMs (i.e. other than the default
 template, e.g. created from it by cloning), or Standalone VMs, then the

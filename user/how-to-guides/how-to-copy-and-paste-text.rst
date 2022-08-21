@@ -3,10 +3,8 @@ How to copy and paste text
 ==========================
 
 *This page is about copying and pasting plain text. If you wish to copy
-more complex data, such as rich text or images, see*\ `copying and
-moving files between qubes </doc/how-to-copy-and-move-files/>`__\ *. For
-dom0, see*\ `copying from (and to)
-dom0 </doc/how-to-copy-from-dom0/>`__\ *.*
+more complex data, such as rich text or images, see*\ :doc:`copying and moving files between qubes </user/how-to-guides/how-to-copy-and-move-files>`\ *. For
+dom0, see*\ :doc:`copying from (and to) dom0 </user/how-to-guides/how-to-copy-from-dom0>`\ *.*
 
 Qubes OS features a secure inter-qube clipboard that allows you to copy
 and paste text between qubes.
@@ -59,11 +57,9 @@ trusted* qubes. It even applies to copying files between physically
 separate (air-gapped) machines. Therefore, you should always copy
 clipboard data only from *more trusted* to *less trusted* qubes.
 
-See also `this
-article <https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html>`__
+See also `this article <https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html>`__
 for more information on this topic, and some ideas of how we might solve
-this problem in some future version of Qubes, as well as `this
-message <https://groups.google.com/group/qubes-devel/msg/48b4b532cee06e01>`__
+this problem in some future version of Qubes, as well as `this message <https://groups.google.com/group/qubes-devel/msg/48b4b532cee06e01>`__
 from qubes-devel.
 
 Focus stealing
@@ -88,7 +84,7 @@ cases.
 Clipboard automatic policy enforcement
 ======================================
 
-The Qubes clipboard `RPC policy </doc/rpc-policy/>`__ is configurable
+The Qubes clipboard :doc:`RPC policy </user/advanced-topics/rpc-policy>` is configurable
 in:
 
 ::

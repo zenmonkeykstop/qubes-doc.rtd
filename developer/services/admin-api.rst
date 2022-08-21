@@ -2,8 +2,7 @@
 Admin API
 =========
 
-*You may also be interested in the article*\ `Introducing the Qubes
-Admin API </news/2017/06/27/qubes-admin-api/>`__\ *.*
+*You may also be interested in the article*\ `Introducing the Qubes Admin API <https://www.qubes-os.org/news/2017/06/27/qubes-admin-api/>`__\ *.*
 
 Goals
 =====
@@ -58,8 +57,7 @@ The calls
 
 The API should be implemented as a set of qrexec calls. This is to make
 it easy to set the policy using current mechanism.
-
-`View this table on a fullscreen page. </doc/admin-api/table/>`__
+ :doc:`View this table on a fullscreen page. </developer/services/admin-api-table>`
 
 +---------------+---+---+-----------------+-------------------------+---+
 | call          | d | a | inside          | return                  | n |
@@ -3344,8 +3342,7 @@ it easy to set the policy using current mechanism.
 |               |   |   |                 |                         | t |
 |               |   |   |                 |                         | s |
 +---------------+---+---+-----------------+-------------------------+---+
-
-`View this table on a fullscreen page. </doc/admin-api/table/>`__
+ :doc:`View this table on a fullscreen page. </developer/services/admin-api-table>`
 
 Volume properties:
 
@@ -3532,8 +3529,7 @@ General notes
 Policy admin API
 ================
 
-There is also an API to view and update `Qubes RPC policy
-files </doc/qrexec>`__ in dom0. All of the following calls have dom0 as
+There is also an API to view and update :doc:`Qubes RPC policy files </developer/services/qrexec>` in dom0. All of the following calls have dom0 as
 destination:
 
 +------------------+----------+------------------+------------------+

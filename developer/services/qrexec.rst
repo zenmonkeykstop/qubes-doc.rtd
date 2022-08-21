@@ -3,7 +3,7 @@ Qrexec: secure communication across domains
 ===========================================
 
 (*This page is about qrexec v3. For qrexec v2,
-see*\ `here </doc/qrexec2/>`__\ *.*)
+see*\ :doc:`here </developer/services/qrexec2>`\ *.*)
 
 The **qrexec framework** is used by core Qubes components to implement
 communication between domains. Qubes domains are strictly isolated by
@@ -73,8 +73,7 @@ for a given domain. The limiting factor is the number of available vchan
 channels, which depends on the underlying hypervisor, as well the
 domain’s OS.
 
-For more details on the qrexec framework and protocol, see “`Qubes RPC
-internals </doc/qrexec-internals>`__.”
+For more details on the qrexec framework and protocol, see “ :doc:`Qubes RPC internals </developer/services/qrexec-internals>`.”
 
 Qubes RPC services
 ==================
@@ -280,8 +279,7 @@ Service policies with arguments
 -------------------------------
 
 Sometimes a service name alone isn’t enough to make reasonable qrexec
-policy. One example of such a situation is `qrexec-based USB
-passthrough </doc/how-to-use-usb-devices/>`__. Using just a service name
+policy. One example of such a situation is :doc:`qrexec-based USB passthrough </user/how-to-guides/how-to-use-usb-devices>`. Using just a service name
 would make it difficult to express the policy “allow access to devices X
 and Y, but deny to all others.” It isn’t feasible to create a separate
 service for every device: we would need to change the code in multiple
@@ -315,7 +313,7 @@ also become available as the ``QREXEC_SERVICE_ARGUMENT`` environment
 variable. This means it is possible to install a different script for a
 particular service argument.
 
-See `below <#rpc-service-with-argument-file-reader>`__ for an example of
+See :ref:`below <developer/services/qrexec:rpc service with argument (file reader)>` for an example of
 an RPC service using an argument.
 
 .. raw:: html
@@ -383,16 +381,13 @@ executable permissions. Finally, invoke the RPC service.
 
 We should get “3” as answer. (dom0 will ask for confirmation first.)
 
-**Note:** For a real world example of writing a qrexec service, see this
-`blog
-post <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__.
+**Note:** For a real world example of writing a qrexec service, see this `blog post <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__.
 
 RPC service with argument (file reader)
 ---------------------------------------
 
 Here we create an RPC call that reads a specific file from a predefined
-directory on the target. This example uses an
-`argument <#service-policies-with-arguments>`__ to the policy. In this
+directory on the target. This example uses an :ref:`argument <developer/services/qrexec:service policies with arguments>` to the policy. In this
 example a simplified workflow will be used. The service code is placed
 directly in the service definition file on the target VM. No separate
 client script will be needed.

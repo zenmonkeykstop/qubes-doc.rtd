@@ -112,8 +112,7 @@ Please note that previously, this parameter was set in ~/.bash_profile.
 This will no longer work. If you have the parameter set in
 ~/.bash_profile you *must* update your configuration.
 
-Please be aware of the caveat regarding passphrase-protected keys in the
-`Current limitations <#current-limitations>`__ section.
+Please be aware of the caveat regarding passphrase-protected keys in the :ref:`Current limitations <user/security-in-qubes/split-gpg:current limitations>` section.
 
 Configuring the client apps to use Split GPG backend
 ----------------------------------------------------
@@ -268,8 +267,7 @@ it by sending an email to yourself.
 |tb78-10.png|
 
 For more details about using smart cards/Split GPG with Thunderbird PGP
-feature, please see
-`Thunderbird:OpenPGP:Smartcards <https://wiki.mozilla.org/Thunderbird:OpenPGP:Smartcards>`__
+feature, please see `Thunderbird:OpenPGP:Smartcards <https://wiki.mozilla.org/Thunderbird:OpenPGP:Smartcards>`__
 from which the above documentation is inspired.
 
 Older Thunderbird versions
@@ -392,8 +390,7 @@ A safe, unspoofable user consent dialog box is displayed.
 
 |r2-split-gpg-5.png|
 
-Selecting “Yes to All” will add a line in the corresponding `RPC
-Policy </doc/rpc-policy/>`__ file.
+Selecting “Yes to All” will add a line in the corresponding :doc:`RPC Policy </user/advanced-topics/rpc-policy>` file.
 
 Advanced: Using Split GPG with Subkeys
 ======================================
@@ -487,8 +484,8 @@ PGP Key(s) VM Name
    This is a network-isolated VM. The initial master keypair and subkeys
    are generated in this VM. The master secret key *never* leaves this
    VM under *any* circumstances. No files or text is *ever*
-   `copied </doc/how-to-copy-and-move-files/#security>`__ or
-   `pasted </doc/how-to-copy-and-paste-text/#security>`__ into this VM
+   :ref:`copied <user/how-to-guides/how-to-copy-and-move-files:security>` or
+   :ref:`pasted <user/how-to-guides/how-to-copy-and-paste-text:security>` into this VM
    under *any* circumstances.
 
 -  ``work-gpg``
@@ -496,9 +493,9 @@ PGP Key(s) VM Name
    This is a network-isolated VM. This VM is used *only* as the GPG
    backend for ``work-email``. The secret subkeys (but *not* the master
    secret key) are
-   `copied </doc/how-to-copy-and-move-files/#security>`__ from the
+   :ref:`copied <user/how-to-guides/how-to-copy-and-move-files:security>` from the
    ``vault`` VM to this VM. Files from less trusted VMs are *never*
-   `copied </doc/how-to-copy-and-move-files/#security>`__ into this VM
+   :ref:`copied <user/how-to-guides/how-to-copy-and-move-files:security>` into this VM
    under *any* circumstances.
 
 -  ``work-email``
@@ -512,8 +509,7 @@ Security Benefits
 
 In the standard Split GPG setup, there are at least two ways in which
 the ``work-gpg`` VM might be compromised. First, an attacker who is
-capable of exploiting a hypothetical bug in ``work-email``\ ’s
-`MUA <https://en.wikipedia.org/wiki/Mail_user_agent>`__ could gain
+capable of exploiting a hypothetical bug in ``work-email``\ ’s `MUA <https://en.wikipedia.org/wiki/Mail_user_agent>`__ could gain
 control of the ``work-email`` VM and send a malformed request which
 exploits a hypothetical bug in the GPG backend (running in the
 ``work-gpg`` VM), giving the attacker control of the ``work-gpg`` VM.
@@ -525,8 +521,7 @@ leak both the master secret key and its passphrase (if any is used, it
 would regularly be input in the work-gpg VM and therefore easily
 obtained by an attacker who controls this VM) back to the ``work-email``
 VM or to another VM (e.g., the ``netvm``, which is always untrusted by
-default) via the Split GPG protocol or other `covert
-channels </doc/data-leaks/>`__. Once the master secret key is in the
+default) via the Split GPG protocol or other :doc:`covert channels </user/security-in-qubes/data-leaks>`. Once the master secret key is in the
 ``work-email`` VM, the attacker could simply email it to himself (or to
 the world).
 
@@ -543,9 +538,7 @@ issue new subkeys in their place. (This is significantly less
 devastating than having to create a new *master* keypair.)
 
 \*In order to gain access to the ``vault`` VM, the attacker would
-require the use of, e.g., a general Xen VM escape exploit or a `signed,
-compromised package which is already installed in the
-template </doc/templates/#trusting-your-templates>`__ upon which the
+require the use of, e.g., a general Xen VM escape exploit or a :ref:`signed, compromised package which is already installed in the template <user/templates/templates:trusting your templates>` upon which the
 ``vault`` VM is based.
 
 Subkey Tutorials and Discussions
@@ -555,14 +548,7 @@ Subkey Tutorials and Discussions
 GPG in mind, they can be adapted with a few commonsense adjustments. As
 always, exercise caution and use your good judgment.)
 
--  `“OpenPGP in Qubes OS” on the qubes-users mailing
-   list <https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion>`__
--  `“Creating the Perfect GPG Keypair” by Alex
-   Cabal <https://alexcabal.com/creating-the-perfect-gpg-keypair/>`__
--  `“GPG Offline Master Key w/ smartcard” maintained by Abel
-   Luck <https://gist.github.com/abeluck/3383449>`__
--  `“Using GnuPG with QubesOS” by
-   Alex <https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/>`__
+-  `“OpenPGP in Qubes OS” on the qubes-users mailing    list <https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion>`__ -  `“Creating the Perfect GPG Keypair” by Alex    Cabal <https://alexcabal.com/creating-the-perfect-gpg-keypair/>`__ -  `“GPG Offline Master Key w/ smartcard” maintained by Abel    Luck <https://gist.github.com/abeluck/3383449>`__ -  `“Using GnuPG with QubesOS” by    Alex <https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/>`__
 
 Current limitations
 ===================
@@ -573,8 +559,7 @@ Current limitations
    See ticket
    `#474 <https://github.com/QubesOS/qubes-issues/issues/474>`__ for
    more details and plans how to get around this problem, as well as the
-   section on `using Split GPG with
-   subkeys <#advanced-using-split-gpg-with-subkeys>`__.
+   section on :ref:`using Split GPG with    subkeys <user/security-in-qubes/split-gpg:advanced: using split gpg with subkeys>`.
 
 -  It doesn’t solve the problem of allowing the user to know what is to
    be signed before the operation gets approved. Perhaps the GPG backend
@@ -586,14 +571,12 @@ Current limitations
    ``Inappropriate ioctl for device`` error. Do not set passphrases for
    the private keys in the GPG backend domain. Doing so won’t provide
    any extra security anyway, as explained in the introduction and in
-   `using Split GPG with
-   subkeys <#advanced-using-split-gpg-with-subkeys>`__. If you are
+   :ref:`using Split GPG with    subkeys <user/security-in-qubes/split-gpg:advanced: using split gpg with subkeys>`. If you are
    generating a new key pair, or if you have a private key that already
    has a passphrase, you can use ``gpg2 --edit-key <key_id>`` then
    ``passwd`` to set an empty passphrase. Note that ``pinentry`` might
    show an error when you try to set an empty passphrase, but it will
-   still make the change. (See `this StackExchange
-   answer <https://unix.stackexchange.com/a/379373>`__ for more
+   still make the change. (See `this StackExchange    answer <https://unix.stackexchange.com/a/379373>`__ for more
    information.) Note: The error shows only if you **do not** have
    graphical pinentry installed.
 

@@ -43,8 +43,7 @@ Known issues
    the problem with your GPU support in Dom0 in the first place (by
    using a different kernel), or install Qubes OS on a different system.
 
--  For other known issues take a look at `our
-   tickets <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+3.0%22+label%3Abug>`__
+-  For other known issues take a look at `our    tickets <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+3.0%22+label%3Abug>`__
 
 It is advised to install updates just after system installation to apply
 bug fixes for (some of) the above problems.
@@ -52,12 +51,12 @@ bug fixes for (some of) the above problems.
 Downloads
 =========
 
-See `Qubes Downloads </doc/QubesDownloads/>`__.
+See :doc:`Qubes Downloads </user/downloading-installing-upgrading/downloads>`.
 
 Installation instructions
 =========================
 
-See `Installation Guide </doc/installation-guide/>`__.
+See :doc:`Installation Guide </user/downloading-installing-upgrading/installation-guide>`.
 
 Upgrading
 =========
@@ -72,8 +71,6 @@ From R2.0 or earlier
 --------------------
 
 The easiest and safest way to upgrade to Qubes R3.0 is to install it
-from scratch and use `qubes backup and restore
-tools </doc/backup-restore/>`__ for migrating of all of the user VMs.
+from scratch and use :doc:`qubes backup and restore tools </user/how-to-guides/how-to-back-up-restore-and-migrate>` for migrating of all of the user VMs.
 
-Users of Qubes R2 can upgrade using `experimental
-procedure </doc/upgrade-to-r3.0/>`__.
+Users of Qubes R2 can upgrade using :doc:`experimental procedure </user/downloading-installing-upgrading/upgrade/3_0>`.

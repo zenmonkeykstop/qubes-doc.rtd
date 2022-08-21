@@ -43,9 +43,7 @@ of shortcuts for all app qubes based on a template. To do this:
 
 2. Create a custom ``.desktop`` file in ``/usr/share/applications`` (you
    may need to first create the subdirectory). Look in
-   ``/usr/share/applications`` for existing examples, or see the full
-   `file
-   specification <https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html>`__.
+   ``/usr/share/applications for existing examples, or see the full    `file    specification <https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html>`__.
    It will be something like:
 
    ::
@@ -72,12 +70,8 @@ create a custom menu entry instead:
 
 1. Open a terminal window to Dom0.
 
-2. Create a custom ``.desktop`` file in ``~/.local/share/applications``.
-   Look in the same directory for existing examples, or see the full
-   `file
-   specification <https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html>`__.
-   You may use ``qvm-run`` inside the ``.desktop`` file; see `Behind the
-   scenes </doc/app-menu-shortcut-troubleshooting/#behind-the-scenes>`__
+2. Create a custom ``.desktop`` file in ``~/.local/share/applications``.    Look in the same directory for existing examples, or see the full    `file    specification <https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html>`__.
+   You may use ``qvm-run`` inside the ``.desktop`` file; see :ref:`Behind the    scenes <user/troubleshooting/app-menu-shortcut-troubleshooting:behind the scenes>`
    for more details.
 
 3. Edit the ``~/.config/menus/applications-merged/<vmname>-vm.menu``
@@ -97,8 +91,7 @@ create a custom menu entry instead:
 
 What about applications in DispVMs?
 ===================================
-
-`See here </doc/disposable-customization/>`__.
+ :doc:`See here </user/advanced-topics/disposable-customization>`.
 
 Fixing shortcuts
 ================
@@ -123,8 +116,7 @@ leftover Application Menu shortcut, and you find a related file in
 Behind the scenes
 =================
 
-``qvm-sync-appmenus`` works by invoking *GetAppMenus* `Qubes
-service </doc/qrexec/>`__ in the target domain. This service enumerates
+``qvm-sync-appmenus`` works by invoking *GetAppMenus* :doc:`Qubes service </developer/services/qrexec>` in the target domain. This service enumerates
 installed applications and sends formatted info back to the dom0 script
 (``/usr/libexec/qubes-appmenus/qubes-receive-appmenus``) which creates
 .desktop files in the app qube/template directory.
@@ -136,9 +128,7 @@ script located in
 by default.
 
 The list of installed applications for each app qube is stored in dom0’s
-``~/.local/share/qubes-appmenus/<vmname>/apps.templates``. Each menu
-entry is a file that follows the `.desktop file
-format <https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html>`__
+``~/.local/share/qubes-appmenus/<vmname>/apps.templates``. Each menu entry is a file that follows the `.desktop file format <https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html>`__
 with some wildcards (*%VMNAME%*, *%VMDIR%*). Applications selected to
 appear in the menu are stored in
 ``~/.local/share/qubes-appmenus/<vmname>/apps``.

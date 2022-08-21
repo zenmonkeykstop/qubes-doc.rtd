@@ -4,7 +4,7 @@ Development workflow
 
 A workflow for developing Qubes OS+
 
-First things first, setup `QubesBuilder </doc/qubes-builder/>`__. This
+First things first, setup :doc:`QubesBuilder </developer/building/qubes-builder>`. This
 guide assumes you’re using qubes-builder to build Qubes.
 
 Repositories and committing Code
@@ -148,7 +148,7 @@ RPMs will appear in qubes-src/linux-kernel/pkgs/fc20/x86_64:
    -rw-rw-r-- 1 user user 54490741 Nov 17 04:08 kernel-qubes-vm-3.4.18-1debug20121116c.pvops.qubes.x86_64.rpm
    -rw-rw-r-- 1 user user 54502117 Nov 17 05:37 kernel-qubes-vm-3.4.18-1debug20121117a.pvops.qubes.x86_64.rpm
 
-Useful `QubesBuilder </doc/qubes-builder/>`__ commands
+Useful :doc:`QubesBuilder </developer/building/qubes-builder>` commands
 ------------------------------------------------------
 
 1. ``make check`` - will check if all the code was committed into
@@ -176,8 +176,7 @@ RPMs back to dom0 for testing.
 
 Here are some handy scripts Marek has shared to facilitate this.
 
-You may also like to run your `test environment on separate
-machine </doc/test-bench/>`__.
+You may also like to run your :doc:`test environment on separate machine </developer/debugging/test-bench>`.
 
 Syncing dom0 files
 ~~~~~~~~~~~~~~~~~~
@@ -336,8 +335,7 @@ rules bundled (unlike current and current-testing).
 RPM packages - yum repo
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In source VM, grab
-`linux-yum <https://github.com/QubesOS/qubes-linux-yum>`__ repository
+In source VM, grab `linux-yum <https://github.com/QubesOS/qubes-linux-yum>`__ repository
 (below is assumed you’ve made it in ``~/repo-yum-upload`` directory) and
 replace ``update_repo.sh`` script with:
 
@@ -354,8 +352,7 @@ replace ``update_repo.sh`` script with:
    # trigger repo update
    qrexec-client-vm $VMNAME local.UpdateYum
 
-In target VM, setup actual yum repository (also based on
-`linux-yum <https://github.com/QubesOS/qubes-linux-yum>`__, this time
+In target VM, setup actual yum repository (also based on `linux-yum <https://github.com/QubesOS/qubes-linux-yum>`__, this time
 without modifications). You will also need to setup some gpg key for
 signing packages (it is possible to force yum to install unsigned
 packages, but it isn’t possible for ``qubes-dom0-update`` tool). Fill
@@ -403,8 +400,7 @@ Of course you will also need to setup qrexec policy in dom0
 
 If you want to access the repository from network, you need to setup
 HTTP server serving it, and configure the system to let other machines
-actually reach this HTTP server. You can use for example using `port
-forwarding </doc/firewall/#port-forwarding-to-a-qube-from-the-outside-world>`__
+actually reach this HTTP server. You can use for example using :ref:`port forwarding <user/security-in-qubes/firewall:port forwarding to a qube from the outside world>`
 or setting up Tor hidden service. Configuration details of those
 services are outside of the scope of this page.
 
@@ -440,8 +436,7 @@ Deb packages - Apt repo
 Steps are mostly the same as in the case of yum repo. The only details
 that differ:
 
--  use `linux-deb <https://github.com/QubesOS/qubes-linux-deb>`__
-   instead of `linux-yum <https://github.com/QubesOS/qubes-linux-yum>`__
+-  use `linux-deb <https://github.com/QubesOS/qubes-linux-deb>`__    instead of `linux-yum <https://github.com/QubesOS/qubes-linux-yum>`__
    as a base - both in source and target VM
 -  use different ``update_repo.sh`` script in source VM (below)
 -  use ``local.UpdateApt`` qrexec service in target VM (code below)

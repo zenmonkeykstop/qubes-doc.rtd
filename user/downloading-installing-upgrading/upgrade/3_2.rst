@@ -3,8 +3,7 @@ Upgrading to R3.2
 =================
 
 **Before attempting either an in-place upgrade or a clean installation,
-we strongly recommend that users**\ `back up their
-systems </doc/backup-restore/>`__\ **.**
+we strongly recommend that users**\ :doc:`back up their systems </user/how-to-guides/how-to-back-up-restore-and-migrate>`\ **.**
 
 Current Qubes R3.1 systems can be upgraded in-place to the latest R3.2
 by following the procedure below.
@@ -93,13 +92,12 @@ Upgrading dom0
 
 7. Reboot dom0.
 
-Please note that if you use `Anti Evil Maid </doc/anti-evil-maid>`__, it
+Please note that if you use :doc:`Anti Evil Maid </user/security-in-qubes/anti-evil-maid>`, it
 won’t be able to unseal the passphrase the first time the system boots
 after performing this in-place upgrade procedure since the Xen, kernel,
 and initramfs binaries will have changed. Once the system boots up
 again, you can reseal your Anti Evil Maid passphrase to the new
-configuration. Please consult the Anti Evil Maid
-`documentation </doc/anti-evil-maid>`__ for instructions on how to do
+configuration. Please consult the Anti Evil Maid :doc:`documentation </user/security-in-qubes/anti-evil-maid>` for instructions on how to do
 that.
 
 At first login after upgrade you may got a message like this:
@@ -114,8 +112,7 @@ Upgrade all Template and Standalone VM(s)
 
 By default, in Qubes R3.1, there are few templates and no standalones.
 However, users are free to create standalones More information on using
-multiple templates, as well as standalones, can be found
-`here </doc/software-update-vm/>`__. The steps described in this section
+multiple templates, as well as standalones, can be found :doc:`here </user/how-to-guides/how-to-install-software>`. The steps described in this section
 should be repeated in **all** the user’s Template and Standalone VMs.
 
 Upgrade Fedora templates:
@@ -123,8 +120,7 @@ Upgrade Fedora templates:
 
 **Note:** This will only upgrade your Fedora template from Qubes 3.1 to
 Qubes 3.2. This will *not* upgrade your Fedora template from Fedora 23
-to Fedora 24. In order to do that, please see the `Fedora 23 template
-upgrade instructions </doc/templates/fedora/#upgrading>`__.
+to Fedora 24. In order to do that, please see the :ref:`Fedora 23 template upgrade instructions <user/templates/fedora/fedora:upgrading>`.
 
 1. Open a terminal in the template (or standalone). (E.g., use Qubes VM
    Manager’s right-click menu, choose “Run Command in VM,” and type

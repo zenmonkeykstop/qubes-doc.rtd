@@ -5,14 +5,12 @@ Volume backup and revert
 With Qubes, it is possible to revert one of a VM’s storage volumes to a
 previous state using the automatic snapshot that is normally saved every
 time a VM is shutdown. (Note that this is a different, lower level
-activity than the `Backup, Restoration, and
-Migration </doc/backup-restore/>`__ process.)
+activity than the :doc:`Backup, Restoration, and Migration </user/how-to-guides/how-to-back-up-restore-and-migrate>` process.)
 
 In Qubes, when you create a new VM, it’s volumes are stored in one of
-the system’s `Storage Pools </doc/storage-pools/>`__. On pool creation,
+the system’s :doc:`Storage Pools </developer/system/storage-pools>`. On pool creation,
 a revisions_to_keep default value is set for the entire pool. (For a
-pool creation example, see `Storing app qubes on Secondary
-Drives </doc/secondary-storage/>`__.) Thereafter, each volume associated
+pool creation example, see :doc:`Storing app qubes on Secondary Drives </user/advanced-topics/secondary-storage>`.) Thereafter, each volume associated
 with a VM that is stored in this pool inherits the pool default
 revisions_to_keep.
 

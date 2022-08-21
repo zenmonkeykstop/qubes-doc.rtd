@@ -34,8 +34,7 @@ code, and this has always back fired at us, sometime months, sometime
 years later, the net result being we had to spend time fixing code,
 rather than implementing new functionality.
 
-And here’s a `link to the real
-case <https://groups.google.com/forum/#!msg/qubes-devel/XgTo6L8-5XA/JLOadvBqnqMJ>`__
+And here’s a `link to the real case <https://groups.google.com/forum/#!msg/qubes-devel/XgTo6L8-5XA/JLOadvBqnqMJ>`__
 (one Qubes Security Bulletin) demonstrating how the lackadaisical coding
 style lead to a real security bug. Never assume you’re smart enough to
 disregard clean and rigorous coding!
@@ -208,8 +207,7 @@ Source Code management (Git) guidelines
 -  Before you start using git, make sure you understand that git is a
    decentralized Source Code Management system, and that it doesn’t
    behave like traditional, centralized source code management systems,
-   such as SVN. Here’s a good `introductory book on
-   git <http://git-scm.com/book>`__. Read it.
+   such as SVN. Here’s a good `introductory book on    git <http://git-scm.com/book>`__. Read it.
 
 -  Qubes code is divided into many git repositories. There are several
    reasons for that:
@@ -228,8 +226,7 @@ Source Code management (Git) guidelines
       former fully open source.
    -  We have drastically changed the layout and naming of the code
       repositories shortly after Qubes OS R2 Beta 2 release. For details
-      on the current code layout, please read `this
-      article <https://blog.invisiblethings.org/2013/03/21/introducing-qubes-odyssey-framework.html>`__.
+      on the current code layout, please read `this       article <https://blog.invisiblethings.org/2013/03/21/introducing-qubes-odyssey-framework.html>`__.
 
 Commit message guidelines
 =========================
@@ -246,8 +243,7 @@ messages:
 -  Use the body to explain *what* and *why* rather than *how*.
 
 For details, examples, and the rationale behind each of these
-conventions, please see `this blog
-post <https://chris.beams.io/posts/git-commit/>`__, which is the source
+conventions, please see `this blog post <https://chris.beams.io/posts/git-commit/>`__, which is the source
 of this list.
 
 Security coding guidelines

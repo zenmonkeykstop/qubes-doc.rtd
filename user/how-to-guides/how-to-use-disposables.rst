@@ -2,8 +2,7 @@
 How to use disposables
 ======================
 
-A `disposable </doc/glossary/#disposable>`__ is a lightweight
-`qube </doc/glossary/#qube>`__ that can be created quickly and will
+A :ref:`disposable <user/reference/glossary:disposable>` is a lightweight :ref:`qube <user/reference/glossary:qube>` that can be created quickly and will
 self-destruct when closed. Disposables are usually created in order to
 host a single application, like a viewer, editor, or web browser.
 
@@ -19,14 +18,13 @@ While running, disposables will appear in Qubes VM Manager with the name
 |disposablevm-example.png|
 
 This diagram provides a general example of how disposables can be used
-to safely open untrusted links and attachments in disposables. See `this
-article <https://blog.invisiblethings.org/2010/06/01/disposable-vms.html>`__
+to safely open untrusted links and attachments in disposables. See `this article <https://blog.invisiblethings.org/2010/06/01/disposable-vms.html>`__
 for more on why one would want to use a disposable.
 
 Security
 ========
 
-If a `disposable template </doc/glossary/#disposable-template>`__
+If a :ref:`disposable template <user/reference/glossary:disposable template>`
 becomes compromised, then any disposable based on that disposable
 template could be compromised. In particular, the *default* disposable
 template is important because it is used by the “Open in disposable”
@@ -38,18 +36,13 @@ Disposables and Local Forensics
 -------------------------------
 
 At this time, disposables should not be relied upon to circumvent local
-forensics, as they do not run entirely in RAM. For details, see `this
-thread <https://groups.google.com/d/topic/qubes-devel/QwL5PjqPs-4/discussion>`__.
-
-When it is essential to avoid leaving any trace, consider using
-`Tails <https://tails.boum.org/>`__.
+forensics, as they do not run entirely in RAM. For details, see `this thread <https://groups.google.com/d/topic/qubes-devel/QwL5PjqPs-4/discussion>`__.  When it is essential to avoid leaving any trace, consider using `Tails <https://tails.boum.org/>`__.
 
 Disposables and Networking
 ==========================
 
-Similarly to how app qubes are based on their underlying
-`template </doc/glossary/#template>`__, disposables are based on their
-underlying `disposable template </doc/glossary/#disposable-template>`__.
+Similarly to how app qubes are based on their underlying :ref:`template <user/reference/glossary:template>`, disposables are based on their
+underlying :ref:`disposable template <user/reference/glossary:disposable template>`.
 R4.0 introduces the concept of multiple disposable templates, whereas
 R3.2 was limited to only one.
 
@@ -210,8 +203,7 @@ Sometimes it can be useful to start an arbitrary program in a
 disposable. The disposable will stay running so long as the process
 which started the disposable has not exited. Some applications, such as
 GNOME Terminal, do not wait for the application to close before the
-process exits (details
-`here <https://github.com/QubesOS/qubes-issues/issues/2581#issuecomment-272664009>`__).
+process exits (details `here <https://github.com/QubesOS/qubes-issues/issues/2581#issuecomment-272664009>`__).
 Starting an arbitrary program can be done from an app qube by running
 
 ::
@@ -229,8 +221,7 @@ The Application Launcher has shortcuts for opening a terminal and a web
 browser in dedicated disposables, since these are very common tasks. The
 disposable will stay running so long as the process which started the
 disposable has not exited. Some applications, such as GNOME Terminal, do
-not wait for the application to close before the process exits (details
-`here <https://github.com/QubesOS/qubes-issues/issues/2581#issuecomment-272664009>`__).
+not wait for the application to close before the process exits (details `here <https://github.com/QubesOS/qubes-issues/issues/2581#issuecomment-272664009>`__).
 It is possible to start an arbitrary application in a disposable
 directly from dom0 by running:
 
@@ -279,8 +270,7 @@ In other words, any VM will be allowed to create a new disposable based
 on ``<ONLINE_DISPOSABLE_TEMPLATE>`` and open a URL inside of that
 disposable.
 
-More information about RPC policies for disposables can be found
-`here </doc/qrexec/#qubes-rpc-administration>`__.
+More information about RPC policies for disposables can be found :ref:`here <developer/services/qrexec:qubes rpc administration>`.
 
 Customizing disposables
 =======================
@@ -288,7 +278,7 @@ Customizing disposables
 You can change the template used to generate the disposables, and change
 settings used in the disposable savefile. These changes will be
 reflected in every new disposable based on that template. Full
-instructions can be found `here </doc/disposable-customization/>`__.
+instructions can be found :doc:`here </user/advanced-topics/disposable-customization>`.
 
 .. |disposablevm-example.png| image:: /attachment/doc/disposablevm-example.png
    :target: /attachment/doc/disposablevm-example.png

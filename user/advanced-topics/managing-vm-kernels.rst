@@ -2,8 +2,7 @@
 Managing qube kernels
 =====================
 
-By default, VMs kernels are provided by dom0. (See
-`here </doc/how-to-install-software-in-dom0/#kernel-upgrade>`__ for
+By default, VMs kernels are provided by dom0. (See :ref:`here <user/advanced-topics/how-to-install-software-in-dom0:kernel upgrade>` for
 information about upgrading kernels in dom0.) This means that:
 
 1. You can select the kernel version (using GUI VM Settings tool or
@@ -426,7 +425,6 @@ The output should look like this:
 Troubleshooting
 ~~~~~~~~~~~~~~~
 
-In case of problems, visit the `VM Troubleshooting
-guide </doc/vm-troubleshooting/#vm-kernel-troubleshooting>`__ to learn
+In case of problems, visit the :ref:`VM Troubleshooting guide <user/troubleshooting/vm-troubleshooting:vm kernel troubleshooting>` to learn
 how to access the VM console, view logs and fix a VM kernel
 installation.

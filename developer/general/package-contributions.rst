@@ -3,8 +3,7 @@ Package contributions
 =====================
 
 *This page is for developers who wish to contribute packages. If you
-want to install contributed packages, please see*\ `installing
-contributed packages </doc/installing-contributed-packages/>`__\ *.*
+want to install contributed packages, please see*\ :doc:`installing contributed packages </user/advanced-topics/installing-contributed-packages>`\ *.*
 
 We’re very grateful to the talented and hard-working community members
 who contribute software packages to Qubes OS. This page explains the
@@ -17,9 +16,8 @@ Inclusion Criteria
 In order to be accepted, packages must:
 
 -  In no way weaken the security of Qubes OS.
--  Be published under an open-source license (read about the `Qubes OS
-   License </doc/license/>`__).
--  Follow our `coding guidelines </doc/coding-style/>`__.
+-  Be published under an open-source license (read about the :doc:`Qubes OS    License </developer/code/license>`).
+-  Follow our :doc:`coding guidelines </developer/code/coding-style>`.
 -  Be thoroughly tested.
 -  Have a clearly-defined use case for Qubes users.
 -  Not be unduly burdensome to review.
@@ -32,18 +30,15 @@ Contribution Procedure
 
 Before you start putting serious work into a package, we recommend that
 you discuss your idea with the Qubes developers and the broader
-community on the `qubes-devel mailing list </support/#qubes-devel>`__.
+community on the :ref:`qubes-devel mailing list <introduction/support:qubes devel>`.
 Once you have a package that’s ready to become part of Qubes OS, please
 follow this procedure:
 
-1. Ensure that your package satisfies the `Inclusion
-   Criteria <#inclusion-criteria>`__.
+1. Ensure that your package satisfies the :ref:`Inclusion    Criteria <developer/general/package-contributions:inclusion criteria>`.
 2. If your code isn’t already on GitHub, create a GitHub repo that
    contains your code. You can have a look to an example package called
    `qubes-skeleton <https://github.com/QubesOS-contrib/qubes-skeleton>`__.
-3. If you haven’t already, `sign your code </doc/code-signing/>`__.
-4. Create an issue in
-   `qubes-issues <https://github.com/QubesOS/qubes-issues/issues/>`__
+3. If you haven’t already, :doc:`sign your code </developer/code/code-signing>`. 4. Create an issue in    `qubes-issues <https://github.com/QubesOS/qubes-issues/issues/>`__
    with the title ``[Contribution] your-package-name``. Include a link
    to your repo, a brief description of your package, and a brief
    explanation of why you think it should be included in Qubes. Please
@@ -58,8 +53,7 @@ follow this procedure:
    contribution, you will be invited to join the
    `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ organization
    on GitHub as public recognition of your contribution (but without
-   push access; see `Review Procedure <#review-procedure>`__), and
-   `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ will fork
+   push access; see :ref:`Review Procedure <developer/general/package-contributions:review procedure>`), and    `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ will fork
    your repo. If we decide not to accept your contribution, we will
    state the reason and close the issue.
 
@@ -71,11 +65,10 @@ just the person who contributed that package! The update procedure is
 the same for everyone, including the original package contributor.
 
 If you would like to update an already-contributed package
-(specifically, a fork owned by
-`QubesOS-contrib <https://github.com/QubesOS-contrib>`__), please submit
-a `signed </doc/code-signing/>`__, fast-forwardable pull request to that
+(specifically, a fork owned by `QubesOS-contrib <https://github.com/QubesOS-contrib>`__), please submit
+a :doc:`signed </developer/code/code-signing>`, fast-forwardable pull request to that
 repo with your changes. Please note that your pull request **must** be
-both `signed </doc/code-signing/>`__ and fast-forwardable, or else it
+both :doc:`signed </developer/code/code-signing>` and fast-forwardable, or else it
 will be closed without further review. One or more reviewers may post
 comments on your pull request. Please be prepared to read and respond to
 these comments.
@@ -83,12 +76,10 @@ these comments.
 Review Procedure
 ================
 
-This review procedure covers both original package contributions (see
-`Contribution Procedure <#contribution-procedure>`__) and all subsequent
+This review procedure covers both original package contributions (see :ref:`Contribution Procedure <developer/general/package-contributions:contribution procedure>`) and all subsequent
 updates to those packages, including updates from the original package
-contributor (see `Update Procedure <#update-procedure>`__). All changes
-will be reviewed by a Qubes Core Reviewer (QCR) and the `Package
-Maintainer <#package-maintainers>`__ (PM). In all cases, the QCR will be
+contributor (see :ref:`Update Procedure <developer/general/package-contributions:update procedure>`). All changes
+will be reviewed by a Qubes Core Reviewer (QCR) and the :ref:`Package Maintainer <developer/general/package-contributions:package maintainers>` (PM). In all cases, the QCR will be
 a core Qubes developer. In some cases, the QCR and the PM will be the
 same person. For example, if someone contributes a package, then
 disappears, and no suitable replacement has been found, then it is
@@ -103,14 +94,14 @@ The review procedure is as follows:
    repo owned by
    `QubesOS-contrib <https://github.com/QubesOS-contrib>`__.
 3. The PM reviews the pull request. If the the pull request passes the
-   PM’s review, the PM adds a `signed </doc/code-signing/>`__ *comment*
+   PM’s review, the PM adds a :doc:`signed </developer/code/code-signing>` *comment*
    on the pull request stating that it has passed review. (In cases in
-   which S = PM, the PM can simply add a `signed </doc/code-signing/>`__
+   which S = PM, the PM can simply add a :doc:`signed </developer/code/code-signing>`
    *tag* to the HEAD commit prior to submitting the pull request.) If
    the pull request does not pass the PM’s review, the PM leaves a
    comment on the pull request explaining why not.
 4. The QCR reviews the pull request. If the pull request passes the
-   QCR’s review, the QCR pushes a `signed </doc/code-signing/>`__ tag to
+   QCR’s review, the QCR pushes a :doc:`signed </developer/code/code-signing>` tag to
    the HEAD commit stating that it has passed review and fast-forward
    merges the pull request. If the pull request does not pass the QCR’s
    review, the QCR leaves a comment on the pull request explaining why
@@ -118,8 +109,7 @@ The review procedure is as follows:
 
 In all the cases, the first condition to be validated by the QCR’s
 review is to ensure that the contribution **will not** hijack any core
-packages of `QubesOS <https://github.com/QubesOS>`__ and of course, none
-of the `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ packages
+packages of `QubesOS <https://github.com/QubesOS>`__ and of course, none of the `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ packages
 too. More precisely, particular attention to the whole build pipeline
 will be made with a specific review of:
 
@@ -133,8 +123,7 @@ will be made with a specific review of:
 
 and any steps which would result in partial/total compromise of
 legitimate components. For this part, you can have a look to an example
-package called
-`qubes-skeleton <https://github.com/QubesOS-contrib/qubes-skeleton>`__.
+package called `qubes-skeleton <https://github.com/QubesOS-contrib/qubes-skeleton>`__.
 
 Package Maintainers
 ===================
@@ -143,7 +132,7 @@ If you contribute a package, we assume that you will be the maintainer
 of that package, unless you tell us otherwise. As the maintainer of the
 package, it is your privilege and responsibility to:
 
--  `Review <#review-procedure>`__ each pull request made against the
+-  :ref:`Review <developer/general/package-contributions:review procedure>` each pull request made against the
    package.
 -  Decide when the package has reached a new version, and notify the
    Qubes core developers when this occurs.

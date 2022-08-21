@@ -2,7 +2,7 @@
 Code signing
 ============
 
-All contributions to the Qubes OS `source code </doc/source-code/>`__
+All contributions to the Qubes OS :doc:`source code </developer/code/source-code>`
 must be cryptographically signed by the author’s PGP key.
 
 Generating a Key
@@ -10,8 +10,7 @@ Generating a Key
 
 (Note: If you already have a PGP key, you may skip this step.)
 
-Alex Cabal has written an excellent
-`guide <https://alexcabal.com/creating-the-perfect-gpg-keypair/>`__ on
+Alex Cabal has written an excellent `guide <https://alexcabal.com/creating-the-perfect-gpg-keypair/>`__ on
 creating a PGP keypair. Below, we reproduce just the minimum steps in
 generating a keypair using GnuPG. Please read Cabal’s full guide for
 further important details.
@@ -62,8 +61,7 @@ Upload the Key
 
 For others to find the public key, please upload it to a server.
 
-Currently,
-`these <https://github.com/marmarek/signature-checker/blob/master/check-git-signature#L133-L135>`__
+Currently, `these <https://github.com/marmarek/signature-checker/blob/master/check-git-signature#L133-L135>`__
 are the recognized servers.
 
 In the example below, we will use ``keyserver.ubuntu.com``.
@@ -145,18 +143,14 @@ GitHub Signature Verification (optional)
 GitHub shows a green ``Verified`` label indicating that the GPG
 signature could be verified using any of the contributor’s GPG keys
 uploaded to GitHub. You can upload your public key on GitHub by adding
-your public GPG key on the `New GPG
-key <https://github.com/settings/gpg/new>`__ under the `SSH GPG keys
-page <https://github.com/settings/keys>`__.
+your public GPG key on the `New GPG key <https://github.com/settings/gpg/new>`__ under the `SSH GPG keys page <https://github.com/settings/keys>`__.
 
 Code Signature Checks
 =====================
 
-The
-`signature-checker <https://github.com/marmarek/signature-checker>`__
+The `signature-checker <https://github.com/marmarek/signature-checker>`__
 checks if code contributions are signed. Although GitHub adds a little
-green ``Verified`` button next to the commit, the
-`signature-checker <https://github.com/marmarek/signature-checker>`__
+green ``Verified button next to the commit, the `signature-checker <https://github.com/marmarek/signature-checker>`__
 uses this algorithm to check if a commit is correctly signed:
 
 1. Is the commit signed? If the commit is not signed, you can see the
@@ -205,8 +199,7 @@ Unable To Verify
 
    policy/qubesos/code-signing — Unable to verify (no valid key found)
 
-This means that the
-`signature-checker <https://github.com/marmarek/signature-checker>`__
+This means that the `signature-checker <https://github.com/marmarek/signature-checker>`__
 has found a signature for the commit but is not able to verify it using
 the any key available. This might be that you forgot to upload the key
 to a key server. Please upload it.
@@ -214,9 +207,7 @@ to a key server. Please upload it.
 Using PGP with Email
 ====================
 
-If you’re submitting a patch by emailing the `developer mailing
-list </support/#qubes-devel>`__, simply sign your email with your PGP
-key. One good way to do this is with a program like
-`Enigmail <https://www.enigmail.net/>`__. Enigmail is a security addon
+If you’re submitting a patch by emailing the :ref:`developer mailing list <introduction/support:qubes devel>`, simply sign your email with your PGP
+key. One good way to do this is with a program like `Enigmail <https://www.enigmail.net/>`__. Enigmail is a security addon
 for the Mozilla Thunderbird email client that allows you to easily
 digitally encrypt and sign your emails.

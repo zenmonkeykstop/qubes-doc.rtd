@@ -33,8 +33,7 @@ increase maximum disk image size.
 In case of standalone qubes and templates, just change the Disk Storage
 settings above. In case of template-based qubes, the private storage
 (the /home directory and user files) can be changed in the qube’s own
-settings, but the system root image is `inherited from the
-template </doc/getting-started/>`__, and so it must be changed in the
+settings, but the system root image is :doc:`inherited from the template </introduction/getting-started>`, and so it must be changed in the
 template settings. If you are increasing the disk image size for
 Linux-based qubes installed from Qubes OS repositories in Qubes 4.0 or
 later, changing the settings above is all you need to do - in other
@@ -129,6 +128,5 @@ to reduce the private storage of qube1 to 1GiB: Open a terminal in dom0:
    qvm-shutdown qube1
    sudo lvresize --size 1024M /dev/qubes_dom0/vm-qube1-private
 
-If you have a SSD see
-`here <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md>`__
+If you have a SSD see `here <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md>`__
 for information on using fstrim.

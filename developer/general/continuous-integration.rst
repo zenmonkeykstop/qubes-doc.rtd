@@ -2,8 +2,7 @@
 Continuous integration (CI)
 ===========================
 
-This page explains the `continuous integration
-(CI) <https://en.wikipedia.org/wiki/Continuous_integration>`__
+This page explains the `continuous integration (CI) <https://en.wikipedia.org/wiki/Continuous_integration>`__
 infrastructure that the Qubes OS Project uses.
 
 Website and documentation
@@ -11,8 +10,7 @@ Website and documentation
 
 The following commands may be useful as a way to interact with our CI
 infrastructure on website
-(`qubesos.github.io <https://github.com/QubesOS/qubesos.github.io>`__)
-and documentation (`qubes-doc <https://github.com/QubesOS/qubes-doc>`__)
+(`qubesos.github.io <https://github.com/QubesOS/qubesos.github.io>`__) and documentation (`qubes-doc <https://github.com/QubesOS/qubes-doc>`__)
 pull requests (PRs). Note that special permissions may be required to
 use some of these commands. These commands are generally issued by
 adding a comment to a PR containing only the command.

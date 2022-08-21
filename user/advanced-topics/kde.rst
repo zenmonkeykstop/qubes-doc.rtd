@@ -6,8 +6,7 @@ Installation
 ============
 
 Prior to R3.2, KDE was the default desktop environment in Qubes.
-Beginning with R3.2, however, `XFCE is the new default desktop
-environment </doc/releases/3.2/release-notes/>`__. Nonetheless, it is
+Beginning with R3.2, however, :doc:`XFCE is the new default desktop environment </developer/releases/3_2/release-notes>`. Nonetheless, it is
 still possible to install KDE by issuing this command in dom0:
 
 .. code:: shell_session
@@ -88,5 +87,4 @@ The safest way to remove (most of) KDE is:
 Mailing List Threads
 ====================
 
--  `Nalu’s KDE customization
-   thread <https://groups.google.com/d/topic/qubes-users/KhfzF19NG1s/discussion>`__
+-  `Nalu’s KDE customization    thread <https://groups.google.com/d/topic/qubes-users/KhfzF19NG1s/discussion>`__

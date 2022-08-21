@@ -2,14 +2,12 @@
 Qubes builder
 =============
 
-**Note: See**\ `ISO building
-instructions </doc/qubes-iso-building/>`__\ **for a streamlined overview
+**Note: See**\ :doc:`ISO building instructions </developer/building/qubes-iso-building>`\ **for a streamlined overview
 on how to use the build system.**
 
 We have a fully automated build system for Qubes, that downloads, builds
 and packages all the Qubes components, and finally should spit out a
-ready-to-use installation ISO, all in a
-`secure </news/2016/05/30/build-security/>`__ way.
+ready-to-use installation ISO, all in a `secure <https://www.qubes-os.org/news/2016/05/30/build-security/>`__ way.
 
 In order to use it, you should use an rpm-based distro, like Fedora :),
 and should ensure the following packages are installed:
@@ -217,8 +215,7 @@ Ubuntu templates.
 
 Code verification keys management
 =================================
-
-`QubesBuilder </doc/qubes-builder/>`__ by default verifies signed tags
+ :doc:`QubesBuilder </developer/building/qubes-builder>` by default verifies signed tags
 on every downloaded code. Public keys used for that are stored in
 ``keyrings/git``. By default Qubes developers’ keys are imported
 automatically, but if you need some additional keys (for example your
@@ -241,8 +238,5 @@ qubes-developers-keys.asc - now the key will be no longer trusted
 Further information
 ===================
 
-For advanced `QubesBuilder </doc/qubes-builder/>`__ use, and preparing
-sources, take a look at
-`QubesBuilderDetails </doc/qubes-builder-details/>`__ page, or
-`QubesBuilder’s doc
-directory <https://github.com/marmarek/qubes-builder/tree/master/doc>`__.
+For advanced :doc:`QubesBuilder </developer/building/qubes-builder>` use, and preparing
+sources, take a look at :doc:`QubesBuilderDetails </developer/building/qubes-builder-details>` page, or `QubesBuilder’s doc directory <https://github.com/marmarek/qubes-builder/tree/master/doc>`__.

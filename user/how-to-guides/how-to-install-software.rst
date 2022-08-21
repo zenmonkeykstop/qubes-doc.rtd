@@ -3,12 +3,9 @@ How to install software
 =======================
 
 When you wish to install software in Qubes OS, you should generally
-install it in a `template </doc/glossary/#template>`__. For installing
-templates themselves, see `how to install a
-template </doc/templates/#installing>`__. Advanced users may also be
-interested in learning how to install software in
-`standalones </doc/standalones-and-hvms/>`__ and
-`dom0 </doc/how-to-install-software-in-dom0>`__.
+install it in a :ref:`template <user/reference/glossary:template>`. For installing
+templates themselves, see :ref:`how to install a template <user/templates/templates:installing>`. Advanced users may also be
+interested in learning how to install software in :doc:`standalones </user/advanced-topics/standalones-and-hvms>` and :doc:`dom0 </user/advanced-topics/how-to-install-software-in-dom0>`.
 
 Qubes OS is effectively a “meta” operating system (OS) that can run
 almost any arbitrary OS inside of itself. For example, the way software
@@ -17,19 +14,12 @@ different from the way software is normally installed in Windows. This
 isn’t up to Qubes. Qubes is just the framework in which you’re running
 these other OSes. Therefore, if you want to install software in a Linux
 template, for example, you should do so in whatever way is normal for
-that Linux distro. Most Linux software is distributed via
-`packages <https://en.wikipedia.org/wiki/Package_format>`__, which are
-stored in `software
-repositories <https://en.wikipedia.org/wiki/Software_repository>`__
-(“repos”). `Package
-managers <https://en.wikipedia.org/wiki/Package_manager>`__ handle
+that Linux distro. Most Linux software is distributed via `packages <https://en.wikipedia.org/wiki/Package_format>`__, which are stored in `software repositories <https://en.wikipedia.org/wiki/Software_repository>`__ (“repos”). `Package managers <https://en.wikipedia.org/wiki/Package_manager>`__ handle
 downloading, installing, updating, and removing packages. (Again, none
 of this is Qubes-specific.) If you’re not familiar with how software is
 normally installed in Linux distros via package managers or the software
 you want doesn’t seem to be available in your distro’s repos (or you’re
-in another situation not covered on this page), please read this
-`community guide to installing software in
-Qubes <https://forum.qubes-os.org/t/9991/>`__.
+in another situation not covered on this page), please read this `community guide to installing software in Qubes <https://forum.qubes-os.org/t/9991/>`__.
 
 The following instructions explain how to permanently install new
 software in a template. There are different instructions for software
@@ -57,7 +47,7 @@ Installing software from default repositories
 6. (Recommended) In the relevant qubes’ **Settings > Applications** tab,
    select the new application(s) from the list, and press **OK**. These
    new shortcuts will appear in the Applications Menu. (If you encounter
-   problems, see `here </doc/app-menu-shortcut-troubleshooting/>`__ for
+   problems, see :doc:`here </user/troubleshooting/app-menu-shortcut-troubleshooting>` for
    troubleshooting.)
 
 .. figure:: /attachment/doc/r4.1-dom0-appmenu-select.png
@@ -71,10 +61,10 @@ Installing software from other sources
 ======================================
 
 **Warning:** This method gives your template direct network access,
-which is `risky <#why-dont-templates-have-network-access>`__. This
+which is :ref:`risky <user/how-to-guides/how-to-install-software:why don’t templates have network access?>`. This
 method is **not** recommended for trusted templates. Moreover, depending
 on how you install this software, it may not get updated automatically
-when you `update Qubes normally </doc/how-to-update/>`__, which means
+when you :doc:`update Qubes normally </user/how-to-guides/how-to-update>`, which means
 you may have to update it manually yourself.
 
 Some software is not available from the default repositories and must be
@@ -120,7 +110,7 @@ running as a template in Qubes OS.
 9. (Recommended) In the relevant qubes’ **Settings > Applications** tab,
    select the new application(s) from the list, and press **OK**. These
    new shortcuts will appear in the Applications Menu. (If you encounter
-   problems, see `here </doc/app-menu-shortcut-troubleshooting/>`__ for
+   problems, see :doc:`here </user/troubleshooting/app-menu-shortcut-troubleshooting>` for
    troubleshooting.)
 
 .. figure:: /attachment/doc/r4.1-dom0-appmenu-select.png
@@ -143,30 +133,25 @@ If things are still not working as expected:
    template**.
 -  Make sure your app qube is assigned to the right template.
 -  If your software requires special files or directories to be
-   persistent, and you’re an advanced user, see `standalones and
-   HVMs </doc/standalones-and-hvms/>`__ and `how to make any file
-   persistent (bind-dirs) </doc/bind-dirs/>`__.
--  `Ask for help. </support/>`__
+   persistent, and you’re an advanced user, see :doc:`standalones and    HVMs </user/advanced-topics/standalones-and-hvms>` and :doc:`how to make any file    persistent (bind-dirs) </user/advanced-topics/bind-dirs>`.
+-  :doc:`Ask for help. </introduction/support>`
 
 How to update software
 ======================
 
-Please see `How to Update </doc/how-to-update/>`__.
+Please see :doc:`How to Update </user/how-to-guides/how-to-update>`.
 
 Why don’t templates have network access?
 ========================================
 
 In order to protect you from performing risky activities in templates,
 they do not have normal network access by default. Instead, templates
-use an `updates proxy <#updates-proxy>`__ that allows you to install and
+use an :ref:`updates proxy <user/how-to-guides/how-to-install-software:updates proxy>` that allows you to install and
 update software without giving the template direct network access. **The
 updates proxy is already set up to work automatically out-of-the-box and
 requires no special action from you.** Most users should simply follow
-the normal instructions for `installing software from default
-repositories <#installing-software-from-default-repositories>`__ and
-`updating </doc/how-to-update/>`__ software. If your software is not
-available in the default repositories, see `installing software from
-other sources <#installing-software-from-other-sources>`__.
+the normal instructions for :ref:`installing software from default repositories <user/how-to-guides/how-to-install-software:installing software from default repositories>` and :doc:`updating </user/how-to-guides/how-to-update>` software. If your software is not
+available in the default repositories, see :ref:`installing software from other sources <user/how-to-guides/how-to-install-software:installing software from other sources>`.
 
 Advanced
 ========
@@ -177,15 +162,12 @@ and updating software in domUs.
 Testing repositories
 --------------------
 
-If you wish to install updates that are still in
-`testing </doc/testing>`__, you must enable the appropriate testing
+If you wish to install updates that are still in :doc:`testing </user/downloading-installing-upgrading/testing>`, you must enable the appropriate testing
 repositories.
 
 **Note:** The following repos are in templates and standalones. For dom0
-testing repos, see
-`here </doc/how-to-install-software-in-dom0/#testing-repositories>`__.
-For testing new templates, please see
-`here </doc/testing/#templates>`__.
+testing repos, see :ref:`here <user/advanced-topics/how-to-install-software-in-dom0:testing repositories>`.
+For testing new templates, please see :ref:`here <user/downloading-installing-upgrading/testing:templates>`.
 
 Fedora
 ~~~~~~
@@ -234,8 +216,7 @@ corresponding ``deb`` line in ``/etc/apt/sources.list.d/qubes-r*.list``.
 Standalones
 -----------
 
-The process for installing and updating software in
-`standalones </doc/glossary/#standalone>`__ is the same as described
+The process for installing and updating software in :ref:`standalones <user/reference/glossary:standalone>` is the same as described
 above for templates, except no qubes are based on standalones, so there
 are no other qubes to restart.
 
@@ -305,7 +286,7 @@ or compromised, it won’t hurt to try reverting first. Just make sure to
 Reinstall the template
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Please see `How to Reinstall a template </doc/reinstall-template/>`__.
+Please see :doc:`How to Reinstall a template </user/templates/how-to-reinstall-a-template>`.
 
 Full revert
 ~~~~~~~~~~~
@@ -344,8 +325,7 @@ dnf to really use the proxy (3). Also access to updates proxy is
 independent of any other firewall settings (VM will have access to
 updates proxy, even if policy is set to block all the traffic).
 
-There are two services (``qvm-service``, `service
-framework </doc/qubes-service/>`__):
+There are two services (``qvm-service``, :doc:`service framework </user/advanced-topics/qubes-service>`):
 
 1. ``qubes-updates-proxy`` (and its deprecated name:
    ``qubes-yum-proxy``) - a service providing a proxy for templates - by

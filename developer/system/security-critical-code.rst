@@ -12,7 +12,7 @@ code, which is several orders of magnitude less than other OSes. (In
 Windows, Linux, and Mac OSes, the amount of trusted code is typically on
 the order of tens of *millions* of lines of C code.)
 
-For more information, see `Qubes Security Goals </security/goals/>`__.
+For more information, see :doc:`Qubes Security Goals </developer/system/security-design-goals>`.
 
 Security-critical Qubes-specific Components
 ===========================================

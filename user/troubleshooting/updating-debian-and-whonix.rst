@@ -2,11 +2,9 @@
 Updating Debian and Whonix
 ==========================
 
-Despite Qubes shipping with `Debian
-Templates </doc/templates/debian/>`__, most of Qubes core components run
+Despite Qubes shipping with :doc:`Debian Templates </user/templates/debian/debian>`, most of Qubes core components run
 on Fedora and thus our documentation has better coverage for Fedora.
-However, Qubes has been working closely with the
-`Whonix <https://whonix.org>`__ project which is based on Debian.
+However, Qubes has been working closely with the `Whonix <https://whonix.org>`__ project which is based on Debian.
 
 This troubleshooting guide is collection of tips about updating Whonix
 that also pertain to updating the normal Debian package manager. If you
@@ -56,9 +54,7 @@ This could be a temporary Tor exit relay or server failure that should
 fix itself. Here are some simple things to try:
 
 -  Check if your network connection is functional
--  Try to `change your Tor circuit <https://www.whonix.org/wiki/Arm>`__,
-   then try again
--  Running `whonixcheck <https://www.whonix.org/wiki/Whonixcheck>`__
+-  Try to `change your Tor circuit <https://www.whonix.org/wiki/Arm>`__,    then try again -  Running `whonixcheck <https://www.whonix.org/wiki/Whonixcheck>`__
    might also help diagnose the problem
 
 Sometimes if you see a message such as:
@@ -79,11 +75,8 @@ And then trying running the ``update`` and ``upgrade`` commands again.
 
    sudo apt-get update && sudo apt-get dist-upgrade
 
-*Please note: if you*\ `disabled the Whonix APT
-Repository <https://www.whonix.org/wiki/Whonix-APT-Repository#Disable_Whonix_APT_Repository>`__\ *you’ll
-have to manually check for new Whonix releases and*\ `manually install
-them from source
-code <https://www.whonix.org/wiki/Dev/Build_Documentation>`__\ *.*
+*Please note: if you*\ `disabled the Whonix APT Repository <https://www.whonix.org/wiki/Whonix-APT-Repository#Disable_Whonix_APT_Repository>`__\ *you’ll
+have to manually check for new Whonix releases and*\ `manually install them from source code <https://www.whonix.org/wiki/Dev/Build_Documentation>`__\ *.*
 
 Never Install Unsigned Packages
 ===============================
@@ -96,13 +89,9 @@ If you see something like this:
      icedove
    Install these packages without verification [y/N]?
 
-Don’t proceed! Press ``N`` and ``<enter>``. Running ``apt-get update``
-again should fix it. If not, something is broken or it’s a `Man in the
-middle
-attack <https://www.whonix.org/wiki/Warning#Man-in-the-middle_attacks>`__,
+Don’t proceed! Press ``N`` and ``<enter>``. Running ``apt-get update again should fix it. If not, something is broken or it’s a `Man in the middle attack <https://www.whonix.org/wiki/Warning#Man-in-the-middle_attacks>`__,
 which isn’t that unlikely, since we are updating over Tor exit relays
-and some of them are malicious. Try to `change your Tor
-circuit <https://www.whonix.org/wiki/Arm#Arm>`__.
+and some of them are malicious. Try to `change your Tor circuit <https://www.whonix.org/wiki/Arm#Arm>`__.
 
 Signature Verification Warnings
 ===============================
@@ -121,18 +110,14 @@ reported so it can be further investigated.
 
 There are two possible reasons why this could happen, either there is an
 issue with the repository that the maintainers have to fix, or you are
-victim of a
-`Man-in-the-middle_attacks <https://www.whonix.org/wiki/Warning#Man-in-the-middle_attacks>`__.
+victim of a `Man-in-the-middle_attacks <https://www.whonix.org/wiki/Warning#Man-in-the-middle_attacks>`__.
 The latter would not be a big issue and might go away after a while
-automatically or try to `change your Tor
-circuit <https://www.whonix.org/wiki/Arm#Arm>`__
+automatically or try to `change your Tor circuit <https://www.whonix.org/wiki/Arm#Arm>`__
 
 In past various apt repositories were signed with expired key. If you
 want to see how the documentation looked at that point, please click on
 expand on the right.
-
-`The Tor Project’s apt repository key was
-expired <https://trac.torproject.org/projects/tor/ticket/12994>`__. You
+ `The Tor Project’s apt repository key was expired <https://trac.torproject.org/projects/tor/ticket/12994>`__. You
 saw the following warning.
 
 ::
@@ -142,8 +127,7 @@ saw the following warning.
    W: Failed to fetch http://deb.torproject.org/torproject.org/dists/stable/Release
    W: Some index files failed to download. They have been ignored, or old ones used instead.
 
-It had already been
-`reported <https://trac.torproject.org/projects/tor/ticket/12994>`__.
+It had already been `reported <https://trac.torproject.org/projects/tor/ticket/12994>`__.
 There was no immediate danger. You could have just ignored it. Just make
 sure, you never install unsigned packages as explained above.
 
@@ -186,5 +170,4 @@ package or not?
    specific package. In that case, your safest bet should be pressing
    ``y``, but then you would lose your customized settings. You can
    re-add them afterwards. Such conflicts will hopefully rarely happen,
-   if you use `Whonix modular flexible .d style configuration
-   folders <https://www.whonix.org/wiki/Whonix_Configuration_Files>`__.
+   if you use `Whonix modular flexible .d style configuration    folders <https://www.whonix.org/wiki/Whonix_Configuration_Files>`__.

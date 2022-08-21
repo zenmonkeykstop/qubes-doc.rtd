@@ -2,10 +2,10 @@
 Release notes
 =============
 
--  `Qubes R1.0 release notes </doc/releases/1.0/release-notes/>`__
--  `Qubes R2.0 release notes </doc/releases/2.0/release-notes/>`__
--  `Qubes R3.0 release notes </doc/releases/3.0/release-notes/>`__
--  `Qubes R3.1 release notes </doc/releases/3.1/release-notes/>`__
--  `Qubes R3.2 release notes </doc/releases/3.2/release-notes/>`__
--  `Qubes R4.0 release notes </doc/releases/4.0/release-notes/>`__
--  `Qubes R4.1 release notes </doc/releases/4.1/release-notes/>`__
+-  :doc:`Qubes R1.0 release notes </developer/releases/1_0/release-notes>`
+-  :doc:`Qubes R2.0 release notes </developer/releases/2_0/release-notes>`
+-  :doc:`Qubes R3.0 release notes </developer/releases/3_0/release-notes>`
+-  :doc:`Qubes R3.1 release notes </developer/releases/3_1/release-notes>`
+-  :doc:`Qubes R3.2 release notes </developer/releases/3_2/release-notes>`
+-  :doc:`Qubes R4.0 release notes </developer/releases/4_0/release-notes>`
+-  :doc:`Qubes R4.1 release notes </developer/releases/4_1/release-notes>`

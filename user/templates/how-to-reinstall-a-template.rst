@@ -2,7 +2,7 @@
 How to reinstall a template
 ===========================
 
-If you suspect your `template </doc/templates/>`__ is broken,
+If you suspect your :doc:`template </user/templates/templates>` is broken,
 misconfigured, or compromised, you can reinstall any template that was
 installed from the Qubes repository.
 

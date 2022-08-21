@@ -4,8 +4,7 @@ Storage pools
 
 Qubes OS R3.2 introduced the concept of storage drivers and pools. This
 feature was a first step towards a saner storage API, which is heavily
-rewritten in R4. See
-`here <https://dev.qubes-os.org/projects/core-admin/en/latest/qubes-storage.html>`__
+rewritten in R4. See `here <https://dev.qubes-os.org/projects/core-admin/en/latest/qubes-storage.html>`__
 for documentation on storage pools in R4.
 
 A storage driver provides a way to store VM images in a Qubes OS system.

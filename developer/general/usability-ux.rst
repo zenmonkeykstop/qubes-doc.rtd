@@ -9,7 +9,7 @@ priority!
 
 We ask anyone developing for Qubes OS to please read through this guide
 to better understand the user experience we strive to achieve. We also
-ask them to review `our visual style guide </doc/visual-style-guide/>`__
+ask them to review :doc:`our visual style guide </developer/general/visual-style-guide>`
 for other design related information.
 
 --------------
@@ -47,8 +47,7 @@ experience, choose a safe and smart default then tuck this setting in an
 -  Offer the ability to easily undo mistakes
 -  Choose intelligent defaults for settings
 
-In making software easy to use, it is crucial to be mindful of
-`cognitive load <https://en.wikipedia.org/wiki/Cognitive_load>`__ which
+In making software easy to use, it is crucial to be mindful of `cognitive load <https://en.wikipedia.org/wiki/Cognitive_load>`__ which
 dictates that *“humans are generally able to hold only seven +/- two
 units of information in short-term memory.”* Making sure your interfaces
 don’t pass this short-term memory limit is perhaps the most important
@@ -282,27 +281,13 @@ power users know how to do!
 GNOME, KDE, and Xfce
 ====================
 
-The desktop GUIs that QubesOS versions 1 - 3.1 offer are
-`KDE <https://www.kde.org>`__ and `Xfce <https://xfce.org>`__. We are
-currently migrating towards using `GNOME <https://www.gnome.org>`__. We
+The desktop GUIs that QubesOS versions 1 - 3.1 offer are `KDE <https://www.kde.org>`__ and `Xfce <https://xfce.org>`__. We are currently migrating towards using `GNOME <https://www.gnome.org>`__. We
 know some people prefer KDE, but we believe Gnome is easier to use for
 average non-technical users. Xfce will always be supported, and
 technical users will always have the choice to use KDE or other desktop
 environments.
 
-This change means you should use `GTK <https://www.gtk.org/>`__ rather
-than Qt for new GUIs.
-
-All three of these mentioned desktop environments have their own `human
-interface
-guidelines <https://en.wikipedia.org/wiki/Human_interface_guidelines>`__,
-and we suggest you familiarize yourself with the platform you developing
-for.
-
--  `GNOME Human Interface
-   Guidelines <https://developer.gnome.org/hig/>`__
--  `KDE HIG <https://techbase.kde.org/Projects/Usability/HIG>`__
--  `Xfce UI Guidlines <https://wiki.xfce.org/dev/hig/general>`__
+This change means you should use `GTK <https://www.gtk.org/>`__ rather than Qt for new GUIs.  All three of these mentioned desktop environments have their own `human interface guidelines <https://en.wikipedia.org/wiki/Human_interface_guidelines>`__, and we suggest you familiarize yourself with the platform you developing for.  -  `GNOME Human Interface    Guidelines <https://developer.gnome.org/hig/>`__ -  `KDE HIG <https://techbase.kde.org/Projects/Usability/HIG>`__ -  `Xfce UI Guidlines <https://wiki.xfce.org/dev/hig/general>`__
 
 --------------
 
@@ -314,17 +299,7 @@ specialized skillset that can take years to cultivate, but if you are
 interested in furthering your understanding, we suggest the following
 resources:
 
--  `Learn Design Principles <http://learndesignprinciples.com>`__ by
-   Melissa Mandelbaum
--  `Usability in Free
-   Software <http://jancborchardt.net/usability-in-free-software>`__ by
-   Jan C. Borchardt
--  `Superheroes & Villains in Design <https://vimeo.com/70030549>`__ by
+-  `Learn Design Principles <http://learndesignprinciples.com>`__ by    Melissa Mandelbaum -  `Usability in Free    Software <http://jancborchardt.net/usability-in-free-software>`__ by    Jan C. Borchardt -  `Superheroes & Villains in Design <https://vimeo.com/70030549>`__ by
    Aral Balkan
 -  `First Rule of Usability? Don’t Listen to
-   Users <http://www.nngroup.com/articles/first-rule-of-usability-dont-listen-to-users/>`__
-   by Jakob Nielsen
--  `10 Usability Heuristics for User Interface
-   Design <https://www.nngroup.com/articles/ten-usability-heuristics/>`__
-   by Jakob Nielsen
--  `Hack Design <https://hackdesign.org/>`__ - online learning program
+   Users <http://www.nngroup.com/articles/first-rule-of-usability-dont-listen-to-users/>`__    by Jakob Nielsen -  `10 Usability Heuristics for User Interface    Design <https://www.nngroup.com/articles/ten-usability-heuristics/>`__    by Jakob Nielsen -  `Hack Design <https://hackdesign.org/>`__ - online learning program

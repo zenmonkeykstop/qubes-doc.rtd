@@ -2,29 +2,24 @@
 How to use PCI devices
 ======================
 
-*This page is part of*\ `device handling in
-qubes </doc/how-to-use-devices/>`__\ *.*
+*This page is part of*\ :doc:`device handling in qubes </user/how-to-guides/how-to-use-devices>`\ *.*
 
 **Warning:** Only dom0 exposes PCI devices. Some of them are strictly
 required in dom0 (e.g., the host bridge). You may end up with an
 unusable system by attaching the wrong PCI device to a VM. PCI
 passthrough should be safe by default, but non-default options may be
-required. Please make sure you carefully read and understand the
-`security
-considerations </doc/device-handling-security/#pci-security>`__ before
+required. Please make sure you carefully read and understand the :ref:`security considerations <user/security-in-qubes/device-handling-security:pci security>` before
 deviating from default behavior.
 
 Introduction
 ============
 
-Unlike other devices (`USB </doc/how-to-use-usb-devices/>`__,
-`block </doc/how-to-use-block-storage-devices/>`__, mic), PCI devices
+Unlike other devices (( :doc:`USB </user/how-to-guides/how-to-use-usb-devices>`, :doc:`block </user/how-to-guides/how-to-use-block-storage-devices>`, mic), PCI devices
 need to be attached on VM-bootup. Similar to how you can’t attach a new
 sound-card after your computer booted (and expect it to work properly),
 attaching PCI devices to already booted VMs isn’t supported. Moreover,
 PCI devices can be attached only to VMs running in certain
-virtualization modes. See `FAQ: Which virtualization modes do VMs
-use? </faq/#which-virtualization-modes-do-vms-use>`__
+virtualization modes. See :ref:`FAQ: Which virtualization modes do VMs use? <introduction/faq:which virtualization modes do vms use>`
 
 The Qubes installer attaches all network class controllers to
 ``sys-net`` and all USB controllers to ``sys-usb`` by default, if you
@@ -37,8 +32,7 @@ Some devices expose multiple functions with distinct BDF-numbers. Limits
 imposed by the PC and VT-d architectures may require all functions
 belonging to the same device to be attached to the same VM. This
 requirement can be dropped with the ``no-strict-reset`` option during
-attachment, bearing in mind the aforementioned `security
-considerations </doc/device-handling-security/#pci-security>`__. In the
+attachment, bearing in mind the aforementioned :ref:`security considerations <user/security-in-qubes/device-handling-security:pci security>`. In the
 steps below, you can tell if this is needed if you see the BDF for the
 same device listed multiple times with only the number after the “.”
 changing.
@@ -84,8 +78,7 @@ attach PCI-devices to a qube.
 =================
 
 The ``qvm-pci`` tool allows PCI attachment and detachment. It’s a
-shortcut for
-```qvm-device pci`` </doc/how-to-use-devices/#general-qubes-device-widget-behavior-and-handling>`__.
+shortcut for :ref:`\`qvm-device pci\` <user/how-to-guides/how-to-use-devices:general qubes device widget behavior and handling>`.
 
 To figure out what device to attach, first list the available PCI
 devices by running (as user) in dom0:
@@ -116,7 +109,7 @@ to the “work” domain, you would do this:
 Possible Issues
 ===============
 
-Visit the `PCI Troubleshooting guide </doc/pci-troubleshooting/>`__ to
+Visit the :doc:`PCI Troubleshooting guide </user/troubleshooting/pci-troubleshooting>` to
 see issues that may arise due to PCI devices and how to troubleshoot
 them.
 
@@ -124,13 +117,10 @@ Additional Attach Options
 =========================
 
 Attaching a PCI device through the commandline offers additional
-options, specifiable via the ``--option``/``-o`` option. (Yes, confusing
-wording, there’s an `issue for
-that <https://github.com/QubesOS/qubes-issues/issues/4530>`__.)
+options, specifiable via the ``--option``/``-o option. (Yes, confusing wording, there’s an `issue for that <https://github.com/QubesOS/qubes-issues/issues/4530>`__.)
 
 ``qvm-pci`` exposes two additional options. Both are intended to fix
-device or driver specific issues, but both come with `heavy security
-implications </doc/device-handling-security/#pci-security>`__! **Make
+device or driver specific issues, but both come with :ref:`heavy security implications <user/security-in-qubes/device-handling-security:pci security>`! **Make
 sure you understand them before continuing!**
 
 no-strict-reset
@@ -149,8 +139,7 @@ permissive
 ----------
 
 Allow write access to full PCI config space instead of whitelisted
-registers. This increases attack surface and possibility of `side
-channel attacks <https://en.wikipedia.org/wiki/Side-channel_attack>`__.
+registers. This increases attack surface and possibility of `side channel attacks <https://en.wikipedia.org/wiki/Side-channel_attack>`__.
 
 usage example:
 

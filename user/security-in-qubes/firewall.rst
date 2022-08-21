@@ -30,8 +30,7 @@ If the qube is running, you can open Settings from the Qube Popup Menu.
 *R4.0 note:* ICMP and DNS are no longer accessible in the GUI, but can
 be changed via ``qvm-firewall`` described below. Connections to Updates
 Proxy are not made over a network so can not be allowed or blocked with
-firewall rules, but are controlled using the relevant policy file (see
-`R4.0 Updates proxy </doc/software-update-vm/>`__ for more detail).
+firewall rules, but are controlled using the relevant policy file (see :doc:`R4.0 Updates proxy </user/how-to-guides/how-to-install-software>` for more detail).
 
 Note that if you specify a rule by DNS name it will be resolved to IP(s)
 *at the moment of applying the rules*, and not on the fly for each new
@@ -53,8 +52,7 @@ directory in dom0:
 Rules are implemented on the netvm.
 
 You can also manually create rules in the qube itself using standard
-firewalling controls. See `Where to put firewall
-rules <#where-to-put-firewall-rules>`__. In complex cases, it might be
+firewalling controls. See :ref:`Where to put firewall rules <user/security-in-qubes/firewall:where to put firewall rules>`. In complex cases, it might be
 appropriate to load a ruleset using ``iptables-restore`` called from
 ``/rw/config/rc.local``. if you do this, be aware that ``rc.local`` is
 called *after* the network is up, so local rules should not be relied
@@ -110,10 +108,7 @@ service qube. The sys-firewall-2 proxy ensures that:
 
 If you adopt this model, you should be aware that all traffic will
 arrive at the ``network service qube`` appearing to originate from the
-IP address of ``sys-firewall-2``.
-
-For the VPN service please also look at the `VPN
-documentation <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__.
+IP address of ``sys-firewall-2``.  For the VPN service please also look at the `VPN documentation <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__.
 
 Enabling networking between two qubes
 =====================================
@@ -337,8 +332,7 @@ our local network 192.168.x.0/24.
 
 ..
 
-   Note: `Issue
-   #4028 <https://github.com/QubesOS/qubes-issues/issues/4028>`__
+   Note: `Issue    #4028 <https://github.com/QubesOS/qubes-issues/issues/4028>`__
    discusses adding a command to automate exposing the port.
 
 **1. Identify the IP addresses you will need to use for sys-net,
@@ -614,7 +608,7 @@ the service is up :-)
 Where to put firewall rules
 ===========================
 
-Implicit in the above example `scripts </doc/config-files/>`__, but
+Implicit in the above example :doc:`scripts </user/advanced-topics/config-files>`, but
 worth calling attention to: for all qubes *except* those supplying
 networking, iptables commands should be added to the
 ``/rw/config/rc.local`` script. For app qubes supplying networking

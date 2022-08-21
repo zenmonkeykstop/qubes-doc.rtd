@@ -5,14 +5,11 @@ GuiVM Configuration
 Gui domain
 ==========
 
-In this section, we describe how to setup ``GuiVM`` in several case as
-described in `GUI Domain </news/2020/03/18/gui-domain/>`__. In all the
+In this section, we describe how to setup ``GuiVM in several case as described in `GUI Domain <https://www.qubes-os.org/news/2020/03/18/gui-domain/>`__. In all the
 cases, the base underlying TemplateVM used is ``Fedora`` with ``XFCE``
 flavor to match current desktop choice in ``dom0``. That can be adapted
 very easily for other desktops and templates. By default, the configured
-``GuiVM`` is a management qube with global admin permissions ``rwx`` but
-can be adjusted to ``ro`` (see `Introducing the Qubes Admin
-API </news/2017/06/27/qubes-admin-api/>`__) in pillar data of the
+``GuiVM`` is a management qube with global admin permissions ``rwx but can be adjusted to ``ro (see `Introducing the Qubes Admin API <https://www.qubes-os.org/news/2017/06/27/qubes-admin-api/>`__) in pillar data of the
 corresponding ``GuiVM`` to setup. For example, pillar data for
 ``sys-gui`` located at ``/srv/pillar/base/qvm/sys-gui.sls``. Please note
 that each ``GuiVM`` has no ``NetVM``.
@@ -26,8 +23,7 @@ Hybrid GuiVM ``sys-gui``
 ------------------------
 
 Here, we describe how to setup ``sys-gui`` that we call *hybrid mode* or
-referenced as a *compromise solution* in `GUI
-Domain </news/2020/03/18/gui-domain/#the-compromise-solution>`__.
+referenced as a *compromise solution* in `GUI Domain <https://www.qubes-os.org/news/2020/03/18/gui-domain/#the-compromise-solution>`__.
 
 |sys-gui|
 
@@ -64,8 +60,7 @@ GPU GuiVM ``sys-gui-gpu``
 -------------------------
 
 Here, we describe how to setup ``sys-gui-gpu`` which is a ``GuiVM`` with
-*GPU passthrough* in `GUI
-Domain </news/2020/03/18/gui-domain/#gpu-passthrough-the-perfect-world-desktop-solution>`__.
+*GPU passthrough* in `GUI Domain <https://www.qubes-os.org/news/2020/03/18/gui-domain/#gpu-passthrough-the-perfect-world-desktop-solution>`__.
 
 |sys-gui-gpu|
 
@@ -98,8 +93,7 @@ permissive option), or via:
 
 The latter option assumes Intel graphics card (it has hardcoded PCI
 address). If you don’t have Intel graphics card, please use the former
-method with ``qvm-pci`` (see `How to use PCI
-devices </doc/how-to-use-pci-devices/>`__).
+method with ``qvm-pci`` (see :doc:`How to use PCI devices </user/how-to-guides/how-to-use-pci-devices>`).
 
    Note: Some platforms can have multiple GPU. For example on laptops,
    it is usual to have HDMI or DISPLAY port linked to the secondary GPU
@@ -116,17 +110,13 @@ into ``sys-gui-gpu``.
    to prevent any data loss.
 
 Once, ``lightdm`` is started, you can log as ``user`` where ``user``
-refers to the first ``dom0`` user in ``qubes`` group and with
-corresponding ``dom0`` password. A better approach for handling password
-is currently discussed in
-`QubesOS/qubes-issues#6740 <https://github.com/QubesOS/qubes-issues/issues/6740>`__.
+refers to the first ``dom0`` user in ``qubes group and with corresponding ``dom0 password. A better approach for handling password is currently discussed in `QubesOS/qubes-issues#6740 <https://github.com/QubesOS/qubes-issues/issues/6740>`__.
 
 VNC GuiVM ``sys-gui-vnc``
 -------------------------
 
 Here, we describe how to setup ``sys-gui-vnc`` that we call a *remote*
-``GuiVM`` or referenced as *with a virtual server* in `GUI
-Domain </news/2020/03/18/gui-domain/#virtual-server-the-perfect-remote-solution>`__.
+``GuiVM`` or referenced as *with a virtual server* in `GUI Domain <https://www.qubes-os.org/news/2020/03/18/gui-domain/#virtual-server-the-perfect-remote-solution>`__.
 
 |sys-gui-vnc|
 
@@ -163,8 +153,7 @@ not connect ``sys-gui-vnc`` to a ``NetVM`` but rather to use another
 qube for remote access, say ``sys-remote``. First, you need to bind port
 5900 of ``sys-gui-vnc`` into a ``sys-remote`` local port (you may want
 to use another port than 5900 to reach ``sys-remote`` from the outside).
-For that, use ``qubes.ConnectTCP`` RPC service (see
-`Firewall </doc/firewall>`__. Then, you can use any ``VNC`` client to
+For that, use ``qubes.ConnectTCP`` RPC service (see :doc:`Firewall </user/security-in-qubes/firewall>`. Then, you can use any ``VNC`` client to
 connect to you ``sys-remote`` on the chosen local port (5900 if you kept
 the default one). For the first connection, you will reach ``lightdm``
 for which you can log as ``user`` where ``user`` refers to the first
@@ -192,8 +181,7 @@ Troobleshooting
 Application menu lacks qubes entries in a fresh GuiVM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-See
-`QubesOS/qubes-issues#5804 <https://github.com/QubesOS/qubes-issues/issues/5804>`__
+See `QubesOS/qubes-issues#5804 <https://github.com/QubesOS/qubes-issues/issues/5804>`__
 
 Delete GuiVM
 ~~~~~~~~~~~~
@@ -226,9 +214,7 @@ You are now able to delete the GuiVM, for example ``sys-gui-gpu``:
 General issue
 ~~~~~~~~~~~~~
 
-For any general GuiVM issue, please take a loot at existing issues
-``QubesOS/qubes-issues`` under `C:
-gui-domain <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+gui-domain%22>`__
+For any general GuiVM issue, please take a loot at existing issues ``QubesOS/qubes-issues under `C: gui-domain <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+gui-domain%22>`__
 label.
 
 .. |sys-gui| image:: /attachment/posts/guivm-hybrid.png

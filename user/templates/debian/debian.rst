@@ -2,17 +2,14 @@
 Debian templates
 ================
 
-The Debian `template </doc/templates/>`__ is an officially
-`supported </doc/supported-releases/#templates>`__ template in Qubes OS.
+The Debian :doc:`template </user/templates/templates>` is an officially :ref:`supported <user/downloading-installing-upgrading/supported-releases:templates>` template in Qubes OS.
 This page is about the standard (or “full”) Debian template. For the
-minimal version, please see the `Minimal
-templates </doc/templates/minimal/>`__ page. There is also a `Qubes page
-on the Debian Wiki <https://wiki.debian.org/Qubes>`__.
+minimal version, please see the :doc:`Minimal templates </user/templates/minimal-templates>` page. There is also a `Qubes page on the Debian Wiki <https://wiki.debian.org/Qubes>`__.
 
 Installing
 ==========
 
-To `install </doc/templates/#installing>`__ a specific Debian template
+To :ref:`install <user/templates/templates:installing>` a specific Debian template
 that is not currently installed in your system, use the following
 command in dom0:
 
@@ -24,7 +21,7 @@ command in dom0:
 to install.)
 
 To reinstall a Debian template that is already installed in your system,
-see `How to Reinstall a template </doc/reinstall-template/>`__.
+see :doc:`How to Reinstall a template </user/templates/how-to-reinstall-a-template>`.
 
 After Installing
 ================
@@ -32,42 +29,36 @@ After Installing
 After installing a fresh Debian template, we recommend performing the
 following steps:
 
-1. `Update the template </doc/software-update-vm/>`__.
+1. :doc:`Update the template </user/how-to-guides/how-to-install-software>`.
 
-2. `Switch any app qubes that are based on the old template to the new
-   one </doc/templates/#switching>`__.
+2. :ref:`Switch any app qubes that are based on the old template to the new    one <user/templates/templates:switching>`.
 
-3. If desired, `uninstall the old
-   template </doc/templates/#uninstalling>`__.
+3. If desired, :ref:`uninstall the old    template <user/templates/templates:uninstalling>`.
 
 Installing software
 ===================
 
-See `How to Install Software </doc/how-to-install-software/>`__.
+See :doc:`How to Install Software </user/how-to-guides/how-to-install-software>`.
 
 Updating
 ========
 
-For routine daily updates within a given release, see `How to
-Update </doc/how-to-update/>`__.
+For routine daily updates within a given release, see :doc:`How to Update </user/how-to-guides/how-to-update>`.
 
 Upgrading
 =========
 
 There are two ways to upgrade your template to a new Debian release:
 
--  **Recommended:** `Install a fresh template to replace the existing
-   one. <#installing>`__ **This option may be simpler for less
+-  **Recommended:** :ref:`Install a fresh template to replace the existing    one. <user/templates/debian/debian:installing>` **This option may be simpler for less
    experienced users.** After you install the new template, redo all
-   desired template modifications and `switch everything that was set to
-   the old template to the new template </doc/templates/#switching>`__.
+   desired template modifications and :ref:`switch everything that was set to    the old template to the new template <user/templates/templates:switching>`.
    You may want to write down the modifications you make to your
    templates so that you remember what to redo on each fresh install. In
    the old Debian template, see ``/var/log/dpkg.log`` and
    ``/var/log/apt/history.log`` for logs of package manager actions.
 
--  **Advanced:** `Perform an in-place upgrade of an existing Debian
-   template. </doc/templates/debian/in-place-upgrade/>`__ This option
+-  **Advanced:** :doc:`Perform an in-place upgrade of an existing Debian    template. </user/templates/debian/debian-upgrade>` This option
    will preserve any modifications you’ve made to the template, **but it
    may be more complicated for less experienced users.**
 
@@ -138,5 +129,4 @@ to your system, particularly if you run ``dist-upgrade``.
 Package installation errors in Qubes 4.0
 ----------------------------------------
 
-If some packages throw installation errors, see `this
-guide. </doc/vm-troubleshooting/#fixing-package-installation-errors>`__
+If some packages throw installation errors, see :ref:`this guide. <user/troubleshooting/vm-troubleshooting:fixing package installation errors>`

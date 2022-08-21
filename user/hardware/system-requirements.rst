@@ -14,21 +14,7 @@ System requirements
 Minimum
 =======
 
--  **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,
-   ``x64``, and ``AMD64``)
-
-   -  `Intel
-      VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__
-      with
-      `EPT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__
-      or
-      `AMD-V <https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__
-      with
-      `RVI <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__
-   -  `Intel
-      VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__
-      or `AMD-Vi (also known as AMD
-      IOMMU) <https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29>`__
+-  **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,    ``x64``, and ``AMD64``)     -  `Intel       VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__       with       `EPT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__       or       `AMD-V <https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__       with       `RVI <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__    -  `Intel       VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__       or `AMD-Vi (also known as AMD       IOMMU) <https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29>`__
 
 -  **Memory:** 6 GB RAM
 -  **Storage:** 32 GB free space
@@ -36,21 +22,7 @@ Minimum
 Recommended
 ===========
 
--  **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,
-   ``x64``, and ``AMD64``)
-
-   -  `Intel
-      VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__
-      with
-      `EPT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__
-      or
-      `AMD-V <https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__
-      with
-      `RVI <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__
-   -  `Intel
-      VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__
-      or `AMD-Vi (also known as AMD
-      IOMMU) <https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29>`__
+-  **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,    ``x64``, and ``AMD64``)     -  `Intel       VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__       with       `EPT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__       or       `AMD-V <https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__       with       `RVI <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__    -  `Intel       VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__       or `AMD-Vi (also known as AMD       IOMMU) <https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29>`__
 
 -  **Memory:** 16 GB RAM
 -  **Storage:** 128 GB free space
@@ -61,15 +33,14 @@ Recommended
    recommended
 
    -  Nvidia GPUs may require significant
-      `troubleshooting </doc/install-nvidia-driver/>`__
+      `troubleshooting <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/install-nvidia-driver.md>`__
    -  AMD GPUs have not been formally tested, but Radeons (especially
       RX580 and earlier) generally work well
 
 -  **Peripherals:** A non-USB keyboard or multiple USB controllers
 -  **TPM:** Trusted Platform Module (TPM) with proper BIOS support
-   (required for `Anti Evil Maid </doc/anti-evil-maid/>`__)
--  **Other:** Satisfaction of all `hardware certification requirements
-   for Qubes 4.x </news/2016/07/21/new-hw-certification-for-q4/>`__
+   (required for :doc:`Anti Evil Maid </user/security-in-qubes/anti-evil-maid>`)
+-  **Other:** Satisfaction of all `hardware certification requirements    for Qubes 4.x <https://www.qubes-os.org/news/2016/07/21/new-hw-certification-for-q4/>`__
 
 Choosing Hardware
 =================
@@ -77,12 +48,11 @@ Choosing Hardware
 We recommend consulting these resources when selecting hardware for
 Qubes OS:
 
--  `Certified hardware </doc/certified-hardware/>`__ — Qubes developer
+-  :doc:`Certified hardware </user/hardware/certified-hardware>` — Qubes developer
    certified, officially recommended
--  `Community-recommended
-   hardware <https://forum.qubes-os.org/t/5560>`__ — list curated and
+-  `Community-recommended    hardware <https://forum.qubes-os.org/t/5560>`__ — list curated and
    maintained by the community, unofficially recommended
--  `Hardware compatibility list (HCL) </hcl/>`__ — community test
+-  :doc:`Hardware compatibility list (HCL) </user/hardware/hcl>` — community test
    results, neither recommended nor disrecommended
 
 Important Notes
@@ -109,8 +79,7 @@ Important Notes
    of having a portable copy of Qubes, this allows users to test for
    hardware compatibility on multiple machines (e.g., at a
    brick-and-mortar computer store) before deciding on which computer to
-   purchase. (See `generating and submitting HCL
-   reports </doc/how-to-use-the-hcl/#generating-and-submitting-new-reports>`__
+   purchase. (See :ref:`generating and submitting HCL    reports <user/hardware/how-to-use-the-hcl:generating and submitting new reports>`
    for advice on hardware compatibility testing.) Remember to change the
    devices assigned to your NetVM and USB VM if you move between
    different machines.

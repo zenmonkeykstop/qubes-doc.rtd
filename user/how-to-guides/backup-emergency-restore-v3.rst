@@ -78,8 +78,7 @@ and *compressed*.
        compressed=True
        compression-filter=gzip
 
-    **Note:** If you see ``version=2`` here, go to `Emergency Backup
-    Recovery - format version 2 </doc/backup-emergency-restore-v2/>`__
+    **Note:** If you see ``version=2`` here, go to :doc:`Emergency Backup     Recovery - format version 2 </user/how-to-guides/backup-emergency-restore-v2>`
     instead.
 
 5.  Verify the integrity of the ``private.img`` file which houses your

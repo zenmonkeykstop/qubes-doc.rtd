@@ -5,9 +5,7 @@ Disposable customization
 Introduction
 ============
 
-A `disposable </doc/disposable/>`__ can be based on any `app
-qube </doc/glossary/#app-qube>`__. You can also choose to use different
-`disposable templates </doc/glossary/#disposable-template>`__ for
+A :doc:`disposable </user/how-to-guides/how-to-use-disposables>` can be based on any :ref:`app qube <user/reference/glossary:app qube>`. You can also choose to use different :ref:`disposable templates <user/reference/glossary:disposable template>` for
 different disposables. To prepare an app qube to be a disposable
 template, you need to set ``template_for_dispvms`` property, for
 example:
@@ -29,7 +27,7 @@ will not be updated automatically. Please go the the “Applications” tab
 in the qube’s “Settings” dialog and unselect all existing shortcuts by
 clicking “<<”, then click “OK” and close the dialog. Give it a few
 seconds time and then reopen and re-select all the shortcuts you want to
-see in the menu. See `this page </doc/managing-appvm-shortcuts>`__ for
+see in the menu. See :doc:`this page </user/troubleshooting/app-menu-shortcut-troubleshooting>` for
 background information.
 
 Security
@@ -70,20 +68,17 @@ Additionally you may want to set it as default disposable template:
 The above default is used whenever a qube request starting a new
 disposable and do not specify which one (for example ``qvm-open-in-dvm``
 tool). This can be also set in qube settings and will affect service
-calls from that qube. See `qrexec
-documentation </doc/qrexec/#specifying-vms-tags-types-targets-etc>`__
+calls from that qube. See :ref:`qrexec documentation <developer/services/qrexec:specifying vms tags types targets etc>`
 for details.
 
-If you wish to use a `Minimal Template </doc/templates/minimal/>`__ as a
-disposable template, please see the `Minimal
-Template </doc/templates/minimal/>`__ page.
+If you wish to use a :doc:`Minimal Template </user/templates/minimal-templates>` as a
+disposable template, please see the :doc:`Minimal Template </user/templates/minimal-templates>` page.
 
 Customization of disposable
 ===========================
 
 **Note:**\ *If you are trying to customize Tor Browser in a Whonix
-disposable, please consult the*\ `Whonix
-documentation <https://www.whonix.org/wiki/Tor_Browser/Advanced_Users#disposable_Template_Customization>`__\ *.*
+disposable, please consult the*\ `Whonix documentation <https://www.whonix.org/wiki/Tor_Browser/Advanced_Users#disposable_Template_Customization>`__\ *.*
 
 It is possible to change the settings for each new disposable. This can
 be done by customizing the disposable template on which it is based:
@@ -120,7 +115,7 @@ be done by customizing the disposable template on which it is based:
 Using named disposables for sys-\*
 ==================================
 
-You can use a `named disposable </doc/glossary/#named-disposable>`__ for
+You can use a :ref:`named disposable <user/reference/glossary:named disposable>` for
 ``sys-*`` as long as it is stateless. For example, a ``sys-net`` using
 DHCP or ``sys-usb`` will work. In most cases ``sys-firewall`` will also
 work, even if you have configured app qube firewall rules. The only
@@ -146,11 +141,9 @@ references to the old one to instead point to the new. For example, with
 To create one with a PCI device attached such as for ``sys-net`` or
 ``sys-usb``, use the additional commands as follows.
 
-**Note** You can use ``qvm-pci`` to
-`determine </doc/how-to-use-pci-devices/#qvm-pci-usage>`__ the
+**Note** You can use ``qvm-pci`` to :ref:`determine <user/how-to-guides/how-to-use-pci-devices:qvm pci usage>` the
 ``<BDF>``. Also, you will often need to include the
-``-o no-strict-reset=True``
-`option </doc/how-to-use-pci-devices/#no-strict-reset>`__ with USB
+``-o no-strict-reset=True`` :ref:`option <user/how-to-guides/how-to-use-pci-devices:no strict reset>` with USB
 controllers.
 
 ::
@@ -256,7 +249,7 @@ Create the sys-net disposable
 
        [user@dom0 ~]$ qvm-create --template <disposable-Template-Name> --class DispVM --label red disp-sys-net
 
-2.  Set ``disp-sys-net`` virtualization mode to `hvm </doc/hvm/>`__:
+2.  Set ``disp-sys-net`` virtualization mode to :doc:`hvm </user/advanced-topics/standalones-and-hvms>`:
 
     .. code:: shell_session
 
@@ -283,7 +276,7 @@ Create the sys-net disposable
 
 6.  Attach the network PCI device(s) to ``disp-sys-net`` (finding and
     assigning PCI devices can be found
-    `here </doc/how-to-use-pci-devices/>`__:
+    :doc:`here </user/how-to-guides/how-to-use-pci-devices>`:
 
     .. code:: shell_session
 
@@ -395,7 +388,7 @@ Create the sys-usb disposable
    of the commonly used USB controllers (all Intel integrated
    controllers) require the ``-o no-strict-reset=True`` option to be
    set. Instructions detailing how this option is set can be found
-   `here </doc/how-to-use-pci-devices/#no-strict-reset>`__.
+   :ref:`here <user/how-to-guides/how-to-use-pci-devices:no strict reset>`.
 
    .. code:: shell_session
 
@@ -416,8 +409,7 @@ Create the sys-usb disposable
 
       [user@dom0 ~]$ qvm-features disp-sys-usb appmenus-dispvm ''
 
-8. Users should now follow instructions on `How to hide USB controllers
-   from dom0 </doc/usb-qubes/#how-to-hide-usb-controllers-from-dom0>`__.
+8. Users should now follow instructions on :ref:`How to hide USB controllers    from dom0 <user/advanced-topics/usb-qubes:how to hide usb controllers from dom0>`.
 
 9. At this point, your mouse may not work. Edit the ``qubes.InputMouse``
    policy file in dom0, which is located here:
@@ -453,8 +445,7 @@ Troubleshooting
 
 If the ``disp-sys-usb`` does not start, it could be due to a PCI
 passthrough problem. For more details on this issue along with possible
-solutions, users can look
-`here </doc/pci-troubleshooting/#pci-passthrough-issues>`__.
+solutions, users can look :ref:`here <user/troubleshooting/pci-troubleshooting:pci passthrough issues>`.
 
 Deleting disposables
 ====================

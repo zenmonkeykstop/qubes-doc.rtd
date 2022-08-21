@@ -18,8 +18,7 @@ resolution and, after starting some qubes, a 4K display is connected. If
 the buffer is too small, and internal desktop resize fails.
 
 The solution to this problem is to increase the minimum size of the
-video RAM buffer, as explained in `GUI
-Configuration </doc/gui-configuration/#video-ram-adjustment-for-high-resolution-displays>`__.
+video RAM buffer, as explained in :ref:`GUI Configuration <user/advanced-topics/gui-configuration:video ram adjustment for high resolution displays>`.
 
 Screen blanks / Weird computer glitches like turning partially black or black boxes
 ===================================================================================

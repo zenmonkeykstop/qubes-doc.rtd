@@ -49,7 +49,7 @@ What is Qubes OS?
                stripped-down</a> virtual machines based on popular operating systems,
                such as <a href="/doc/templates/fedora/">Fedora</a>,
                <a href="/doc/templates/debian/">Debian</a>, and
-               <a href="/doc/windows/">Windows</a>.
+               <a href="https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows.md">Windows</a>.
              </li>
              <li class="more-bottom">
                <b>Levels of trust:</b> from complete to non-existent. All windows are
@@ -115,7 +115,7 @@ Features
            Use multiple operating systems at the same time, including
            <a href="/doc/templates/fedora/">Fedora</a>,
            <a href="/doc/templates/debian/">Debian</a>, and
-           <a href="/doc/windows/">Windows.</a>
+           <a href="https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows.md">Windows.</a>
          </p>
 
 .. raw:: html

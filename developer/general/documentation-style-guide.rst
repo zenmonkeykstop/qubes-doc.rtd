@@ -2,8 +2,7 @@
 Documentation style guide
 =========================
 
-*Also see*\ `how to edit the
-documentation </doc/how-to-edit-the-documentation/>`__\ *.*
+*Also see*\ :doc:`how to edit the documentation </developer/general/how-to-edit-the-documentation>`\ *.*
 
 Qubes OS documentation pages are stored as plain text Markdown files in
 the `qubes-doc <https://github.com/QubesOS/qubes-doc>`__ repository. By
@@ -13,22 +12,19 @@ relying solely on the web.
 
 The documentation is a volunteer community effort. People like you are
 constantly working to make it better. If you notice something that can
-be fixed or improved, please `edit the
-documentation </doc/how-to-edit-the-documentation/>`__!
+be fixed or improved, please :doc:`edit the documentation </developer/general/how-to-edit-the-documentation>`!
 
 This page explains the standards we follow for writing, formatting, and
 organizing the documentation. Please follow these guidelines and
 conventions when editing the documentation. For the standards governing
-the website as a whole, please see the `website style
-guide </doc/website-style-guide>`__.
+the website as a whole, please see the :doc:`website style guide </developer/general/website-style-guide>`.
 
 Markdown conventions
 ====================
 
 All the documentation is written in Markdown for maximum accessibility.
 When making contributions, please observe the following style
-conventions. If you’re not familiar with Markdown syntax,
-`this <https://daringfireball.net/projects/markdown/>`__ is a great
+conventions. If you’re not familiar with Markdown syntax, `this <https://daringfireball.net/projects/markdown/>`__ is a great
 resource.
 
 Hyperlink syntax
@@ -51,7 +47,7 @@ You may use absolute URLs in the following cases:
 -  External links
 -  URLs that appear inside code blocks (e.g., in comments and document
    templates, and the plain text reproductions of
-   `QSBs </security/qsb/>`__ and `Canaries </security/canary/>`__),
+   :doc:`QSBs </project-security/qsb>` and :doc:`Canaries </project-security/canary>`),
    since they’re not hyperlinks
 -  Git repo files like ``README.md`` and ``CONTRIBUTING.md``, since
    they’re not part of the website itself but rather of the auxiliary
@@ -69,8 +65,7 @@ links breaks:
 Image linking
 -------------
 
-See `how to add
-images </doc/how-to-edit-the-documentation/#how-to-add-images>`__ for
+See :ref:`how to add images <developer/general/how-to-edit-the-documentation:how to add images>` for
 the required syntax. This will make the image a hyperlink to the image
 file, allowing the reader to click on the image in order to view the
 full image by itself. This is important. Following best practices, our
@@ -81,8 +76,7 @@ shrink down to fit the screen. If visitors cannot click on the image to
 view it in full size, then, depending on their device, they may have no
 way see the details in the image clearly.
 
-In addition, make sure to link only to images in the
-`qubes-attachment <https://github.com/QubesOS/qubes-attachment>`__
+In addition, make sure to link only to images in the `qubes-attachment <https://github.com/QubesOS/qubes-attachment>`__
 repository. Do not attempt to link to images hosted on other websites.
 
 HTML and CSS
@@ -118,10 +112,7 @@ and this makes numbered lists easier to follow.
 Code blocks
 -----------
 
-When writing code blocks, use `syntax
-highlighting <https://github.github.com/gfm/#info-string>`__ where
-possible (see
-`here <https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers>`__
+When writing code blocks, use `syntax highlighting <https://github.github.com/gfm/#info-string>`__ where possible (see `here <https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers>`__
 for a list of supported languages). Use ``[...]`` for anything omitted.
 
 Line wrapping
@@ -136,16 +127,14 @@ Writing guidelines
 Correct use of terminology
 --------------------------
 
-Familiarize yourself with the terms defined in the
-`glossary </doc/glossary/>`__. Use these terms consistently and
+Familiarize yourself with the terms defined in the :doc:`glossary </user/reference/glossary>`. Use these terms consistently and
 accurately throughout your writing.
 
 Sentence case in headings
 -------------------------
 
 Use sentence case (rather than title case) in headings for the reasons
-explained
-`here <https://www.sallybagshaw.com.au/articles/sentence-case-v-title-case/>`__.
+explained `here <https://www.sallybagshaw.com.au/articles/sentence-case-v-title-case/>`__.
 In particular, since the authorship of the Qubes documentation is
 decentralized and widely distributed among users from around the world,
 many contributors come from regions with different conventions for
@@ -258,27 +247,12 @@ certain not to change for a very long time), but they are rare.
 Core vs. external documentation
 -------------------------------
 
-Core documentation resides in the `Qubes OS Project’s official
-repositories <https://github.com/QubesOS/>`__, mainly in
-`qubes-doc <https://github.com/QubesOS/qubes-doc>`__. External
+Core documentation resides in the `Qubes OS Project’s official repositories <https://github.com/QubesOS/>`__, mainly in `qubes-doc <https://github.com/QubesOS/qubes-doc>`__. External
 documentation can be anywhere else (such as forums, community websites,
-and blogs), but there is an especially large collection in the `Qubes
-Community <https://github.com/Qubes-Community>`__ project. External
-documentation should not be submitted to
-`qubes-doc <https://github.com/QubesOS/qubes-doc>`__. If you’ve written
-a piece of documentation that is not appropriate for
-`qubes-doc <https://github.com/QubesOS/qubes-doc>`__, we encourage you
-to submit it to the `Qubes
-Community <https://github.com/Qubes-Community>`__ project instead.
-However, *linking* to external documentation from
-`qubes-doc <https://github.com/QubesOS/qubes-doc>`__ is perfectly fine.
-Indeed, the maintainers of the `Qubes
-Community <https://github.com/Qubes-Community>`__ project should
-regularly submit PRs against the documentation index (see `How to edit
-the documentation
-index </doc/how-to-edit-the-documentation/#how-to-edit-the-documentation-index>`__)
-to add and update Qubes Community links in the `“External
-documentation” </doc/#external-documentation>`__ section of the
+and blogs), but there is an especially large collection in the `Qubes Community <https://github.com/Qubes-Community>`__ project. External documentation should not be submitted to `qubes-doc <https://github.com/QubesOS/qubes-doc>`__. If you’ve written a piece of documentation that is not appropriate for `qubes-doc <https://github.com/QubesOS/qubes-doc>`__, we encourage you to submit it to the `Qubes Community <https://github.com/Qubes-Community>`__ project instead.
+However, *linking* to external documentation from `qubes-doc <https://github.com/QubesOS/qubes-doc>`__ is perfectly fine. Indeed, the maintainers of the `Qubes Community <https://github.com/Qubes-Community>`__ project should
+regularly submit PRs against the documentation index (see :ref:`How to edit the documentation index <developer/general/how-to-edit-the-documentation:how to edit the documentation index>`)
+to add and update Qubes Community links in the :ref:`“External documentation” <developer/general/documentation-style-guide:external documentation>` section of the
 documentation table of contents.
 
 The main difference between **core** (or **official**) and **external**
@@ -290,8 +264,7 @@ output by the Qubes OS Project. In other words, we take responsibility
 for documenting all of the software we put out into the world, but it
 doesn’t make sense for us to take on the responsibility of documenting
 or maintaining documentation for anything else. For example, Qubes OS
-may use a popular Linux distribution for an official
-`TemplateVM </doc/templates/>`__. However, it would not make sense for a
+may use a popular Linux distribution for an official :doc:`TemplateVM </user/templates/templates>`. However, it would not make sense for a
 comparatively small project like ours, with modest funding and a lean
 workforce, to attempt to document software belonging to a large,
 richly-funded project with an army of paid and volunteer contributors,
@@ -307,8 +280,7 @@ work involved in *maintaining* documentation after it has been written.
 They may wish to write documentation and submit it to the core docs, but
 they see only their own writing process and fail to consider that it
 will have to be kept up-to-date and consistent with the rest of the docs
-for years afterward. Submissions to the core docs also have to `undergo
-a review process </doc/how-to-edit-the-documentation/#security>`__ to
+for years afterward. Submissions to the core docs also have to :ref:`undergo a review process <developer/general/how-to-edit-the-documentation:security>` to
 ensure accuracy before being merged, which takes up valuable time from
 the team. We aim to maintain high quality standards for the core docs
 (style and mechanics, formatting), which also takes up a lot of time. If
@@ -334,10 +306,7 @@ introductory tutorials that teach basic Linux concepts and commands in
 the context of Qubes. In addition, just because the Qubes OS Project has
 officially written and maintains some flexible framework, such as
 ``qrexec``, it does not make sense to include every tutorial that says
-“here’s how to do something cool with ``qrexec``” in the core docs. Such
-tutorials generally also belong in the community documentation.
-
-See `#4693 <https://github.com/QubesOS/qubes-issues/issues/4693>`__ for
+“here’s how to do something cool with ``qrexec``” in the core docs. Such tutorials generally also belong in the community documentation.  See `#4693 <https://github.com/QubesOS/qubes-issues/issues/4693>`__ for
 more background information.
 
 Release-specific documentation
@@ -484,11 +453,9 @@ the website so that search results wouldn’t be populated with
 out-of-date information.)
 
 For further discussion about release-specific documentation in Qubes,
-see
-`here <https://groups.google.com/d/topic/qubes-users/H9BZX4K9Ptk/discussion>`__.
+see `here <https://groups.google.com/d/topic/qubes-users/H9BZX4K9Ptk/discussion>`__.
 
 Git conventions
 ===============
 
-Please follow our `Git commit message
-guidelines </doc/coding-style/#commit-message-guidelines>`__.
+Please follow our :ref:`Git commit message guidelines <developer/code/coding-style:commit message guidelines>`.

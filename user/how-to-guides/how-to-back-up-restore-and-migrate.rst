@@ -57,7 +57,7 @@ Creating a backup
 
    If you wish to send your backup to a (currently running) VM, select
    the VM in the drop-down box next to **Target app qube**. If you wish
-   to send your backup to a `USB mass storage device </doc/usb/>`__, you
+   to send your backup to a :doc:`USB mass storage device </user/how-to-guides/how-to-use-usb-devices>`, you
    can use the directory selection widget to mount a connected device
    (under “Other locations” item on the left); or first mount the device
    in a VM, then select the mount point inside that VM as the backup
@@ -97,8 +97,7 @@ Creating a backup
    backup. Once the progress bar has completed, you may click
    **Finish**.
 
-6. Test restore your backup. Follow the `restore
-   procedure <#restoring-from-a-backup>`__, selecting **Verify backup
+6. Test restore your backup. Follow the :ref:`restore    procedure <user/how-to-guides/how-to-back-up-restore-and-migrate:restoring from a backup>`, selecting **Verify backup
    integrity, do not restore the data**. This step is optional but
    strongly recommended. A backup is useless if you can’t restore your
    data from it, and you can’t be sure that your backup is good until
@@ -112,8 +111,7 @@ Restoring from a backup
 
 2. Select the source location of the backup to be restored:
 
-   -  If your backup is located on a `USB mass storage
-      device </doc/usb/>`__, attach it first to another VM or select
+   -  If your backup is located on a :doc:`USB mass storage       device </user/how-to-guides/how-to-use-usb-devices>`, attach it first to another VM or select
       ``sys-usb`` in the next item.
    -  If your backup is located in a (currently running) VM, select the
       VM in the drop-down box next to **app qube**.
@@ -145,8 +143,7 @@ Restoring from a backup
    3. **Verify backup integrity, do not restore the data**: This will
       scan the backup file for corrupted data. However, it does not
       currently detect if it is missing data as long as it is a
-      correctly structured, non-corrupted backup file. See `issue
-      #3498 <https://github.com/QubesOS/qubes-issues/issues/3498>`__ for
+      correctly structured, non-corrupted backup file. See `issue       #3498 <https://github.com/QubesOS/qubes-issues/issues/3498>`__ for
       more details.
 
 4. If your backup is encrypted, you must check the **Encrypted backup**
@@ -177,8 +174,7 @@ to overwrite the existing files in dom0’s home directory, unexpected and
 undesired configuration changes could occur. However, if you do wish to
 move all files from the dom0 backup out of the subdirectory into your
 current dom0 home directory (overwriting any existing files in the
-process), you may do so by following the instructions
-`here <https://stackoverflow.com/questions/20192070/how-to-move-all-files-including-hidden-files-into-parent-directory-via>`__.
+process), you may do so by following the instructions `here <https://stackoverflow.com/questions/20192070/how-to-move-all-files-including-hidden-files-into-parent-directory-via>`__.
 Just remember that this can cause unexpected and desired configuration
 changes in dom0, depending on exactly which files you’re adding and
 replacing.
@@ -194,16 +190,15 @@ procedure.
 
 Refer to the following for emergency restore of a backup created on:
 
--  `Qubes R4 or newer </doc/backup-emergency-restore-v4/>`__
--  `Qubes R3 </doc/backup-emergency-restore-v3/>`__
--  `Qubes R2 or older </doc/backup-emergency-restore-v2/>`__
+-  :doc:`Qubes R4 or newer </user/how-to-guides/backup-emergency-restore-v4>`
+-  :doc:`Qubes R3 </user/how-to-guides/backup-emergency-restore-v3>`
+-  :doc:`Qubes R2 or older </user/how-to-guides/backup-emergency-restore-v2>`
 
 Migrating between two physical machines
 =======================================
 
 In order to migrate your Qubes system from one physical machine to
-another, simply follow the backup procedure on the old machine, `install
-Qubes </downloads/>`__ on the new machine, and follow the restoration
+another, simply follow the backup procedure on the old machine, :doc:`install Qubes </user/downloading-installing-upgrading/downloads>` on the new machine, and follow the restoration
 procedure on the new machine. All of your settings and data will be
 preserved!
 
@@ -236,7 +231,4 @@ backups:
 Notes
 =====
 
--  For the technical details of the backup system, please refer to `this
-   thread <https://groups.google.com/d/topic/qubes-devel/TQr_QcXIVww/discussion>`__.
--  If working with symlinks, note the issues described in `this
-   thread <https://groups.google.com/d/topic/qubes-users/EITd1kBHD30/discussion>`__.
+-  For the technical details of the backup system, please refer to `this    thread <https://groups.google.com/d/topic/qubes-devel/TQr_QcXIVww/discussion>`__. -  If working with symlinks, note the issues described in `this    thread <https://groups.google.com/d/topic/qubes-users/EITd1kBHD30/discussion>`__.

@@ -5,9 +5,7 @@ Device handling security
 Any additional ability a VM gains is additional attack surface. It’s a
 good idea to always attach the minimum entity required in a VM.
 
-For example, attaching a full USB-device offers `more attack surface
-than attaching a single block
-device <https://blog.invisiblethings.org/2011/05/31/usb-security-challenges.html>`__,
+For example, attaching a full USB-device offers `more attack surface than attaching a single block device <https://blog.invisiblethings.org/2011/05/31/usb-security-challenges.html>`__,
 while attaching a full block device (e.g. ``sda``) again offers more
 attack surface than attaching a single partition (e.g. ``sda1``), since
 the targetVM doesn’t have to parse the partition-table. (Attaching a
@@ -55,12 +53,7 @@ accessible. However, some devices or applications require full PCI
 access. In these cases, the whole config-space may be allowed. You’re
 potentially weakening the device isolation, especially if your system is
 not equipped with a VT-d Interrupt Remapping unit. This increases the
-VM’s ability to run a `side channel
-attack <https://en.wikipedia.org/wiki/Side-channel_attack>`__ and
-vulnerability to the same. See `Xen PCI Passthrough: PV guests and PCI
-quirks <https://wiki.xenproject.org/wiki/Xen_PCI_Passthrough#PV_guests_and_PCI_quirks>`__
-and `Software Attacks on Intel
-VT-d <https://invisiblethingslab.com/resources/2011/Software%20Attacks%20on%20Intel%20VT-d.pdf>`__
+VM’s ability to run a `side channel attack <https://en.wikipedia.org/wiki/Side-channel_attack>`__ and vulnerability to the same. See `Xen PCI Passthrough: PV guests and PCI quirks <https://wiki.xenproject.org/wiki/Xen_PCI_Passthrough#PV_guests_and_PCI_quirks>`__ and `Software Attacks on Intel VT-d <https://invisiblethingslab.com/resources/2011/Software%20Attacks%20on%20Intel%20VT-d.pdf>`__
 (page 7) for more details.
 
 USB Security
@@ -70,18 +63,16 @@ The connection of an untrusted USB device to dom0 is a security risk
 since the device can attack an arbitrary USB driver (which are included
 in the linux kernel), exploit bugs during partition-table-parsing or
 simply pretend to be a keyboard. There are many ready-to-use
-implementations of such attacks, e.g. a `USB Rubber
-Ducky <https://shop.hak5.org/products/usb-rubber-ducky-deluxe>`__. The
+implementations of such attacks, e.g. a `USB Rubber Ducky <https://shop.hak5.org/products/usb-rubber-ducky-deluxe>`__. The
 whole USB stack is put to work to parse the data presented by the USB
 device in order to determine if it is a USB mass storage device, to read
 its configuration, etc. This happens even if the drive is then assigned
 and mounted in another qube.
 
-To avoid this risk, use a `USB qube </doc/usb-qubes/>`__.
+To avoid this risk, use a :doc:`USB qube </user/advanced-topics/usb-qubes>`.
 
 Attaching a USB device to a VM (USB passthrough) will **expose your
-target qube** to most of the `security
-issues <https://blog.invisiblethings.org/2011/05/31/usb-security-challenges.html>`__
+target qube** to most of the `security issues <https://blog.invisiblethings.org/2011/05/31/usb-security-challenges.html>`__
 associated with the USB-stack. If possible, use a method specific for
 particular device type (for example, block devices described above),
 instead of this generic one.
@@ -91,7 +82,7 @@ Security Warning On USB Input Devices
 
 If you connect USB input devices (keyboard and mouse) to a VM, that VM
 will effectively have control over your system. Because of this, the
-benefits of using a `USB qube </doc/usb-qubes/>`__ entrusted with a
+benefits of using a :doc:`USB qube </user/advanced-topics/usb-qubes>` entrusted with a
 keyboard or other interface device are much smaller than using a fully
 untrusted USB qube. In addition to having control over your system, such
 a VM can also sniff all the input you enter there (for example,
@@ -115,11 +106,4 @@ harder. Locking the screen (with a traditional password) does not solve
 the problem, because the USB qube can simply sniff this password and
 later easily unlock the screen. One possibility is to set up the screen
 locker to require an additional step to unlock (i.e., two-factor
-authentication). One way to achieve this is to use a
-`YubiKey </doc/YubiKey/>`__, or some other hardware token, or even to
-manually enter a one-time password.
-
-Support for `two factor
-authentication </news/2018/09/11/qubes-u2f-proxy/>`__ was recently
-added, though there are
-`issues <https://github.com/QubesOS/qubes-issues/issues/4661>`__.
+authentication). One way to achieve this is to use a :doc:`YubiKey </user/security-in-qubes/yubi-key>`, or some other hardware token, or even to manually enter a one-time password.  Support for `two factor authentication <https://www.qubes-os.org/news/2018/09/11/qubes-u2f-proxy/>`__ was recently added, though there are `issues <https://github.com/QubesOS/qubes-issues/issues/4661>`__.

@@ -8,8 +8,7 @@ collected at these mirrors.
 List of Download Mirrors
 ========================
 
-The full list of known Qubes download mirrors is available
-`here </downloads/#mirrors>`__.
+The full list of known Qubes download mirrors is available :ref:`here <user/downloading-installing-upgrading/downloads:mirrors>`.
 
 Instructions for Mirror Operators
 =================================
@@ -22,7 +21,4 @@ instructions are helpful in streamlining the process.
 -  Our preferred frequency is **once every 24 hours**, but anything up
    to once every 6-8 hours is fine.
 -  For technical accommodations, please contact
-   `Wojtek </team/#wojtek-porczyk>`__ or
-   `Marek </team/#marek-marczykowski-górecki>`__.
--  For website updates and fixes, please contact
-   `Andrew </team/#andrew-david-wong>`__.
+   `Wojtek <https://www.qubes-os.org/team/#wojtek-porczyk>`__ or    `Marek <https://www.qubes-os.org/team/#marek-marczykowski-górecki>`__. -  For website updates and fixes, please contact    `Andrew <https://www.qubes-os.org/team/#andrew-david-wong>`__.

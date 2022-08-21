@@ -2,8 +2,7 @@
 Version scheme
 ==============
 
-The Qubes OS Project uses the `semantic
-versioning <https://semver.org/>`__ standard. Version numbers are
+The Qubes OS Project uses the `semantic versioning <https://semver.org/>`__ standard. Version numbers are
 written as ``<major>.<minor>.<patch>``. When ``<patch>`` is omitted
 (e.g., ``4.1``), it is usually either because ``<patch>`` is zero (as in
 ``4.1.0``) or because we are referring to a specific minor release
@@ -29,7 +28,7 @@ intended for consumption by the general userbase. For example, ``4.0.4``
 was both a **version** and a **release**, since it was stable and
 intended for general public use, while ``4.1-beta1`` was a **version**
 but *not* a **release**, since it was not stable and was intended only
-for `testing </doc/testing/>`__. All releases are versions, but not all
+for :doc:`testing </user/downloading-installing-upgrading/testing>`. All releases are versions, but not all
 versions are releases.
 
 The letter **R**, as in ``R4.1``, stands for **release**. The
@@ -43,9 +42,8 @@ We intend to make it easy to make a remix of Qubes, targeting another
 hypervisor or isolation provider. We may also create commercial products
 intended for specific circumstances. There is one distinguished
 distribution called **Qubes OS**. All source code for it is available
-for download under a `free and open-source license </doc/license/>`__
-and is openly developed on `GitHub <https://github.com/QubesOS>`__ and
-our `mailing lists <https://www.qubes-os.org/support/>`__. The rest of
+for download under a :doc:`free and open-source license </developer/code/license>`
+and is openly developed on `GitHub <https://github.com/QubesOS>`__ and our `mailing lists <https://www.qubes-os.org/support/>`__. The rest of
 this document discusses Qubes OS. Another remix may have its own version
 series.
 
@@ -57,16 +55,14 @@ release, we decide on the ``<major>.<minor>`` numbers (e.g., ``3.0``).
 We then publish the first release candidate, ``3.0-rc1``. When we feel
 that enough progress has been made, we’ll release ``3.0-rc2`` and so on.
 All these versions (not yet releases) are considered unstable and not
-for production use. You are welcome to `help us test </doc/testing/>`__
+for production use. You are welcome to :doc:`help us test </user/downloading-installing-upgrading/testing>`
 these versions.
 
 When enough progress has been made, we announce the first stable
 release, e.g. ``3.0.0``. This not only a version but an actual release.
-It is considered stable and we commit to supporting it according to our
-`support schedule </doc/supported-releases/>`__. Core components are
+It is considered stable and we commit to supporting it according to our :doc:`support schedule </user/downloading-installing-upgrading/supported-releases>`. Core components are
 branched at this moment and bug fixes are backported from the master
-branch. Please see `help, support, mailing lists, and
-forum </support/>`__ for places to ask questions about stable releases.
+branch. Please see :doc:`help, support, mailing lists, and forum </introduction/support>` for places to ask questions about stable releases.
 No major features and interface incompatibilities are to be included in
 this release. We release bug fixes as patch releases (``3.0.1``,
 ``3.0.2``, and so on), while backward-compatible enhancements and new
@@ -74,8 +70,8 @@ features are introduced in the next minor release (e.g., ``3.1``). Any
 backward-incompatible changes are introduced in the next major release
 (e.g., ``4.0``).
 
-Issues in our `issue tracker </doc/issue-tracking/>`__ are sorted by
-release `milestones </doc/issue-tracking/#milestones>`__.
+Issues in our :doc:`issue tracker </introduction/issue-tracking>` are sorted by
+release :ref:`milestones <introduction/issue-tracking:milestones>`.
 
 Release schedule
 ================
@@ -118,7 +114,7 @@ Bug priorities
 ==============
 
 When deciding whether the current release candidate is the final one,
-the Committee takes bug `priorities </doc/issue-tracking/#priority>`__
+the Committee takes bug :ref:`priorities <introduction/issue-tracking:priority>`
 into consideration. The meaning of them is as follows:
 
 -  ``blocker`` — when any such bug is present in the current release

@@ -4,8 +4,7 @@ YubiKey
 
 You can use a YubiKey to enhance Qubes user authentication, for example
 to mitigate risk of someone snooping the password. This can also
-slightly improve security when you have a `USB
-keyboard </doc/device-handling-security/#security-warning-on-usb-input-devices>`__.
+slightly improve security when you have a :ref:`USB keyboard <user/security-in-qubes/device-handling-security:security warning on usb input devices>`.
 
 Challenge-response mode
 =======================
@@ -41,9 +40,7 @@ To use this mode you need to:
    inside the template take effect in your USB app qube) or install the
    packages inside your USB VM if you would like to avoid rebooting it.
 
-2. Configure your YubiKey for challenge-response ``HMAC-SHA1`` mode, for
-   example `following this
-   tutorial <https://www.yubico.com/products/services-software/personalization-tools/challenge-response/>`__.
+2. Configure your YubiKey for challenge-response ``HMAC-SHA1 mode, for    example `following this    tutorial <https://www.yubico.com/products/services-software/personalization-tools/challenge-response/>`__.
 
    On Debian, you can run the graphical user interface
    ``yubikey-personalization-gui`` from the command line.

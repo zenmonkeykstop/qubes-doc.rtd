@@ -2,8 +2,7 @@
 How to edit the documentation
 =============================
 
-*Also see the*\ `documentation style
-guide </doc/documentation-style-guide/>`__\ *.*
+*Also see the*\ :doc:`documentation style guide </developer/general/documentation-style-guide>`\ *.*
 
 Qubes OS documentation pages are stored as plain text Markdown files in
 the `qubes-doc <https://github.com/QubesOS/qubes-doc>`__ repository. By
@@ -19,9 +18,7 @@ request!
 How to submit a pull request
 ============================
 
-We keep all the documentation in
-`qubes-doc <https://github.com/QubesOS/qubes-doc>`__, a dedicated Git
-repository hosted on `GitHub <https://github.com/>`__. Thanks to
+We keep all the documentation in `qubes-doc <https://github.com/QubesOS/qubes-doc>`__, a dedicated Git repository hosted on `GitHub <https://github.com/>`__. Thanks to
 GitHub’s easy web interface, you can edit the documentation even if
 you’re not familiar with Git or the command line! All you need is a free
 GitHub account.
@@ -29,16 +26,15 @@ GitHub account.
 A few notes before we get started:
 
 -  Since Qubes is a security-oriented project, every documentation
-   change will be `reviewed <#security>`__ before it’s accepted. This
+   change will be :ref:`reviewed <developer/general/how-to-edit-the-documentation:security>` before it’s accepted. This
    allows us to maintain quality control and protect our users.
 
 -  To give your contribution a better chance of being accepted, please
-   follow our `documentation style
-   guide </doc/documentation-style-guide/>`__.
+   follow our :doc:`documentation style    guide </developer/general/documentation-style-guide>`.
 
 -  We don’t want you to spend time and effort on a contribution that we
    can’t accept. If your contribution would take a lot of time, please
-   `file an issue </doc/issue-tracking/>`__ for it first so that we can
+   :doc:`file an issue </introduction/issue-tracking>` for it first so that we can
    make sure we’re on the same page before significant works begins.
 
 -  Alternatively, you may already have written content that doesn’t
@@ -51,16 +47,11 @@ A few notes before we get started:
 
 -  Finally, if you’ve written something that doesn’t belong in qubes-doc
    but that would be beneficial to the Qubes community, please consider
-   adding it to the `external
-   documentation </doc/documentation-style-guide/#core-vs-external-documentation>`__.
+   adding it to the :ref:`external    documentation <developer/general/documentation-style-guide:core vs external documentation>`.
 
 (**Advanced users:** If you’re already familiar with GitHub or wish to
 work from the command line, you can skip the rest of this section. All
-you need to do to contribute is to `fork and
-clone <https://guides.github.com/activities/forking/>`__ the
-`qubes-doc <https://github.com/QubesOS/qubes-doc>`__ repo, make your
-changes, then `submit a pull
-request <https://help.github.com/articles/using-pull-requests/>`__.)
+you need to do to contribute is to `fork and clone <https://guides.github.com/activities/forking/>`__ the `qubes-doc <https://github.com/QubesOS/qubes-doc>`__ repo, make your changes, then `submit a pull request <https://help.github.com/articles/using-pull-requests/>`__.)
 
 Ok, let’s begin. Every documentation page has a “Page Source on GitHub”
 button. Depending on the size of your screen, it may either be on the
@@ -89,10 +80,7 @@ time you make a contribution.
 
 Now you can make your modifications. You can also preview the changes to
 see how they’ll be formatted by clicking the “Preview changes” tab. If
-you want to add images, please see `How to add
-images <#how-to-add-images>`__. If you’re making formatting changes,
-please `render the site
-locally <https://github.com/QubesOS/qubesos.github.io#instructions>`__
+you want to add images, please see :ref:`How to add images <developer/general/how-to-edit-the-documentation:how to add images>`. If you’re making formatting changes, please `render the site locally <https://github.com/QubesOS/qubesos.github.io#instructions>`__
 to verify that everything looks correct before submitting any changes.
 
 |edit|
@@ -112,16 +100,13 @@ the “Create pull request” button.
 You will be able to adjust the pull request message and title there. In
 most cases, the defaults are ok, so you can just confirm by pressing the
 “Create pull request” button again. However, if you’re not ready for
-your PR to be reviewed or merged yet, please `make a draft PR
-instead <https://github.blog/2019-02-14-introducing-draft-pull-requests/>`__.
+your PR to be reviewed or merged yet, please `make a draft PR instead <https://github.blog/2019-02-14-introducing-draft-pull-requests/>`__.
 
 |pull-request-confirm|
 
-If any of your changes should be reflected in the `documentation index
-(a.k.a. table of contents) </doc/>`__ — for example, if you’re adding a
+If any of your changes should be reflected in the `documentation index (a.k.a. table of contents) </>`__ — for example, if you’re adding a
 new page, changing the title of an existing page, or removing a page —
-please see `How to edit the documentation
-index <#how-to-edit-the-documentation-index>`__.
+please see :ref:`How to edit the documentation index <developer/general/how-to-edit-the-documentation:how to edit the documentation index>`.
 
 That’s all! We will review your changes. If everything looks good, we’ll
 pull them into the official documentation. Otherwise, we may have some
@@ -135,9 +120,7 @@ can’t.
 How to edit the documentation index
 ===================================
 
-The source file for the `documentation index (a.k.a. table of
-contents) </doc/>`__ is
-`doc-index.yml <https://github.com/QubesOS/qubesos.github.io/blob/master/_data/doc-index.yml>`__.
+The source file for the `documentation index (a.k.a. table of contents) </>`__ is `doc-index.yml <https://github.com/QubesOS/qubesos.github.io/blob/master/_data/doc-index.yml>`__.
 
 Editing this file will change what appears on the documentation index.
 If your pull request (PR) adds, removes, or edits anything that should
@@ -148,24 +131,21 @@ How to add images
 =================
 
 To add an image to a page, use the following syntax in the main document
-(see `here </doc/documentation-style-guide/#image-linking>`__ for why
+(see :ref:`here <developer/general/documentation-style-guide:image linking>` for why
 this syntax is important).
 
 ::
 
    [![Image Title](/attachment/doc/image.png)](/attachment/doc/image.png)
 
-Then, submit your image(s) in a separate pull request to the
-`qubes-attachment <https://github.com/QubesOS/qubes-attachment>`__
+Then, submit your image(s) in a separate pull request to the `qubes-attachment <https://github.com/QubesOS/qubes-attachment>`__
 repository using the same path and filename. This is the only permitted
 way to include images. Do not link to images on other websites.
 
 Serving the website locally
 ===========================
 
-You can serve the website offline on your local machine by following
-`these
-instructions <https://github.com/QubesOS/qubesos.github.io#instructions>`__.
+You can serve the website offline on your local machine by following `these instructions <https://github.com/QubesOS/qubesos.github.io#instructions>`__.
 This can be useful for making sure that your changes render the way you
 expect, especially when your changes affect formatting, images, tables,
 styling, etc.
@@ -173,14 +153,10 @@ styling, etc.
 Security
 ========
 
-*Also see:*\ `Should I trust this
-website? </faq/#should-i-trust-this-website>`__
+*Also see:*\ :ref:`Should I trust this website? <introduction/faq:should i trust this website>`
 
-All pull requests (PRs) against
-`qubes-doc <https://github.com/QubesOS/qubes-doc>`__ must pass review
-prior to be merged, except in the case of `external
-documentation </doc/#external-documentation>`__ (see
-`#4693 <https://github.com/QubesOS/qubes-issues/issues/4693>`__). This
+All pull requests (PRs) against `qubes-doc <https://github.com/QubesOS/qubes-doc>`__ must pass review
+prior to be merged, except in the case of :ref:`external documentation <developer/general/how-to-edit-the-documentation:external documentation>` (see `#4693 <https://github.com/QubesOS/qubes-issues/issues/4693>`__). This
 process is designed to ensure that contributed text is accurate and
 non-malicious. This process is a best effort that should provide a
 reasonable degree of assurance, but it is not foolproof. For example,
@@ -204,13 +180,9 @@ Questions, problems, and improvements
 =====================================
 
 If you have a question about something you read in the documentation or
-about how to edit the documentation, please post it on the
-`forum <https://forum.qubes-os.org/>`__ or send it to the appropriate
-`mailing list </support/>`__. If you see that something in the
-documentation should be fixed or improved, please
-`contribute <#how-to-submit-a-pull-request>`__ the change yourself. To
-report an issue with the documentation, please follow our standard
-`issue reporting guidelines </doc/issue-tracking/>`__. (If you report an
+about how to edit the documentation, please post it on the `forum <https://forum.qubes-os.org/>`__ or send it to the appropriate :doc:`mailing list </introduction/support>`. If you see that something in the
+documentation should be fixed or improved, please :ref:`contribute <developer/general/how-to-edit-the-documentation:how to submit a pull request>` the change yourself. To
+report an issue with the documentation, please follow our standard :doc:`issue reporting guidelines </introduction/issue-tracking>`. (If you report an
 issue with the documentation, you will likely be asked to submit a pull
 request for it, unless there is a clear indication in your report that
 you are not willing or able to do so.)

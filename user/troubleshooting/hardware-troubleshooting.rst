@@ -11,8 +11,7 @@ this works fine since the Linux kernel developers backport fixes to this
 kernel, but for some newer hardware, you may run into issues. For
 example, the audio might not work if the sound card is too new for the
 LTS kernel. To fix this, you can try the ``kernel-latest`` package –
-though be aware that it’s less tested! (See
-`here </doc/how-to-install-software-in-dom0/#kernel-upgrade>`__ for more
+though be aware that it’s less tested! (See :ref:`here <user/advanced-topics/how-to-install-software-in-dom0:kernel upgrade>` for more
 information about upgrading kernels in dom0). In dom0:
 
 ::
@@ -31,8 +30,7 @@ booted with the kernel shipped by ``kernel-latest``.
 “Unsupported Hardware Detected” error
 =====================================
 
-See `Installation
-Troubleshooting </doc/installation-troubleshooting/#unsupported-hardware-detected-error>`__.
+See :ref:`Installation Troubleshooting <user/troubleshooting/installation-troubleshooting:unsupported hardware detected error>`.
 
 Keyboard layout settings not behaving correctly
 ===============================================
@@ -55,10 +53,4 @@ This generates the appropriate configuration in
 ``/etc/X11/xorg.conf.d/00-keyboard.conf``. This file is auto-generated.
 Do not edit it by hand, unless you know what you are doing.
 
-Restarting ``xorg`` is required. The most straightforward way is to
-reboot the system.
-
-More information in `this
-discussion <https://groups.google.com/d/topic/qubes-devel/d8ZQ_62asKI/discussion>`__
-and `this GitHub
-issue <https://github.com/QubesOS/qubes-issues/issues/1396>`__.
+Restarting ``xorg is required. The most straightforward way is to reboot the system.  More information in `this discussion <https://groups.google.com/d/topic/qubes-devel/d8ZQ_62asKI/discussion>`__ and `this GitHub issue <https://github.com/QubesOS/qubes-issues/issues/1396>`__.

@@ -14,16 +14,14 @@ procedure.
 Required ``scrypt`` Utility
 ===========================
 
-In Qubes 4.X, backups are encrypted and integrity-protected with
-`scrypt <https://www.tarsnap.com/scrypt.html>`__. You will need a copy
+In Qubes 4.X, backups are encrypted and integrity-protected with `scrypt <https://www.tarsnap.com/scrypt.html>`__. You will need a copy
 of this utility in order to access your data. Since ``scrypt`` is not
 pre-installed on every GNU/Linux system, it is strongly recommended that
 you store a copy of it with your backups. If your distribution has
 ``scrypt`` packaged (e.g., Debian), you can install the package in the
 standard way using your distribution’s package manager. Otherwise,
 you’ll need to obtain a compiled binary (instructions below) or compile
-the program from source yourself. (Don’t forget to `verify
-signatures </security/verifying-signatures>`__ first!) Note that
+the program from source yourself. (Don’t forget to :doc:`verify signatures </project-security/verifying-signatures>` first!) Note that
 versions of ``scrypt`` up to 1.2.0 (inclusive) do not support the ``-P``
 option for easier scripting, which means you’ll need to enter the
 passphrase for each file separately, instead of using
@@ -33,9 +31,7 @@ Here are instructions for obtaining a compiled ``scrypt`` binary. This
 example uses an RPM-based system (Fedora), but the same general
 procedure should work on any GNU/Linux system.
 
-1. If you’re not on Qubes 4.X, `import and authenticate the Release 4
-   Signing
-   Key </security/verifying-signatures/#how-to-import-and-authenticate-release-signing-keys>`__.
+1. If you’re not on Qubes 4.X, :ref:`import and authenticate the Release 4    Signing    Key <project-security/verifying-signatures:how to import and authenticate release signing keys>`.
 
    ::
 
@@ -151,10 +147,8 @@ and *compressed*.
    value other than ``version=4``, go to the instructions for that
    format version:
 
-   -  `Emergency Backup Recovery without Qubes
-      (v2) </doc/backup-emergency-restore-v2/>`__
-   -  `Emergency Backup Recovery without Qubes
-      (v3) </doc/backup-emergency-restore-v3/>`__
+   -  :doc:`Emergency Backup Recovery without Qubes       (v2) </user/how-to-guides/backup-emergency-restore-v2>`
+   -  :doc:`Emergency Backup Recovery without Qubes       (v3) </user/how-to-guides/backup-emergency-restore-v3>`
 
 4. Read ``backup-header``:
 

@@ -26,8 +26,7 @@ to 16 GB) can help. Last, you may want to disable memory balancing, but
 keep in mind the impact on your other qubes.
 
 Once you’ve built the development AppVM, open a Terminal window to it
-and install the necessary dependencies (see
-`QubesBuilder </doc/qubes-builder/>`__ for more info):
+and install the necessary dependencies (see :doc:`QubesBuilder </developer/building/qubes-builder>` for more info):
 
 ::
 
@@ -51,8 +50,7 @@ commands below as a regular user, not root):
 **Note** In the above process, we do *not* rely on the security of our
 server (keys.qubes-os.org) nor the connection (ssl, cert) – we only rely
 on you getting the Qubes Master Signing Key fingerprint *somehow* and
-ensuring they match! See `verifying
-signatures </security/verifying-signatures/#how-to-import-and-authenticate-the-qubes-master-signing-key>`__
+ensuring they match! See :ref:`verifying signatures <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>`
 for verification sources.
 
 Now let’s bootstrap the builder. Unfortunately, the builder cannot
@@ -79,8 +77,7 @@ kernel sources).
 Build using setup script
 ========================
 
-Let’s configure the builder first (see
-`procedure </doc/qubes-iso-building/#build-using-manual-steps>`__ at
+Let’s configure the builder first (see :ref:`procedure <developer/building/qubes-iso-building:build using manual steps>` at
 bottom if you would prefer to manually configure):
 
 ::
@@ -118,12 +115,11 @@ Continue the build process with:
 When building the Whonix templates, you will often need to add/update
 the ``WHONIX_TBB_VERSION`` variable in ``builder.conf`` at this stage to
 specify the currently shipping Tor Browser version. See the related note
-under `Extra Whonix Build Options </doc/building-whonix-template/>`__.
+under `Extra Whonix Build Options <https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-whonix-template.md>`__.
 
 You may also want to add
 ``COMPONENTS := $(filter-out gcc,$(COMPONENTS))`` to bypass a multiple
-hour compile step. See
-`QubesBuilder </doc/qubes-builder/#use-pre-built-qubes-packages>`__ for
+hour compile step. See :ref:`QubesBuilder <developer/building/qubes-builder:use pre built qubes packages>` for
 more detail.
 
 Finally, if you are making a test build, use:
@@ -160,8 +156,7 @@ If you will be building Whonix templates:
    gpg --fingerprint 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
 
 **Note:** It’s very important to check the fingerprint displayed against
-multiple sources such as the `Whonix web
-site <https://www.whonix.org/wiki/Whonix_Signing_Key>`__, etc. It should
+multiple sources such as the `Whonix web site <https://www.whonix.org/wiki/Whonix_Signing_Key>`__, etc. It should
 look something like this:
 
 ::
@@ -204,7 +199,7 @@ Continue the build process with:
 When building the Whonix templates, you will often need to add/update
 the ``WHONIX_TBB_VERSION`` variable at this stage to specify the
 currently shipping Tor Browser version. See the related note under
-`Extra Whonix Build Options </doc/building-whonix-template/>`__.
+`Extra Whonix Build Options <https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-whonix-template.md>`__.
 
 Finally, if you are making a test build, use:
 

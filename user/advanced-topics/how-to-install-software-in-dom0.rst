@@ -41,7 +41,7 @@ maintain.
 How to update dom0
 ==================
 
-See `How to Update </doc/how-to-update/>`__.
+See :doc:`How to Update </user/how-to-guides/how-to-update>`.
 
 How to install a specific package
 =================================
@@ -116,12 +116,11 @@ with the following command:
 Testing repositories
 ====================
 
-If you wish to install updates that are still in
-`testing </doc/testing>`__, you must enable the appropriate testing
+If you wish to install updates that are still in :doc:`testing </user/downloading-installing-upgrading/testing>`, you must enable the appropriate testing
 repositories.
 
 **Note:** The following repos are in dom0. For template testing repos,
-see `here </doc/how-to-install-software/#testing-repositories>`__.
+see :ref:`here <user/how-to-guides/how-to-install-software:testing repositories>`.
 
 -  ``qubes-dom0-current-testing`` – testing packages that will
    eventually land in the stable (``current``) repository
@@ -145,14 +144,12 @@ To enable or disable any of these repos permanently, change the
 corresponding ``enabled`` value to ``1`` in
 ``/etc/yum.repos.d/qubes-dom0.repo``.
 
-For testing new templates, please see
-`here </doc/testing/#templates>`__.
+For testing new templates, please see :ref:`here <user/downloading-installing-upgrading/testing:templates>`.
 
 Contributed package repository
 ==============================
 
-Please see `installing contributed
-packages </doc/installing-contributed-packages/>`__.
+Please see :doc:`installing contributed packages </user/advanced-topics/installing-contributed-packages>`.
 
 Kernel upgrade
 ==============
@@ -167,10 +164,9 @@ The packages ``kernel`` and ``kernel-latest`` are for dom0.
 In the ``current`` repository:
 
 -  ``kernel``: an older LTS kernel that has passed Qubes
-   `testing </doc/testing/>`__ (the default dom0 kernel)
+   :doc:`testing </user/downloading-installing-upgrading/testing>` (the default dom0 kernel)
 -  ``kernel-latest``: the latest release from kernel.org that has passed
-   Qubes `testing </doc/testing/>`__ (useful for `troubleshooting newer
-   hardware </doc/newer-hardware-troubleshooting/>`__)
+   Qubes :doc:`testing </user/downloading-installing-upgrading/testing>` (useful for :doc:`troubleshooting newer    hardware </user/troubleshooting/hardware-troubleshooting>`)
 
 In the ``current-testing`` repository:
 
@@ -183,7 +179,7 @@ domU
 ----
 
 The packages ``kernel-qubes-vm`` and ``kernel-latest-qubes-vm`` are for
-domUs. See `Managing VM kernel </doc/managing-vm-kernels/>`__ for more
+domUs. See :doc:`Managing VM kernel </user/advanced-topics/managing-vm-kernels>` for more
 information.
 
 Example
@@ -219,9 +215,7 @@ Grub2
 Reboot required.
 
 If you wish to upgrade to a kernel that is not available from the repos,
-then there is no easy way to do so, but `it may still be possible if
-you’re willing to do a lot of work
-yourself <https://groups.google.com/d/msg/qubes-users/m8sWoyV58_E/HYdReRIYBAAJ>`__.
+then there is no easy way to do so, but `it may still be possible if you’re willing to do a lot of work yourself <https://groups.google.com/d/msg/qubes-users/m8sWoyV58_E/HYdReRIYBAAJ>`__.
 
 Changing default kernel
 =======================
@@ -270,7 +264,7 @@ default, and it will be remembered for next boot.
 Updating over Tor
 =================
 
-Requires installed `Whonix </doc/privacy/whonix/>`__.
+Requires installed `Whonix <https://github.com/Qubes-Community/Contents/blob/master/docs/privacy/whonix.md>`__.
 
 Go to Qubes VM Manager -> System -> Global Settings. See the UpdateVM
 setting. Choose your desired Whonix-Gateway ProxyVM from the list. For

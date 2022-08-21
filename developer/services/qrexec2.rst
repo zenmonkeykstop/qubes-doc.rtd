@@ -3,7 +3,7 @@ Qrexec v2 (deprecated)
 ======================
 
 (*This page is about qrexec v2. For qrexec v3,
-see*\ `here </doc/qrexec/>`__\ *.*)
+see*\ :doc:`here </developer/services/qrexec>`\ *.*)
 
 Qubes **qrexec** is a framework for implementing inter-VM
 (incl. Dom0-VM) services. It offers a mechanism to start programs in
@@ -168,7 +168,7 @@ vulnerability in a RPC server can be fatal to security of the target VM!
 
 If requesting VM-VM (and VM-Dom0) services execution *without cmdline
 helper*, connect directly to ``/var/run/qubes/qrexec-agent-fdpass``
-socket as described `below <#all-the-pieces-together-at-work>`__.
+socket as described :ref:`below <developer/services/qrexec2:all the pieces together at work>`.
 
 Revoking “Yes to All” authorization
 -----------------------------------
@@ -242,9 +242,7 @@ should appear after the invocation of this command. If we changed the
 policy from “ask” to “allow”, then no popup should be presented, and the
 call will always be allowed.
 
-**Note:** For a real world example of writing a qrexec service, see this
-`blog
-post <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__.
+**Note:** For a real world example of writing a qrexec service, see this `blog post <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__.
 
 More high-level RPCs?
 ---------------------
@@ -262,7 +260,7 @@ Qubes RPC internals
 ===================
 
 (*This is about the implementation of qrexec v2. For the implementation
-of qrexec v3, see*\ `here </doc/qrexec-internals/>`__\ *. Note that the
+of qrexec v3, see*\ :doc:`here </developer/services/qrexec-internals>`\ *. Note that the
 user API in v3 is backward compatible: qrexec apps written for Qubes R2
 should run without modification on Qubes R3.*)
 
@@ -318,8 +316,7 @@ All the pieces together at work
 -------------------------------
 
 **Note:** This section is not needed to use qrexec for writing Qubes
-apps. Also note the `qrexec framework implemention in Qubes
-R3 </doc/qrexec3/>`__ significantly differs from what is described in
+apps. Also note the :doc:`qrexec framework implemention in Qubes R3 </developer/services/qrexec>` significantly differs from what is described in
 this section.
 
 The VM-VM channels in Qubes R2 are made via “gluing” two VM-Dom0 and

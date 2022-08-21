@@ -10,10 +10,7 @@ New features and improvements since Qubes 4.0
    network connections open by default; requires explicit connection
    initiation by the user, then requires sharing a code word with the
    remote party before a connection can be established; see
-   `#6364 <https://github.com/QubesOS/qubes-issues/issues/6364>`__ for
-   more information)
--  Qubes firewall reworked to be more defensive (see
-   `#5540 <https://github.com/QubesOS/qubes-issues/issues/5540>`__ for
+   `#6364 <https://github.com/QubesOS/qubes-issues/issues/6364>`__ for    more information) -  Qubes firewall reworked to be more defensive (see    `#5540 <https://github.com/QubesOS/qubes-issues/issues/5540>`__ for
    details)
 -  Xen upgraded to version 4.14
 -  Dom0 operating system upgraded to Fedora 32
@@ -30,17 +27,12 @@ New features and improvements since Qubes 4.0
    path similar to legacy boot and allowing the user to modify boot
    parameters or choose an alternate boot menu entry
 -  New qrexec policy format (see
-   `#4370 <https://github.com/QubesOS/qubes-issues/issues/4370>`__ for
-   details)
--  qrexec protocol improvements (see
-   `#4909 <https://github.com/QubesOS/qubes-issues/issues/4909>`__ for
+   `#4370 <https://github.com/QubesOS/qubes-issues/issues/4370>`__ for    details) -  qrexec protocol improvements (see    `#4909 <https://github.com/QubesOS/qubes-issues/issues/4909>`__ for
    details)
 -  New qrexec-policy daemon
 -  Simplified using in-qube kernels
 -  Windows USB and audio support courtesy of
-   `tabit-pro <https://github.com/tabit-pro>`__ (see
-   `#5802 <https://github.com/QubesOS/qubes-issues/issues/5802>`__ and
-   `#2624 <https://github.com/QubesOS/qubes-issues/issues/2624>`__)
+   `tabit-pro <https://github.com/tabit-pro>`__ (see    `#5802 <https://github.com/QubesOS/qubes-issues/issues/5802>`__ and    `#2624 <https://github.com/QubesOS/qubes-issues/issues/2624>`__)
 -  Clarified disposable-related terminology and properties
 -  Default kernelopts can now be specified by a kernel package
 -  Improved support for high-resolution displays
@@ -76,29 +68,27 @@ New features and improvements since Qubes 4.0
 -  ``qvm-run`` tool got ``--no-shell`` option to run a single command
    without using a shell inside the qube
 
-For a full list, including more detailed descriptions, please see
-`here <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-desc+milestone%3A%22Release+4.1%22+label%3A%22release+notes%22+is%3Aclosed>`__.
+For a full list, including more detailed descriptions, please see `here <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-desc+milestone%3A%22Release+4.1%22+label%3A%22release+notes%22+is%3Aclosed>`__.
 
 Known issues
 ============
 
-For a full list of known 4.1 issues with open bug reports, please see
-`here <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+4.1%22+label%3A%22T%3A+bug%22>`__.
-We strongly recommend `updating Qubes OS </doc/how-to-update/>`__
+For a full list of known 4.1 issues with open bug reports, please see `here <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+4.1%22+label%3A%22T%3A+bug%22>`__.
+We strongly recommend :doc:`updating Qubes OS </user/how-to-guides/how-to-update>`
 immediately after installation in order to apply any and all available
 bug fixes.
 
 Download
 ========
 
-See `downloads </downloads/>`__.
+See :doc:`downloads </user/downloading-installing-upgrading/downloads>`.
 
 Installation instructions
 =========================
 
-See the `installation guide </doc/installation-guide/>`__.
+See the :doc:`installation guide </user/downloading-installing-upgrading/installation-guide>`.
 
 Upgrading
 =========
 
-Please see `how to upgrade to Qubes 4.1 </doc/upgrade/4.1/>`__.
+Please see :doc:`how to upgrade to Qubes 4.1 </user/downloading-installing-upgrading/upgrade/4_1>`.

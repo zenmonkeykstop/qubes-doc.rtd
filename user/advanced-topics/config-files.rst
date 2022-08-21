@@ -82,7 +82,7 @@ on the same template. The scripts here all run as root.
 
 Note that scripts need to be executable (``chmod +x``) to be used.
 
-Also, take a look at `bind-dirs </doc/bind-dirs>`__ for instructions on
+Also, take a look at :doc:`bind-dirs </user/advanced-topics/bind-dirs>` for instructions on
 how to easily modify arbitrary system files in an app qube and have
 those changes persist.
 

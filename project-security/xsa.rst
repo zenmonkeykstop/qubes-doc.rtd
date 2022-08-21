@@ -2,11 +2,9 @@
 Xen security advisory (XSA) tracker
 ===================================
 
-This tracker shows whether Qubes OS is affected by any given `Xen
-security advisory (XSA) <https://xenbits.xen.org/xsa/>`__. Shortly after
+This tracker shows whether Qubes OS is affected by any given `Xen security advisory (XSA) <https://xenbits.xen.org/xsa/>`__. Shortly after
 a new XSA is published, we will add a new row to this tracker. Whenever
-Qubes is significantly affected by an XSA, a `Qubes security bulletin
-(QSB) </security/qsb/>`__ is published, and a link to that QSB is added
+Qubes is significantly affected by an XSA, a :doc:`Qubes security bulletin (QSB) </project-security/qsb>` is published, and a link to that QSB is added
 to the row for the associated XSA.
 
 Under the “Is Qubes Affected?” column, there are two possible values:
@@ -19,8 +17,7 @@ Important notes
 ===============
 
 -  For the purpose of this tracker, we do *not* classify mere
-   `denial-of-service (DoS)
-   attacks <https://en.wikipedia.org/wiki/Denial-of-service_attack>`__
+   `denial-of-service (DoS)    attacks <https://en.wikipedia.org/wiki/Denial-of-service_attack>`__
    as affecting the *security* of Qubes OS. Therefore, if an XSA
    pertains *only* to DoS attacks against Qubes, the value in the “Is
    Qubes Affected?” column will be **No**.
@@ -32,11 +29,10 @@ Important notes
    are almost always published concurrently with QSBs. Please read the
    QSB (if any) for each XSA for patching details.
 -  Embargoed XSAs are excluded from this tracker until they are publicly
-   released, since the `Xen security
-   policy <https://www.xenproject.org/security-policy.html>`__ does not
+   released, since the `Xen security    policy <https://www.xenproject.org/security-policy.html>`__ does not
    permit us to state whether Qubes is affected prior to the embargo
    date.
 -  Unused and withdrawn XSA numbers are included in the tracker for the
    sake of completeness, but they are excluded from the
-   `statistics <#statistics>`__ section for the sake of accuracy.
+   :ref:`statistics <project-security/xsa:statistics>` section for the sake of accuracy.
 -  All dates are in UTC.

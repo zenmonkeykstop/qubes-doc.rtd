@@ -3,21 +3,19 @@ How to update
 =============
 
 *This page is about updating your system while staying on the
-same*\ `supported version of Qubes
-OS </doc/supported-releases/#qubes-os>`__\ *. If you’re instead looking
+same*\ :ref:`supported version of Qubes OS <user/downloading-installing-upgrading/supported-releases:qubes os>`\ *. If you’re instead looking
 to upgrade from your current version of Qubes OS to a newer version, see
-the*\ `Upgrade Guides </doc/upgrade/>`__\ *.*
+the*\ :doc:`Upgrade Guides </user/downloading-installing-upgrading/upgrade/upgrade>`\ *.*
 
 Security updates
 ================
 
 Security updates are an extremely important part of keeping your Qubes
 installation secure. When there is an important security issue, we will
-issue a `Qubes Security Bulletin (QSB) </security/qsb/>`__ via the
-`Qubes Security Pack (``qubes-secpack``) </security/pack/>`__. It is
+issue a :doc:`Qubes Security Bulletin (QSB) </project-security/qsb>` via the
+`Qubes Security Pack (``qubes-secpack` :doc:`) </project-security/security-pack>`. It is
 very important to read each new QSB and follow any user instructions it
-contains. Most of the time, simply `updating your system
-normally <#routine-updates>`__ will be sufficient to obtain security
+contains. Most of the time, simply :ref:`updating your system normally <user/how-to-guides/how-to-update:routine updates>` will be sufficient to obtain security
 updates. However, in some cases, special action may be required on your
 part, which will be explained in the QSB.
 
@@ -25,14 +23,14 @@ Routine updates
 ===============
 
 It is important to keep your Qubes OS system up-to-date to ensure you
-have the latest `security updates <#security-updates>`__, as well as the
+have the latest :ref:`security updates <user/how-to-guides/how-to-update:security updates>`, as well as the
 latest non-security enhancements and bug fixes.
 
 Fully updating your Qubes OS system means updating:
 
--  `dom0 </doc/glossary/#dom0>`__
--  `templates </doc/glossary/#template>`__
--  `standalones </doc/glossary/#standalone>`__ (if you have any)
+-  :ref:`dom0 <user/reference/glossary:dom0>`
+-  :ref:`templates <user/reference/glossary:template>`
+-  :ref:`standalones <user/reference/glossary:standalone>` (if you have any)
 
 You can accomplish this using the **Qubes Update** tool.
 
@@ -70,11 +68,9 @@ interface. The recommended way to do this is by using the command-line
 equivalents of the **Qubes Update** tool.
 
 There are two Salt formulae and two corresponding ``qubesctl`` commands:
-- ```update.qubes-dom0`` </doc/salt/#updatequbes-dom0>`__ -
-```update.qubes-vm`` </doc/salt/#updatequbes-vm>`__
+- :ref:`\`update.qubes-dom0\` <user/advanced-topics/salt:updatequbes dom0>` - :ref:`\`update.qubes-vm\` <user/advanced-topics/salt:updatequbes vm>`
 
-Advanced users may also be interested in learning `how to enable the
-testing repos </doc/testing/>`__.
+Advanced users may also be interested in learning :doc:`how to enable the testing repos </user/downloading-installing-upgrading/testing>`.
 
 Qubes 4.1
 ---------
@@ -94,36 +90,27 @@ Upgrading to avoid EOL
 The above covers updating *within* a given operating system (OS)
 release. Eventually, however, most OS releases will reach **end-of-life
 (EOL)**, after which point they will no longer be supported. This
-applies to Qubes OS itself as well as OSes used in
-`templates </doc/templates/>`__ (and
-`standalones </doc/standalones-and-hvms/>`__, if you have any).
+applies to Qubes OS itself as well as OSes used in :doc:`templates </user/templates/templates>` (and :doc:`standalones </user/advanced-topics/standalones-and-hvms>`, if you have any).
 
 **It’s very important that you use only supported releases so that you
 continue to receive security updates.** This means that you *must*
 periodically upgrade Qubes OS and your templates before they reach EOL.
 You can always see which versions of Qubes OS and select templates are
-supported on the `Supported Versions </doc/supported-releases/>`__ page.
+supported on the :doc:`Supported Versions </user/downloading-installing-upgrading/supported-releases>` page.
 
-In the case of Qubes OS itself, we will make an
-`announcement </news/categories/#releases>`__ when a supported Qubes OS
+In the case of Qubes OS itself, we will make an `announcement <https://www.qubes-os.org/news/categories/#releases>`__ when a supported Qubes OS
 release is approaching EOL and another when it has actually reached EOL,
-and we will provide `instructions for upgrading to the next stable
-supported Qubes OS release </doc/upgrade/>`__.
+and we will provide :doc:`instructions for upgrading to the next stable supported Qubes OS release </user/downloading-installing-upgrading/upgrade/upgrade>`.
 
 Periodic upgrades are also important for templates. For example, you
-might be using a `Fedora template </doc/templates/fedora/>`__. The
-`Fedora Project <https://getfedora.org/>`__ is independent of the Qubes
-OS Project. They set their own
-`schedule <https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle#Maintenance_Schedule>`__
+might be using a :doc:`Fedora template </user/templates/fedora/fedora>`. The `Fedora Project <https://getfedora.org/>`__ is independent of the Qubes OS Project. They set their own `schedule <https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle#Maintenance_Schedule>`__
 for when each Fedora release reaches EOL. You can always find out when
 an OS reaches EOL from the upstream project that maintains it. We also
 pass along any EOL notices we receive for official template OSes as a
-convenience to Qubes users (see `Supported Versions:
-Templates </doc/supported-releases/#templates>`__).
+convenience to Qubes users (see :ref:`Supported Versions: Templates <user/downloading-installing-upgrading/supported-releases:templates>`).
 
 The one exception to all this is the specific release used for dom0 (not
-to be confused with Qubes OS as a whole), which `doesn’t have to be
-upgraded </doc/supported-releases/#note-on-dom0-and-eol>`__.
+to be confused with Qubes OS as a whole), which :ref:`doesn’t have to be upgraded <user/downloading-installing-upgrading/supported-releases:note on dom0 and eol>`.
 
 .. |Qubes Update| image:: /attachment/doc/r4.0-software-update.png
    :target: /attachment/doc/r4.0-software-update.png

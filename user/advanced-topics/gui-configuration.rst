@@ -61,5 +61,5 @@ have the below config as well present in
 GUI Troubleshooting
 ===================
 
-See `GUI Troubleshooting </doc/gui-troubleshooting>`__ for issues
+See :doc:`GUI Troubleshooting </user/troubleshooting/gui-troubleshooting>` for issues
 relating to the Qubes graphical user interface and how to fix them.

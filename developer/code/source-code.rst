@@ -13,8 +13,7 @@ repository, for example:
 -  ``linux-template-builder.git`` – Scripts and other files used to
    create Qubes template images.
 
-All of our repositories are available under the `QubesOS GitHub
-account <https://github.com/QubesOS/>`__.
+All of our repositories are available under the `QubesOS GitHub account <https://github.com/QubesOS/>`__.
 
 To clone a repository:
 
@@ -29,7 +28,7 @@ e.g.:
    git clone https://github.com/QubesOS/qubes-core-admin.git core-admin
 
 To build Qubes you do not need to download all these repositories. If
-you use `qubes builder </doc/QubesBuilder/>`__ you can specify *what*
+you use :doc:`qubes builder </developer/building/qubes-builder>` you can specify *what*
 you want to build, and download only the repositories needed to build
 that target.
 
@@ -52,22 +51,17 @@ To update (git fetch) **all** of these repositories :
 How to Send Patches
 ===================
 
-If you want to `contribute
-code </doc/contributing/#contributing-code>`__ to the project, there are
-two ways. Whichever method you choose, you must `sign your
-code </doc/code-signing/>`__ before it can be accepted.
+If you want to :ref:`contribute code <introduction/contributing:contributing code>` to the project, there are
+two ways. Whichever method you choose, you must :doc:`sign your code </developer/code/code-signing>` before it can be accepted.
 
--  **Preferred**: Use GitHub’s `fork & pull
-   requests <https://guides.github.com/activities/forking/>`__.
+-  **Preferred**: Use GitHub’s `fork & pull    requests <https://guides.github.com/activities/forking/>`__.
 
    Opening a pull request on GitHub greatly eases the code review and
    tracking process. In addition, especially for bigger changes, it’s a
-   good idea to send a message to the `qubes-devel mailing
-   list </support/#qubes-devel>`__ in order to notify people who do not
+   good idea to send a message to the :ref:`qubes-devel mailing    list <introduction/support:qubes devel>` in order to notify people who do not
    receive GitHub notifications.
 
--  Send a patch to the `qubes-devel mailing
-   list </support/#qubes-devel>`__ (``git format-patch``).
+-  Send a patch to the :ref:`qubes-devel mailing    list <introduction/support:qubes devel>` (``git format-patch``).
 
    1. Make all the changes in your working directory, i.e. edit files,
       move them around (you can use ‘git mv’ for this), etc.
