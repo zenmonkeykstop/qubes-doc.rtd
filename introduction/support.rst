@@ -485,7 +485,10 @@ Social media
 The Qubes OS Project has a presence on the following social media
 platforms:
 
--  `Twitter <https://twitter.com/QubesOS>`__ -  `Reddit <https://www.reddit.com/r/Qubes/>`__ -  `Facebook <https://www.facebook.com/QubesOS/>`__ -  `LinkedIn <https://www.linkedin.com/company/qubes-os/>`__
+-  `Twitter <https://twitter.com/QubesOS>`__ 
+-  `Reddit <https://www.reddit.com/r/Qubes/>`__ 
+-  `Facebook <https://www.facebook.com/QubesOS/>`__ 
+-  `LinkedIn <https://www.linkedin.com/company/qubes-os/>`__
 
 Generally speaking, these are not intended to be primary support venues.
 (Those would be :ref:`qubes-users <introduction/support:qubes-users>` and the :ref:`forum <introduction/support:forum>`.) Rather, these are primarily intended to be a way to more widely disseminate items published on the `news <https://www.qubes-os.org/news/>`__ page.

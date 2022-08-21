@@ -499,7 +499,8 @@ games and applications.
 For further discussion about the potential for GPU passthrough on
 Xen/Qubes, please see the following threads:
 
--  `GPU passing to    HVM <https://groups.google.com/group/qubes-devel/browse_frm/thread/31f1f2da39978573?scoring=d&q=GPU&>`__ -  `Clarifications on GPU    security <https://groups.google.com/group/qubes-devel/browse_frm/thread/31e2d8a47c8b4474?scoring=d&q=GPU&>`__
+-  `GPU passing to    HVM <https://groups.google.com/group/qubes-devel/browse_frm/thread/31f1f2da39978573?scoring=d&q=GPU&>`__ 
+-  `Clarifications on GPU    security <https://groups.google.com/group/qubes-devel/browse_frm/thread/31e2d8a47c8b4474?scoring=d&q=GPU&>`__
 
 Is Qubes a multi-user system?
 -----------------------------

@@ -27,7 +27,7 @@ PCI Passthrough Issues
 ======================
 
 Sometimes the PCI arbitrator is too strict, which may cause errors such
-as ``Unable to reset PCI device and other PCI-related errors. There is a way to enable permissive mode for it. See also: `this thread <https://groups.google.com/forum/#!topic/qubes-users/Fs94QAc3vQI>`__ and the Xen wiki’s `PCI passthrough <https://wiki.xen.org/wiki/Xen_PCI_Passthrough>`__ page.
+as ``Unable to reset PCI device`` and other PCI-related errors. There is a way to enable permissive mode for it. See also: `this thread <https://groups.google.com/forum/#!topic/qubes-users/Fs94QAc3vQI>`__ and the Xen wiki’s `PCI passthrough <https://wiki.xen.org/wiki/Xen_PCI_Passthrough>`__ page.
 Other times, you may instead need to disable the FLR requirement on a
 device.
 
@@ -118,7 +118,7 @@ Domain […] has failed to start: internal error: Unable to reset PCI device [�
 This is a :ref:`PCI passthrough issue <user/troubleshooting/pci-troubleshooting:pci passthrough issues>`, which
 occurs when PCI arbitrator is too strict. There is a way to enable
 permissive mode for it. Sometimes, you may instead need to disable the
-FLR requirement on a device. Both can be achieved during attachment with ``qvm-pci as described below.  NOTE: The ``permissive flag increases attack surface and possibility of `side channel attacks <https://en.wikipedia.org/wiki/Side-channel_attack>`__. While
+FLR requirement on a device. Both can be achieved during attachment with ``qvm-pci`` as described below.  NOTE: The ``permissive`` flag increases attack surface and possibility of `side channel attacks <https://en.wikipedia.org/wiki/Side-channel_attack>`__. While
 using the ``no-strict-reset`` flag, do not require PCI device to be
 reset before attaching it to another VM. This may leak usage data even
 without malicious intent. Both ``permissive`` and ``no-strict-reset``

@@ -5,11 +5,11 @@ GuiVM Configuration
 Gui domain
 ==========
 
-In this section, we describe how to setup ``GuiVM in several case as described in `GUI Domain <https://www.qubes-os.org/news/2020/03/18/gui-domain/>`__. In all the
+In this section, we describe how to setup ``GuiVM`` in several case as described in `GUI Domain <https://www.qubes-os.org/news/2020/03/18/gui-domain/>`__. In all the
 cases, the base underlying TemplateVM used is ``Fedora`` with ``XFCE``
 flavor to match current desktop choice in ``dom0``. That can be adapted
 very easily for other desktops and templates. By default, the configured
-``GuiVM`` is a management qube with global admin permissions ``rwx but can be adjusted to ``ro (see `Introducing the Qubes Admin API <https://www.qubes-os.org/news/2017/06/27/qubes-admin-api/>`__) in pillar data of the
+``GuiVM`` is a management qube with global admin permissions ``rwx`` but can be adjusted to ``ro`` (see `Introducing the Qubes Admin API <https://www.qubes-os.org/news/2017/06/27/qubes-admin-api/>`__) in pillar data of the
 corresponding ``GuiVM`` to setup. For example, pillar data for
 ``sys-gui`` located at ``/srv/pillar/base/qvm/sys-gui.sls``. Please note
 that each ``GuiVM`` has no ``NetVM``.
@@ -214,7 +214,7 @@ You are now able to delete the GuiVM, for example ``sys-gui-gpu``:
 General issue
 ~~~~~~~~~~~~~
 
-For any general GuiVM issue, please take a loot at existing issues ``QubesOS/qubes-issues under `C: gui-domain <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+gui-domain%22>`__
+For any general GuiVM issue, please take a loot at existing issues ``QubesOS/qubes-issues`` under `C: gui-domain <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+gui-domain%22>`__
 label.
 
 .. |sys-gui| image:: /attachment/posts/guivm-hybrid.png

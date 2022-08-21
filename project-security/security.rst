@@ -13,7 +13,7 @@ The following is a list of important project security pages:
 -  :doc:`Xen security advisory (XSA) tracker </project-security/xsa>`
 -  :doc:`Verifying signatures </project-security/verifying-signatures>`
 -  `PGP keys <https://keys.qubes-os.org/keys/>`__
--  :ref:`Security FAQ <introduction/faq:general  security>`
+-  :doc:`Security FAQ </introduction/faq>`
 
 Reporting security issues in Qubes OS
 =====================================
@@ -74,4 +74,6 @@ of the QST by virtue of the actions listed above.
 Members of the security team
 ----------------------------
 
--  `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/#marek-marczykowski-górecki>`__ -  `Simon Gaiser (aka HW42) <https://www.qubes-os.org/team/#simon-gaiser-aka-hw42>`__ -  `Joanna Rutkowska <https://www.qubes-os.org/team/#joanna-rutkowska>`__ (`emeritus, canaries    only <https://www.qubes-os.org/news/2018/11/05/qubes-security-team-update/>`__)
+-  `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/#marek-marczykowski-górecki>`__ 
+-  `Simon Gaiser (aka HW42) <https://www.qubes-os.org/team/#simon-gaiser-aka-hw42>`__ 
+-  `Joanna Rutkowska <https://www.qubes-os.org/team/#joanna-rutkowska>`__ (`emeritus, canaries    only <https://www.qubes-os.org/news/2018/11/05/qubes-security-team-update/>`__)

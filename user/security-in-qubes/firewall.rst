@@ -23,7 +23,6 @@ and press the “firewall” button.
 .. figure:: /attachment/doc/r4.0-manager-firewall.png
    :alt: r4.0-manager-firewall.png
 
-   r4.0-manager-firewall.png
 
 If the qube is running, you can open Settings from the Qube Popup Menu.
 

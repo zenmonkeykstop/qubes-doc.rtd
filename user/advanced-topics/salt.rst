@@ -83,7 +83,8 @@ the administrator. ``name: echo 'hello world'`` is a parameter for the
 execution module ``cmd.run``. The module used defines which parameters can be passed to it.  There is a list of `officially available states <https://docs.saltproject.io/en/latest/ref/states/all/>`__. There are many very useful states:  -  For `managing    files <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html>`__:
    Use this to create files or directories and change them (append
    lines, replace text, set their content etc.)
--  For `installing and    uninstalling <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html>`__    packages. -  For `executing shell    commands <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html>`__.
+-  For `installing and    uninstalling <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html>`__    packages. 
+-  For `executing shell    commands <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html>`__.
 
 With these three states you can define most of the configuration of a
 VM.
@@ -654,4 +655,9 @@ solution is to shut down the updateVM between each install:
 Further Reading
 ===============
 
--  `Salt documentation <https://docs.saltproject.io/en/latest/>`__ -  `Salt    states <https://docs.saltproject.io/en/latest/ref/states/all/>`__    (`files <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html>`__,    `commands <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html>`__,    `packages <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html>`__,    `ordering <https://docs.saltproject.io/en/latest/ref/states/ordering.html>`__) -  `Top    files <https://docs.saltproject.io/en/latest/ref/states/top.html>`__ -  `Jinja templates <http://jinja.pocoo.org/>`__ -  `Qubes specific    modules <https://github.com/QubesOS/qubes-mgmt-salt-dom0-qvm/blob/master/README.rst>`__ -  `Formulas for default Qubes    VMs <https://github.com/QubesOS/qubes-mgmt-salt-dom0-virtual-machines/tree/master/qvm>`__
+-  `Salt documentation <https://docs.saltproject.io/en/latest/>`__ 
+-  `Salt    states <https://docs.saltproject.io/en/latest/ref/states/all/>`__    (`files <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html>`__,    `commands <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html>`__,    `packages <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html>`__,    `ordering <https://docs.saltproject.io/en/latest/ref/states/ordering.html>`__) 
+-  `Top    files <https://docs.saltproject.io/en/latest/ref/states/top.html>`__ 
+-  `Jinja templates <http://jinja.pocoo.org/>`__ 
+-  `Qubes specific    modules <https://github.com/QubesOS/qubes-mgmt-salt-dom0-qvm/blob/master/README.rst>`__ 
+-  `Formulas for default Qubes    VMs <https://github.com/QubesOS/qubes-mgmt-salt-dom0-virtual-machines/tree/master/qvm>`__

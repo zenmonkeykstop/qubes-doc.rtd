@@ -228,7 +228,7 @@ Here is the server code:
    if __name__ == '__main__':
        main()
 
-You can also use ``qrexec/server.py from `qubes-core-qrexec <https://github.com/QubesOS/qubes-core-qrexec/>`__
+You can also use ``qrexec/server.py`` from `qubes-core-qrexec <https://github.com/QubesOS/qubes-core-qrexec/>`__
 repository, which is a variant of the above code - but note that
 currently it’s somewhat more specific (JSON requests and ASCII
 responses; no target handling in service descriptors).
@@ -254,4 +254,6 @@ Further reading
 
 -  :doc:`Qrexec overview </developer/services/qrexec>`
 -  :doc:`Qrexec internals </developer/services/qrexec-internals>`
--  `qubes-core-qrexec <https://github.com/QubesOS/qubes-core-qrexec/>`__    repository - contains the above example -  `systemd.socket <https://www.freedesktop.org/software/systemd/man/systemd.socket.html>`__    - socket unit configuration -  `Streams in Python    asyncio <https://docs.python.org/3/library/asyncio-stream.html>`__
+-  `qubes-core-qrexec <https://github.com/QubesOS/qubes-core-qrexec/>`__    repository - contains the above example 
+-  `systemd.socket <https://www.freedesktop.org/software/systemd/man/systemd.socket.html>`__    - socket unit configuration 
+-  `Streams in Python    asyncio <https://docs.python.org/3/library/asyncio-stream.html>`__

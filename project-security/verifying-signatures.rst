@@ -135,7 +135,9 @@ Now, there are several ways to get the QMSK.
    Here are some example download locations:
 
    -  :doc:`Qubes security pack </project-security/security-pack>`
-   -  `Qubes       keyserver <https://keys.qubes-os.org/keys/qubes-master-signing-key.asc>`__    -  `Email to       qubes-devel <https://groups.google.com/d/msg/qubes-devel/RqR9WPxICwg/kaQwknZPDHkJ>`__    -  `Email to       qubes-users <https://groups.google.com/d/msg/qubes-users/CLnB5uFu_YQ/ZjObBpz0S9UJ>`__
+   -  `Qubes       keyserver <https://keys.qubes-os.org/keys/qubes-master-signing-key.asc>`__    
+   -  `Email to       qubes-devel <https://groups.google.com/d/msg/qubes-devel/RqR9WPxICwg/kaQwknZPDHkJ>`__    
+   -  `Email to       qubes-users <https://groups.google.com/d/msg/qubes-users/CLnB5uFu_YQ/ZjObBpz0S9UJ>`__
 
    Once you have the key as a file, import it:
 
@@ -271,7 +273,7 @@ steps:
 2. :ref:`Import and authenticate the    QMSK. <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>`
 
 The first step is to obtain the correct RSK. The filename of the RSK for
-your Qubes OS release is usually ``qubes-release-X-signing-key.asc``, where ``X is the `major version number <https://semver.org/>`__ of
+your Qubes OS release is usually ``qubes-release-X-signing-key.asc``, where ``X`` is the `major version number <https://semver.org/>`__ of
 your Qubes release. For example, if you were installing release
 ``1.2.3``, you would replace ``X`` with ``1``, resulting in
 ``qubes-release-1-signing-key.asc``. There are several ways to get the
@@ -779,8 +781,10 @@ inverted the arguments to ``gpg2``. (The signature file goes first.)
 Why am I getting “WARNING: This key is not certified with a trusted signature! There is no indication that the signature belongs to the owner.”?
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-There are several possibilities: - You don’t have the :ref:`Qubes Master Signing Key <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>`. -
-You have not :ref:`set the Qubes Master Signing Key’s trust level correctly. <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>`
+There are several possibilities: 
+
+- You don’t have the :ref:`Qubes Master Signing Key <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>`. 
+- You have not :ref:`set the Qubes Master Signing Key’s trust level correctly. <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>`
 - In the case of a key that is not directly signed by the Qubes Master
 Signing Key, you have not :ref:`set that key’s trust level correctly. <project-security/verifying-signatures:how to verify signatures on git repository tags and commits>`
 

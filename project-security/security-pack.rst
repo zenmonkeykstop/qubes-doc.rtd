@@ -8,7 +8,8 @@ contains:
 -  :doc:`Qubes security bulletins (QSBs) </project-security/qsb>`
 -  :doc:`Qubes canaries </project-security/canary>`
 -  :ref:`Qubes ISO cryptographic hash    values <project-security/verifying-signatures:how to verify the cryptographic hash values of qubes isos>`
--  `Qubes fund    information <https://github.com/QubesOS/qubes-secpack/tree/master/fund>`__ -  `Qubes PGP keys <https://keys.qubes-os.org/keys/>`__
+-  `Qubes fund    information <https://github.com/QubesOS/qubes-secpack/tree/master/fund>`__ 
+-  `Qubes PGP keys <https://keys.qubes-os.org/keys/>`__
 -  Security-related information and announcements (e.g., key
    revocations)
 

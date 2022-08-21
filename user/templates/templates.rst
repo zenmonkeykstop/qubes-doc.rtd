@@ -271,27 +271,27 @@ app qubes persist in this manner. If you would like to make changes in
 other directories which *do* persist in this manner, you must make those
 changes in the parent template.
 
+
 +--------------------+------------------------+-----------------------+
 | Qube Type          | Inheritance1           | Persistence2          |
 +====================+========================+=======================+
-| `t                 | N/A (templates cannot  | everything            |
-| emplate </doc/glos | be based on templates) |                       |
-| sary/#template>`__ |                        |                       |
+| templat            | N/A (templates cannot  | everything            |
+|                    | be based on templates) |                       |
 +--------------------+------------------------+-----------------------+
-| `app               | ``/etc/skel`` to       | ``/rw`` (includes     |
-| qube </doc/glossar | ``/home``;             | ``/home``,            |
-| y/#app-qube>`__\ 3 | ``/usr/local.orig`` to | ``/usr/local``, and   |
+| app qube 3         | ``/etc/skel`` to       | ``/rw`` (includes     |
+|                    | ``/home``;             | ``/home``,            |
+|                    | ``/usr/local.orig`` to | ``/usr/local``, and   |
 |                    | ``/usr/local``         | ``bind-dirs``)        |
 +--------------------+------------------------+-----------------------+
-| `dispo             | ``/rw`` (includes      | nothing               |
-| sable </doc/glossa | ``/home``,             |                       |
-| ry/#disposable>`__ | ``/usr/local``, and    |                       |
+| disposable         | ``/rw`` (includes      | nothing               |
+|                    | ``/home``,             |                       |
+|                    | ``/usr/local``, and    |                       |
 |                    | ``bind-dirs``)         |                       |
 +--------------------+------------------------+-----------------------+
 
-| 1Upon creation
-| 2Following shutdown
-| 3Includes :ref:`disposable   templates <user/reference/glossary:disposable template>`
+| 1 Upon creation
+| 2 Following shutdown
+| 3 Includes :ref:`disposable   templates <user/reference/glossary:disposable template>`
 
 Trusting your templates
 -----------------------

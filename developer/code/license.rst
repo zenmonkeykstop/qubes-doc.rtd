@@ -7,7 +7,7 @@ license. The compilation is made available under the GNU General Public
 License version 2 (GPLv2).
 
 The source code of Qubes OS is contained in repositories under the
-[@QubesOS](https://github.com/QubesOS) account on GitHub. This source
+`@QubesOS <https://github.com/QubesOS>`__ account on GitHub. This source
 code is made available under GPLv2, unless there is a ``LICENSE`` file
 in the root of the containing repository that specifies a different
 license.

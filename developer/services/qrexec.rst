@@ -418,12 +418,19 @@ Now we create three policy files in dom0. See the table below for
 details. Replace “source_vm1” and others with the names of your own
 chosen domains.
 
-\|————————————————————————\| \| Path to file in dom0 \| Policy contents
-\| \|——————————————-+—————————-\| \| /etc/qubes-rpc/policy/test.File \|
-@anyvm @anyvm deny \| \| /etc/qubes-rpc/policy/test.File+testfile1 \|
-source_vm1 target_vm allow \| \|
-/etc/qubes-rpc/policy/test.File+testfile2 \| source_vm2 target_vm allow
-\| \|————————————————————————\|
+
+.. list-table:: Policies
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Path to file in dom0 
+     - Policy contents
+   * - /etc/qubes-rpc/policy/test.File 
+     - @anyvm @anyvm deny 
+   * - /etc/qubes-rpc/policy/test.File+testfile1 
+     - source_vm1 target_vm allow 
+   * - /etc/qubes-rpc/policy/test.File+testfile2 
+     - source_vm2 target_vm allow
 
 With this done, we can run some tests. Invoke RPC from ``source_vm1``
 via

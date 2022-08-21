@@ -58,7 +58,7 @@ Only ``mic`` should be attached to more than one running VM. You may
 *assign* a device to more than one VM (using the ``--persistent``
 option), however, only one of them can be started at the same time.
 
-But be careful: There is a `bug in ``qvm-device block or ``qvm-block <https://github.com/QubesOS/qubes-issues/issues/4692>`__
+But be careful: There is a `bug in qvm-device block or qvm-block <https://github.com/QubesOS/qubes-issues/issues/4692>`__
 which will allow you to *attach* a block device to two running VMs.
 Don’t do that!
 

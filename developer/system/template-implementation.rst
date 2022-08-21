@@ -83,7 +83,6 @@ the AppVM.
 .. figure:: /attachment/doc/TemplateSharing2.png
    :alt: TemplateSharing2.png
 
-   TemplateSharing2.png
 
 Snapshot device in Dom0
 -----------------------

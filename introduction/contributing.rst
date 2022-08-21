@@ -22,7 +22,10 @@ the many ways in which you can help:
 -  Answer questions and discuss Qubes on the :doc:`mailing    lists </introduction/support>` and :ref:`forum <introduction/support:forum>`
 -  Engage with us on social media:
 
-   -  Follow us on `Twitter <https://twitter.com/QubesOS>`__    -  Join us on `Reddit <https://www.reddit.com/r/Qubes/>`__    -  Like us on `Facebook <https://www.facebook.com/QubesOS>`__    -  Connect with us on       `LinkedIn <https://www.linkedin.com/company/qubes-os/>`__
+   -  Follow us on `Twitter <https://twitter.com/QubesOS>`__    
+   -  Join us on `Reddit <https://www.reddit.com/r/Qubes/>`__    
+   -  Like us on `Facebook <https://www.facebook.com/QubesOS>`__    
+   -  Connect with us on       `LinkedIn <https://www.linkedin.com/company/qubes-os/>`__
 
 -  And last but not least, tell your friends and colleagues about how
    Qubes can help them secure their digital lives!
@@ -35,7 +38,12 @@ have a look at our `GitHub issues <https://github.com/QubesOS/qubes-issues/issue
 tasks are the most urgent. You can filter issues depending on your
 interest and experience. For example, here are some common issue labels:
 
--  `Help    wanted <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22&utf8=%E2%9C%93>`__ -  `UX and    usability <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3AUX>`__ -  `Windows    tools <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+windows+tools%22>`__ -  `Documentation <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+doc%22>`__ -  `Privacy <https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22privacy%22%20>`__ -  `Debian <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+Debian%22>`__
+-  `Help    wanted <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22&utf8=%E2%9C%93>`__ 
+-  `UX and    usability <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3AUX>`__ 
+-  `Windows    tools <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+windows+tools%22>`__ 
+-  `Documentation <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+doc%22>`__ 
+-  `Privacy <https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22privacy%22%20>`__ 
+-  `Debian <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+is%3Aopen+label%3A%22C%3A+Debian%22>`__
 
 Before you engage in an activity that will take you a significant amount
 of time, like implementing a new feature, it’s always good to contact us

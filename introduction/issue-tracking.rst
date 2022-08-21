@@ -95,7 +95,7 @@ under under neither ``T: bug`` nor ``T: enhancement``.
 Priority
 ~~~~~~~~
 
-There are several **priority** levels ranging from ``P: minor to ``P: blocker (see `here <https://github.com/QubesOS/qubes-issues/labels?q=P%3A>`__ for the
+There are several **priority** levels ranging from P: minor to P: blocker (see `here <https://github.com/QubesOS/qubes-issues/labels?q=P%3A>`__ for the
 full list). Every open issue should have **exactly one** priority. An
 open issue should not have more than one priority, and it should not
 lack a priority entirely. See :ref:`here <developer/releases/version-scheme:bug priorities>` for details about how the
@@ -104,7 +104,7 @@ developers use these priorities.
 Component
 ~~~~~~~~~
 
-There are many **component** labels, each beginning with ``C: (see `here <https://github.com/QubesOS/qubes-issues/labels?page=2&q=C%3A>`__
+There are many **component** labels, each beginning with C: (see `here <https://github.com/QubesOS/qubes-issues/labels?page=2&q=C%3A>`__
 for the full list). Every open issue should have **at least one**
 component. An open issue may have more than one component, but it should
 not lack a component entirely. When no other component applies, use ``C: other``.  Milestones ----------  The issue tracker has several `milestones <https://github.com/QubesOS/qubes-issues/milestones>`__.

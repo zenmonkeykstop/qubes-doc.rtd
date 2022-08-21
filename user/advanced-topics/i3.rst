@@ -23,7 +23,11 @@ Customization
 **Caution:** The following external resources may not have been reviewed
 by the Qubes team.
 
--  `xdg_autostart_script <https://gist.github.com/SietsevanderMolen/7b4cc32ce7b4884513b0a639540e454f>`__ -  `i3bar_script <https://gist.github.com/SietsevanderMolen/e7f594f209dfaa3596907e427b657e30>`__ -  `terminal_start_script <https://gist.github.com/SietsevanderMolen/7c6f2b5773dbc0c08e1509e49abd1e96>`__ -  `i3 config with    dmenu-i3-window-jumper <https://github.com/anadahz/qubes-i3-config/blob/master/config>`__ -  `dmenu script to open a terminal in a chosen    VM <https://gist.github.com/dmoerner/65528941dd20b05c98ee79e92d7e0183>`__
+-  `xdg_autostart_script <https://gist.github.com/SietsevanderMolen/7b4cc32ce7b4884513b0a639540e454f>`__ 
+-  `i3bar_script <https://gist.github.com/SietsevanderMolen/e7f594f209dfaa3596907e427b657e30>`__ 
+-  `terminal_start_script <https://gist.github.com/SietsevanderMolen/7c6f2b5773dbc0c08e1509e49abd1e96>`__ 
+-  `i3 config with    dmenu-i3-window-jumper <https://github.com/anadahz/qubes-i3-config/blob/master/config>`__ 
+-  `dmenu script to open a terminal in a chosen    VM <https://gist.github.com/dmoerner/65528941dd20b05c98ee79e92d7e0183>`__
 
 Compilation and installation from source
 ========================================

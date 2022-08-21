@@ -145,7 +145,7 @@ with a space-delimited list of packages to be installed):
    ``telnet`` ``nmap`` ``nmap-ncat``.
 -  :doc:`USB qube </user/advanced-topics/usb-qubes>`, such as the template for ``sys-usb``:
    ``qubes-usb-proxy`` to provide USB devices to other Qubes and
-   ``qubes-input-proxy-sender to provide keyboard or mouse input to    dom0. -  `VPN    qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
+   ``qubes-input-proxy-sender`` to provide keyboard or mouse input to    dom0. -  `VPN    qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
    Use the ``dnf search "NetworkManager VPN plugin"`` command to look up
    the VPN packages you need, based on the VPN technology you’ll be
    using, and install them. Some GNOME related packages may be needed as
@@ -194,7 +194,7 @@ Also, there are packages to provide additional services:
 -  ``qubes-mgmt-salt-vm-connector``: If you want to use salt management
    on the template and qubes.
 
-You may also wish to consider additional packages from the ``qubes-core-agent suite.  See `here <https://github.com/Qubes-Community/Contents/blob/master/docs/customization/fedora-minimal-template-customization.md>`__
+You may also wish to consider additional packages from the ``qubes-core-agent`` suite.  See `here <https://github.com/Qubes-Community/Contents/blob/master/docs/customization/fedora-minimal-template-customization.md>`__
 for further information on customizing ``fedora-minimal``.
 
 Logging
@@ -218,7 +218,7 @@ with a space-delimited list of packages to be installed):
 
    [user@your-new-clone ~]$ sudo apt install packages
 
--  Commonly used utilities: ``pciutils ``vim-minimal ``less    ``psmisc ``gnome-keyring -  The ``zenity package is required for interactive dialogs, e.g.,    file selection    (`#5202 <https://github.com/QubesOS/qubes-issues/issues/5202>`__) and    for using the Nautilus menu option to copy some files to other qubes    (`#6801 <https://github.com/QubesOS/qubes-issues/issues/6801>`__).
+-  Commonly used utilities: ``pciutils`` ``vim-minimal`` ``less``    ``psmisc`` ``gnome-keyring`` -  The ``zenity`` package is required for interactive dialogs, e.g.,    file selection    (`#5202 <https://github.com/QubesOS/qubes-issues/issues/5202>`__) and    for using the Nautilus menu option to copy some files to other qubes    (`#6801 <https://github.com/QubesOS/qubes-issues/issues/6801>`__).
 -  Audio: ``pulseaudio-qubes``
 -  Networking: ``qubes-core-agent-networking``, and whatever network
    tools you want. N.B. minimal templates do not include any browser.
@@ -234,11 +234,12 @@ with a space-delimited list of packages to be installed):
    debugging and analyzing network connections, install the following
    packages: ``tcpdump`` ``telnet`` ``nmap`` ``ncat``.
 -  :doc:`USB qube </user/advanced-topics/usb-qubes>`, such as the template for ``sys-usb``:
-   ``qubes-usb-proxy`` to provide USB devices to other Qubes and
-   ``qubes-input-proxy-sender to provide keyboard or mouse input to    dom0. -  Qubes to which USB devices are attached: ``libpam-systemd (Until    `#7689 <https://github.com/QubesOS/qubes-issues/issues/7689>`__ is
+   ``qubes-usb-proxy`` to provide USB devices to other Qubes and ``qubes-input-proxy-sender`` to provide keyboard or mouse input to    dom0. 
+-  Qubes to which USB devices are attached: ``libpam-systemd`` (Until    `#7689 <https://github.com/QubesOS/qubes-issues/issues/7689>`__ is
    fixed, either pair it with ``qubes-core-agent-passwordless-root`` or
    manually activate the user session with
-   ``loginctl activate <USER_SESSION_ID>``.) -  `VPN    qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
+   ``loginctl activate <USER_SESSION_ID>``.) 
+-  `VPN    qube <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__:
    You may need to install network-manager VPN packages, depending on
    the VPN technology you’ll be using. After creating a machine based on
    this template, follow the `VPN    howto <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-as-a-vpn-gateway-using-networkmanager>`__

@@ -231,4 +231,5 @@ backups:
 Notes
 =====
 
--  For the technical details of the backup system, please refer to `this    thread <https://groups.google.com/d/topic/qubes-devel/TQr_QcXIVww/discussion>`__. -  If working with symlinks, note the issues described in `this    thread <https://groups.google.com/d/topic/qubes-users/EITd1kBHD30/discussion>`__.
+-  For the technical details of the backup system, please refer to `this    thread <https://groups.google.com/d/topic/qubes-devel/TQr_QcXIVww/discussion>`__. 
+-  If working with symlinks, note the issues described in `this    thread <https://groups.google.com/d/topic/qubes-users/EITd1kBHD30/discussion>`__.

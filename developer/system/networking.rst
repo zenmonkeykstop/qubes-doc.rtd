@@ -31,19 +31,99 @@ Routing tables examples
 
 VM routing table is simple:
 
-\|\| \|Destination|Gateway|Genmask|Flags|Metric|Ref|Use|Iface\|
-\|0.0.0.0|0.0.0.0|0.0.0.0|U|0|0|0|eth0\|
+.. list-table:: VM routing table
+   :widths: 25 25 25 25 25 25 25 25
+   :header-rows: 1
+
+   * - Destination
+     - Gateway
+     - Genmask
+     - Flags
+     - Metric
+     - Ref
+     - Use
+     - Iface
+   * - 0.0.0.0
+     - 0.0.0.0
+     - 0.0.0.0
+     - U
+     - 0
+     - 0
+     - 0
+     - eth0
+
 
 Network driver domain routing table is a bit longer:
 
-\|\| \|Destination|Gateway|Genmask|Flags|Metric|Ref|Use|Iface\|
-\|10.137.0.16|0.0.0.0|255.255.255.255|UH|0|0|0|vif4.0\|
-\|10.137.0.7|0.0.0.0|255.255.255.255|UH|0|0|0|vif10.0\|
-\|10.137.0.9|0.0.0.0|255.255.255.255|UH|0|0|0|vif9.0\|
-\|10.137.0.8|0.0.0.0|255.255.255.255|UH|0|0|0|vif8.0\|
-\|10.137.0.12|0.0.0.0|255.255.255.255|UH|0|0|0|vif3.0\|
-\|192.168.0.0|0.0.0.0|255.255.255.0|U|1|0|0|eth0\|
-\|0.0.0.0|192.168.0.1|0.0.0.0|UG|0|0|0|eth0\|
+.. list-table:: Network driver domain 
+   :widths: 25 25 25 25 25 25 25 25
+   :header-rows: 1
+
+   * - Destination
+     - Gateway
+     - Genmask
+     - Flags
+     - Metric
+     - Ref
+     - Use
+     - Iface
+   * - 10.137.0.16
+     - 0.0.0.0
+     - 255.255.255.255
+     - UH
+     - 0
+     - 0
+     - 0
+     - vif4.0
+   * - 10.137.0.7
+     - 0.0.0.0
+     - 255.255.255.255
+     - UH
+     - 0
+     - 0
+     - 0
+     - vif10.0
+   * - 10.137.0.9
+     - 0.0.0.0
+     - 255.255.255.255
+     - UH
+     - 0
+     - 0
+     - 0
+     - vif9.0
+   * - 10.137.0.8
+     - 0.0.0.0
+     - 255.255.255.255
+     - UH
+     - 0
+     - 0
+     - 0
+     - vif8.0
+   * - 10.137.0.12
+     - 0.0.0.0
+     - 255.255.255.255
+     - UH
+     - 0
+     - 0
+     - 0
+     - vif3.0
+   * - 192.168.0.0
+     - 0.0.0.0
+     - 255.255.255.0
+     - U
+     - 1
+     - 0
+     - 0
+     - eth0
+   * - 0.0.0.0
+     - 102.168.0.1
+     - 0.0.0.0
+     - UG
+     - 0
+     - 0
+     - 0
+     - eth0
+
 
 IPv6
 ====

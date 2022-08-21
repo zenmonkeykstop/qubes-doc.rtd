@@ -14,7 +14,9 @@ System requirements
 Minimum
 =======
 
--  **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,    ``x64``, and ``AMD64``)     -  `Intel       VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__       with       `EPT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__       or       `AMD-V <https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__       with       `RVI <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__    -  `Intel       VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__       or `AMD-Vi (also known as AMD       IOMMU) <https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29>`__
+-  **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,    ``x64``, and ``AMD64``)     
+-  `Intel       VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__       with       `EPT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__       or       `AMD-V <https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__       with       `RVI <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__    
+-  `Intel       VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__       or `AMD-Vi (also known as AMD       IOMMU) <https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29>`__
 
 -  **Memory:** 6 GB RAM
 -  **Storage:** 32 GB free space
@@ -22,7 +24,9 @@ Minimum
 Recommended
 ===========
 
--  **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,    ``x64``, and ``AMD64``)     -  `Intel       VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__       with       `EPT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__       or       `AMD-V <https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__       with       `RVI <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__    -  `Intel       VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__       or `AMD-Vi (also known as AMD       IOMMU) <https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29>`__
+-  **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,    ``x64``, and ``AMD64``)     
+-  `Intel       VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__       with       `EPT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__       or       `AMD-V <https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__       with       `RVI <https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__    
+-  `Intel       VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__       or `AMD-Vi (also known as AMD       IOMMU) <https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-Vi_and_Intel_VT-d.29>`__
 
 -  **Memory:** 16 GB RAM
 -  **Storage:** 128 GB free space

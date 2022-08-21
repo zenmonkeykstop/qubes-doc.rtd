@@ -548,7 +548,10 @@ Subkey Tutorials and Discussions
 GPG in mind, they can be adapted with a few commonsense adjustments. As
 always, exercise caution and use your good judgment.)
 
--  `“OpenPGP in Qubes OS” on the qubes-users mailing    list <https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion>`__ -  `“Creating the Perfect GPG Keypair” by Alex    Cabal <https://alexcabal.com/creating-the-perfect-gpg-keypair/>`__ -  `“GPG Offline Master Key w/ smartcard” maintained by Abel    Luck <https://gist.github.com/abeluck/3383449>`__ -  `“Using GnuPG with QubesOS” by    Alex <https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/>`__
+-  `“OpenPGP in Qubes OS” on the qubes-users mailing    list <https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion>`__ 
+-  `“Creating the Perfect GPG Keypair” by Alex    Cabal <https://alexcabal.com/creating-the-perfect-gpg-keypair/>`__ 
+-  `“GPG Offline Master Key w/ smartcard” maintained by Abel    Luck <https://gist.github.com/abeluck/3383449>`__ 
+-  `“Using GnuPG with QubesOS” by    Alex <https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/>`__
 
 Current limitations
 ===================

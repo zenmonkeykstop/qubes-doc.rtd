@@ -4,8 +4,7 @@ Data leaks
 
 The Role of the Firewall
 ========================
- :doc:`Firewalling in Qubes </user/security-in-qubes/firewall>`\ **is not intended to be a
-leak-prevention mechanism.**
+ :doc:`Firewalling in Qubes </user/security-in-qubes/firewall>` **is not intended to be a leak-prevention mechanism.**
 
 There are several reasons for this, which will be explained below.
 However, the main reason is that Qubes cannot prevent an attacker who

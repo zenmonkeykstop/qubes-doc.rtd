@@ -299,7 +299,11 @@ specialized skillset that can take years to cultivate, but if you are
 interested in furthering your understanding, we suggest the following
 resources:
 
--  `Learn Design Principles <http://learndesignprinciples.com>`__ by    Melissa Mandelbaum -  `Usability in Free    Software <http://jancborchardt.net/usability-in-free-software>`__ by    Jan C. Borchardt -  `Superheroes & Villains in Design <https://vimeo.com/70030549>`__ by
+-  `Learn Design Principles <http://learndesignprinciples.com>`__ by    Melissa Mandelbaum 
+-  `Usability in Free    Software <http://jancborchardt.net/usability-in-free-software>`__ by    Jan C. Borchardt 
+-  `Superheroes & Villains in Design <https://vimeo.com/70030549>`__ by
    Aral Balkan
 -  `First Rule of Usability? Don’t Listen to
-   Users <http://www.nngroup.com/articles/first-rule-of-usability-dont-listen-to-users/>`__    by Jakob Nielsen -  `10 Usability Heuristics for User Interface    Design <https://www.nngroup.com/articles/ten-usability-heuristics/>`__    by Jakob Nielsen -  `Hack Design <https://hackdesign.org/>`__ - online learning program
+   Users <http://www.nngroup.com/articles/first-rule-of-usability-dont-listen-to-users/>`__    by Jakob Nielsen 
+-  `10 Usability Heuristics for User Interface    Design <https://www.nngroup.com/articles/ten-usability-heuristics/>`__    by Jakob Nielsen 
+-  `Hack Design <https://hackdesign.org/>`__ - online learning program
