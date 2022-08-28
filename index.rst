@@ -148,12 +148,12 @@ General
 -  :doc:`Package contributions </developer/general/package-contributions>`
 -  :doc:`Google Summer of Code (GSoC) </developer/general/gsoc>`
 -  :doc:`Google Season of Docs (GSoD) </developer/general/gsod>`
--  :doc:`How to edit the    documentation </developer/general/how-to-edit-the-documentation>`
+-  :doc:`How to edit the documentation </developer/general/how-to-edit-the-documentation>`
 -  :doc:`Documentation style guide </developer/general/documentation-style-guide>`
 -  :doc:`Website style guide </developer/general/website-style-guide>`
 -  :doc:`Continuous integration (CI) </developer/general/continuous-integration>`
 -  :doc:`Usability & UX </developer/general/usability-ux>`
--  :doc:`Visual style guide </developer/general/visual-style-guide>`
+-  `Visual style guide <https://www.qubes-os.org/doc/visual-style-guide/>`__
 -  :doc:`Research </developer/general/research>`
 -  :doc:`Developer books </developer/general/devel-books>`
 
