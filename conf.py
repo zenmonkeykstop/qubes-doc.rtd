@@ -56,4 +56,4 @@ epub_show_urls = 'footnote'
 latex_show_urls ='footnote'
 
 
-locale_dirs = ['../_translated']
+locale_dirs = ['_translated']
