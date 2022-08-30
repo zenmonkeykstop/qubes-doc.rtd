@@ -33,7 +33,9 @@ exclude_patterns = [
             '**/*.txt'
             ]
 
-html_theme = 'classic'
+
+html_theme = 'default'
+#html_theme = 'classic'
 
 html_theme_options = {
     'externalrefs': True, 
