@@ -12,7 +12,6 @@ html_title = "Qubes Docs"
 # The full version, including alpha/beta/rc tags
 release = '0.1'
 
-
 # -- General configuration ---------------------------------------------------
 
 html_static_path = ['attachment/doc']
@@ -54,8 +53,8 @@ gettext_uuid=True
 gettext_compact=False
 
 
-epub_show_urls = 'footnote'
-latex_show_urls ='footnote'
+#epub_show_urls = 'footnote'
+#latex_show_urls ='footnote'
 
 
 locale_dirs = ['_translated']
