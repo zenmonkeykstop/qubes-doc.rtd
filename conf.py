@@ -15,7 +15,7 @@ release = '0.1'
 
 # -- General configuration ---------------------------------------------------
 
-html_static_path = ['_static', 'attachment/doc']
+html_static_path = ['attachment/doc']
 extensions = [
         'sphinx.ext.autosectionlabel',
 ]
