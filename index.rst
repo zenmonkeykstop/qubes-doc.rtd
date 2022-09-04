@@ -22,6 +22,7 @@ Core documentation for Qubes users.
 Choosing Your Hardware
 ~~~~~~~~~~~~~~~~~~~~~~
 
+
 -  :doc:`System requirements </user/hardware/system-requirements>`
 -  :doc:`Certified hardware </user/hardware/certified-hardware>`
 -  `Community-recommended
@@ -32,6 +33,7 @@ Downloading, Installing, and Upgrading Qubes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  `Download Qubes OS <https://www.qubes-os.org/downloads/>`__
+
 -  :doc:`Installation guide </user/downloading-installing-upgrading/installation-guide>`
 -  :doc:`Upgrade guides </user/downloading-installing-upgrading/upgrade/upgrade>`
 -  :doc:`Supported releases </user/downloading-installing-upgrading/supported-releases>`
@@ -57,6 +59,7 @@ How-to guides
 Templates
 ~~~~~~~~~
 
+
 -  :doc:`Templates </user/templates/templates>`
 -  :doc:`Fedora templates </user/templates/fedora/fedora>`
 -  :doc:`Debian templates </user/templates/debian/debian>`
@@ -67,6 +70,7 @@ Troubleshooting
 ~~~~~~~~~~~~~~~
 
 -  :doc:`Installation troubleshooting </user/troubleshooting/installation-troubleshooting>`
+-  :doc:`Update troubleshooting </user/troubleshooting/update-troubleshooting>`
 -  :doc:`Update troubleshooting </user/troubleshooting/update-troubleshooting>`
 -  :doc:`Hardware troubleshooting </user/troubleshooting/hardware-troubleshooting>`
 -  :doc:`UEFI troubleshooting </user/troubleshooting/uefi-troubleshooting>`
@@ -126,6 +130,7 @@ Reference
 
 Project Security
 ----------------
+
 
 -  :doc:`Qubes OS project security center </project-security/security>`
 -  :doc:`Qubes security pack (qubes-secpack) </project-security/security-pack>`
@@ -209,11 +214,11 @@ Debugging
 Building
 ~~~~~~~~
 
+
 -  :doc:`Qubes builder </developer/building/qubes-builder>`
 -  :doc:`Development workflow </developer/building/development-workflow>`
 -  :doc:`Qubes ISO building </developer/building/qubes-iso-building>`
--  `Qubes template
-   configs <https://github.com/QubesOS/qubes-template-configs>`__
+-  `Qubes template configs <https://github.com/QubesOS/qubes-template-configs>`__
 
 Releases
 ~~~~~~~~
@@ -222,6 +227,39 @@ Releases
 -  :doc:`Release schedules </developer/releases/schedules>`
 -  :doc:`Release checklist </developer/releases/todo>`
 -  :doc:`Version scheme </developer/releases/version-scheme>`
+
+Hidden gems
+----------
+
+-  :doc:`Qubes builder </developer/building/qubes-builder-details>`
+-  :doc:`Join </developer/general/join>`
+-  :doc:`Admin API Table </developer/services/admin-api-table>`
+-  :doc:`Disposable VM Implementation </developer/services/disposablevm-implementation>`
+-  :doc:`Qrexec2 </developer/services/qrexec2>`
+-  :doc:`Qfileexchgd </developer/services/qfileexchgd>`
+-  `Developer documentation`_
+-  :doc:`Code of Conduct </introduction/code-of-conduct>`
+-  :doc:`Intro </introduction/intro>`
+-  :doc:`Privacy </introduction/privacy>`
+-  :doc:`Screenshots </introduction/screenshots>`
+-  :doc:`Statistics </introduction/statistics>`
+-  :doc:`Video Tours </introduction/video-tours>`
+-  :doc:`QSB Checklist </project-security/qsb-checklist>`
+-  `QSB Template <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-template.txt>`__
+-  `Canary Template <https://github.com/QubesOS/qubes-secpack/blob/master/canaries/canary-template.txt>`__
+-  :doc:`Canary Checklist </project-security/canary-checklist>`
+-  :doc:`Download mirrors </user/downloading-installing-upgrading/download-mirrors>`
+-  :doc:`Custom install </user/downloading-installing-upgrading/custom-install>`
+-  :doc:`Install security </user/downloading-installing-upgrading/install-security>`
+-  :doc:`How to use the hcl </user/hardware/how-to-use-the-hcl>`
+-  :doc:`How to reinstall a template </user/templates/how-to-reinstall-a-template>`
+-  :doc:`Debian template </user/templates/debian/debian>`
+-  :doc:`Debian upgrade </user/templates/debian/debian-upgrade>`
+-  :doc:`Fedora upgrade </user/templates/fedora/fedora-upgrade>`
+-  :doc:`Fedora </user/templates/fedora/fedora>`
+-  :doc:`Update Debian Whonix </user/troubleshooting/updating-debian-and-whonix>`
+
+
 
 External Documentation
 ----------------------
