@@ -1,5 +1,5 @@
 =============================
-How to edit the documentation
+How to edit the Markdown documentation
 =============================
 
 *Also see the*\ :doc:`documentation style guide </developer/general/documentation-style-guide>`\ *.*
