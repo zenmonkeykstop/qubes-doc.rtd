@@ -178,7 +178,11 @@ Debian 9 (“Stretch”)
 -  User-initiated updates/upgrades may not run when a template first
    starts. This is due to a new Debian config setting that attempts to
    update automatically; it should be disabled with
-   ``sudo systemctl disable   apt-daily.{service,timer}``.  Relevant discussions:  -  `Stretch Template    Installation <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/4rdayBF_UTc>`__ -  `Stretch availability in    3.2 <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/cekPfBqQMOI>`__ -  `Fixing sound in Debian    Stretch <https://groups.google.com/forum/#!topic/qubes-users/JddCE54GFiU>`__ -  `User apt commands blocked on    startup <https://github.com/QubesOS/qubes-issues/issues/2621>`__  Also see `Debian’s Stretch upgrade instructions <https://www.debian.org/releases/stretch/amd64/release-notes/ch-upgrading.en.html>`__.  Debian 8 (“Jessie”) -------------------  Please see `Debian’s Jessie upgrade instructions <https://www.debian.org/releases/jessie/amd64/release-notes/ch-upgrading.en.html>`__.  End-of-life (EOL) releases --------------------------  We strongly recommend against using any Debian release that has reached `end-of-life (EOL) <https://wiki.debian.org/DebianReleases#Production_Releases>`__.
+   ``sudo systemctl disable   apt-daily.{service,timer}``.  Relevant discussions:  
+   -  `Stretch Template    Installation <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/4rdayBF_UTc>`__ 
+   -  `Stretch availability in    3.2 <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/cekPfBqQMOI>`__ 
+   -  `Fixing sound in Debian    Stretch <https://groups.google.com/forum/#!topic/qubes-users/JddCE54GFiU>`__ 
+   -  `User apt commands blocked on    startup <https://github.com/QubesOS/qubes-issues/issues/2621>`__  Also see `Debian’s Stretch upgrade instructions <https://www.debian.org/releases/stretch/amd64/release-notes/ch-upgrading.en.html>`__.  Debian 8 (“Jessie”) -------------------  Please see `Debian’s Jessie upgrade instructions <https://www.debian.org/releases/jessie/amd64/release-notes/ch-upgrading.en.html>`__.  End-of-life (EOL) releases --------------------------  We strongly recommend against using any Debian release that has reached `end-of-life (EOL) <https://wiki.debian.org/DebianReleases#Production_Releases>`__.
 
 Additional information
 ======================

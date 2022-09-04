@@ -96,7 +96,7 @@ red frame around the Network Manager dialog box on the screen above.)
 This means that in the event that your network card driver, Wi-Fi stack,
 or DHCP client is compromised, the integrity of the rest of the system
 will not be affected! This feature requires Intel VT-d or AMD IOMMU
-hardware (e.g., Core i5/i7 systems) \* \* \* \* \*
+hardware (e.g., Core i5/i7 systems) 
 
 |r4.0-software-update.png|
 

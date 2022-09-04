@@ -4,8 +4,7 @@ Qubes builder details
 
 Components Makefile.builder file
 ================================
- :doc:`QubesBuilder </developer/building/qubes-builder>` expects that each component have
-*Makefile.builder* file in its root directory. This file specifies what
+:doc:`QubesBuilder </developer/building/qubes-builder>` expects that each component have **Makefile.builder** file in its root directory. This file specifies what
 should be done to build the package. As name suggests, this is normal
 makefile, which is included by builder as its configuration. Its main
 purpose is to set some variables. Generally all available

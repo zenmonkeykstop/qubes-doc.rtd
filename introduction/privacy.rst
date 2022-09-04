@@ -25,7 +25,7 @@ the `documentation </>`__ in Markdown so that the plain text can be enjoyed from
 on our repos are PGP-signed so you can :doc:`verify </project-security/verifying-signatures>` the authenticity of the content.)
 Obviously, we don’t use any ads or trackers, but this is still a public
 website, so man-in-the-middle attacks and such are always a possibility.
-Please be careful. See :ref:`FAQ: Should I trust this website? <introduction/faq:should i trust this website>`
+Please be careful. See :ref:`FAQ: Should I trust this website? <introduction/faq:should i trust this website?>`
 
 Update Servers and Repositories
 ===============================
@@ -56,7 +56,7 @@ Mirrors
 =======
 
 There are also other third-party mirrors hosted by volunteers. These are
-used both for :ref:`ISO downloads <user/downloading-installing-upgrading/downloads:mirrors>` and :ref:`updates <introduction/privacy:update servers and repositories>`. We have no control over
+used both for `ISO downloads <https://qubes-os.org/downloads#mirrors>`__ and :ref:`updates <introduction/privacy:update servers and repositories>`. We have no control over
 what data these mirrors collect or with whom they share it. Please see
 the privacy policy of each respective mirror operator.
 
@@ -81,4 +81,4 @@ running inside of Qubes OS may not be as privacy-respecting, so please
 be mindful of what you install. We have no control over such third-party
 software.
 
-For more information, please see :ref:`FAQ: How does Qubes OS provide privacy? <introduction/faq:how does qubes os provide privacy>`
+For more information, please see :ref:`FAQ: How does Qubes OS provide privacy? <introduction/faq:how does qubes os provide privacy?>`

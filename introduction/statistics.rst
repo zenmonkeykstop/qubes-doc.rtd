@@ -2,7 +2,9 @@
 Statistics
 ==========
 
-.. container:: center-block more-bottom
+.. figure:: https://tools.qubes-os.org/counter/stats.png
+   :alt: Estimated Qubes OS userbase graph
+
 
 FAQ
 ===

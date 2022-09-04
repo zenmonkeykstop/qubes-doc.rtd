@@ -54,7 +54,8 @@ This could be a temporary Tor exit relay or server failure that should
 fix itself. Here are some simple things to try:
 
 -  Check if your network connection is functional
--  Try to `change your Tor circuit <https://www.whonix.org/wiki/Arm>`__,    then try again -  Running `whonixcheck <https://www.whonix.org/wiki/Whonixcheck>`__
+-  Try to `change your Tor circuit <https://www.whonix.org/wiki/Arm>`__,    then try again 
+-  Running `whonixcheck <https://www.whonix.org/wiki/Whonixcheck>`__
    might also help diagnose the problem
 
 Sometimes if you see a message such as:
@@ -89,7 +90,7 @@ If you see something like this:
      icedove
    Install these packages without verification [y/N]?
 
-Don’t proceed! Press ``N`` and ``<enter>``. Running ``apt-get update again should fix it. If not, something is broken or it’s a `Man in the middle attack <https://www.whonix.org/wiki/Warning#Man-in-the-middle_attacks>`__,
+Don’t proceed! Press ``N`` and ``<enter>``. Running ``apt-get update`` again should fix it. If not, something is broken or it’s a `Man in the middle attack <https://www.whonix.org/wiki/Warning#Man-in-the-middle_attacks>`__,
 which isn’t that unlikely, since we are updating over Tor exit relays
 and some of them are malicious. Try to `change your Tor circuit <https://www.whonix.org/wiki/Arm#Arm>`__.
 
@@ -116,8 +117,7 @@ automatically or try to `change your Tor circuit <https://www.whonix.org/wiki/Ar
 
 In past various apt repositories were signed with expired key. If you
 want to see how the documentation looked at that point, please click on
-expand on the right.
- `The Tor Project’s apt repository key was expired <https://trac.torproject.org/projects/tor/ticket/12994>`__. You
+expand on the right. `The Tor Project’s apt repository key was expired <https://trac.torproject.org/projects/tor/ticket/12994>`__. You
 saw the following warning.
 
 ::

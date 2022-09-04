@@ -237,7 +237,6 @@ Hidden gems
 -  :doc:`Disposable VM Implementation </developer/services/disposablevm-implementation>`
 -  :doc:`Qrexec2 </developer/services/qrexec2>`
 -  :doc:`Qfileexchgd </developer/services/qfileexchgd>`
--  `Developer documentation`_
 -  :doc:`Code of Conduct </introduction/code-of-conduct>`
 -  :doc:`Intro </introduction/intro>`
 -  :doc:`Privacy </introduction/privacy>`
@@ -245,8 +244,6 @@ Hidden gems
 -  :doc:`Statistics </introduction/statistics>`
 -  :doc:`Video Tours </introduction/video-tours>`
 -  :doc:`QSB Checklist </project-security/qsb-checklist>`
--  `QSB Template <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-template.txt>`__
--  `Canary Template <https://github.com/QubesOS/qubes-secpack/blob/master/canaries/canary-template.txt>`__
 -  :doc:`Canary Checklist </project-security/canary-checklist>`
 -  :doc:`Download mirrors </user/downloading-installing-upgrading/download-mirrors>`
 -  :doc:`Custom install </user/downloading-installing-upgrading/custom-install>`

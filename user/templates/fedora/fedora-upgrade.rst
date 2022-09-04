@@ -11,7 +11,7 @@ How to upgrade a Fedora template in-place
 This page provides instructions for performing an in-place upgrade of an
 installed :doc:`Fedora Template </user/templates/fedora/fedora>`. If you wish to
 install a new, unmodified Fedora template instead of upgrading a
-template that is already installed in your system, please see the :doc:`Fedora Template </user/templates/fedora/fedora>` page instead.  :ref:`Learn more about the two options. <user/templates/fedora/fedora:upgrading>`)
+template that is already installed in your system, please see the :doc:`Fedora Template </user/templates/fedora/fedora>` page instead.  :ref:`Learn more about the two options. <user/templates/fedora/fedora:upgrading>`
 
 Summary instructions for standard Fedora templates
 ==================================================
