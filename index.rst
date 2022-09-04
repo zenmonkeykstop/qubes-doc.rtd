@@ -154,6 +154,7 @@ General
 -  :doc:`Google Summer of Code (GSoC) </developer/general/gsoc>`
 -  :doc:`Google Season of Docs (GSoD) </developer/general/gsod>`
 -  :doc:`How to edit the Markdown documentation </developer/general/how-to-edit-the-documentation>`
+-  :doc:`How to edit the ReStructuredText documentation </developer/general/how-to-edit-the-rst-documentation>`
 -  :doc:`Markdown Documentation style guide </developer/general/documentation-style-guide>`
 -  :doc:`Website style guide </developer/general/website-style-guide>`
 -  :doc:`Continuous integration (CI) </developer/general/continuous-integration>`
