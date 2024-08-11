@@ -3,7 +3,7 @@ How to install Windows qubes in Qubes OS 4.0
 ============================================
 
 
-Warning:** *The content below describes Windows installation in Qubes R4.0. The text has been updated to reflect the newer R4.1 release and QWT recent development. Please see* :doc:`this updated document </user/templates/windows/windows-qubes-4-1>` *for instructions for Qubes R4.1.*
+**Warning:** *The content below describes Windows installation in Qubes R4.0. The text has been updated to reflect the newer R4.1 release and QWT recent development. Please see* :doc:`this updated document </user/templates/windows/windows-qubes-4-1>` *for instructions for Qubes R4.1.*
 
 Simple Windows install
 ----------------------
@@ -414,7 +414,7 @@ On starting the AppVM, sometimes a message is displayed that the Xen PV
 Network Class needs to restart the system. This message can be safely
 ignored and closed by selecting “No”.
 
-Caution:** These AppVMs must not be started while the corresponding
+**Caution:** These AppVMs must not be started while the corresponding
 TemplateVM is running, because they share the TemplateVM’s license data.
 Even if this could work sometimes, it would be a violation of the
 license terms.

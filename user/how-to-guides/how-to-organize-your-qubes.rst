@@ -61,7 +61,7 @@ looks like this:
 
 |Alice’s system: diagram 1|
 
-- Several qubes for writing code.** Here’s where she runs her IDE,
+- **Several qubes for writing code.** Here’s where she runs her IDE,
   commits code, and signs her commits. These qubes are based on
   different templates depending on which tools and which development
   environment she needs. In general, Alice likes to have a separate
@@ -77,7 +77,7 @@ looks like this:
   for personal programming projects that she works on just for fun when
   she has “free time” (whatever that is).
 
-- Several qubes for building and testing.** Again, Alice usually
+- **Several qubes for building and testing.** Again, Alice usually
   likes to have one of these for each client or project in order to
   keep things organized. However, this can become rather cumbersome and
   memory-intensive when many such qubes are running at the same time,
@@ -106,7 +106,7 @@ looks like this:
 
 |Alice’s system: diagram 2|
 
-- Several email qubes.** Since Alice is a command-line aficionado,
+- **Several email qubes.** Since Alice is a command-line aficionado,
   she likes to use a terminal-based email client, so both her work and
   personal email qubes are based on a template with
   `Mutt <https://forum.qubes-os.org/t/18989>`__ installed. The email
@@ -115,7 +115,7 @@ looks like this:
   that below). To guard against malicious attachments, she configured
   Mutt to open all attachment files in :doc:`disposable qubes </user/how-to-guides/how-to-use-disposables>`.
 
-- Several qubes for communication tools,** like Signal, Slack, Zoom,
+- **Several qubes for communication tools,** like Signal, Slack, Zoom,
   Telegram, IRC, and Discord. This is where she teleconferences and
   chats with clients. She uses :doc:`USB passthrough </user/how-to-guides/how-to-use-usb-devices>` to attach her webcam to
   each qube as needed and detaches it afterward. Likewise, she gives
@@ -128,7 +128,7 @@ looks like this:
   it’s mostly for feuds over programming language superiority, Vim
   vs. Emacs wars, and tabs vs. spaces crusades).
 
-- A GPG backend vault.** Vaults are completely offline qubes that are
+- **A GPG backend vault.** Vaults are completely offline qubes that are
   isolated from the network. This particular vault holds Alice’s
   private keys (e.g., for code signing and email) and is securely
   accessed by several other “frontend” qubes via the :doc:`Split GPG </user/security-in-qubes/split-gpg>` system. Split GPG allows only the frontend
@@ -137,14 +137,14 @@ looks like this:
   Even then, no qube ever has direct access to Alice’s private keys
   except the backend vault itself.
 
-- A password manager vault.** This is another completely offline,
+- **A password manager vault.** This is another completely offline,
   network-isolated qube where Alice uses her offline password manager,
   KeePassXC, to store all of her usernames and passwords. She uses the
   :doc:`secure copy and paste </user/how-to-guides/how-to-copy-and-paste-text>` system
   to quickly copy credentials into other qubes whenever she needs to
   log into anything.
 
-- Personal qubes.** One of the things Alice loves the most about
+- **Personal qubes.** One of the things Alice loves the most about
   Qubes is that she can use it for both work *and* personal stuff
   without having to worry about cross-contamination. Accordingly, she
   has several qubes that pertain to her personal life. For example, she
@@ -190,12 +190,12 @@ work, which contains:
 
 |A diagram of Bob’s system|
 
-- One offline qube for writing.** It runs only LibreOffice Writer.
+- **One offline qube for writing.** It runs only LibreOffice Writer.
   This is where Bob does all of his writing. This window is usually
   open side-by-side with another window containing research or material
   from a source.
 
-- Multiple email qubes.** One is for receiving emails from the
+- **Multiple email qubes.** One is for receiving emails from the
   general public. Another is for emailing his editor and colleagues.
   Both are based on a :doc:`minimal template </user/templates/minimal-templates>`
   with Thunderbird installed. He’s configured both to open all
@@ -203,7 +203,7 @@ work, which contains:
   are offline in case an attachment contains a beacon that tries to
   phone home.
 
-- Whonix qubes.** He has the standard ``sys-whonix`` service qube for
+- **Whonix qubes.** He has the standard ``sys-whonix`` service qube for
   providing Torified network access, and he uses disposable
   ``anon-workstation`` app qubes for using Tor Browser to do research
   on stories he’s writing. Since the topic is often of a sensitive
@@ -217,7 +217,7 @@ work, which contains:
   whistleblowers he’s interacted with have said that they can’t take a
   chance with any other form of communication.
 
-- Two qubes for** `Signal <https://forum.qubes-os.org/t/19073>`__.** Bob has
+- **Two qubes for** `Signal <https://forum.qubes-os.org/t/19073>`__ **.** Bob has
   two Signal app qubes (both on the same template in which the Signal
   desktop app is installed). One is linked to his own mobile number for
   communicating with co-workers and other known, trusted contacts. The
@@ -226,7 +226,7 @@ work, which contains:
   individuals who don’t use Tor but for whom unencrypted communication
   could be dangerous.
 
-- Several data vaults.** When someone sends Bob material that turns
+- **Several data vaults.** When someone sends Bob material that turns
   out to be useful, or when he comes across useful material while doing
   his own research, he stores a copy in a completely offline,
   network-isolated vault qube. Most of these files are PDFs and images,
@@ -236,13 +236,13 @@ work, which contains:
   different vaults (usually one for each story or topic) just in case.
   This has the side benefit of helping to keep things organized.
 
-- A** `VPN qube <https://forum.qubes-os.org/t/19061>`__and associated qubes for accessing work resources.** The servers at work
+- **A** `VPN qube <https://forum.qubes-os.org/t/19061>`__ **and associated qubes for accessing work resources.** The servers at work
   can only be accessed from the organization’s network, so Bob has
   certain qubes that are connected to a VPN qube so that he can upload
   his work and access anything he needs on the local network when he’s
   not physically there.
 
-- A password manager vault.** Bob stores all of his login credentials
+- **A password manager vault.** Bob stores all of his login credentials
   in the default password manager that came with his offline vault
   qube. He :doc:`securely copies and pastes </user/how-to-guides/how-to-copy-and-paste-text>` them into other qubes as
   needed.
@@ -306,7 +306,7 @@ setup looks like this:
 
 |A diagram of Carol’s system|
 
-- One qube for each investment firm and bank.** Carol has a few
+- **One qube for each investment firm and bank.** Carol has a few
   different retirement accounts, brokerage accounts, and bank accounts.
   She treats each qube like a “secure terminal” for accessing only that
   one institution’s website. She makes her transactions and saves any
@@ -317,7 +317,7 @@ setup looks like this:
   and PDFs, most of Carol’s app qubes are based on a :doc:`minimal template </user/templates/minimal-templates>` with just a web browser (which
   doubles as a PDF viewer) and a file manager installed.
 
-- One qube for all her credit card accounts.** Carol started to make
+- **One qube for all her credit card accounts.** Carol started to make
   a separate qube for each credit card account but ultimately decided
   against it. For one thing, the consumer protections for credit card
   fraud in her country are much better than for losing assets to theft
@@ -342,17 +342,17 @@ setup looks like this:
   every credit card website wouldn’t be worth the hassle of having to
   manage so many extra qubes.
 
-- A qube for credit monitoring, credit reports, and credit history services.** Carol has worked hard to build up a good credit score,
+- **A qube for credit monitoring, credit reports, and credit history services.** Carol has worked hard to build up a good credit score,
   and she’s concerned about identity theft, so she has one qube
   dedicated to managing her free credit monitoring services and
   downloading her free annual credit reports.
 
-- Two qubes for taxes.** Carol has a `Windows qube <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows.md>`__
+- **Two qubes for taxes.** Carol has a `Windows qube <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows.md>`__
   for running her Windows-only tax software. She also has an offline
   vault where she stores all of her tax-related forms and documents,
   organized by year.
 
-- A qube for financial planning and tracking.** Carol loves
+- **A qube for financial planning and tracking.** Carol loves
   spreadsheets, so this offline qube is where she maintains a master
   spreadsheet to track all of her investments and her savings rate. She
   also keeps her budgeting spreadsheet, insurance spreadsheet, and
@@ -360,13 +360,13 @@ setup looks like this:
   template with some additional productivity software, like LibreOffice
   and Gnumeric (so that Carol can run her own Monte Carlo simulations).
 
-- Various email qubes.** Carol likes to have one email qube for her
+- **Various email qubes.** Carol likes to have one email qube for her
   most important financial accounts; a separate one for her credit
   cards accounts, online shopping accounts, and insurance companies;
   and another one for personal email. They’re all based on the same
   template with Thunderbird installed.
 
-- A password manager vault.** A network-isolated qube where Carol
+- **A password manager vault.** A network-isolated qube where Carol
   stores all of her account usernames and passwords in KeePassXC. She
   uses the :doc:`Qubes global clipboard </user/how-to-guides/how-to-copy-and-paste-text>` to copy and paste
   them into her other qubes when she needs to log into her accounts.
@@ -393,7 +393,7 @@ particularly as a hedge against certain types of political risk.
 
 Carol has added the following to her Qubes setup:
 
-- A standalone qube for running Bitcoin Core and an offline wallet vault.** Carol finds the design and security properties of Bitcoin
+- **A standalone qube for running Bitcoin Core and an offline wallet vault.** Carol finds the design and security properties of Bitcoin
   very interesting, so she’s experimenting with running a full node.
   She also created a network-isolated vault in order to try running a
   copy of Bitcoin Core completely offline as a “cold storage” wallet.
@@ -403,13 +403,13 @@ Carol has added the following to her Qubes setup:
   recently heard about using `Electrum as a “split” wallet in Qubes <https://forum.qubes-os.org/t/19017>`__ and is interested in
   exploring that further.
 
-- Whonix qubes.** Carol read somewhere that Bitcoin nodes should be
+- **Whonix qubes.** Carol read somewhere that Bitcoin nodes should be
   run over Tor for privacy and security. She found it very convenient
   that Whonix is already integrated into Qubes, so she simply set her
   Bitcoin Core “full node” qube to use ``sys-whonix`` as its networking
   qube.
 
-- Various qubes for DeFi and web3.** Carol has also started getting
+- **Various qubes for DeFi and web3.** Carol has also started getting
   into DeFi (decentralized finance) and web3 on Ethereum and other
   smart contract blockchains, so a friend recommended that she get a
   Ledger hardware wallet. She downloaded the Ledger Live software in an
@@ -422,7 +422,7 @@ Carol has added the following to her Qubes setup:
   can use Metamask in conjunction with her Ledger to interact with
   smart contracts and decentralized exchanges.
 
-- Various qubes for research and centralized exchanges.** Carol uses
+- **Various qubes for research and centralized exchanges.** Carol uses
   these when she wants to check block explorer websites, coin listing
   and market cap sites, aggregation tools, or just to see what the
   latest buzz is on Crypto Twitter.
@@ -449,21 +449,21 @@ just adding a few well-documented features like Split GPG.
 
 |Simple VM setup|
 
-- One qube for surfing.** ``untrusted`` is just the standard qube
+- **One qube for surfing.** ``untrusted`` is just the standard qube
   coming with the Qubes installation, based on the standard Fedora
   template, but with Thunderbird removed. It is intended for surfing
   arbitrary locations and may be at risk from some websites.
   Consequently, it does not keep any valuable data and has no
   facilities to view or edit office documents.
 
-- One offline qube for writing.** ``work`` is the qube used to edit
+- **One offline qube for writing.** ``work`` is the qube used to edit
   documents – even MS office documents. It is based on an extended
   Fedora template containing additional software like LibreOffice,
   GIMP, Wine, and some Windows applications. It has no netVM and so the
   risk of an infected document contacting a hacker’s control server is
   minimized.
 
-- One qube for access to trusted servers.** ``personal`` is used to
+- **One qube for access to trusted servers.** ``personal`` is used to
   access only trusted websites like home banking, and the firewall
   rules for this qube restrict it to these locations. It is based on
   the same extended Fedora template. John uses this qube for access to
@@ -471,7 +471,7 @@ just adding a few well-documented features like Split GPG.
   mail in this qube. Any office documents from this qube are only
   opened in disposables in order to reduce the risk of infection.
 
-- One qube for preparing teaching material for his students.**
+- **One qube for preparing teaching material for his students.**
   ``Windows`` is the workhorse used to execute anything needed for
   teaching. It is based on a Windows 7 template with QWT installed as
   most of John’s students work with Windows PCs. In order to reduce the
@@ -479,18 +479,18 @@ just adding a few well-documented features like Split GPG.
   internet access is limited, again by a firewall rule, to the servers
   providing material for teaching.
 
-- One qube for protected access to sensible websites.** ``whonix`` is
+- **One qube for protected access to sensible websites.** ``whonix`` is
   just the standard AppVM ``anon-whonix`` based on the ``whonix-ws``
   coming with the Qubes installation. It is used for all accesses over
   Tor and could as well be replaced by a disposable. John, who is
   engaged in a project for helping mentally disabled people, uses this
   qube to avoid tracking his access to the project’s server.
 
-- One offline qube for keeping the private PGP key.** ``vault`` is
+- **One offline qube for keeping the private PGP key.** ``vault`` is
   the key part of Split GPG, just as described in the Qubes
   documentation, keeping the private PGP key.
 
-- One offline qube for permanent data storage.** ``storage`` finally
+- **One offline qube for permanent data storage.** ``storage`` finally
   is a qube based on the standard Debian template and, having no
   applications and no network access, it is used explicitly and only
   for permanent data storage, and it is the only qube whose data is
@@ -534,7 +534,7 @@ sense to keep it in an offline, network-isolated vault.
 As you’re designing your own Qubes system, keep in mind some of the
 following lessons from our case studies:
 
-- You’ll probably change your mind as you go.** You’ll realize that
+- **You’ll probably change your mind as you go.** You’ll realize that
   one qube should really be split into two, or you’ll realize that it
   doesn’t really make sense for two qubes to be separate and that they
   should instead be merged into one. That’s okay. Qubes OS supports
@@ -557,7 +557,7 @@ following lessons from our case studies:
   need anymore without having to worry that you might need them again
   someday, since you know you can always restore them from a backup.
 
-- Think about which programs you want to run and where you want to store data.** In some cases, it makes sense to run programs and store
+- **Think about which programs you want to run and where you want to store data.** In some cases, it makes sense to run programs and store
   data in the same qube, for example, if the data is generated by that
   program. In other cases, it makes sense to have qubes that are
   exclusively for storing data (e.g., offline data storage vaults) and
@@ -579,7 +579,7 @@ following lessons from our case studies:
   than a certain amount of downtime, then by all means, back everything
   up!
 
-- Introspect on your own behavior.** For example, if you find
+- **Introspect on your own behavior.** For example, if you find
   yourself wanting to find some way to get two qubes to share the same
   storage space, then this is probably a sign that those two qubes
   shouldn’t be separate in the first place. Sharing storage with each
@@ -595,7 +595,7 @@ following lessons from our case studies:
   allow you to better refine your system, resulting in a more logical
   organization that serves your needs better and better over time.
 
-- Don’t assume that just because you can’t find a way to attack your system, an adversary wouldn’t be able to.** When you’re thinking
+- **Don’t assume that just because you can’t find a way to attack your system, an adversary wouldn’t be able to.** When you’re thinking
   about whether it’s a good idea to combine different activities or
   data in a single qube, for example, you might think, “Well, I can’t
   really see how these pose a risk to each other.” The problem is that
@@ -605,7 +605,7 @@ following lessons from our case studies:
   their entire digital life can be taken down in one fell swoop. That’s
   why a good rule of thumb is: When in doubt, compartmentalize.
 
-- But remember that compartmentalization — like everything else — can be taken to an extreme.** The appropriate amount depends on your
+- **But remember that compartmentalization — like everything else — can be taken to an extreme.** The appropriate amount depends on your
   temperament, time, patience, experience, risk tolerance, and
   expertise. In short, there can be such a thing as *too much*
   compartmentalization! You also have to be able to actually *use* your

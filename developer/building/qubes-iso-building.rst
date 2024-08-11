@@ -16,7 +16,7 @@ the below steps. Other rpm-based operating systems may also work.
 Travis-CI uses Ubuntu 18.04 to perform test builds, except it can not
 test the ``./setup`` script.
 
-Notes:** On modern Fedora system (like Fedora 37) SeLinux is enforced
+**Notes:** On modern Fedora system (like Fedora 37) SeLinux is enforced
 by default and is blocking the build system. You would get error like
 “can’t create transaction lock on /…/rpm/.rpm.lock (Permission denied)”.
 You can set SeLinux to permissive mode with
@@ -70,7 +70,7 @@ commands below as a regular user, not root):
 
 
 
-Note** In the above process, we do *not* rely on the security of our
+**Note** In the above process, we do *not* rely on the security of our
 server (keys.qubes-os.org) nor the connection (ssl, cert) – we only rely
 on you getting the Qubes Master Signing Key fingerprint *somehow* and
 ensuring they match! See :ref:`verifying signatures <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>`
@@ -88,7 +88,7 @@ verify the signature manually:
 
 
 
-Note** It’s very important to check if the verification message
+**Note** It’s very important to check if the verification message
 contains “Good signature from …” and does not contain “WARNING: This key
 is not certified with a trusted signature!”.
 
@@ -196,7 +196,7 @@ If you will be building Whonix templates:
 
 
 
-Note:** It’s very important to check the fingerprint displayed against
+**Note:** It’s very important to check the fingerprint displayed against
 multiple sources such as the `Whonix web site <https://www.whonix.org/wiki/Whonix_Signing_Key>`__, etc. It should
 look something like this:
 

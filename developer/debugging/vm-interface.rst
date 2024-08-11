@@ -228,7 +228,7 @@ Keys set by VM for passing info to dom0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-- ``memory/meminfo`` (xenstore**) - used memory (updated by
+- ``memory/meminfo`` (**xenstore**) - used memory (updated by
   qubes-meminfo-writer), input information for qmemman;
 
   - Qubes 3.x format: 6 lines (EOL encoded as ``\n``), each in format

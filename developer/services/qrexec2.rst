@@ -6,7 +6,7 @@ Qrexec v2 (deprecated)
 (*This page is about qrexec v2. For qrexec v3, see*
 :doc:`here </developer/services/qrexec>` *.*)
 
-Qubes qrexec** is a framework for implementing inter-VM
+Qubes **qrexec** is a framework for implementing inter-VM
 (incl. Dom0-VM) services. It offers a mechanism to start programs in
 VMs, redirect their stdin/stdout, and a policy framework to control this
 all.
@@ -265,7 +265,7 @@ should appear after the invocation of this command. If we changed the
 policy from “ask” to “allow”, then no popup should be presented, and the
 call will always be allowed.
 
-Note:** For a real world example of writing a qrexec service, see this
+**Note:** For a real world example of writing a qrexec service, see this
 `blog post <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__.
 
 More high-level RPCs?
@@ -304,7 +304,7 @@ Players:
 
 
 
-Note:** None of the above tools are designed to be used by users.
+**Note:** None of the above tools are designed to be used by users.
 
 Linux VMs implementation
 ------------------------
@@ -323,7 +323,7 @@ Players:
 
 
 
-Note:** None of the above tools are designed to be used by users.
+**Note:** None of the above tools are designed to be used by users.
 ``qrexec-client-vm`` is designed to be wrapped up by Qubes apps.
 
 Windows VMs implementation
@@ -347,14 +347,14 @@ default).
 
 
 
-Note:** None of the above tools are designed to be used by users.
+**Note:** None of the above tools are designed to be used by users.
 ``qrexec-client-vm`` is designed to be wrapped up by Qubes apps.
 
 All the pieces together at work
 -------------------------------
 
 
-Note:** This section is not needed to use qrexec for writing Qubes
+**Note:** This section is not needed to use qrexec for writing Qubes
 apps. Also note the :doc:`qrexec framework implemention in Qubes R3 </developer/services/qrexec>` significantly differs from what is described in
 this section.
 

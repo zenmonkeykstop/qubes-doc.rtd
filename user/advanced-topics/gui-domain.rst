@@ -55,7 +55,7 @@ You can now disable the ``sys-gui`` formula:
 At this point, you need to shutdown all your running qubes as the
 ``default_guivm`` qubes global property has been set to ``sys-gui``. In
 order to use ``sys-gui`` as GUI domain, you need to logout and, in the
-top right corner, select ``lightdm`` session type to GUI domain (sys-gui)**. Once logged, you are running ``sys-gui`` as fullscreen
+top right corner, select ``lightdm`` session type to **GUI domain (sys-gui)**. Once logged, you are running ``sys-gui`` as fullscreen
 window and you can perform any operation as if you would be in ``dom0``
 desktop.
 
@@ -184,7 +184,7 @@ password.
    ``VNC`` client. Ensure to lock or log out before disconnecting your
    ``VNC`` client session.
 
-   WARNING**: This setup raises multiple security issues: 1) Anyone
+   **WARNING**: This setup raises multiple security issues: 1) Anyone
    who can reach the ``VNC`` server, can take over the control of the
    Qubes OS machine, 2) A second client can connect even if a connection
    is already active and potentially get disconnected, 3) You can get

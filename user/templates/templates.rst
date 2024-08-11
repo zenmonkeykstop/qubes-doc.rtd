@@ -13,18 +13,18 @@ run your software and store your data.
 
 The template system has significant benefits:
 
-- Security:** Each qube has read-only access to the template on which
+- **Security:** Each qube has read-only access to the template on which
   it’s based, so if a qube is compromised, it cannot infect its
   template or any of the other qubes based on that template.
 
-- Storage:** Each qube based on a template uses only the disk space
+- **Storage:** Each qube based on a template uses only the disk space
   required to store its own data (i.e., your files in its home
   directory), which dramatically saves on disk space.
 
-- Speed:** It is extremely fast to create new app qubes, since the
+- **Speed:** It is extremely fast to create new app qubes, since the
   root filesystem already exists in the template.
 
-- Updates:** Updates are naturally centralized, since updating a
+- **Updates:** Updates are naturally centralized, since updating a
   template means that all qubes based on it will automatically use
   those updates after they’re restarted.
 
@@ -213,7 +213,7 @@ The procedure for uninstalling a template depends on how it was created.
 
 If the template was originaly created by cloning another template, then
 you can delete it the same way as you would any other qube. In the Qube
-Manager, right-click on the template and select Delete qube**. (If
+Manager, right-click on the template and select **Delete qube**. (If
 you’re not sure, you can safely try this method first to see if it
 works.)
 
@@ -292,12 +292,12 @@ When you install a new template or
 is recommended that you switch everything that was using the old
 template to the new template:
 
-1. Make the new template the default template.** In the App Menu, go
+1. **Make the new template the default template.** In the App Menu, go
    to Qubes Tools, then click on Qubes Global Settings. In the Qube
    Defaults section, next to Template, select the new template from the
    drop-down list. Press OK.
 
-2. Base your** :ref:`disposable templates <user/reference/glossary:disposable template>` on the new template.**
+2. **Base your** :ref:`disposable templates <user/reference/glossary:disposable template>` **on the new template.**
 
    - If your only keyboard and mouse are *not* connected through a :doc:`USB qube </user/advanced-topics/usb-qubes>`, or that USB qube is *not* a disposable,
      then shut down all disposables. In the App Menu, go to Qubes
@@ -337,7 +337,7 @@ template to the new template:
 
 
 
-3. Base your app qubes on the new template.** In the Qube Manager,
+3. **Base your app qubes on the new template.** In the Qube Manager,
    click on the Template heading to sort by template. Select all the
    qubes based on the old template by clicking on the first one, holding
    shift, then clicking on the last one. With multiple qubes selected,
@@ -347,7 +347,7 @@ template to the new template:
    template and update them to the new template using the drop down
    menu.
 
-4. Change the template for the default-mgmt-dvm** If the old template
+4. **Change the template for the default-mgmt-dvm** If the old template
    was used for management qubes, then you should change the template.
    This is an *internal* qube which does not appear by default in the
    Qube manager. In the ``System`` menu select

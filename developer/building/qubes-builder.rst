@@ -7,8 +7,8 @@ Qubes builder
       
       Note: These instructions concern the older Qubes builder (v1). It supports only building Qubes 4.2 or earlier.The build process has been completely rewritten in `qubes-builder v2 <https://github.com/QubesOS/qubes-builderv2/>`__      . This can be used for building Qubes R4.2 and later, and all related components.
 
-Note: See** :doc:`ISO building instructions </developer/building/qubes-iso-building>`
-for a streamlined overview on how to use the build system.**
+**Note: See** :doc:`ISO building instructions </developer/building/qubes-iso-building>`
+**for a streamlined overview on how to use the build system.**
 
 We have a fully automated build system for Qubes, that downloads, builds
 and packages all the Qubes components, and finally should spit out a
@@ -184,7 +184,7 @@ steps:
          make get-sources
 
 
-4. Make your modifications here**
+4. **Make your modifications here**
 
 5. Build the Qubes ``make qubes`` actually is just meta target which
    builds all required components in correct order. The list of
@@ -261,7 +261,7 @@ Also, once enabled, disabling this setting will not disable repositories
 in relevant chroots. And even if it did, there could be some leftover
 packages installed from those repos (which may or may not be desirable).
 
-Note** If you are building Ubuntu templates, you cannot use this
+**Note** If you are building Ubuntu templates, you cannot use this
 option. This is because Qubes does not provide official packages for
 Ubuntu templates.
 

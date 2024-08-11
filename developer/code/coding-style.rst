@@ -50,7 +50,7 @@ General typographic conventions
 -------------------------------
 
 
-- Use space-expanded tabs that equal 4 spaces.** Yes, we know, there
+- **Use space-expanded tabs that equal 4 spaces.** Yes, we know, there
   are many arguments for using “real” tabs instead of space-expanded
   tabs, but we need to pick one convention to make the project
   consistent. One argument for using space-expanded tabs is that this
@@ -61,14 +61,14 @@ General typographic conventions
   assume this is just an arbitrary choice made to enforce a unified
   style.
 
-- Maintain max. line length of 80 characters**. Even though today’s
+- **Maintain max. line length of 80 characters**. Even though today’s
   monitors often are very wide and it’s often not a problem to have 120
   characters displayed in an editor, maintaining shorter line lengths
   improves readability. It also allows others to have two parallel
   windows open, side by side, each with different parts of the source
   code.
 
-- Naming conventions for any OS other than Windows**:
+- **Naming conventions for any OS other than Windows**:
 
   - ``ClassName``
 
@@ -76,7 +76,7 @@ General typographic conventions
 
 
 
-- Naming convention for Windows OS** – exceptionally to preserve
+- **Naming convention for Windows OS** – exceptionally to preserve
   Windows conventions please use the following:
 
   - ``ClassName``, ``FunctionName``
@@ -86,7 +86,7 @@ General typographic conventions
 
 
 
-- Maintain a decent amount of horizontal spacing**, e.g. add a space
+- **Maintain a decent amount of horizontal spacing**, e.g. add a space
   after ``if`` or before ``{`` in C, and similar in other languages.
   Whether and where to also use spaces within expressions, such as
   (x*2+5) vs. (x * 2 + 5) is left to the developer’s judgment. Do not
@@ -94,16 +94,16 @@ General typographic conventions
   so avoid constructs like this: ``if ( condition )`` and use ones like
   this: ``if (condition)`` instead.
 
-- Use single new lines** (‘\n’ aka LF) in any non-Windows source
+- **Use single new lines** (‘\n’ aka LF) in any non-Windows source
   code. On Windows, exceptionally, use the CRLF line endings (–). This
   will allow the source code to be easily viewable in various
   Windows-based programs.
 
-- Use descriptive names for variables and functions**! Really, at a
+- **Use descriptive names for variables and functions**! Really, at a
   time when most editors have auto-completion features, there is no
   excuse for using short variable names.
 
-- Comments should be indented together with the code**, e.g. like
+- **Comments should be indented together with the code**, e.g. like
   this:
 
   .. code:: c
@@ -129,7 +129,7 @@ File naming conventions
 
 
 
-File naming in Linux/Unix-like systems:**
+**File naming in Linux/Unix-like systems:**
 
 - User commands that operate on particular VMs (also those accessible
   in VMs): ``/usr/bin/qvm-*``
@@ -158,7 +158,7 @@ File naming in Linux/Unix-like systems:**
 
 
 
-File naming in Windows systems:**
+**File naming in Windows systems:**
 
 - All base qubes-related files in
   ``C:\Program Files\Invisible Things Lab\Qubes\`` (Exceptionally
@@ -187,7 +187,7 @@ General programming style guidelines
   behavior of more complex functions, if it is not clear from their
   name.
 
-- Do not** use comments for code fragments where it is immediately
+- Do **not** use comments for code fragments where it is immediately
   clear what the code does. E.g. avoid constructs like this:
 
   .. code:: c
@@ -200,7 +200,7 @@ General programming style guidelines
 
 
 
-- Do not** use comments to disable code fragments. In production code
+- Do **not** use comments to disable code fragments. In production code
   there should really be no commented or disabled code fragments. If
   you really, really have a good reason to retain some fragment of
   unused code, use #if or #ifdef to disable it, e.g.:
@@ -308,7 +308,7 @@ Security coding guidelines
 --------------------------
 
 
-- As a general rule: untrusted input** is our #1 enemy!
+- As a general rule: **untrusted input** is our #1 enemy!
 
 - Any input that comes from untrusted, or less trusted, or just
   differently-trusted, entity should always be considered as malicious

@@ -30,7 +30,7 @@ adding a comment to a PR containing only the command.
 
 - ``TestDeploy``: Deploys a test website, which is a live version of
   the Qubes website as if this PR had been merged. This can be useful
-  for previewing a PR on a live public website. Note:** You must wait
+  for previewing a PR on a live public website. **Note:** You must wait
   for the site to finish building before issuing this command, or else
   it will deploy an empty website. To find the URL of the test website,
   look for text similar to “This branch was successfully deployed” and

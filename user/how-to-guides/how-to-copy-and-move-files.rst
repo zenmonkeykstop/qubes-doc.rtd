@@ -29,7 +29,7 @@ which are copied recursively.
          /home/user/QubesIncoming/<source_qube>/<filename>
 
 
-   If you selected Move** rather than Copy**, the original file in
+   If you selected **Move** rather than **Copy**, the original file in
    the source qube will be deleted. (Moving a file is equivalent to
    copying the file, then deleting the original.)
 

@@ -15,7 +15,7 @@ information about upgrading kernels in dom0.) This means that:
 
 2. You can modify kernel options (using ``qvm-prefs`` commandline tool);
 
-3. You can not** modify any of the above from inside a VM;
+3. You can **not** modify any of the above from inside a VM;
 
 4. Installing additional kernel modules is cumbersome.
 
@@ -337,7 +337,7 @@ You can safely ignore this error message:
 
 Then shutdown the VM.
 
-Notes:**
+**Notes:**
 
 - You may also use ``PV`` mode instead of ``HVM`` but this is not
   recommended for security purposes.

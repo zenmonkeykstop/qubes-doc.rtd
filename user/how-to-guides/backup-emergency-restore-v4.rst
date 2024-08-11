@@ -99,7 +99,7 @@ Emergency Recovery Instructions
 -------------------------------
 
 
-Note:** In the following example, the backup file is both *encrypted*
+**Note:** In the following example, the backup file is both *encrypted*
 and *compressed*.
 
 1. Untar the main backup file.
@@ -119,7 +119,7 @@ and *compressed*.
          dom0-home/dom0user.000.enc
 
 
-   To extract only specific VMs:** Each VM in the backup file has its
+   **To extract only specific VMs:** Each VM in the backup file has its
    path listed in ``qubes.xml.000.enc``. Decrypt it. (In this example,
    the password is ``password``.)
 
@@ -166,7 +166,7 @@ and *compressed*.
          Files backup-header and backup-header.verified are identical
 
 
-   Note:** If this command fails, it may be that the backup was
+   **Note:** If this command fails, it may be that the backup was
    tampered with or is in a different format. In the latter case, look
    inside ``backup-header`` at the ``version`` field. If it contains a
    value other than ``version=4``, go to the instructions for that
@@ -213,7 +213,7 @@ and *compressed*.
 
    If this pipeline fails, it is likely that the backup is corrupted or
    has been tampered with.
-   Note:** If your backup was compressed with a program other than
+   **Note:** If your backup was compressed with a program other than
    ``gzip``, you must substitute the correct compression program in the
    command above. This information is contained in ``backup-header``
    (see step 4). For example, if your backup is compressed with
@@ -232,7 +232,7 @@ and *compressed*.
 
 8. Success! If you wish to recover data from more than one VM in your
    backup, simply repeat steps 6 and 7 for each additional VM.
-   Note:** You may wish to store a copy of these instructions with
+   **Note:** You may wish to store a copy of these instructions with
    your Qubes backups in the event that you fail to recall the above
    procedure while this web page is inaccessible. All Qubes
    documentation, including this page, is available in plain text format

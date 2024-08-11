@@ -12,7 +12,7 @@ Using the Devices Widget to Attach a Drive
 ------------------------------------------
 
 
-(Note:** In the present context, the term “USB drive” denotes any `USB mass storage device <https://en.wikipedia.org/wiki/USB_mass_storage_device_class>`__.
+(**Note:** In the present context, the term “USB drive” denotes any `USB mass storage device <https://en.wikipedia.org/wiki/USB_mass_storage_device_class>`__.
 In addition to smaller flash memory sticks, this includes things like
 USB external hard drives.)
 
@@ -33,7 +33,7 @@ this is ``sys-usb:sda``, so hover over it. This will pop up a submenu
 showing running VMs to which the USB drive can be connected. Click on
 one and your USB drive will be attached!
 
-Note:** attaching individual partitions (e.g. ``sys-usb:sda1``) can be
+**Note:** attaching individual partitions (e.g. ``sys-usb:sda1``) can be
 slightly more secure because it doesn’t force the target app qube to
 parse the partition table. However, it often means the app qube won’t
 detect the new partition and you will need to manually mount it inside
@@ -126,7 +126,7 @@ don’t see anything that looks like your drive, run
 
 3. The block device is now attached to the qube. If using a default
    qube, you may open the Nautilus file manager in the qube, and your
-   drive should be visible in the Devices** panel on the left. If
+   drive should be visible in the **Devices** panel on the left. If
    you’ve attached a single partition (e.g. ``sdb2`` instead of ``sdb``
    in our example), you may need to manually mount before it becomes
    visible:
@@ -140,7 +140,7 @@ don’t see anything that looks like your drive, run
 
 
 4. When you finish using the block device, click the eject button or
-   right-click and select Unmount**.
+   right-click and select **Unmount**.
    If you’ve manually mounted a single partition in the above step, use:
 
    .. code:: bash

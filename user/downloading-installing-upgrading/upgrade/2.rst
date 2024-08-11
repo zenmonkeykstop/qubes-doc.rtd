@@ -6,7 +6,7 @@ Upgrading to R2
 Current Qubes R2 Beta 3 (R2B3) systems can be upgraded in-place to the
 latest R2 (R2) release by following the procedure below.
 
-Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in** :doc:`backup tool </user/how-to-guides/how-to-back-up-restore-and-migrate>`.**
+**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in** :doc:`backup tool </user/how-to-guides/how-to-back-up-restore-and-migrate>` **.**
 
 Upgrade Template and Standalone VM(s)
 -------------------------------------
@@ -16,7 +16,7 @@ Upgrade Template and Standalone VM(s)
   existing template according to procedure described
   :ref:`here <user/templates/fedora/fedora:upgrading>`.
 
-- It also possible to download a new Fedora 20-based template from our repositories**. To do this please first upgrade the Dom0 distro
+- **It also possible to download a new Fedora 20-based template from our repositories**. To do this please first upgrade the Dom0 distro
   as described in the section below.
 
 

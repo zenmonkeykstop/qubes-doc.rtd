@@ -29,18 +29,18 @@ still function, though the UI may be different in some cases. In
 general, deprecated features are removed only in major releases, and
 in-place upgrades between major versions are not guaranteed.
 
-Following standard practice, version** refers to any build that has
+Following standard practice, **version** refers to any build that has
 been assigned a version name or number, e.g., ``3.2-rc2``, ``4.0.4``,
-``4.1-beta1``. By contrast, release** refers to any version that is
+``4.1-beta1``. By contrast, **release** refers to any version that is
 intended for consumption by the general userbase. For example, ``4.0.4``
-was both a version** and a release**, since it was stable and
-intended for general public use, while ``4.1-beta1`` was a version**
-but *not* a release**, since it was not stable and was intended only
+was both a **version** and a **release**, since it was stable and
+intended for general public use, while ``4.1-beta1`` was a **version**
+but *not* a **release**, since it was not stable and was intended only
 for :doc:`testing </user/downloading-installing-upgrading/testing>`. All releases are versions, but not all
 versions are releases.
 
-The letter R**, as in ``R4.1``, stands for release**. The
-abbreviation RC**, as in ``3.2-rc2``, stands for release candidate**.
+The letter **R**, as in ``R4.1``, stands for **release**. The
+abbreviation **RC**, as in ``3.2-rc2``, stands for **release candidate**.
 
 Qubes distributions and products
 --------------------------------
@@ -49,7 +49,7 @@ Qubes distributions and products
 We intend to make it easy to make a remix of Qubes, targeting another
 hypervisor or isolation provider. We may also create commercial products
 intended for specific circumstances. There is one distinguished
-distribution called Qubes OS**. All source code for it is available
+distribution called **Qubes OS**. All source code for it is available
 for download under a :doc:`free and open-source license </developer/code/license>`
 and is openly developed on `GitHub <https://github.com/QubesOS>`__ and
 our `mailing lists <https://www.qubes-os.org/support/>`__. The rest of

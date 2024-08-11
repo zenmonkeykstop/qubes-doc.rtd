@@ -47,11 +47,11 @@ To ensure the process is efficient and productive for everyone involved,
 please follow these steps:
 
 1. Carefully read our issue tracking `guidelines <#guidelines>`__. If
-   your issue would violate any of the guidelines, stop**. Please do
+   your issue would violate any of the guidelines, **stop**. Please do
    not submit it.
 
 2. `Search through the existing issues <#search-tips>`__, both open and
-   closed, to see if your issue already exists. If it does, stop**.
+   closed, to see if your issue already exists. If it does, **stop**.
    :ref:`Do not open a duplicate. <introduction/issue-tracking:new issues should not be duplicates of existing issues>`
    Instead, comment on the existing issue.
 
@@ -110,21 +110,21 @@ Type
 ^^^^
 
 
-There are three issue types**: ``T: bug``, ``T: enhancement``, and
+There are three issue **types**: ``T: bug``, ``T: enhancement``, and
 ``T: task``.
 
 - ``T: bug`` — Type: bug report. A problem or defect resulting in
   unintended behavior in something that exists.
 
 - ``T: enhancement`` — Type: enhancement. A new feature that does not
-  yet exist or** improvement of existing functionality.
+  yet exist **or** improvement of existing functionality.
 
 - ``T: task`` — Type: task. An action item that is neither a bug nor an
   enhancement.
 
 
 
-Every open issue should have exactly one** type. An open issue should
+Every open issue should have **exactly one** type. An open issue should
 not have more than one type, and it should not lack a type entirely. Bug
 reports are for problems in things that already exist. If something
 doesn’t exist yet, but you think it ought to exist, then use
@@ -137,10 +137,10 @@ Priority
 ^^^^^^^^
 
 
-There are several issue priority** levels ranging from ``P: minor`` to
+There are several issue **priority** levels ranging from ``P: minor`` to
 ``P: blocker`` (see
 `here <https://github.com/QubesOS/qubes-issues/labels?q=P%3A>`__ for the
-full list). Every open issue should have exactly one** priority. An
+full list). Every open issue should have **exactly one** priority. An
 open issue should not have more than one priority, and it should not
 lack a priority entirely. See
 :ref:`here <developer/releases/version-scheme:bug priorities>` for details about how the
@@ -150,9 +150,9 @@ Component
 ^^^^^^^^^
 
 
-There are many component** labels, each beginning with ``C:`` (see
+There are many **component** labels, each beginning with ``C:`` (see
 `here <https://github.com/QubesOS/qubes-issues/labels?q=C%3A>`__ for the
-full list). Every open issue should have at least one** component. An
+full list). Every open issue should have **at least one** component. An
 open issue may have more than one component, but it should not lack a
 component entirely. When no other component applies, use ``C: other``.
 
@@ -179,11 +179,11 @@ metadata to issues. They also allow more focused view.
 
 There is a special project in Qubes OS project: the `Current team tasks project <https://github.com/orgs/QubesOS/projects/19/views/1>`__ which
 represents current work of the core team. Issues in this project’s
-backlog** section are not yet ready for work - they might be waiting
+**backlog** section are not yet ready for work - they might be waiting
 for clarifications, blockers, decisions on priorities etc. Issues that
-are ready** can be picked up by any team member. There should not be
-too many issues in ready** column to decrease confusion and decision
-paralysis - good number is around 20. The in review** state means that
+are **ready** can be picked up by any team member. There should not be
+too many issues in **ready** column to decrease confusion and decision
+paralysis - good number is around 20. The **in review** state means that
 the developer is finished with the work (the completion state has been
 reached) - if something has to be postponed or abandoned, a
 justification should be posted in issue discussion.
@@ -334,7 +334,7 @@ New issues should not be duplicates of existing issues
 
 Before you submit an issue, check to see whether it has already been
 reported. Search through the existing issues – both open and closed – by
-typing your key words in the Filters** box. If you find an issue that
+typing your key words in the **Filters** box. If you find an issue that
 seems to be similar to yours, read through it. If you find an issue that
 is the same as or subsumes yours, leave a comment on the existing issue
 rather than filing a new one, even if the existing issue is closed. If
@@ -417,7 +417,7 @@ On GitHub, create collapsible sections in Markdown like so:
 
 
 
-Tip:** Use the “Preview” tab to make sure it renders correctly before
+**Tip:** Use the “Preview” tab to make sure it renders correctly before
 posting.
 
 How issues get closed
@@ -439,7 +439,7 @@ wait for it to land in the stable repository. If, after testing the fix,
 you find that it does not really fix the reported bug, please leave a
 comment on the issue explaining the situation. When you do, we will
 receive a notification and respond on the issue or reopen it (or both).
-Please do not** create a duplicate issue or attempt to contact the
+Please **do not** create a duplicate issue or attempt to contact the
 developers individually about a problem.
 
 Resolution
@@ -460,7 +460,7 @@ occur.
 
 Being closed as ``not planned`` means that the issue will *not* be fixed
 (in the case of bugs) or done (in the case of enhancements and tasks).
-When an issue is closed as ``not planned``, we add a resolution**
+When an issue is closed as ``not planned``, we add a **resolution**
 label starting with ``R:`` that specifies the reason for the closure,
 such as ``R: duplicate`` or ``R: cannot reproduce``. Each of these
 labels has a description that briefly explains the label. We also leave
@@ -521,9 +521,9 @@ Understanding open and closed issues
 
 
 Every issue is always in one of two states: open or closed, with open
-being the default. The open** and closed** states mean that,
+being the default. The **open** and **closed** states mean that,
 according to our available information at present, the issue in question
-either is** or is not** (respectively) actionable for the Qubes
+either **is** or **is not** (respectively) actionable for the Qubes
 team. The open and closed states do not mean anything more than this,
 and it’s important not to read anything else into them. It’s also
 important to understand that closing an issue is, in effect, nothing
@@ -583,5 +583,5 @@ an issue turns out to be more (or maybe less) complicated than it has
 initially seemed.
 
 When an issue is done (that is, the completion checklist has been
-completed), the issue should be moved to ready** column in the
+completed), the issue should be moved to **ready** column in the
 *Current team tasks* project.

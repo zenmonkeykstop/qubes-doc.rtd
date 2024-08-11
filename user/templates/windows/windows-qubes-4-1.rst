@@ -70,7 +70,7 @@ Windows VM installation
 -----------------------
 
 
-qvm-create-windows-qube**: An unofficial, third-party tool for
+**qvm-create-windows-qube**: An unofficial, third-party tool for
 automating this process is available
 `here <https://github.com/elliotkillick/qvm-create-windows-qube>`__.
 (Please note that this tool has not been reviewed by the Qubes OS
@@ -79,7 +79,7 @@ Project. Use it at your own risk.)
 However, if you are an expert or want to do it manually you may continue
 below.
 
-Notes:**
+**Notes:**
 
 - The instructions may work on other versions than Windows 7, 8.1, 10
   and 11 x64 but haven’t been tested.
@@ -89,7 +89,7 @@ Notes:**
 
 
 
-Provide installation media**
+**Provide installation media**
 
 Have the Windows ISO image (preferrably the 64-bit version) downloaded
 in some qube.
@@ -110,7 +110,7 @@ planned usage though (eg. no appx functionality in ameliorated windows -
 so the installation of Windows Store apps is impossible, even with
 powershell).
 
-Create Windows VM**
+**Create Windows VM**
 
 Create a VM named WindowsNew in :doc:`HVM </user/advanced-topics/standalones-and-hvms>` mode (Xen’s current
 PVH limitations precludes from using PVH). This can be done in either of
@@ -243,7 +243,7 @@ These parameters are set for the following reasons:
 
 
 
-Start Windows VM**
+**Start Windows VM**
 
 - The VM is now ready to be started; the best practice is to use an
   installation ISO :ref:`located in a VM <user/advanced-topics/standalones-and-hvms:installing an os in an hvm>`. Now
@@ -287,12 +287,12 @@ Start Windows VM**
   - The installation will run mostly as usual, but automatic reboots
     will halt the qube - just restart it again and again until the
     installation is finished. Note, however, that for these restarts,
-    the parameter ``--cdrom`` must not** be used, because otherwise
+    the parameter ``--cdrom`` **must not** be used, because otherwise
     the installation will start all over.
 
   - Install on first disk.
 
-  - For Windows 11 only**: Windows 11 requires TPM 2.0, which
+  - **For Windows 11 only**: Windows 11 requires TPM 2.0, which
     currently is not supported from Xen. In Order to install Windows
     11 under Qubes, the check for TPM in the Windows installer has to
     be disabled:
@@ -365,7 +365,7 @@ Start Windows VM**
 
 
 
-After Windows installation**
+**After Windows installation**
 
 - From the Windows command line, disable hibernation in order to avoid
   incomplete Windows shutdown, which could lead to corruption of the
@@ -434,13 +434,13 @@ sections :ref:`Windows Update <user/templates/windows/windows-qubes-4-1:windows 
 :ref:`Xen PV drivers and Qubes Windows Tools <user/templates/windows/qubes-windows-tools-4-1:xen pv drivers and qubes windows tools>`).
 It is a good time to clone the VM again.
 
-Installing Qubes Windows Tools**
+**Installing Qubes Windows Tools**
 
 To install Qubes Windows Tools, follow instructions in :doc:`Qubes Windows Tools </user/templates/windows/qubes-windows-tools-4-1>`, but don’t
 forget to ``qvm-clone`` your qube before you install Qubes Windows Tools
 (QWT) in case something goes south.
 
-Post-install best practices**
+**Post-install best practices**
 
 Optimize resources for use in virtual machine as “vanilla” version of
 Windows are bloated; e.g.:
@@ -491,7 +491,7 @@ On starting the AppVM, sometimes a message is displayed that the Xen PV
 Network Class needs to restart the system. This message can be safely
 ignored and closed by selecting “No”.
 
-Caution:** These AppVMs must not be started while the corresponding
+**Caution:** These AppVMs must not be started while the corresponding
 TemplateVM is running, because they share the TemplateVM’s license data.
 Even if this could work sometimes, it would be a violation of the
 license terms.
@@ -565,7 +565,7 @@ Troubleshooting
 ---------------
 
 
-Windows 7 - USB drives are not visible in your domain**
+**Windows 7 - USB drives are not visible in your domain**
 
 After Qubes Windows Tools have been installed on your Windows 7 system,
 please install the `Chipset_Driver_X2NF0_WN_2.1.39.0_A03.EXE driver <https://web.archive.org/web/20221007093126/https://dl.dell.com/FOLDER01557883M/3/Chipset_Driver_X2NF0_WN_2.1.39.0_A03.EXE>`__.

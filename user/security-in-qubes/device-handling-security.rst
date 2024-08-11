@@ -40,7 +40,7 @@ when Qubes booted.)
 Some devices do not implement a reset option. In these cases, Qubes by
 default does not allow attaching the device to any VM. If you decide to
 override this precaution, beware that the device may only be trusted
-when attached to the first VM. Afterwards, it should be considered tainted** until the whole system is shut down. Even without malicious
+when attached to the first VM. Afterwards, it should be **considered tainted** until the whole system is shut down. Even without malicious
 intent, usage data may be leaked.
 
 In case device reset is disabled for any reason, detaching the device
@@ -75,7 +75,7 @@ and mounted in another qube.
 
 To avoid this risk, use a :doc:`USB qube </user/advanced-topics/usb-qubes>`.
 
-Attaching a USB device to a VM (USB passthrough) will expose your target qube** to most of the `security issues <https://blog.invisiblethings.org/2011/05/31/usb-security-challenges.html>`__
+Attaching a USB device to a VM (USB passthrough) will **expose your target qube** to most of the `security issues <https://blog.invisiblethings.org/2011/05/31/usb-security-challenges.html>`__
 associated with the USB-stack. If possible, use a method specific for
 particular device type (for example, block devices described above),
 instead of this generic one.

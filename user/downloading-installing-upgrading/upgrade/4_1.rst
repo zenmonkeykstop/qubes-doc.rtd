@@ -41,7 +41,7 @@ In-place upgrade
 ----------------
 
 
-Warning:** It is not possible to upgrade directly from releases
+**Warning:** It is not possible to upgrade directly from releases
 earlier than 4.0. If you’re still on an earlier release, please either
 perform a `clean installation of 4.1 <#clean-installation>`__ or
 :doc:`upgrade to 4.0 </user/downloading-installing-upgrading/upgrade/4_0>` first.

@@ -16,14 +16,14 @@ Most people — even programmers — are confused about the basic concepts
 underlying digital signatures. Therefore, most people should read this
 section, even if it looks trivial at first sight.
 
-Digital signatures can prove both authenticity** and integrity** to
-a reasonable degree of certainty. Authenticity** ensures that a given
+Digital signatures can prove both **authenticity** and **integrity** to
+a reasonable degree of certainty. **Authenticity** ensures that a given
 file was indeed created by the person who signed it (i.e., that a third
-party did not forge it). Integrity** ensures that the contents of the
+party did not forge it). **Integrity** ensures that the contents of the
 file have not been tampered with (i.e., that a third party has not
 undetectably altered its contents *en route*).
 
-Digital signatures cannot** prove, e.g., that the signed file is not
+Digital signatures **cannot** prove, e.g., that the signed file is not
 malicious. In fact, there is nothing that could stop someone from
 signing a malicious program (and it happens from time to time in
 reality).
@@ -69,17 +69,17 @@ keys and verify PGP signatures. Any program that complies with the
 OpenPGP standard will do, but here are some examples for popular
 operating systems:
 
-Linux:** `GnuPG <https://gnupg.org/download/index.html>`__
+**Linux:** `GnuPG <https://gnupg.org/download/index.html>`__
 (`documentation <https://www.gnupg.org/documentation/>`__). Open a
 terminal and use the ``gpg2`` command. If you don’t already have GnuPG
 installed, install it via your distro’s package manager or from the
 GnuPG website.
 
-Mac:** `GPG Suite <https://gpgtools.org/>`__
+**Mac:** `GPG Suite <https://gpgtools.org/>`__
 (`documentation <https://gpgtools.tenderapp.com/kb>`__). Open a terminal
 to enter commands.
 
-Windows:** `Gpg4win <https://gpg4win.org/download.html>`__
+**Windows:** `Gpg4win <https://gpg4win.org/download.html>`__
 (`documentation <https://www.gpg4win.org/documentation.html>`__). Use
 the Windows command line (``cmd.exe``) to enter commands.
 
@@ -360,7 +360,7 @@ How to import and authenticate release signing keys
 ---------------------------------------------------
 
 
-Every Qubes OS release is signed by a release signing key (RSK)**,
+Every Qubes OS release is signed by a **release signing key (RSK)**,
 which is, in turn, signed by the Qubes Master Signing Key (QMSK).
 
 Before we proceed, you must first complete the following prerequisite
@@ -482,7 +482,7 @@ steps:
 
 
 
-Each Qubes ISO is accompanied by a set of cryptographic hash values**
+Each Qubes ISO is accompanied by a set of **cryptographic hash values**
 contained in a plain text file ending in ``.DIGESTS``, which can find on
 the `downloads <https://www.qubes-os.org/downloads/>__` page alongside the ISO. This file
 contains the output of running several different cryptographic hash
@@ -631,7 +631,7 @@ steps:
 
 
 
-Every Qubes ISO is released with a detached PGP signature** file,
+Every Qubes ISO is released with a **detached PGP signature** file,
 which you can find on the `downloads <https://www.qubes-os.org/downloads/>__` page alongside the
 ISO. If the filename of your ISO is ``Qubes-RX-x86_64.iso``, then the
 name of the signature file for that ISO is ``Qubes-RX-x86_64.iso.asc``,
@@ -820,7 +820,7 @@ Whenever you use one of the `Qubes repositories <https://github.com/QubesOS>`__,
 verify the PGP signature in a tag on the latest commit or on the latest
 commit itself. (One or both may be present, but only one is required.)
 If there is no trusted signed tag or commit on top, any commits after
-the latest trusted signed tag or commit should not** be trusted. If
+the latest trusted signed tag or commit should **not** be trusted. If
 you come across a repo with any unsigned commits, you should not add any
 of your own signed tags or commits on top of them unless you personally
 vouch for the trustworthiness of the unsigned commits. Instead, ask the

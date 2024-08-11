@@ -26,7 +26,7 @@ Customization
 -------------
 
 
-Caution:** The following external resources may not have been reviewed
+**Caution:** The following external resources may not have been reviewed
 by the Qubes team.
 
 - `xdg_autostart_script <https://gist.github.com/SietsevanderMolen/7b4cc32ce7b4884513b0a639540e454f>`__
@@ -97,7 +97,7 @@ Installing
 ----------
 
 
-Warning**: Manually installing software in dom0 is inherently risky,
+**Warning**: Manually installing software in dom0 is inherently risky,
 and the method described here circumvents the usual security mechanisms
 of qubes-dom0-update.
 

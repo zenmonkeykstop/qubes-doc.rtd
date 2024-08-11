@@ -9,7 +9,7 @@ This is an overview of device handling in Qubes OS. For specific devices
 :doc:`PCI </user/how-to-guides/how-to-use-pci-devices>` devices), please visit their
 respective pages.
 
-Important security warning:** Device handling comes with many security
+**Important security warning:** Device handling comes with many security
 implications. Please make sure you carefully read and understand the
 :doc:`security considerations </user/security-in-qubes/device-handling-security>`.
 
@@ -136,7 +136,7 @@ These three options are always available:
 A full command consists of one DEVICE_CLASS and one action. If no action
 is given, list is implied. DEVICE_CLASS however is required.
 
-SYNOPSIS**:
+**SYNOPSIS**:
 ``qvm-device DEVICE_CLASS {action} [action-specific arguments] [options]``
 
 .. _actions-1:
@@ -168,7 +168,7 @@ attached to the named VMs will be listed.
 
 
 
-SYNOPSIS**
+**SYNOPSIS**
 ``qvm-device DEVICE_CLASS {list|ls|l} [--all [--exclude VM [VM [...]]] | VM [VM [...]]]``
 
 Attaching Devices
@@ -191,7 +191,7 @@ from ``list`` output)
 
 
 
-SYNOPSIS**
+**SYNOPSIS**
 ``qvm-device DEVICE_CLASS {attach|at|a} targetVM sourceVM:deviceID [options]``
 
 Detaching Devices
@@ -207,7 +207,7 @@ If no specific ``sourceVM:deviceID`` combination is given, *all devices of that 
 
 ``detach`` accepts no options.
 
-SYNOPSIS**
+**SYNOPSIS**
 ``qvm-device DEVICE_CLASS {detach|dt|d} targetVM [sourceVM:deviceID]``
 
 .. |SD card and thumbdrive| image:: /attachment/doc/media-removable.png

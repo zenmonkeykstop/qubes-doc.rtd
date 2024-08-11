@@ -110,7 +110,7 @@ You can now use your USB keyboard to log in to your dom0 user account
 You can set up your system so that there’s a confirmation prompt each
 time the USB keyboard is connected. However, this will effectively
 disable your USB keyboard for dom0 user account login and the screen
-locker, so don’t do this if you want to log into and unlock your device with a USB keyboard!** If you’re sure you wish to proceed, change
+locker, so **don’t do this if you want to log into and unlock your device with a USB keyboard!** If you’re sure you wish to proceed, change
 the previous line to:
 
 .. code:: bash
@@ -126,7 +126,7 @@ removing the ``rd.qubes.hide_all_usb`` option and employ an alternative
 strategy for protecting your system by physically disconnecting other
 devices during startup.
 
-Qubes 4.1 only:** You should also add the
+**Qubes 4.1 only:** You should also add the
 ``usbcore.authorized_default=0`` option, which prevents the
 initialization of non-input devices. (Qubes ships with a USBGuard
 configuration that allows only input devices when
@@ -253,7 +253,7 @@ You can create a USB qube manually as follows:
 3. In the qube’s settings, go to the “Devices” tab. Find the USB
    controller that you identified in step 1 in the “Available” list.
    Move it to the “Selected” list by highlighting it and clicking the
-   single arrow ``>`` button. (Warning:** By assigning a USB
+   single arrow ``>`` button. (**Warning:** By assigning a USB
    controller to a USB qube, it will no longer be available to dom0.
    This can make your system unusable if, for example, you have only one
    USB controller, and you are running Qubes off of a USB drive.)
@@ -289,10 +289,10 @@ in dom0 being compromised. There are two approaches to this problem:
 
 
 
-Warning:** If you use a USB keyboard, hiding your USB controllers from
+**Warning:** If you use a USB keyboard, hiding your USB controllers from
 dom0 could lock you out of your system. See `USB keyboards <#usb-keyboards>`__ for more information.
 
-Warning:** Using a USB AEM device requires dom0 to have access to the
+**Warning:** Using a USB AEM device requires dom0 to have access to the
 USB controller to which your USB AEM device is attached. If dom0 cannot
 read your USB AEM device, AEM will hang.
 
@@ -322,7 +322,7 @@ How to remove a USB qube
 ------------------------
 
 
-Warning:** This procedure will result in your USB controller(s) being
+**Warning:** This procedure will result in your USB controller(s) being
 attached directly to dom0.
 
 GRUB2

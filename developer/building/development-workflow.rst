@@ -22,7 +22,7 @@ somewhere (e.g., github) for the repo you are interested in editing
 repo with the rest of Qubes, cd to the repo directory and add your
 repository as a remote in git
 
-Example:**
+**Example:**
 
 .. code:: bash
 
@@ -186,11 +186,11 @@ Useful :doc:`QubesBuilder </developer/building/qubes-builder>` commands
    repository and if all repository are tagged with signed tag.
 
 2. ``make show-vtags`` - show version of each component (based on git
-   tags) - mostly useful just before building ISO. Note:** this will
+   tags) - mostly useful just before building ISO. **Note:** this will
    not show version for components containing changes since last version
    tag.
 
-3. ``make push`` - push change from all** repositories to git server.
+3. ``make push`` - push change from **all** repositories to git server.
    You must set proper remotes (see above) for all repositories first.
 
 4. ``make prepare-merge`` - fetch changes from remote repositories (can

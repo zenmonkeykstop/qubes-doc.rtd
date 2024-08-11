@@ -6,7 +6,7 @@ How to install software in dom0
 ===============================
 
 
-Warning:** Installing software in dom0 is for advanced users only.
+**Warning:** Installing software in dom0 is for advanced users only.
 Doing so has the potential to compromise your entire Qubes OS
 installation. Exercise extreme caution.
 
@@ -69,7 +69,7 @@ How to downgrade a specific package
 -----------------------------------
 
 
-WARNING:** Downgrading a package can expose your system to security
+**WARNING:** Downgrading a package can expose your system to security
 vulnerabilities.
 
 1. Download an older version of the package:
@@ -143,7 +143,7 @@ If you wish to install updates that are still in
 :doc:`testing </user/downloading-installing-upgrading/testing>`, you must enable the appropriate testing
 repositories.
 
-Note:** The following repos are in dom0. For template testing repos,
+**Note:** The following repos are in dom0. For template testing repos,
 see :ref:`here <user/how-to-guides/how-to-install-software:testing repositories>`.
 
 - ``qubes-dom0-current-testing`` – testing packages that will

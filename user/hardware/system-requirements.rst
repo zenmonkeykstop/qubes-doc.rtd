@@ -11,7 +11,7 @@ Minimum
 -------
 
 
-- CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,
+- **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,
   ``x64``, and ``AMD64``)
 
   - `Intel VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__
@@ -27,9 +27,9 @@ Minimum
 
 
 
-- Memory:** 6 GB RAM
+- **Memory:** 6 GB RAM
 
-- Storage:** 32 GB free space
+- **Storage:** 32 GB free space
 
 
 
@@ -37,7 +37,7 @@ Recommended
 -----------
 
 
-- CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,
+- **CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``,
   ``x64``, and ``AMD64``)
 
   - `Intel VT-x <https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__
@@ -53,15 +53,15 @@ Recommended
 
 
 
-- Memory:** 16 GB RAM
+- **Memory:** 16 GB RAM
 
-- Storage:** 128 GB free space
+- **Storage:** 128 GB free space
 
   - High-speed solid-state drive strongly recommended
 
 
 
-- Graphics:** Intel integrated graphics processor (IGP) strongly
+- **Graphics:** Intel integrated graphics processor (IGP) strongly
   recommended
 
   - Nvidia GPUs may require significant
@@ -72,9 +72,9 @@ Recommended
 
 
 
-- Peripherals:** A non-USB keyboard or multiple USB controllers
+- **Peripherals:** A non-USB keyboard or multiple USB controllers
 
-- TPM:** Trusted Platform Module (TPM) with proper BIOS support
+- **TPM:** Trusted Platform Module (TPM) with proper BIOS support
   (required for :doc:`Anti Evil Maid </user/security-in-qubes/anti-evil-maid>`)
 
 
@@ -120,15 +120,15 @@ Important Notes
 ---------------
 
 
-- Installing Qubes in a virtual machine is not recommended, as it uses its own bare-metal hypervisor (Xen).**
+- **Installing Qubes in a virtual machine is not recommended, as it uses its own bare-metal hypervisor (Xen).**
 
-- Qubes can** be installed on many systems that do not meet the
+- Qubes **can** be installed on many systems that do not meet the
   recommended requirements. Such systems will still offer significant
   security improvements over traditional operating systems, since
   things like GUI isolation and kernel protection do not require
   special hardware.
 
-- Qubes can** be installed on a USB flash drive or external disk, and
+- Qubes **can** be installed on a USB flash drive or external disk, and
   testing has shown that this works very well. A fast USB 3.0 flash
   drive is recommended for this. (As a reminder, its capacity must be
   at least 32 GiB.) Simply plug the flash drive into the computer

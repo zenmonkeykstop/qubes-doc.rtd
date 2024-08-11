@@ -179,7 +179,7 @@ accordingly, e.g. by renaming ``Microsoft Excel.desktop`` to
 ``Excel.desktop``. Refreshing the menu structure will then build working
 menu entries.
 
-Note:** Applications installed under *wine* are installed in AppVMs,
+**Note:** Applications installed under *wine* are installed in AppVMs,
 not in the template on which these AppVMs are based, as the file
 structure used by *wine* is stored under ``~/.wine``, which is part of
 the persistent data of the AppVM and not inherited from its template.

@@ -11,7 +11,7 @@ described predefined services.
 
 Under the hood, an enabled service in a VM is signaled by a file in
 ``/var/run/qubes-service``. This can be used to implement an almost
-enable/disable per-VM** switch controlled by dom0.
+enable/disable **per-VM** switch controlled by dom0.
 
 Adding support for systemd services is pretty simple. In the VM, create
 the following file (and directory, if needed):

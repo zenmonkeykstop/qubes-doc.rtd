@@ -12,7 +12,7 @@ data backed up by Qubes. In the event a Qubes system is unavailable, you
 can access your data on any GNU/Linux system with the following
 procedure.
 
-Note:** In the following example, the backup file is both *encrypted*
+**Note:** In the following example, the backup file is both *encrypted*
 and *compressed*.
 
 1. Untar the main backup file.
@@ -58,10 +58,10 @@ and *compressed*.
          (stdin)= 5b266783e116fe3b2601a54c249ca5f5f96d421dfe6828eeaeb2dcd014e9e945c27b3d7b0f952f5d55c927318906d9c360f387b0e1f069bb8195e96543e2969c
 
 
-   Note:** The hash values should match. If they do not match, then
+   **Note:** The hash values should match. If they do not match, then
    the backup file may have been tampered with, or there may have been
    a storage error.
-   Note:** If your backup was hashed with a message digest algorithm
+   **Note:** If your backup was hashed with a message digest algorithm
    other than ``sha512``, you must substitute the correct message
    digest command. This information is contained in the
    ``backup-header`` file (see step 4), however it is not recommended
@@ -84,7 +84,7 @@ and *compressed*.
          compression-filter=gzip
 
 
-   Note:** If you see ``version=2`` here, go to :doc:`Emergency Backup Recovery - format version 2 </user/how-to-guides/backup-emergency-restore-v2>`
+   **Note:** If you see ``version=2`` here, go to :doc:`Emergency Backup Recovery - format version 2 </user/how-to-guides/backup-emergency-restore-v2>`
    instead.
 
 5. Verify the integrity of the ``private.img`` file which houses your
@@ -99,10 +99,10 @@ and *compressed*.
          (stdin)= cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e
 
 
-   Note:** The hash values should match. If they do not match, then
+   **Note:** The hash values should match. If they do not match, then
    the backup file may have been tampered with, or there may have been
    a storage error.
-   Note:** If your backup was hashed with a message digest algorithm
+   **Note:** If your backup was hashed with a message digest algorithm
    other than ``sha512``, you must substitute the correct message
    digest command. This information is contained in the
    ``backup-header`` file (see step 4). A complete list of supported
@@ -116,7 +116,7 @@ and *compressed*.
          [user@restore vm1]$ find -name 'private.img.*[0-9]' | sort -V | xargs cat | openssl enc -d -md MD5 -pass pass:"$backup_pass" -aes-256-cbc -out private.img.dec
 
 
-   Note:** If your backup was encrypted with a cipher algorithm other
+   **Note:** If your backup was encrypted with a cipher algorithm other
    than ``aes-256-cbc``, you must substitute the correct cipher
    command. This information is contained in the ``backup-header`` file
    (see step 4). A complete list of supported cipher algorithms can be
@@ -131,7 +131,7 @@ and *compressed*.
          [user@restore vm1]$ gunzip private.img.dec.gz
 
 
-   Note:** If your backup was compressed with a program other than
+   **Note:** If your backup was compressed with a program other than
    ``gzip``, you must substitute the correct compression program. This
    information is contained in the ``backup-header`` file (see step 4).
    For example, if you used ``bzip2``, then you should do this:
@@ -165,7 +165,7 @@ and *compressed*.
 
 10. Success! If you wish to recover data from more than one VM in your
     backup, simply repeat steps 5–9 for each additional VM.
-    Note:** You may wish to store a copy of these instructions with
+    **Note:** You may wish to store a copy of these instructions with
     your Qubes backups in the event that you fail to recall the above
     procedure while this web page is inaccessible. All Qubes
     documentation, including this page, is available in plain text

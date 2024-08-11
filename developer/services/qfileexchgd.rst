@@ -3,7 +3,7 @@ Qfileexchgd (deprecated)
 ========================
 
 
-This mechanism is obsolete as of Qubes Beta 1!**
+**This mechanism is obsolete as of Qubes Beta 1!**
 
 Please see this :doc:`page </developer/services/qfilecopy>` instead.
 

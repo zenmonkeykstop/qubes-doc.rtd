@@ -19,7 +19,7 @@ Summary instructions for Debian templates
 -----------------------------------------
 
 
-Important:** The prompt on each line indicates where each command
+**Important:** The prompt on each line indicates where each command
 should be entered: ``dom0``, ``debian-<old>``, or ``debian-<new>``,
 where ``<old>`` is the Debian version number *from* which you are
 upgrading, and ``<new>`` is the Debian version number *to* which you are
@@ -39,7 +39,7 @@ instructions specific to your particular release.
       [user@dom0 ~]$ qvm-shutdown debian-<new>
 
 
-Recommended:** :ref:`Switch everything that was set to the old template to the new template. <user/templates/templates:switching>`
+**Recommended:** :ref:`Switch everything that was set to the old template to the new template. <user/templates/templates:switching>`
 
 Detailed instructions for Debian templates
 ------------------------------------------
@@ -49,7 +49,7 @@ These instructions will show you how to upgrade Debian templates. The
 same general procedure may be used to upgrade any template based on the
 standard Debian template.
 
-Important:** The prompt on each line indicates where each command
+**Important:** The prompt on each line indicates where each command
 should be entered: ``dom0``, ``debian-<old>``, or ``debian-<new>``,
 where ``<old>`` is the Debian version number *from* which you are
 upgrading, and ``<new>`` is the Debian version number *to* which you are

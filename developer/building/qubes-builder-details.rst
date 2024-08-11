@@ -111,7 +111,7 @@ builder.conf settings
 Most settings are documented in *builder.conf.default* file, which can
 be used as template the actual configuration.
 
-TODO**
+**TODO**
 
 Notes
 -----

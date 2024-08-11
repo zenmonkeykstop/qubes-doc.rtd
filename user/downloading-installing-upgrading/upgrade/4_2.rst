@@ -45,7 +45,7 @@ upgrading in-place:
          qubes-dist-upgrade --template-standalone-upgrade
 
 
-   Note**: This step is critical to ensure the templates will receive
+   **Note**: This step is critical to ensure the templates will receive
    updates once Qubes 4.1 reaches end-of-life (EOL) and was missing in
    previous clean installation instructions.
 
@@ -67,7 +67,7 @@ In-place upgrade
 ----------------
 
 
-Warning:** It is not possible to upgrade directly from releases
+**Warning:** It is not possible to upgrade directly from releases
 earlier than 4.1. If you’re still on an earlier release, please either
 perform a `clean installation of 4.2 <#clean-installation>`__ or
 :doc:`upgrade to 4.1 </user/downloading-installing-upgrading/upgrade/4_1>` first.

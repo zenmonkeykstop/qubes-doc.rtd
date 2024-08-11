@@ -81,7 +81,7 @@ The string ‘personal’ above is an example only and should be replaced by
 the actual name of the VM for which you want to enable this
 functionality.
 
-Note:** There should be only one ``VM: {}`` block in the file (or you
+**Note:** There should be only one ``VM: {}`` block in the file (or you
 will `get into problems <https://groups.google.com/d/msg/qubes-users/-Yf9yNvTsVI/xXsEm8y2lrYJ>`__).
 
 One can also enable this functionality for all the VMs globally in the

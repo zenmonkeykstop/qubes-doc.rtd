@@ -36,7 +36,7 @@ and ``upgrade`` are ``upgrade-to`` and ``downgrade``. Note that the
 supported under Fedora based UpdateVMs. If you receive a message about
 them being unsupported, review the manual reinstallation method below.
 
-Reminder:** If you’re trying to reinstall a template that is not in an
+**Reminder:** If you’re trying to reinstall a template that is not in an
 enabled repo, you must enable that repo. For example:
 
 .. code:: bash
@@ -45,7 +45,7 @@ enabled repo, you must enable that repo. For example:
 
 
 
-Note:** VMs that are using the reinstalled template will not be
+**Note:** VMs that are using the reinstalled template will not be
 affected until they are restarted.
 
 Manual Method
@@ -68,7 +68,7 @@ repeat these instructions for each one.
    want to keep. On the other hand, if you suspect that these VMs (or
    the templates on which they are based) are broken, misconfigured, or
    compromised, you may want to remove them instead. You can do this in
-   Qubes Manager by right-clicking on the VM and clicking Remove VM**,
+   Qubes Manager by right-clicking on the VM and clicking **Remove VM**,
    or you can use the command ``qvm-remove <vm-name>`` in dom0.
 
 3. Uninstall the target template from dom0:
@@ -108,7 +108,7 @@ repeat these instructions for each one.
    reinstalled target template now.
 
 6. Delete the cloned template. You can do this in Qubes Manager by
-   right-clicking on the VM and clicking Remove VM**, or you can use
+   right-clicking on the VM and clicking **Remove VM**, or you can use
    the command ``qvm-remove <vm-name>`` in dom0.
 
 

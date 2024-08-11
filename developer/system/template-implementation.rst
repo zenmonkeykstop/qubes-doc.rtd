@@ -9,14 +9,14 @@ Block devices of a VM
 
 Every VM has 4 block devices connected:
 
-- xvda** – base root device (/) – details described below
+- **xvda** – base root device (/) – details described below
 
-- xvdb** – private.img – place where VM always can write.
+- **xvdb** – private.img – place where VM always can write.
 
-- xvdc** – volatile.img, discarded at each VM restart – here is
+- **xvdc** – volatile.img, discarded at each VM restart – here is
   placed swap and temporal “/” modifications (see below)
 
-- xvdd** – modules.img – kernel modules and firmware
+- **xvdd** – modules.img – kernel modules and firmware
 
 
 
@@ -36,7 +36,7 @@ includes:
 
 
 
-Note:** Whenever a TemplateBasedVM is created, the contents of the
+**Note:** Whenever a TemplateBasedVM is created, the contents of the
 ``/home`` directory of its parent TemplateVM :ref:`are not copied to the
 child TemplateBasedVM’s
 /home <user/templates/templates:inheritance and persistence>`. The child
@@ -174,11 +174,11 @@ underlying block devices (root.img, root-cow.img via loop device).
 Because of this all AppVMs based on this template must be halted during
 this operation.
 
-Steps performed by qvm-revert-template-changes**:
+Steps performed by **qvm-revert-template-changes**:
 
 1. Ensure that no other VMs uses this template.
 
-2. Prepare snapshot device with root-cow.img.old** instead of
+2. Prepare snapshot device with **root-cow.img.old** instead of
    *root-cow.img* (*/etc/xen/scripts/block-snapshot prepare*).
 
 3. Replace *snapshot* device-mapper target with *snapshot-merge*, other

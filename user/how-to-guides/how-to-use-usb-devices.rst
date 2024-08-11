@@ -8,9 +8,9 @@ How to use USB devices
 If you are looking to handle USB *storage* devices (thumbdrives or
 USB-drives), please have a look at the :doc:`block device </user/how-to-guides/how-to-use-block-storage-devices>` page.
 
-Note:** Attaching USB devices to VMs requires a :doc:`USB qube </user/advanced-topics/usb-qubes>`.
+**Note:** Attaching USB devices to VMs requires a :doc:`USB qube </user/advanced-topics/usb-qubes>`.
 
-Important security warning:** USB passthrough comes with many security
+**Important security warning:** USB passthrough comes with many security
 implications. Please make sure you carefully read and understand the
 :ref:`security considerations <user/security-in-qubes/device-handling-security:usb security>`.
 Whenever possible, attach a :doc:`block device </user/how-to-guides/how-to-use-block-storage-devices>` instead.
@@ -45,7 +45,7 @@ Click one of those. The USB device will be attached to it. You’re done.
 
 After you finished using the USB-device, you can detach it the same way
 by clicking on the Devices Widget. You will see an entry in bold for
-your device such as ``sys-usb:2-5 - 058f_USB_2.0_Camera``**. Hover on
+your device such as **sys-usb:2-5 - 058f_USB_2.0_Camera**. Hover on
 the attached device to display a list of running VMs. The one to which
 your device is connected will have an eject button |eject icon| next to
 it. Click that and your device will be detached.
@@ -147,7 +147,7 @@ Using USB Keyboards And Other Input Devices
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Warning:** especially keyboards need to be accepted by default when
+**Warning:** especially keyboards need to be accepted by default when
 using them to login! Please make sure you carefully read and understood
 the :ref:`security considerations <user/security-in-qubes/device-handling-security:usb security>` before
 continuing!

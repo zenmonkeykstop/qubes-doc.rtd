@@ -74,7 +74,7 @@ dom0
 
 
 `Domain <#domain>`__ zero. A type of `admin qube <#admin-qube>`__. Also
-known as the host** domain, dom0 is the initial qube started by the
+known as the **host** domain, dom0 is the initial qube started by the
 Xen hypervisor on boot. Dom0 runs the Xen management toolstack and has
 special privileges relative to other domains, such as direct access to
 most hardware.
@@ -100,7 +100,7 @@ domU
 ----
 
 
-Unprivileged `domain <#domain>`__. Also known as guest** domains,
+Unprivileged `domain <#domain>`__. Also known as **guest** domains,
 domUs are the counterparts to dom0. In Xen, all VMs except dom0 are
 domUs. By default, most domUs lack direct hardware access.
 
@@ -196,7 +196,7 @@ Xen `VMs <#vm>`__, but Qubes OS is independent of its underlying
 compartmentalization technology. VMs could be replaced with a different
 technology, and qubes would still be called “qubes.”
 
-- Important:** The term “qube” is a common noun and should follow the
+- **Important:** The term “qube” is a common noun and should follow the
   capitalization rules of common nouns. For example, “I have three
   qubes” is correct, while “I have three Qubes” is incorrect.
 
@@ -224,7 +224,7 @@ OS is security by compartmentalization (or isolation), in which
 activities are compartmentalized (or isolated) in separate
 `qubes <#qube>`__.
 
-- Important:** The official name is “Qubes OS” (note the
+- **Important:** The official name is “Qubes OS” (note the
   capitalization and the space between “Qubes” and “OS”). In casual
   conversation, this is often shortened to “Qubes.” Only in technical
   contexts where spaces are not permitted (e.g., in usernames) may the

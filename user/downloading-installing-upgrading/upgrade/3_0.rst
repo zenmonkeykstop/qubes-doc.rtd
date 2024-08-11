@@ -3,15 +3,15 @@ Upgrading to R3.0
 =================
 
 
-This instruction is highly experimental, the official way to upgrade from R2 is to backup the data and reinstall the system. Use at your own risk!**
+**This instruction is highly experimental, the official way to upgrade from R2 is to backup the data and reinstall the system. Use at your own risk!**
 
 Current Qubes R3.0 (R3.0) systems can be upgraded in-place to the latest
 R3.0 by following the procedure below. However, upgrading in-place is
 riskier than performing a clean installation, since there are more
-things which can go wrong. For this reason, we strongly recommended that users perform a** :doc:`clean installation </user/downloading-installing-upgrading/installation-guide>`
-of Qubes R3.0**.
+things which can go wrong. For this reason, **we strongly recommended that users perform a** :doc:`clean installation </user/downloading-installing-upgrading/installation-guide>`
+**of Qubes R3.0**.
 
-Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in** :doc:`backup tool </user/how-to-guides/how-to-back-up-restore-and-migrate>`.**
+**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in** :doc:`backup tool </user/how-to-guides/how-to-back-up-restore-and-migrate>` **.**
 
 Experienced users may be comfortable accepting the risks of upgrading
 in-place. Such users may wish to first attempt an in-place upgrade. If
@@ -28,10 +28,10 @@ By default, in Qubes R2, there is only one template, however users are
 free to create more templates for special purposes, as well as
 Standalone VMs. More information on using multiple templates, as well as
 Standalone VMs, can be found :doc:`here </user/how-to-guides/how-to-install-software>`. The
-steps described in this section should be repeated in all** user’s
+steps described in this section should be repeated in **all** user’s
 Template and Standalone VMs.
 
-It is critical to complete this step before** proceeding to dom0
+It is critical to complete this step **before** proceeding to dom0
 upgrade. Otherwise you will most likely end with unusable system.
 
 Upgrade Fedora template:

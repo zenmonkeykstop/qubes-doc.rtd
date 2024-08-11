@@ -29,7 +29,7 @@ itself), you can achieve that with the ``appmenus-dispvm`` feature:
       [user@dom0 ~]$ qvm-features <DISPOSABLE_TEMPLATE> appmenus-dispvm 1
 
 
-Note:** Application shortcuts that existed before setting this feature
+**Note:** Application shortcuts that existed before setting this feature
 will not be updated automatically. Please go the “Applications” tab in
 the qube’s “Settings” dialog and unselect all existing shortcuts by
 clicking “<<”, then click “OK” and close the dialog. Give it a few
@@ -87,7 +87,7 @@ Customization of disposable
 ---------------------------
 
 
-Note:** *If you are trying to customize Tor Browser in a Whonix disposable, please consult the* `Whonix documentation <https://www.whonix.org/wiki/Tor_Browser/Advanced_Users#disposable_Template_Customization>`__ *.*
+**Note:** *If you are trying to customize Tor Browser in a Whonix disposable, please consult the* `Whonix documentation <https://www.whonix.org/wiki/Tor_Browser/Advanced_Users#disposable_Template_Customization>`__ *.*
 
 It is possible to change the settings for each new disposable. This can
 be done by customizing the disposable template on which it is based:
@@ -161,7 +161,7 @@ references to the old one to instead point to the new, for example, with
 To create one with a PCI device attached such as for ``sys-net`` or
 ``sys-usb``, use the additional commands as follows.
 
-Note:** You can use ``qvm-pci`` to
+**Note:** You can use ``qvm-pci`` to
 :ref:`determine <user/how-to-guides/how-to-use-pci-devices:\`\`qvm-pci\`\` usage>` the
 ``<BDF>``. Also, you will often need to include the
 ``-o no-strict-reset=True``

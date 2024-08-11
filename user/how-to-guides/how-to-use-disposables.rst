@@ -55,7 +55,7 @@ Settings’ of the app qube, set it as a *Disposable template* in the
 
 In Qubes 4.1, the entry in the Application menu is split into
 ‘Disposable’ and ‘Template (disp)’. The settings for the disposable can
-be changed under ’Application Menu -> Template (disp) -> Template: Qubes Settings**
+be changed under **’Application Menu -> Template (disp) -> Template: Qubes Settings**
 
 In Qubes 4.2, the qube will now appear in the menu as a disposable
 template (in the Apps section), from which you can launch new disposable
@@ -67,9 +67,9 @@ How to create named disposables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-In Qubes 4.1: named disposables can be created under Application Menu -> Create Qubes VM**, set the qube type to be *DisposableVM*.
+In Qubes 4.1: named disposables can be created under **Application Menu -> Create Qubes VM**, set the qube type to be *DisposableVM*.
 
-In Qubes 4.2: named disposables can be created by Application Menu -> Settings -> Qubes Settings -> Create New Qube**. Set the qube type to
+In Qubes 4.2: named disposables can be created by **Application Menu -> Settings -> Qubes Settings -> Create New Qube**. Set the qube type to
 Named disposable_
 
 Security
@@ -153,7 +153,7 @@ it is based. For example, if an app qube uses sys-net as its net qube,
 but the default system disposable uses sys-whonix, any disposable
 launched from this app qube will have sys-whonix as its net qube.
 
-Warning:** The opposite is also true. This means if you have changed
+**Warning:** The opposite is also true. This means if you have changed
 ``anon-whonix``’s ``default_dispvm`` to use the system default, and
 the system default disposable uses sys-net, launching a disposable from
 inside ``anon-whonix`` will result in the disposable using ``sys-net``.
@@ -165,7 +165,7 @@ template *does* affect the net qube of disposables launched from the app
 menu. Different disposable templates with individual net qube settings
 can be added to the app menu.
 
-Important Notes:** Some disposable templates will automatically create
+**Important Notes:** Some disposable templates will automatically create
 a menu item to launch a disposable. If you do not see an entry and want
 to add one, please use the command:
 
@@ -214,7 +214,7 @@ Opening a fresh web browser instance in a new disposable
 
 Sometimes it is desirable to open an instance of Firefox within a new
 fresh disposable. This can be done easily using the app menu: just go to
-Application Menu -> Disposable -> Disposable: Firefox web browser**.
+**Application Menu -> Disposable -> Disposable: Firefox web browser**.
 Wait a few seconds until a web browser starts. Once you close the
 viewing application the whole disposable will be destroyed.
 

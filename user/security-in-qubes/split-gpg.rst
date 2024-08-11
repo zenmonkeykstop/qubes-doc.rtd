@@ -221,9 +221,9 @@ Thunderbird 78 and higher
 Starting with version 78, Thunderbird has a built-in PGP feature and no
 longer requires the Enigmail extension. For users coming from the
 Enigmail extension, the built-in functionality is more limited
-currently, including that public keys must live in your**
-``work-email`` qube with Thunderbird rather than your offline**
-``work-gpg`` qube**.
+currently, including that **public keys must live in your**
+``work-email`` **qube with Thunderbird rather than your offline**
+``work-gpg`` **qube**.
 
 In ``work-email``, use the Thunderbird config editor (found at the
 bottom of preferences/options), and search for
@@ -234,7 +234,7 @@ after this change.
 
 |tb78-1.png| |tb78-2.png| |tb78-3.png|
 
-You need to obtain your key ID which should be exactly 16 characters**. Enter the command
+You need to obtain your key ID which should be **exactly 16 characters**. Enter the command
 ``qubes-gpg-client-wrapper -K --keyid-format long``:
 
 .. code:: bash
@@ -304,8 +304,8 @@ setup is required. It is recommended to set up and use
 ``/usr/bin/qubes-gpg-client-wrapper``, as discussed above, in
 Thunderbird through the Enigmail addon.
 
-Warning:** Before adding any account, configuring Enigmail with
-``/usr/bin/qubes-gpg-client-wrapper`` is required**. By default,
+**Warning:** Before adding any account, configuring Enigmail with
+``/usr/bin/qubes-gpg-client-wrapper`` is **required**. By default,
 Enigmail will generate a default GPG key in ``work-email`` associated
 with the newly created Thunderbird account. Generally, it corresponds to
 the email used in ``work-gpg`` associated to your private key. In
@@ -333,7 +333,7 @@ Keybase, a security focused messaging and file-sharing app with GPG
 integration, can be configured to use Split GPG.
 
 The Keybase service does not preserve/pass the ``QUBES_GPG_DOMAIN``
-environment variable through to underlying GPG processes, so it must**
+environment variable through to underlying GPG processes, so it **must**
 be configured to use ``/usr/bin/qubes-gpg-client-wrapper`` (as discussed
 above) rather than ``/usr/bin/qubes-gpg-client``.
 
@@ -459,7 +459,7 @@ locations (see below for definitions of these terms):
 
 - ``sec`` (master secret key)
   Depending on your needs, you may wish to create this as a
-  certify-only (C)** key, i.e., a key which is capable only of
+  **certify-only (C)** key, i.e., a key which is capable only of
   signing (a.k.a., “certifying”) other keys. This key may be created
   *without* an expiration date. This is for two reasons. First, the
   master secret key is never to leave the ``vault`` VM, so it is
@@ -477,13 +477,13 @@ locations (see below for definitions of these terms):
   passphrase as you enter it. An adversary who obtains the passphrase
   can then use it in order to change or remove the passphrase from the
   key. Therefore, using a passphrase at all should be considered
-  optional. It is, however, recommended that a revocation certificate** be created and safely stored in multiple locations so
+  optional. It is, however, recommended that a **revocation certificate** be created and safely stored in multiple locations so
   that the master keypair can be revoked in the (exceedingly unlikely)
   event that it is ever compromised.
 
 - ``ssb`` (secret subkey)
   Depending on your needs, you may wish to create two different
-  subkeys: one for signing (S)** and one for encryption (E)**. You
+  subkeys: one for **signing (S)** and one for **encryption (E)**. You
   may also wish to give these subkeys reasonable expiration dates
   (e.g., one year). Once these keys expire, it is up to you whether to
   *renew* these keys by extending the expiration dates or to create
@@ -617,7 +617,7 @@ Current limitations
   ``passwd`` to set an empty passphrase. Note that ``pinentry`` might
   show an error when you try to set an empty passphrase, but it will
   still make the change. (See `this StackExchange answer <https://unix.stackexchange.com/a/379373>`__ for more
-  information.) Note: The error shows only if you do not** have
+  information.) Note: The error shows only if you **do not** have
   graphical pinentry installed.
 
 

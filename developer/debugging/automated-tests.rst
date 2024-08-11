@@ -22,7 +22,7 @@ Integration tests are written with the assumption that they will be
 executed on dedicated hardware and must be run in dom0. All other unit
 tests can also be run in dom0.
 
-Do not run the tests on installations with important data, because you might lose it.**
+**Do not run the tests on installations with important data, because you might lose it.**
 
 All the VMs with a name starting with ``test-`` on the installation are
 removed during the process, and all the tests are recklessly started
@@ -312,7 +312,7 @@ Automated tests with openQA
 ---------------------------
 
 
-URL:** https://openqa.qubes-os.org/ Tests:**
+**URL:** https://openqa.qubes-os.org/ **Tests:**
 https://github.com/marmarek/openqa-tests-qubesos
 
 Manually testing Qubes OS and its installation is a time-consuming

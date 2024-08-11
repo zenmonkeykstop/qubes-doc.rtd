@@ -73,7 +73,7 @@ are the recognized servers.
 
 In the example below, we will use ``keyserver.ubuntu.com``.
 
-Replace 6E2F4E7AF50A5827 with your key ID, preferably the long keyID**
+Replace 6E2F4E7AF50A5827 with your key ID, preferably the **long keyID**
 which is the last 16 hex digits of the long number in the second line of
 the output above:
 

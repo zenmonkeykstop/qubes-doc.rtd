@@ -38,7 +38,7 @@ Checking for updates
 --------------------
 
 
-By default, the Qubes Update** tool will appear as an icon in the
+By default, the **Qubes Update** tool will appear as an icon in the
 Notification Area when updates are available.
 
 |Qube Updates Available|
@@ -65,7 +65,7 @@ Installing updates
 ------------------
 
 
-The standard way to install updates is with the Qubes Update** tool.
+The standard way to install updates is with the **Qubes Update** tool.
 (However, you can also perform the same action via the `command-line interface <#command-line-interface>`__.)
 
 |Qubes Update|
@@ -85,7 +85,7 @@ the updates to take effect:
 - QSBs may instruct you to restart certain components after installing
   updates.
 
-- Dom0 should be restarted after all Xen** and kernel** updates.
+- Dom0 should be restarted after all **Xen** and **kernel** updates.
 
 - On Intel systems, dom0 should be restarted after all
   ``microcode_ctl`` updates.
@@ -118,7 +118,7 @@ Command-line interface
 
 Advanced users may wish to perform updates via the command-line
 interface. The recommended way to do this is by applying the following
-two Salt states. Applying these two Salt states is the same as updating via the Qubes Update tool.**
+two Salt states. **Applying these two Salt states is the same as updating via the Qubes Update tool.**
 
 - :ref:`update.qubes-dom0 <user/advanced-topics/salt:\`\`update.qubes-dom0\`\`>`
 
@@ -138,12 +138,12 @@ Upgrading to avoid EOL
 
 
 The above covers updating *within* a given operating system (OS)
-release. Eventually, however, most OS releases will reach end-of-life (EOL)**, after which point they will no longer be supported. This
+release. Eventually, however, most OS releases will reach **end-of-life (EOL)**, after which point they will no longer be supported. This
 applies to Qubes OS itself as well as OSes used in
 :doc:`templates </user/templates/templates>` (and
 :doc:`standalones </user/advanced-topics/standalones-and-hvms>`, if you have any).
 
-It’s very important that you use only supported releases so that you continue to receive security updates.** This means that you *must*
+**It’s very important that you use only supported releases so that you continue to receive security updates.** This means that you *must*
 periodically upgrade Qubes OS and your templates before they reach EOL.
 You can always see which versions of Qubes OS and select templates are
 supported on :doc:`Supported releases </user/downloading-installing-upgrading/supported-releases>`.

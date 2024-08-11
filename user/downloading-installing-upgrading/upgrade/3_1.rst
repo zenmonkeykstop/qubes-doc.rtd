@@ -3,7 +3,7 @@ Upgrading to R3.1
 =================
 
 
-Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users** :doc:`back up their systems </user/how-to-guides/how-to-back-up-restore-and-migrate>`.**
+**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users** :doc:`back up their systems </user/how-to-guides/how-to-back-up-restore-and-migrate>` **.**
 
 Current Qubes R3.0 systems can be upgraded in-place to the latest R3.1
 by following the procedure below.
@@ -16,7 +16,7 @@ By default, in Qubes R3.0, there is only one template. However, users
 are free to create more templates for special purposes, as well as
 standalones. More information on using multiple templates, as well as
 standalones, can be found :doc:`here </user/how-to-guides/how-to-install-software>`. The steps
-described in this section should be repeated in all** the user’s
+described in this section should be repeated in **all** the user’s
 Template and Standalone VMs.
 
 Upgrade Fedora templates:
@@ -89,8 +89,8 @@ Upgrading dom0
 --------------
 
 
-Important:** Do not perform the steps described in this section until
-all** your Template and Standalone VMs have been upgraded as described
+**Important:** Do not perform the steps described in this section until
+**all** your Template and Standalone VMs have been upgraded as described
 in the previous section. Also, do not shut down ``sys-net`` or
 ``sys-firewall``, since you will not be able to start them again until
 after the entire in-place upgrade procedure is complete.

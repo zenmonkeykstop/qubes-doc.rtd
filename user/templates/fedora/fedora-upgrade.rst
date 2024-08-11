@@ -17,7 +17,7 @@ Summary instructions for standard Fedora templates
 --------------------------------------------------
 
 
-Note:** The prompt on each line indicates where each command should be
+**Note:** The prompt on each line indicates where each command should be
 entered: ``dom0``, ``fedora-<old>``, or ``fedora-<new>``, where
 ``<old>`` is the Fedora version number *from* which you are upgrading,
 and ``<new>`` is the Fedora version number *to* which you are upgrading.
@@ -39,7 +39,7 @@ and ``<new>`` is the Fedora version number *to* which you are upgrading.
       [user@dom0 ~]$ qvm-features fedora-<new> template-name fedora-<new>
 
 
-Recommended:** :ref:`Switch everything that was set to the old template to the new template. <user/templates/templates:switching>`
+**Recommended:** :ref:`Switch everything that was set to the old template to the new template. <user/templates/templates:switching>`
 
 Detailed instructions for standard Fedora templates
 ---------------------------------------------------
@@ -49,7 +49,7 @@ These instructions will show you how to upgrade the standard Fedora
 template. The same general procedure may be used to upgrade any template
 based on the standard Fedora template.
 
-Note:** The prompt on each line indicates where each command should be
+**Note:** The prompt on each line indicates where each command should be
 entered: ``dom0``, ``fedora-<old>``, or ``fedora-<new>``, where
 ``<old>`` is the Fedora version number *from* which you are upgrading,
 and ``<new>`` is the Fedora version number *to* which you are upgrading.
@@ -78,7 +78,7 @@ and ``<new>`` is the Fedora version number *to* which you are upgrading.
          [user@fedora-<new> ~]$ sudo dnf --releasever=<new> distro-sync --best --allowerasing
 
 
-   Note:** ``dnf`` might ask you to approve importing a new package
+   **Note:** ``dnf`` might ask you to approve importing a new package
    signing key. For example, you might see a prompt like this one:
 
    .. code:: bash
@@ -94,7 +94,7 @@ and ``<new>`` is the Fedora version number *to* which you are upgrading.
    This key was already checked when it was installed (notice that the
    “From” line refers to a location on your local disk), so you can
    safely say yes to this prompt.
-   Note:** If you encounter no errors, proceed to step 4. If you do
+   **Note:** If you encounter no errors, proceed to step 4. If you do
    encounter errors, see the next two points first.
 
    - If ``dnf`` reports that you do not have enough free disk space to
@@ -193,7 +193,7 @@ Summary instructions for Fedora Minimal templates
 -------------------------------------------------
 
 
-Note:** The prompt on each line indicates where each command should be
+**Note:** The prompt on each line indicates where each command should be
 entered: ``dom0``, ``fedora-<old>``, or ``fedora-<new>``, where
 ``<old>`` is the Fedora version number *from* which you are upgrading,
 and ``<new>`` is the Fedora version number *to* which you are upgrading.

@@ -130,7 +130,7 @@ Hardware certification requirements
 -----------------------------------
 
 
-Note:** This section describes the requirements for hardware
+**Note:** This section describes the requirements for hardware
 *certification*, *not* the requirements for *running* Qubes OS. For the
 latter, please see the :doc:`system requirements </user/hardware/system-requirements>`. A brief list of the
 requirements described in this section is available
@@ -144,7 +144,7 @@ on that list in order to maintain Qubes hardware certification.
 
 One of the most important security improvements introduced with the
 release of Qubes 4.0 was to replace paravirtualization (PV) technology
-with hardware-enforced memory virtualization**, which recent
+with **hardware-enforced memory virtualization**, which recent
 processors have made possible thanks to so-called Second Level Address
 Translation
 (`SLAT <https://en.wikipedia.org/wiki/Second_Level_Address_Translation>`__),
@@ -162,7 +162,7 @@ Qubes OS. Consequently, we require SLAT support of all certified
 hardware beginning with Qubes OS 4.0.
 
 Another important requirement is that Qubes-certified hardware should
-run only open-source boot firmware** (aka “the BIOS”), such as
+run only **open-source boot firmware** (aka “the BIOS”), such as
 `coreboot <https://www.coreboot.org/>`__. The only exception is the use
 of (properly authenticated) CPU-vendor-provided blobs for silicon and
 memory initialization (see `Intel FSP <https://firmware.intel.com/learn/fsp/about-intel-fsp>`__) as well
@@ -179,7 +179,7 @@ first, before we can implement even stronger countermeasures such as a
 A switch to open source boot firmware is one such important step. To be
 compatible with Qubes OS, the BIOS must properly expose all the VT-x,
 VT-d, and SLAT functionality that the underlying hardware offers (and
-which we require). Among other things, this implies proper DMAR ACPI table** construction.
+which we require). Among other things, this implies **proper DMAR ACPI table** construction.
 
 Most laptops use PS/2 connections internally for their input devices
 (i.e., keyboard and touchpad). On most desktops, however, USB-connected
@@ -192,7 +192,7 @@ system in a secure way. In practice, Qubes users on such hardware
 systems are generally forced to use a single USB controller for both
 trusted and untrusted purposes — :ref:`an unfortunate security trade-off <user/security-in-qubes/device-handling-security:security warning on usb input devices>`.
 For this reason, we require that every Qubes-certified non-laptop device
-either** (1) supports non-USB input devices (e.g., via PS/2) or**
+**either** (1) supports non-USB input devices (e.g., via PS/2) **or**
 (2) has a separate USB controller that is only for input devices.
 
 Finally, we require that Qubes-certified hardware does not have any

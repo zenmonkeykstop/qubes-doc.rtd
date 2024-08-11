@@ -8,7 +8,7 @@ ways in which you can :doc:`contribute </introduction/contributing>` to the Qube
 OS Project. If you’re interested in helping with this, please `join the testing team <https://forum.qubes-os.org/t/joining-the-testing-team/5190>`__.
 There are several different types of testing, which we’ll cover below.
 
-Warning:** Software testing is intended for advanced users and
+**Warning:** Software testing is intended for advanced users and
 developers. You should only attempt to do this if you know what you’re
 doing. Never rely on code that is in testing for critical work!
 

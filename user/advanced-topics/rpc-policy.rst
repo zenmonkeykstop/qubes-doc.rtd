@@ -27,22 +27,22 @@ Here’s an example of an RPC policy file in dom0:
 
 It has three columns (from left to right): source, destination, and
 permission. Each row is a rule. For example, the second row says that
-we’re allowed** (third column) to copy a file (since this is the
-policy file for ``qubes.FileCopy``) from** (first column) any VM
-tagged with “work” to** (second column) any VM tagged with “work”. In
+we’re **allowed** (third column) to copy a file (since this is the
+policy file for ``qubes.FileCopy``) **from** (first column) any VM
+tagged with “work” **to** (second column) any VM tagged with “work”. In
 other words, all the VMs tagged with “work” are allowed to copy files to
 each other without any prompts. (If the third column were “ask” instead
-of “allow”, there would be prompts. I.e., we would be asked** to
-approve the action, instead of it always being allowed**.)
+of “allow”, there would be prompts. I.e., we would be **asked** to
+approve the action, instead of it always being **allowed**.)
 
 Now, the whole policy file is parsed from top to bottom. As soon as a
 rule is found that matches the action being evaluated, parsing stops. We
 can see what this means by looking at the third row. It says that we’re
-denied** from attempting to copy a file from** any VM tagged with
-“work” to** any VM whatsoever. (That’s what the ``@anyvm`` keyword
+**denied** from attempting to copy a file **from** any VM tagged with
+“work” **to** any VM whatsoever. (That’s what the ``@anyvm`` keyword
 means – literally any VM in the system, except for dom0). But, wait a
 minute, didn’t we just say (in the second row) that all the VMs tagged
-with work are allowed** to copy files to each other? That’s exactly
+with work are **allowed** to copy files to each other? That’s exactly
 right. The second and third rows contradict each other, but that’s
 intentional. Since we know that parsing goes from top to bottom (and
 stops at the first match), we intentionally put the second row above the
@@ -71,15 +71,15 @@ without prompting the user with a list of valid destination VMs, and
 only ``qvm-copy-to-vm`` operations with valid destinations would be
 allowed.
 
-The fourth row says that we’re denied** from copying files from**
-any VM in the system to** any VM tagged with “work”. Again, since
+The fourth row says that we’re **denied** from copying files **from**
+any VM in the system **to** any VM tagged with “work”. Again, since
 parsing goes from top to bottom, this doesn’t mean that no files can
 ever be copied from *any* VM to a VM tagged with “work”. Rather, it
 means that only VMs that match an earlier rule can do so (in this case,
 only VMs tagged with “work”).
 
-The fifth and final row says that we’re asked** (i.e., prompted) to
-copy files from** any VM in the system to** any VM in the system.
+The fifth and final row says that we’re **asked** (i.e., prompted) to
+copy files **from** any VM in the system **to** any VM in the system.
 (This rule was already in the policy file by default. We added the first
 four.) Note that it wouldn’t make sense to add any rules after this one,
 since every possible pair of VMs will match the ``@anyvm  @anyvm``
@@ -95,5 +95,5 @@ already covered.
 
 Further details about how this system works can be found in :doc:`Qrexec: command execution in VMs </developer/services/qrexec>`.
 
-(Note** *: the ``$`` character is deprecated in qrexec keywords – please use ``@`` instead (e.g. ``@anyvm``). For more information, see the bulletin*
+(**Note** *: the ``$`` character is deprecated in qrexec keywords – please use ``@`` instead (e.g. ``@anyvm``). For more information, see the bulletin*
 `here <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-038-2018.txt>`__ *.*)

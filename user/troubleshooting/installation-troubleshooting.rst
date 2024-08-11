@@ -22,7 +22,7 @@ There are a variety of other problems that could arise when using a USB
 installation medium, and some of the issues can be fixed by doing one or
 more of the following:
 
-- Use a different USB drive:** If possible, try several drives of
+- **Use a different USB drive:** If possible, try several drives of
   different sizes and formats. This determines whether the problem
   stems from the flash drive or Qubes installer. Some laptops cannot
   read from an external boot device larger than 8GB. If you encounter a
@@ -32,11 +32,11 @@ more of the following:
   image is over 4GB, so it may not fit on a smaller USB. If a machine
   can not boot from a bigger USB, it may be too old to run Qubes.
 
-- Verify your Qubes ISO:** Errors will occur if the Qubes installer
+- **Verify your Qubes ISO:** Errors will occur if the Qubes installer
   is corrupted. Ensure that the installer is correct and complete
   before writing it to a flash drive by :doc:`verifying the ISO </project-security/verifying-signatures>`.
 
-- Change the method you used to** :ref:`write your ISO to a USB key <user/downloading-installing-upgrading/installation-guide:copying the iso onto the installation medium>`:**
+- **Change the method you used to** :ref:`write your ISO to a USB key <user/downloading-installing-upgrading/installation-guide:copying the iso onto the installation medium>` **:**
   Some people use the ``dd`` command (recommended), others use tools
   like Rufus, balenaEtcher or the GNOME Disk Utility. If installation
   fails after using one tool, try a different one. For example, if you
@@ -80,7 +80,7 @@ installation medium, make sure the boot order is set up appropriately.
 The process to change the boot order varies depending on the currently
 installed system and the motherboard manufacturer.
 
-If Windows 10** is installed on your machine, you may need to follow
+If **Windows 10** is installed on your machine, you may need to follow
 specific instructions to change the boot order. This may require an
 `advanced reboot <https://support.microsoft.com/en-us/help/4026206/windows-10-find-safe-mode-and-other-startup-settings>`__.
 

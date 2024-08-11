@@ -8,7 +8,7 @@ This page covers copying files and clipboard text between
 Since dom0 is special, the processes are different from :doc:`copying and pasting text between qubes </user/how-to-guides/how-to-copy-and-paste-text>` and
 :doc:`copying and moving files between qubes </user/how-to-guides/how-to-copy-and-move-files>`.
 
-Copying from** dom0
+Copying **from** dom0
 ---------------------
 
 
@@ -31,12 +31,12 @@ Copying and pasting clipboard text from dom0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Use the Qubes Clipboard** widget:
+Use the **Qubes Clipboard** widget:
 
 1. Copy text to the clipboard normally in dom0 (e.g., by pressing
    Ctrl+C).
 
-2. Click the Qubes Clipboard** icon in the Notification Area.
+2. Click the **Qubes Clipboard** icon in the Notification Area.
 
 3. Click “Copy dom0 clipboard”. This displays a notification that text
    has been copied to the inter-qube clipboard.
@@ -73,7 +73,7 @@ inter-VM clipboard, you can simply:
 You may now paste the log contents in qube as you normally would (e.g.,
 Ctrl+Shift+V, then Ctrl+V).
 
-Copying to** dom0
+Copying **to** dom0
 -------------------
 
 

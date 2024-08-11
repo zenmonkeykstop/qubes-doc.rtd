@@ -12,7 +12,7 @@ already configured). Salt allows administrators to easily configure
 their systems. In this guide we will show how it is set up and how you
 can modify it for your own purpose.
 
-In the current form the API is provisional** and subject to change
+In the current form the **API is provisional** and subject to change
 between *minor* releases.
 
 Understanding Salt
@@ -73,7 +73,7 @@ bottom of the compiler . You can call them with ``state.low`` Next up is
 the *lowstate* level - this is the list of all low chunks in order. - To
 see them you have ``state.show_lowstate``, and use ``state.lowstate`` to
 apply them. At the top level is *highstate* - this is an interpretation
-of all** the data represented in YAML in sls files. You can view it
+of **all** the data represented in YAML in sls files. You can view it
 with ``state.show_highstate``.
 
 When you want to apply a configuration, you can use
@@ -402,7 +402,7 @@ file. A separate ``*.top`` file should be also written:
 
 
 
-Note** The third line should contain the name of the previous state
+**Note** The third line should contain the name of the previous state
 file, without the ``.sls`` extension.
 
 To enable the particular top file you should issue the command:
@@ -488,7 +488,7 @@ You can set properties of an existing qube:
 
 
 
-Note** The ``name:`` option will not change the name of a qube, it
+**Note** The ``name:`` option will not change the name of a qube, it
 will only be used to match a qube to apply the configurations to it.
 
 ``qvm.service``
@@ -723,7 +723,7 @@ The ``qubes`` Pillar Module
 Additional pillar data is available to ease targeting configurations
 (for example all templates).
 
-Note:** This list is subject to change in future releases.
+**Note:** This list is subject to change in future releases.
 
 ``qubes:features``
 ^^^^^^^^^^^^^^^^^^

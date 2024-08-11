@@ -33,7 +33,7 @@ time-dependent. You can save the TOTP secret in a mobile app like
 `FreeOTP <https://en.wikipedia.org/wiki/FreeOTP>`__ and then use it as
 an additional factor to login to your Qubes system.
 
-   Warning**: remember to keep backup access codes.
+   **Warning**: remember to keep backup access codes.
 
 1. Download ``google-authenticator`` in dom0:
 
@@ -68,7 +68,7 @@ an additional factor to login to your Qubes system.
 
 
 
-   Warning**: in the next session if incorrectly performed, there is
+   **Warning**: in the next session if incorrectly performed, there is
    the risk of locking yourself out. Before procedding ensure that you
    have an up-to-date backup.
 
@@ -118,7 +118,7 @@ Now we are going to add the authenticator as a login requirement:
 Now you can test by locking the screen with ctrl+alt+l. If it was
 successful and you are pleased with the results, restart your computer.
 
-Note**: When logging in. the first thing you put is the TOTP secret
+**Note**: When logging in. the first thing you put is the TOTP secret
 and then the password. This is true in the screen locker and as well as
 the session manager (the login window that shows right after you put the
 disk encryption passphrase).
@@ -227,7 +227,7 @@ NitroKey3 is not supported.
 1. Install YubiKey / NitroKey3 software in the template on which your
    USB VM is based. Without this software the challenge-response / HOTP
    mechanism won’t work.
-   YubiKey**
+   **YubiKey**
    For Fedora.
 
    .. code:: bash
@@ -242,10 +242,10 @@ NitroKey3 is not supported.
          sudo apt-get install yubikey-personalization
 
 
-   NitroKey3**
+   **NitroKey3**
    Follow the installation instructions on the official `NitroKey website <https://docs.nitrokey.com/software/nitropy/all-platforms/installation>`__.
-   WARNING**: *as of April 2024 the official instructions involve using pipx to install the pynitrokey package and its dependencies without any GPG verification! This is not a recommended practice, but will soon be fixed by NitroKey when they start providing release artifacts with detached signatures on* `their GitHub <https://github.com/Nitrokey/pynitrokey/releases>`__ *. Proper packaging and distribution for Debian and perhaps Fedora is also planned for the mid-long term.* Installing packages using pip or pipx is not recommended!**
-   both**
+   **WARNING**: *as of April 2024 the official instructions involve using pipx to install the pynitrokey package and its dependencies without any GPG verification! This is not a recommended practice, but will soon be fixed by NitroKey when they start providing release artifacts with detached signatures on* `their GitHub <https://github.com/Nitrokey/pynitrokey/releases>`__ *. Proper packaging and distribution for Debian and perhaps Fedora is also planned for the mid-long term.* **Installing packages using pip or pipx is not recommended!**
+   **both**
    Shut down your template. Then, either reboot your USB VM (so changes
    inside the template take effect in your USB app qube) or install the
    packages inside your USB VM as well if you would like to avoid
@@ -263,7 +263,7 @@ NitroKey3 is not supported.
 
 
 3. Configure your YubiKey / NitroKey3:
-   YubiKey**
+   **YubiKey**
    Configure your YubiKey for challenge-response ``HMAC-SHA1`` mode.
    This can be done on any qube, e.g. a disposable (you need to `attach the YubiKey <https://www.qubes-os.org/doc/how-to-use-usb-devices/>`__
    to this app qube though) or directly on the sys-usb vm.
@@ -288,7 +288,7 @@ NitroKey3 is not supported.
    - press ``Write Configuration`` once you are ready.
 
 
-   NitroKey3**
+   **NitroKey3**
    Set up a new NK3 Secrets App HOTP secret by attaching the NitroKey to
    your USB qube and running the following commands in it:
 
@@ -301,7 +301,7 @@ NitroKey3 is not supported.
    Note that the 20 digit sequence can contain any printable ASCII
    character, e.g. letters, numbers, punctuation marks. The actual
    ``Secret Key (base 32)`` is the base32 encoded form of that sequence.
-   both**
+   **both**
    We will call the ``Secret Key (20 bytes hex)`` (YubiKey) or
    ``Secret Key (base 32)`` ``AESKEY``.
 
@@ -328,12 +328,12 @@ NitroKey3 is not supported.
 
 
 
-4. YubiKey**
+4. **YubiKey**
    Paste your ``AESKEY`` into ``/etc/qubes/yk-keys/yk-secret-key.hex``
    in dom0. Note that if you had previously used a NitroKey3 with this
    package, you *must* delete the file
    ``/etc/qubes/yk-keys/nk-hotp-secret`` or its content!
-   NitroKey3**
+   **NitroKey3**
    Create the file ``/etc/qubes/yk-keys/nk-hotp-secret`` in dom0 and
    paste your ``AESKEY`` (in base 32 format) into it.
 

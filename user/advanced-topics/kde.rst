@@ -93,7 +93,7 @@ Removal
 -------
 
 
-If you decide to remove KDE do not** use
+If you decide to remove KDE do **not** use
 ``dnf remove @kde-desktop-qubes``. You will almost certainly break your
 system.
 

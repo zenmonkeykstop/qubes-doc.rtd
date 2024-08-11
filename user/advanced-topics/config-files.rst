@@ -144,7 +144,7 @@ Currently supported settings:
 
 - ``allow_fullscreen`` - allow VM to request its windows to go
   fullscreen (without any colorful frame).
-  Note:** Regardless of this setting, you can always put a window
+  **Note:** Regardless of this setting, you can always put a window
   into fullscreen mode in Xfce4 using the trusted window manager by
   right-clicking on a window’s title bar and selecting “Fullscreen”.
   This functionality should still be considered safe, since a VM window

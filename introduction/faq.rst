@@ -101,7 +101,7 @@ How does Qubes OS provide security?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Qubes takes an approach called security by compartmentalization**,
+Qubes takes an approach called **security by compartmentalization**,
 which allows you to compartmentalize the various parts of your digital
 life into securely isolated compartments called *qubes*.
 
@@ -190,7 +190,7 @@ sensitive activities can certainly be more secure than simply using your
 main OS, but this method still preserves many of the risks of
 conventional OSes. For example, popular live OSes (such as
 `Tails <https://tails.boum.org/>`__ and other Linux distributions) are
-still monolithic** in the sense that all software is still running in
+still **monolithic** in the sense that all software is still running in
 the same OS. This means, once again, that if your session is
 compromised, then all the data and activities performed within that same
 session are also potentially compromised.
@@ -202,10 +202,10 @@ How does Qubes OS compare to running VMs in a conventional OS?
 Not all virtual machine software is equal when it comes to security. You
 may have used or heard of VMs in relation to software like VirtualBox or
 VMware Workstation. These are known as “Type 2” or “hosted” hypervisors.
-(The hypervisor** is the software, firmware, or hardware that creates
+(The **hypervisor** is the software, firmware, or hardware that creates
 and runs virtual machines.) These programs are popular because they’re
 designed primarily to be easy to use and run under popular OSes like
-Windows (which is called the host** OS, since it “hosts” the VMs).
+Windows (which is called the **host** OS, since it “hosts” the VMs).
 However, the fact that Type 2 hypervisors run under the host OS means
 that they’re really only as secure as the host OS itself. If the host OS
 is ever compromised, then any VMs it hosts are also effectively
@@ -670,7 +670,7 @@ Is Qubes a multi-user system?
 
 No. Qubes does not pretend to be a multi-user system. Qubes assumes that
 the user who controls Dom0 controls the whole system. It is very
-difficult to securely** implement multi-user support. See
+difficult to **securely** implement multi-user support. See
 `here <https://groups.google.com/group/qubes-devel/msg/899f6f3efc4d9a06>`__
 for details.
 
@@ -1134,8 +1134,8 @@ Are there restrictions on the software that the Qubes developers are willing to 
 
 
 Yes. In general, the Qubes developers will not use a piece of software
-unless there is an *easy* way to verify both its integrity** and
-authenticity**, preferably via PGP signatures (see :doc:`Verifying Signatures </project-security/verifying-signatures>`). Specifically:
+unless there is an *easy* way to verify both its **integrity** and
+**authenticity**, preferably via PGP signatures (see :doc:`Verifying Signatures </project-security/verifying-signatures>`). Specifically:
 
 - If PGP signatures are used, the signing key(s) should have
   well-publicized fingerprint(s) verifiable via multiple independent
@@ -1356,6 +1356,6 @@ Is there a way to automate tasks for continuous integration or DevOps?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Yes, Qubes natively supports automation via :doc:`Salt (SaltStack) </user/advanced-topics/salt>`. There is also the unofficial `ansible-qubes toolkit <https://github.com/Rudd-O/ansible-qubes>`__. (Warning:**
+Yes, Qubes natively supports automation via :doc:`Salt (SaltStack) </user/advanced-topics/salt>`. There is also the unofficial `ansible-qubes toolkit <https://github.com/Rudd-O/ansible-qubes>`__. (**Warning:**
 Since this is an external project that has not been reviewed or endorsed
 by the Qubes team, `allowing it to manage dom0 may be a security risk <https://forum.qubes-os.org/t/19075#dom0-precautions>`__.)

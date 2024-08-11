@@ -7,9 +7,9 @@ Current Qubes R2 Beta 2 (R2B2) systems can be upgraded in-place to the
 latest R2 Beta 3 (R2B3) release by following the procedure below.
 However, upgrading in-place is riskier than performing a clean
 installation, since there are more things which can go wrong. For this
-reason, we strongly recommended that users perform a** :doc:`clean installation </user/downloading-installing-upgrading/installation-guide>` of Qubes R2 Beta 3**.
+reason, **we strongly recommended that users perform a** :doc:`clean installation </user/downloading-installing-upgrading/installation-guide>` **of Qubes R2 Beta 3**.
 
-Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in** :doc:`backup tool </user/how-to-guides/how-to-back-up-restore-and-migrate>`.**
+**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in** :doc:`backup tool </user/how-to-guides/how-to-back-up-restore-and-migrate>` **.**
 
 Experienced users may be comfortable accepting the risks of upgrading
 in-place. Such users may wish to first attempt an in-place upgrade. If
@@ -29,7 +29,7 @@ Standalone VMs, can be found :doc:`here </user/how-to-guides/how-to-install-soft
 steps described in this section should be repeated in *all* user’s
 Template and Standalone VMs.
 
-It is critical to complete this step before** proceeding to dom0
+It is critical to complete this step **before** proceeding to dom0
 upgrade. Otherwise you will most likely ends with unusable system.
 
 1. Open terminal in the template (or standalone VM). E.g. use the Qubes
@@ -60,7 +60,7 @@ upgrade. Otherwise you will most likely ends with unusable system.
 
 
 
-5. Do not** shutdown the VM.
+5. **Do not** shutdown the VM.
 
 
 

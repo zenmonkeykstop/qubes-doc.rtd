@@ -5,7 +5,7 @@ How to use PCI devices
 
 *This page is part of* :doc:`device handling in qubes </user/how-to-guides/how-to-use-devices>` *.*
 
-Warning:** Only dom0 exposes PCI devices. Some of them are strictly
+**Warning:** Only dom0 exposes PCI devices. Some of them are strictly
 required in dom0 (e.g., the host bridge). You may end up with an
 unusable system by attaching the wrong PCI device to a VM. PCI
 passthrough should be safe by default, but non-default options may be
@@ -142,7 +142,7 @@ options, specifiable via the ``--option``/``-o`` option. (Yes, confusing
 wording, there’s an `issue for that <https://github.com/QubesOS/qubes-issues/issues/4530>`__.)
 
 ``qvm-pci`` exposes two additional options. Both are intended to fix
-device or driver specific issues, but both come with :ref:`heavy security implications <user/security-in-qubes/device-handling-security:pci security>`! Make sure you understand them before continuing!**
+device or driver specific issues, but both come with :ref:`heavy security implications <user/security-in-qubes/device-handling-security:pci security>`! **Make sure you understand them before continuing!**
 
 no-strict-reset
 ^^^^^^^^^^^^^^^
@@ -212,7 +212,7 @@ or
 
 
 
-It is strongly discouraged to reattach PCI devices to dom0**,
+It is **strongly discouraged to reattach PCI devices to dom0**,
 especially if they don’t support resetting!
 
 .. |appmenu| image:: /attachment/doc/qubes-appmenu-select.png

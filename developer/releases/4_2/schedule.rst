@@ -3,7 +3,7 @@ Qubes R4.2 release schedule
 ===========================
 
 
-Please note:** *This page is still an unfinished draft in progress. It is being updated as Qubes 4.2 development and testing continues.*
+**Please note:** *This page is still an unfinished draft in progress. It is being updated as Qubes 4.2 development and testing continues.*
 
 The table below is based on our :ref:`release schedule policy <developer/releases/version-scheme:release schedule>`.
 

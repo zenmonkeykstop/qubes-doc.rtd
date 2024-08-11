@@ -6,7 +6,7 @@ Qrexec: secure communication across domains
 (*This page is about qrexec v3. For qrexec v2, see*
 :doc:`here </developer/services/qrexec2>` *.*)
 
-The qrexec framework** is used by core Qubes components to implement
+The **qrexec framework** is used by core Qubes components to implement
 communication between domains. Qubes domains are strictly isolated by
 design. However, the OS needs a mechanism to allow the administrative
 domain (dom0) to force command execution in another domain (VM). For
@@ -27,7 +27,7 @@ Qrexec basics: architecture and examples
 Qrexec is built on top of *vchan*, a Xen library providing data links
 between VMs. During domain startup, a process named ``qrexec-daemon`` is
 started in dom0, and a process named ``qrexec-agent`` is started in the
-VM. They are connected over a vchan** channel. ``qrexec-daemon``
+VM. They are connected over a **vchan** channel. ``qrexec-daemon``
 listens for connections from a dom0 utility named ``qrexec-client``.
 Let’s say we want to start a process (call it ``VMprocess``) in a VM
 (``someVM``). Typically, the first thing that a ``qrexec-client``
@@ -442,7 +442,7 @@ executable permissions. Finally, invoke the RPC service.
 
 We should get “3” as answer. (dom0 will ask for confirmation first.)
 
-Note:** For a real world example of writing a qrexec service, see this
+**Note:** For a real world example of writing a qrexec service, see this
 `blog post <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__.
 
 RPC service with argument (file reader)

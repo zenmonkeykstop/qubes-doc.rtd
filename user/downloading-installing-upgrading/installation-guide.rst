@@ -28,11 +28,11 @@ consult the `Hardware Compatibility List <https://www.qubes-os.org/hcl/>__`.
 Even on supported hardware, you must ensure that `IOMMU-based virtualization <https://en.wikipedia.org/wiki/Input%E2%80%93output_memory_management_unit#Virtualization>`__
 is activated in the BIOS or UEFI. Without it, Qubes OS won’t be able to
 enforce isolation. For Intel-based boards, this setting is called Intel
-Virtualization for Directed I/O (Intel VT-d**) and for AMD-based
+Virtualization for Directed I/O (**Intel VT-d**) and for AMD-based
 boards, it is called AMD I/O Virtualization Technology (or simply
-AMD-Vi**). This parameter should be activated in your computer’s BIOS
-or UEFI, alongside the standard Virtualization (Intel VT-x**) and AMD
-Virtualization (AMD-V**) extensions. This `external guide <https://web.archive.org/web/20200112220913/https://www.intel.in/content/www/in/en/support/articles/000007139/server-products.html>`__
+**AMD-Vi**). This parameter should be activated in your computer’s BIOS
+or UEFI, alongside the standard Virtualization (**Intel VT-x**) and AMD
+Virtualization (**AMD-V**) extensions. This `external guide <https://web.archive.org/web/20200112220913/https://www.intel.in/content/www/in/en/support/articles/000007139/server-products.html>`__
 made for Intel-based boards can help you figure out how to enter your
 BIOS or UEFI to locate and activate those settings. If those settings
 are not nested under the Advanced tab, you might find them under the
@@ -199,7 +199,7 @@ troubleshoot. First, try rebooting your computer. If it still loads your
 currently installed operating system or does not detect your
 installation medium, make sure the boot order is set up appropriately.
 The process to change the boot order varies depending on the currently
-installed system and the motherboard manufacturer. If Windows 10** is
+installed system and the motherboard manufacturer. If **Windows 10** is
 installed on your machine, you may need to follow specific instructions
 to change the boot order. This may require an `advanced reboot <https://support.microsoft.com/en-us/help/4026206/windows-10-find-safe-mode-and-other-startup-settings>`__.
 
@@ -209,7 +209,7 @@ The installer home screen
 
 On the first screen, you are asked to select the language that will be
 used during the installation process. When you are done, select
-Continue**.
+**Continue**.
 
 |Language selection window|
 
@@ -305,10 +305,10 @@ internal storage device.
       
       Did you know? By default, Qubes OS uses `LUKS <https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup>`__      /`dm-crypt <https://en.wikipedia.org/wiki/Dm-crypt>`__       to encrypt everything except the /boot partition.
 
-As soon as you press Done**, the installer will ask you to enter a
+As soon as you press **Done**, the installer will ask you to enter a
 passphrase for disk encryption. The passphrase should be complex. Make
 sure that your keyboard layout reflects what keyboard you are actually
-using. When you’re finished, press Done**.
+using. When you’re finished, press **Done**.
 
 .. DANGER::
       
@@ -342,10 +342,10 @@ Installation
 
 
 When you have completed all the items marked with the warning icon,
-press Begin Installation**.
+press **Begin Installation**.
 
 Installation can take some time. |Windows showing installation complete
-and Reboot button.| When the installation is complete, press Reboot System**. Don’t forget to remove the installation medium, or else you
+and Reboot button.| When the installation is complete, press **Reboot System**. Don’t forget to remove the installation medium, or else you
 may end up seeing the installer boot screen again.
 
 Post-installation
@@ -383,47 +383,47 @@ designed to give you a more ready-to-use environment from the get-go.
 
 Let’s briefly go over the options:
 
-- Templates Configuration:** Here you can decide which
+- **Templates Configuration:** Here you can decide which
   :doc:`templates </user/templates/templates>` you want to have installed, and which
   will be the default template.
 
-- Create default system qubes:** These are the core components of the
+- **Create default system qubes:** These are the core components of the
   system, required for things like internet access. You can opt to have
   some created as :ref:`disposables <user/reference/glossary:disposable>`.
 
-- Create default application qubes:** These are how you
+- **Create default application qubes:** These are how you
   compartmentalize your digital life. There’s nothing special about the
   ones the installer creates. They’re just suggestions that apply to
   most people. If you decide you don’t want them, you can always delete
   them later, and you can always create your own.
 
-- Use a qube to hold all USB controllers:** Just like the network
+- **Use a qube to hold all USB controllers:** Just like the network
   qube for the network stack, the USB qube isolates the USB
   controllers.
 
-  - Use sys-net qube for both networking and USB devices:** You
+  - **Use sys-net qube for both networking and USB devices:** You
     should select this option if you rely on a USB device for network
     access, such as a USB modem or a USB Wi-Fi adapter.
 
 
 
-- Create Whonix Gateway and Workstation qubes:** If you want to use
+- **Create Whonix Gateway and Workstation qubes:** If you want to use
   `Whonix <https://www.whonix.org/wiki/Qubes>`__, you should select
   this option.
 
-  - Enabling system and template updates over the Tor anonymity network using Whonix:** If you select this option, then whenever
+  - **Enabling system and template updates over the Tor anonymity network using Whonix:** If you select this option, then whenever
     you install or update software in dom0 or a template, the internet
     traffic will go through Tor.
 
 
 
-- Do not configure anything:** This is for very advanced users only.
+- **Do not configure anything:** This is for very advanced users only.
   If you select this option, you will have to manually set up
   everything.
 
 
 
-When you’re satisfied with your choices, press Done**. This
+When you’re satisfied with your choices, press **Done**. This
 configuration process may take a while, depending on the speed and
 compatibility of your system.
 
@@ -510,7 +510,7 @@ Getting help
 
 - If you don’t find your answer in the documentation, please see :doc:`Help, Support, Mailing Lists, and Forum </introduction/support>` for places to ask.
 
-- Please do not** email individual members of the Qubes team with
+- Please do **not** email individual members of the Qubes team with
   questions about installation or other problems. Instead, please see
   :doc:`Help, Support, Mailing Lists, and Forum </introduction/support>` for
   appropriate places to ask questions.

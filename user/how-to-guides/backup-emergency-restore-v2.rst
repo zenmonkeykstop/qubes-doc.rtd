@@ -12,7 +12,7 @@ data backed up by Qubes. In the event a Qubes system is unavailable, you
 can access your data on any GNU/Linux system with the following
 procedure.
 
-Note:** In the following example, the backup file is assumed to be
+**Note:** In the following example, the backup file is assumed to be
 both encrypted and compressed.
 
 1. Untar the main backup file.
@@ -62,11 +62,11 @@ both encrypted and compressed.
 
 
 
-Note:** The hash values should match. If they do not match, then the
+**Note:** The hash values should match. If they do not match, then the
 backup file may have been tampered with, or there may have been a
 storage error.
 
-Note:** If your backup was hashed with a message digest algorithm
+**Note:** If your backup was hashed with a message digest algorithm
 other than ``sha512``, you must substitute the correct message digest
 command. A complete list of supported message digest algorithms can be
 found with ``openssl list-message-digest-algorithms``.
@@ -83,7 +83,7 @@ found with ``openssl list-message-digest-algorithms``.
 
 
 
-Note:** For multi-part files, a loop can be used:
+**Note:** For multi-part files, a loop can be used:
 
 .. code:: bash
 
@@ -94,7 +94,7 @@ Note:** For multi-part files, a loop can be used:
 
 
 
-Note:** If your backup was encrypted with a cipher algorithm other
+**Note:** If your backup was encrypted with a cipher algorithm other
 than ``aes-256-cbc``, you must substitute the correct cipher command. A
 complete list of supported cipher algorithms can be found with
 ``openssl   list-cipher-algorithms``.
@@ -112,7 +112,7 @@ complete list of supported cipher algorithms can be found with
 
 
 
-Note:** If your backup was compressed with a program other than
+**Note:** If your backup was compressed with a program other than
 ``gzip``, you must substitute the correct compression program.
 
 6. Untar the decrypted and decompressed ``private.img`` file.
@@ -123,7 +123,7 @@ Note:** If your backup was compressed with a program other than
          vm1/private.img
 
 
-   Note:** For multi-part files, a script is required:
+   **Note:** For multi-part files, a script is required:
 
    1. Create a ``new-volume-script``:
 
@@ -159,7 +159,7 @@ Note:** If your backup was compressed with a program other than
 
 
 
-Note:** You may wish to store a plain text copy of these instructions
+**Note:** You may wish to store a plain text copy of these instructions
 with your Qubes backups in the event that you fail to recall the above
 procedure while this web page is inaccessible. You may obtain a
 plaintext version of this file in Git repository housing all the

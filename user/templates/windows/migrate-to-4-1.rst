@@ -115,7 +115,7 @@ Transferring the Windows Qube
 
 - Now, finally, after one additional reboot, Qubes Windows Tools 4.1-68
   can be installed. The option ``Move user profiles`` should be used
-  if and only if** there was no** separate drive ``D:`` in the
+  **if and only if** there was **no** separate drive ``D:`` in the
   earlier Windows installation.
 
 - After one more reboot, the backup for R4.1 may be created.

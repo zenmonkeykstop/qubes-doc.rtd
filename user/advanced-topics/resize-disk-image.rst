@@ -77,11 +77,11 @@ Note: Size is the target size (i.e. 4096MB or 16GB, …), not the size to
 add to the existing disk.
 
 If you have run out of space for software in your Template, you need to
-increase *root image* of the Template (not private storage!). Make sure changes in the Template between reboots don’t exceed 10G.** It is
+increase *root image* of the Template (not private storage!). **Make sure changes in the Template between reboots don’t exceed 10G.** It is
 recommended that you restart (or start and then shutdown, if it is not
 running) the template after resizing the root image.
 
-If you are not** using Linux in the qube, you will also need to:
+If you are **not** using Linux in the qube, you will also need to:
 
 1. Start the template.
 

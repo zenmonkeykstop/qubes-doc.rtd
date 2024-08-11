@@ -69,7 +69,7 @@ Installing packages
 After you’ve installed the repositories, you can install contributed
 packages.
 
-Note:** The first time you install a contrib package in dom0, you must
+**Note:** The first time you install a contrib package in dom0, you must
 use the ``--clean`` flag.
 
 For example, to install ``qvm-screenshot-tool`` in dom0:

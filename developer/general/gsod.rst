@@ -326,15 +326,15 @@ Consolidate troubleshooting guides
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Consolidate troubleshooting guides
+**Project**: Consolidate troubleshooting guides
 
-Brief explanation**: Troubleshooting guides are scattered across many
+**Brief explanation**: Troubleshooting guides are scattered across many
 pages and sometimes incomplete, leading to repeatedly posting the same
 instruction over and over when helping users to diagnose problems. This
 could be helped by writing a consolidated guide with a clear list of
 symptom-action layout.
 
-Expected results**:
+**Expected results**:
 
 - Review existing :ref:`troubleshooting guides <index:troubleshooting>`
 
@@ -347,28 +347,28 @@ Expected results**:
 
 
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - `Markdown <https://daringfireball.net/projects/markdown/>`__
 
 
 
-Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Improve Getting Started page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Improve Getting Started page
+**Project**: Improve Getting Started page
 
-Brief explanation**: The :doc:`Getting Started page </introduction/getting-started>` is the place a new user would go to
+**Brief explanation**: The :doc:`Getting Started page </introduction/getting-started>` is the place a new user would go to
 understand better how to use Qubes. It is currently has old screenshots
 not using the default desktop environment and could have much better
 flow. In addition, this improved page content may end up being served
 more directly to the user via the `offline documentation <https://github.com/QubesOS/qubes-issues/issues/1019>`__
 or the firstboot guide.
 
-Expected results**:
+**Expected results**:
 
 - Review the existing page and website, similar pages for other OSes
 
@@ -376,7 +376,7 @@ Expected results**:
 
 
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - basic Qubes OS knowledge
 
@@ -384,15 +384,15 @@ Knowledge prerequisite**:
 
 
 
-Mentor**: `Michael Carbone <https://www.qubes-os.org/team/>`__
+**Mentor**: `Michael Carbone <https://www.qubes-os.org/team/>`__
 
 Rewrite qrexec documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Rewrite qrexec documentation
+**Project**: Rewrite qrexec documentation
 
-Brief explanation**: Current qrexec (qubes remote exec) documentation
+**Brief explanation**: Current qrexec (qubes remote exec) documentation
 is hard to follow, important information is hidden within a wall of
 text. Some parts are split into multiple sections, for example version
 specific to avoid duplication, but it doesn’t help reading it.
@@ -402,7 +402,7 @@ this last point may require very close cooperation with developers, as
 the current documentation doesn’t multiple corner cases (that’s one of
 the issue with its current shape).
 
-Expected results**:
+**Expected results**:
 
 - Review existing :doc:`qrexec documentation </developer/services/qrexec>` and an
   `issue about it <https://github.com/QubesOS/qubes-issues/issues/1392>`__
@@ -415,10 +415,10 @@ Expected results**:
 
 
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - `Markdown <https://daringfireball.net/projects/markdown/>`__
 
 
 
-Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__

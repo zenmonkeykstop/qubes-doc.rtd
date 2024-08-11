@@ -55,8 +55,8 @@ Installing software from default repositories
 
 5. Restart all qubes based on the template.
 
-6. (Recommended) In the relevant qubes’ Settings > Applications** tab,
-   select the new application(s) from the list, and press OK**. These
+6. (Recommended) In the relevant qubes’ **Settings > Applications** tab,
+   select the new application(s) from the list, and press **OK**. These
    new shortcuts will appear in the Applications Menu. (If you encounter
    problems, see :doc:`here </user/troubleshooting/app-menu-shortcut-troubleshooting>` for
    troubleshooting.)
@@ -74,9 +74,9 @@ Installing software from other sources
 --------------------------------------
 
 
-Warning:** This method gives your template direct network access,
+**Warning:** This method gives your template direct network access,
 which is `risky <#why-dont-templates-have-network-access>`__. This
-method is not** recommended for trusted templates. Moreover, depending
+method is **not** recommended for trusted templates. Moreover, depending
 on how you install this software, it may not get updated automatically
 when you :doc:`update Qubes normally </user/how-to-guides/how-to-update>`, which means
 you may have to update it manually yourself.
@@ -90,28 +90,28 @@ running as a template in Qubes OS.
 1. (Recommended) Clone the desired template (since this new template
    will probably be less trusted than the original).
 
-2. (Recommended) In the new template’s Settings > Basic** tab, change
+2. (Recommended) In the new template’s **Settings > Basic** tab, change
    the color label from black to red (or another color that signifies to
    you that the template is less trusted).
 
-3. In the new template’s Settings > Basic** tab, change the
-   Networking** value from ``default (none) (current)`` to
+3. In the new template’s **Settings > Basic** tab, change the
+   **Networking** value from ``default (none) (current)`` to
    ``sys-firewall`` (or whichever network-providing qube you wish to
    use).
 
-4. (Recommended) In the new template’s Settings > Firewall rules**
+4. (Recommended) In the new template’s **Settings > Firewall rules**
    tab, select “Limit outgoing Internet connections to…” and tick “Allow
    full access for 5 min.” (This can help in case you forget to remove
    network access later.)
 
 5. Follow the normal instructions for installing your software in the
    new template. For example, open a terminal and enter the commands as
-   instructed. Warning:** If you don’t fully understand the commands
+   instructed. **Warning:** If you don’t fully understand the commands
    you’re entering, then this can be extremely risky, and the template
    should be regarded as *completely untrusted*.
 
-6. (Recommended) In the new template’s Settings > Basic** tab, change
-   the Networking** value from ``sys-firewall (current)`` (or
+6. (Recommended) In the new template’s **Settings > Basic** tab, change
+   the **Networking** value from ``sys-firewall (current)`` (or
    whichever network-providing qube you chose) back to
    ``default (none)``.
 
@@ -121,8 +121,8 @@ running as a template in Qubes OS.
    any app qubes were already assigned to the new template, restart
    them.
 
-9. (Recommended) In the relevant qubes’ Settings > Applications** tab,
-   select the new application(s) from the list, and press OK**. These
+9. (Recommended) In the relevant qubes’ **Settings > Applications** tab,
+   select the new application(s) from the list, and press **OK**. These
    new shortcuts will appear in the Applications Menu. (If you encounter
    problems, see :doc:`here </user/troubleshooting/app-menu-shortcut-troubleshooting>` for
    troubleshooting.)
@@ -145,9 +145,9 @@ If things are still not working as expected:
 - Review the instructions very carefully, making sure you follow each
   step.
 
-- Make sure you shut down the template after installing your software**.
+- Make sure you **shut down the template after installing your software**.
 
-- Make sure you restart your app qube after shutting down your template**.
+- Make sure you **restart your app qube after shutting down your template**.
 
 - Make sure your app qube is assigned to the right template.
 
@@ -172,7 +172,7 @@ In order to protect you from performing risky activities in templates,
 they do not have normal network access by default. Instead, templates
 use an `updates proxy <#updates-proxy>`__ that allows you to install and
 update software using the distribution package manager without giving
-the template direct network access.The updates proxy is already setup to work automatically out-of-the-box and requires no special action from you.** Most users should simply follow the normal
+the template direct network access. **The updates proxy is already setup to work automatically out-of-the-box and requires no special action from you.** Most users should simply follow the normal
 instructions for `installing software from default repositories <#installing-software-from-default-repositories>`__ and
 :doc:`updating </user/how-to-guides/how-to-update>` software. If your software is not
 available in the default repositories, see `installing software from other sources <#installing-software-from-other-sources>`__.
@@ -192,7 +192,7 @@ If you wish to install updates that are still in
 :doc:`testing </user/downloading-installing-upgrading/testing>`, you must enable the appropriate testing
 repositories.
 
-Note:** The following repos are in templates and standalones. For dom0
+**Note:** The following repos are in templates and standalones. For dom0
 testing repos, see
 :ref:`here <user/advanced-topics/how-to-install-software-in-dom0:testing repositories>`.
 For testing new templates, please see
@@ -299,14 +299,14 @@ confirming the installation of an unsigned package that could be
 malicious. If you want to undo changes to a template, there are three
 basic methods:
 
-1. Root revert.** This is appropriate for misconfigurations, but not
+1. **Root revert.** This is appropriate for misconfigurations, but not
    for security concerns. It will preserve your customizations.
 
-2. Reinstall the template.** This is appropriate for both
+2. **Reinstall the template.** This is appropriate for both
    misconfigurations and security concerns, but you will lose all
    customizations.
 
-3. Full revert.** This is appropriate for both misconfigurations and
+3. **Full revert.** This is appropriate for both misconfigurations and
    security concerns, and it can preserve your customizations. However,
    it is a bit more complex.
 
@@ -316,15 +316,15 @@ Root revert
 ^^^^^^^^^^^
 
 
-Important:** This command will roll back any changes made *during the last time the template was run, but* not** *before.* This means that
+**Important:** This command will roll back any changes made *during the last time the template was run, but* **not** *before.* This means that
 if you have already restarted the template, using this command is
 unlikely to help, and you’ll likely want to reinstall it from the
 repository instead. On the other hand, if the template is already broken
 or compromised, it won’t hurt to try reverting first. Just make sure to
-back up** all of your data and changes first!
+**back up** all of your data and changes first!
 
 1. Shut down ``<template>``. If you’ve already just shut it down, do
-   not** start it again (see above).
+   **not** start it again (see above).
 
 2. In a dom0 terminal:
 
@@ -357,7 +357,7 @@ This is like the simple revert, except:
   ``qvm-volume import --no-resize <template>:private /dev/null``.
 
 - The saved revision of the volumes must be uncompromised. With the
-  default ``revisions_to_keep=1`` for the root volume, you must not**
+  default ``revisions_to_keep=1`` for the root volume, you must **not**
   have started the template since the compromising action.
 
 
@@ -433,7 +433,7 @@ Fedora (apt and dnf) and are often installed as the user rather than as
 root. To support these in an app qube you need to take the following
 steps:
 
-1. In the template** you must install ``snapd`` and
+1. In the **template** you must install ``snapd`` and
    ``qubes-snapd-helper``. Open a terminal in the template and run:
 
    .. code:: bash
@@ -487,7 +487,7 @@ steps:
          [user@fedora-36-snap-demo ~]$ sudo shutdown -h now
 
 
-2. Now open the app qube** in which you would like to install the Snap
+2. Now open the **app qube** in which you would like to install the Snap
    application and run a terminal:
 
    .. code:: bash
@@ -497,7 +497,7 @@ steps:
    When the install is complete you can close the terminal window.
 
 3. Refresh the Applications list for the app qube. In the Qubes Menu for
-   the app qube*** launch the Qube Settings. Then go to the
+   the **app qube*** launch the Qube Settings. Then go to the
    Applications tab and click “Refresh Applications”
    The refresh will take a few minutes; after it’s complete the Snap app
    will appear in the app qube’s list of available applications. At this
@@ -512,11 +512,11 @@ Autostarting Installed Applications
 
 If you want a desktop app to start automatically every time a qube
 starts you can create a link to it in the ``~/.config/autostart``
-directory of the app qube**. This might be useful for Qubes that you
+directory of the **app qube**. This might be useful for Qubes that you
 set to automatically start on boot or for Qubes that have a set of apps
 you typically use all day, such as a chat app.
 
-1. Open a terminal in the app qube** where you would like the app to
+1. Open a terminal in the **app qube** where you would like the app to
    launch.
 
 2. List the names of the available desktop shortcuts by running the

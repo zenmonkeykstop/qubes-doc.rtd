@@ -13,7 +13,7 @@ and SSH. This tutorial assumes you are familiar with
 :doc:`QubesBuilder </developer/building/qubes-builder>` and you have it set up and
 running flawlessly.
 
-   Notice:** This setup intentionally weakens some security properties
+   **Notice:** This setup intentionally weakens some security properties
    in the testing system. So make sure you understand the risks and use
    exclusively for testing.
 
@@ -36,7 +36,7 @@ Internet access is intentionally disabled by default in dom0. But to
 ease the deployment process we will give it access. The following steps
 should be done in ``dom0``.
 
-   Note:** the following assume you have only one network card. If you
+   **Note:** the following assume you have only one network card. If you
    have two, pick one and leave the other attached to ``sys-net``.
 
 1. Remove the network card (PCI device) from ``sys-net``
@@ -123,7 +123,7 @@ should be done in ``dom0``.
 
 
 
-   Note:** If you want to install additional software in dom0 and your
+   **Note:** If you want to install additional software in dom0 and your
    only network card was assigned to dom0, then *instead* of the usual
    ``sudo qubes-dom0-update <PACKAGE>`` now you run
    ``sudo dnf --setopt=reposdir=/etc/yum.repos.d install <PACKAGE>``.

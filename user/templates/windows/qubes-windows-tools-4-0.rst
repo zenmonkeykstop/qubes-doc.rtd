@@ -3,28 +3,28 @@ Qubes Windows Tools (QWT) in Qubes OS 4.0
 =========================================
 
 
-Warning:** *The content below describes Qubes Windows Tools installation in Qubes R4.0. The text has been updated to reflect the newer R4.1 release and QWT recent development. Please see* :doc:`this updated document </user/templates/windows/qubes-windows-tools-4-1>` *for instructions for Qubes R4.1 and the updated version of Qubes Windows Tools.*
+**Warning:** *The content below describes Qubes Windows Tools installation in Qubes R4.0. The text has been updated to reflect the newer R4.1 release and QWT recent development. Please see* :doc:`this updated document </user/templates/windows/qubes-windows-tools-4-1>` *for instructions for Qubes R4.1 and the updated version of Qubes Windows Tools.*
 
 Qubes Windows Tools are a set of programs and drivers that provide
 integration of Windows AppVMs with the rest of the Qubes system.
 Currently the following features are available for Windows VMs after
 installation of those tools:
 
-- Qubes Video Driver** - provides for the Seamless GUI mode that
+- **Qubes Video Driver** - provides for the Seamless GUI mode that
   integrates apps windows onto the common Qubes trusted desktop
 
-- File sender/receiver** - Support for :doc:`secure clipboard copy/paste </user/how-to-guides/how-to-copy-and-paste-text>` between the Windows VM and other
+- **File sender/receiver** - Support for :doc:`secure clipboard copy/paste </user/how-to-guides/how-to-copy-and-paste-text>` between the Windows VM and other
   AppVMs
 
-- File sender/receiver** - Support for :doc:`secure file exchange </user/how-to-guides/how-to-copy-and-move-files>` between the Windows VM and other
+- **File sender/receiver** - Support for :doc:`secure file exchange </user/how-to-guides/how-to-copy-and-move-files>` between the Windows VM and other
   AppVMs
 
-- Copy/Edit in Disposable VM** - Support for editing files in
+- **Copy/Edit in Disposable VM** - Support for editing files in
   DisposableVMs as well as for qvm-run and generic qrexec for the
   Windows VM (e.g. ability to run custom service within/from the
   Windows VM)
 
-- Xen PV drivers** for Windows that increase performance compared to
+- **Xen PV drivers** for Windows that increase performance compared to
   qemu emulated devices
 
 
@@ -76,7 +76,7 @@ windows version:
 Qubes Windows Tools are open source and are distributed under a GPL
 license.
 
-Notes:**
+**Notes:**
 
 - Qubes Windows Tools are currently unmaintained
 
@@ -85,7 +85,7 @@ Notes:**
   (although `there has been reports <https://groups.google.com/forum/#!topic/qubes-users/cmPRMOkxkdA>`__
   on working GPU passthrough).
 
-- This page documents the process of installing Qubes Windows Tools on versions up to R3.2.**. Installation on Qubes R4.0 is possible but
+- **This page documents the process of installing Qubes Windows Tools on versions up to R3.2.**. Installation on Qubes R4.0 is possible but
   is a work in progress and there are limitations/bugs (see `issue #3585 <https://github.com/QubesOS/qubes-issues/issues/3585>`__).
 
 
@@ -97,7 +97,7 @@ Installing Windows OS in a Qubes VM
 Please refer to :doc:`this page </user/templates/windows/windows-qubes-4-0>` for
 instructions on how to install Windows in a Qubes VM.
 
-Note:** It is strongly suggested to enable autologon for any Windows
+**Note:** It is strongly suggested to enable autologon for any Windows
 HVMs that will have Qubes Tools installed. To do so, run ``netplwiz``
 command from the ``Win+R``/Start menu and uncheck the *Users must enter a user name and password to use this computer* option.
 
@@ -109,7 +109,7 @@ This will allow you to install the Qubes Windows Tools on Windows 10
 both as a StandaloneVM as well as a Template VM and a corresponding
 AppVM. But some features are not available:
 
-Note:** seamless mode is currently not available for windows. Please
+**Note:** seamless mode is currently not available for windows. Please
 check the top of this document for the full feature availability
 breakdown.
 
@@ -144,12 +144,12 @@ breakdown.
 
    And compare it the value to
    ``148A2A993F0C746B48FA6C5C9A5D1B504E09A7CFBA3FB931A4DCF86FDA4EC9B1``
-   (it has to exactly match for security reasons**). If it matches,
+   (**it has to exactly match for security reasons**). If it matches,
    feel free to continue the installation. If not, repeat the download
    to make sure it was not corrupted due to a network problem. If keeps
    on not matching it might be an attacker attempting to do something
    nasty to your system – Ask for support.
-   Note**: This is a workaround for installing the qubes windows
+   **Note**: This is a workaround for installing the qubes windows
    tools on windows 10 since the standard way is broken.
 
 7. Install Qubes Windows Tools 4.0.1.3 by starting
@@ -185,7 +185,7 @@ breakdown.
 
 
 
-Note:** If this property is not set or set to a wrong value, files
+**Note:** If this property is not set or set to a wrong value, files
 copied to this VM are stored in the folder
 
 .. code:: bash
@@ -284,7 +284,7 @@ can be verified (but is not required) using qvm-prefs command:
 
 
 
-Note:** it is recommended to increase the default value of Windows
+**Note:** it is recommended to increase the default value of Windows
 VM’s ``qrexec_timeout`` property from 60 (seconds) to, for example, 300.
 During one of the first reboots after Windows Tools installation Windows
 user profiles are moved onto the private VM’s virtual disk (private.img)
@@ -313,7 +313,7 @@ are usually very stable). There are two ways of installing the drivers:
 
 
 
-Notes about using Xen’s VBD (storage) PV driver: - Windows 7:**
+Notes about using Xen’s VBD (storage) PV driver: - **Windows 7:**
 installing the driver requires a fully updated VM or else you’ll likely
 get a BSOD and a VM in a difficult to fix state. Updating Windows takes
 *hours* and for casual usage there isn’t much of a performance between
@@ -329,12 +329,12 @@ Tools - in case you already had QWT installed without the storage PV
 driver and you then updated the VM, you may then install the driver from
 Xen’s site (xenvbd.tar).
 
-Caution:** Installing the version 9.0.0 Xen drivers on Windows 7 (a
+**Caution:** Installing the version 9.0.0 Xen drivers on Windows 7 (a
 system without QWT - QWT uninstalled) leads to an unbootable system. The
 drivers install without error, but after reboot, the system aborts the
 reboot saying ``Missing driver xenbus.sys``.
 
-- Windows 10:** The version 9.0.0 Xen drivers have to be installed
+- **Windows 10:** The version 9.0.0 Xen drivers have to be installed
   before installing Qubes Windows Tools. Installing them on a system
   with QWT installed is likely to produce a system which crashes or has
   the tools in a non-functional state. Even if the tools were installed
@@ -357,7 +357,7 @@ Using Windows AppVMs in seamless mode
 -------------------------------------
 
 
-Note:** This feature is only available for Windows 7
+**Note:** This feature is only available for Windows 7
 
 Once you start a Windows-based AppVM with Qubes Tools installed, you can
 easily start individual applications from the VM (note the ``-a`` switch
@@ -450,7 +450,7 @@ default, but working only for Windows 7. If that feature is selected
 during installation, completion of the process requires two reboots:
 
 - The private disk is initialized and formatted on the first reboot
-  after tools installation. It can’t be done during** the
+  after tools installation. It can’t be done **during** the
   installation because Xen mass storage drivers are not yet active.
 
 - User profiles are moved to the private disk on the next reboot after
@@ -546,15 +546,15 @@ be enabled or disabled during installation:
 
 
 
-In testing VMs only** it’s probably a good idea to install a VNC
+**In testing VMs only** it’s probably a good idea to install a VNC
 server before installing QWT. If something goes very wrong with the
 Qubes gui agent, a VNC server should still allow access to the OS.
 
-NOTE**: Xen PV disk drivers are not installed by default. This is
+**NOTE**: Xen PV disk drivers are not installed by default. This is
 because they seem to cause problems (BSOD = Blue Screen Of Death). We’re
 working with upstream devs to fix this. *However*, the BSOD seems to
 only occur after the first boot and everything works fine after that.
-Enable the drivers at your own risk** of course, but we welcome
+**Enable the drivers at your own risk** of course, but we welcome
 reports of success/failure in any case (backup your VM first!). With
 disk PV drivers absent ``qvm-block`` will not work for the VM, but you
 can still use standard Qubes inter-VM file copying mechanisms.
@@ -573,7 +573,7 @@ There are two text files, one small and one big, with names starting
 with ``Qubes_Windows_Tools``.
 
 Uninstalling QWT is supported from version 3.2.1. Uninstalling previous
-versions is not recommended**. After uninstalling you need to manually
+versions is **not recommended**. After uninstalling you need to manually
 enable the DHCP Client Windows service, or set IP settings yourself to
 restore network access.
 
@@ -687,7 +687,7 @@ not functioning), try to boot it in safe mode:
 
 Safe Mode should at least give you access to logs (see above).
 
-Please include appropriate logs when reporting bugs/problems.**
+**Please include appropriate logs when reporting bugs/problems.**
 Starting from version 2.4.2 logs contain QWT version, but if you’re
 using an earlier version be sure to mention which one. If the OS crashes
 (BSOD) please include the BSOD code and parameters in your bug report.
@@ -743,7 +743,7 @@ from current-testing, run this in dom0:
 ``qubes-dom0-update --enablerepo=qubes-dom0-current-testing qubes-windows-tools``
 
 That command will download a new QWT .iso from the testing repository.
-It goes without saying that you should backup your VMs** before
+It goes without saying that you should **backup your VMs** before
 installing anything from testing repos.
 
 .. |windows-seamless-4.png| image:: /attachment/doc/windows-seamless-4.png

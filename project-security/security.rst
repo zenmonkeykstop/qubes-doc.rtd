@@ -62,7 +62,7 @@ Qubes security team
 -------------------
 
 
-The Qubes security team (QST)** is the subset of the `core team <https://www.qubes-os.org/team/#core-team>`__ that is responsible for ensuring the security
+The **Qubes security team (QST)** is the subset of the `core team <https://www.qubes-os.org/team/#core-team>`__ that is responsible for ensuring the security
 of Qubes OS and the Qubes OS Project. In particular, the QST is
 responsible for:
 

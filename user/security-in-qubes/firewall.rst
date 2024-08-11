@@ -233,7 +233,7 @@ In the case where a specific TCP port needs to be exposed from a qubes
 to another one, you do not need to enable networking between them but
 you can use the qubes RPC service ``qubes.ConnectTCP``.
 
-1. Simple port binding**
+**1. Simple port binding**
 
 Consider the following example. ``mytcp-service`` qube has a TCP service
 running on port ``444`` and ``untrusted`` qube needs to access this
@@ -281,7 +281,7 @@ which means to use default local port of ``unstrusted`` as the same of
 the remote port and unspecified destination qube is ``@default`` by
 default in ``qrexec`` call.
 
-2. Binding remote port on another local port**
+**2. Binding remote port on another local port**
 
 Consider now the case where someone prefers to specify the destination
 qube and use another port in untrusted, for example ``10044``. Instead
@@ -305,7 +305,7 @@ use the tool as follow:
 The service of ``mytcp-service`` running on port ``444`` is now
 accessible in ``untrusted`` as ``localhost:10444``.
 
-3. Binding to different qubes using RPC policies**
+**3. Binding to different qubes using RPC policies**
 
 One can go further than the previous examples by redirecting different
 ports to different qubes. For example, let assume that another qube
@@ -333,7 +333,7 @@ now, calling it with port ``445``
 will restrict the binding to only the corresponding TCP port of
 ``mytcp-service-bis``.
 
-4. Permanent port binding**
+**4. Permanent port binding**
 
 For creating a permanent port bind between two qubes, ``systemd`` can be
 used. We use the case of the first example. In ``/rw/config`` (or any
@@ -425,7 +425,7 @@ interface ens6, but only to our local network 192.168.x.y/24.
    Note: `Issue #4028 <https://github.com/QubesOS/qubes-issues/issues/4028>`__
    discusses adding a command to automate exposing the port.
 
-1. Identify the IP addresses you will need to use for sys-net, sys-firewall and the destination qube.**
+**1. Identify the IP addresses you will need to use for sys-net, sys-firewall and the destination qube.**
 
 You can get this information using various methods, but only the first
 one can be used for ``sys-net`` outside world IP:
@@ -446,7 +446,7 @@ steps.
    Note: The vifx.0 interface is the one used by qubes connected to this
    netvm so it is *not* an outside world interface.
 
-2. Route packets from the outside world to the FirewallVM**
+**2. Route packets from the outside world to the FirewallVM**
 
 For the following example, we assume that the physical interface ens6 in
 sys-net is on the local network 192.168.x.y with the IP 192.168.x.n, and
@@ -557,7 +557,7 @@ Content of ``/rw/config/qubes-firewall-user-script`` in ``sys-net``:
 
 
 
-3. Route packets from the FirewallVM to the VM**
+**3. Route packets from the FirewallVM to the VM**
 
 For the following example, we use the fact that the physical interface
 of sys-firewall, facing sys-net, is eth0. Furthermore, we assume that
@@ -627,7 +627,7 @@ If the service should be available to other VMs on the same system, do
 not forget to specify the additional rules described earlier in this
 guide.
 
-4. Allow packets into the qube to reach the service**
+**4. Allow packets into the qube to reach the service**
 
 No routing is required in the destination qube, only filtering.
 

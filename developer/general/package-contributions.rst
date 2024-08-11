@@ -87,7 +87,7 @@ If you would like to update an already-contributed package
 (specifically, a fork owned by
 `QubesOS-contrib <https://github.com/QubesOS-contrib>`__), please submit
 a :doc:`signed </developer/code/code-signing>`, fast-forwardable pull request to that
-repo with your changes. Please note that your pull request must** be
+repo with your changes. Please note that your pull request **must** be
 both :doc:`signed </developer/code/code-signing>` and fast-forwardable, or else it
 will be closed without further review. One or more reviewers may post
 comments on your pull request. Please be prepared to read and respond to
@@ -135,7 +135,7 @@ The review procedure is as follows:
 
 
 In all the cases, the first condition to be validated by the QCR’s
-review is to ensure that the contribution will not** hijack any core
+review is to ensure that the contribution **will not** hijack any core
 packages of `QubesOS <https://github.com/QubesOS>`__ and of course, none
 of the `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ packages
 too. More precisely, particular attention to the whole build pipeline

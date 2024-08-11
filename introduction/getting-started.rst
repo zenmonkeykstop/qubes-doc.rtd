@@ -63,7 +63,7 @@ Color & Security
 ^^^^^^^^^^^^^^^^
 
 
-You’ll choose a color** for each of your qubes out of a predefined set
+You’ll choose a **color** for each of your qubes out of a predefined set
 of colors. Each window on your desktop will have its frame colored
 according to the color of that qube. These colored frames help you keep
 track of which qube each window belongs to and how trustworthy it is.
@@ -105,15 +105,15 @@ and :doc:`AwesomeWM </user/advanced-topics/awesomewm>`.
 The bar at the top of your screen in Qubes 4.0 includes the following
 XFCE component areas:
 
-- The Tray**, where many functional widgets live.
+- The **Tray**, where many functional widgets live.
 
-- Spaces**, an interface for `virtual desktops <https://en.wikipedia.org/wiki/Virtual_desktop>`__. Virtual
+- **Spaces**, an interface for `virtual desktops <https://en.wikipedia.org/wiki/Virtual_desktop>`__. Virtual
   desktops do not have any inherent security isolation properties, but
   some users find them useful for organizing things.
 
-- The Task Bar** where buttons for open and hidden windows live.
+- The **Task Bar** where buttons for open and hidden windows live.
 
-- The App Menu**, where you go to open an application within a qube,
+- The **App Menu**, where you go to open an application within a qube,
   to open a dom0 terminal, to access administrative UI tools such as
   the Qube Manager, or to access settings panels for your desktop
   environment.
@@ -125,21 +125,21 @@ recommend you spend some time going through `XFCE’s documentation <https://doc
 
 There are several tray widgets that are unique to Qubes OS:
 
-- The Whonix SDWDate** allows you to control the Tor connection in
+- The **Whonix SDWDate** allows you to control the Tor connection in
   your `sys-whonix <https://www.whonix.org/wiki/Qubes>`__ qube.
 
-- The Qubes Clipboard** lets you easily copy text from dom0.
+- The **Qubes Clipboard** lets you easily copy text from dom0.
 
-- The Qubes Devices** widget allows you to attach and detach devices
+- The **Qubes Devices** widget allows you to attach and detach devices
   — such as USB drives and cameras — to qubes.
 
-- The Qubes Disk Space** widget shows you how much storage you’re
+- The **Qubes Disk Space** widget shows you how much storage you’re
   using. It’ll notify you if you’re ever running out of space.
 
-- The Qubes Domains** widget allows you to manage running qubes, turn
+- The **Qubes Domains** widget allows you to manage running qubes, turn
   them on and off, and monitor RAM and CPU usage.
 
-- The Qubes Updater** widget informs you when updates are available
+- The **Qubes Updater** widget informs you when updates are available
   and helps you install them.
 
 
@@ -150,7 +150,7 @@ Qube Manager
 ^^^^^^^^^^^^
 
 
-To see all of your qubes at the same time, you can use the Qube Manager** (go to the App Menu → Qubes Tools → Qube Manager), which
+To see all of your qubes at the same time, you can use the **Qube Manager** (go to the App Menu → Qubes Tools → Qube Manager), which
 displays the states of all the qubes in your system, even the ones that
 aren’t running.
 
@@ -163,11 +163,11 @@ Command-line interface
 All aspects of Qubes OS can be controlled using command-line tools.
 Opening a terminal emulator in dom0 can be done in several ways:
 
-- Go to the App Menu and select Terminal Emulator** at the top.
+- Go to the App Menu and select **Terminal Emulator** at the top.
 
 - Press ``Alt``+ ``F3`` and search for ``xfce terminal``.
 
-- Right-click on the desktop and select Open Terminal Here**.
+- Right-click on the desktop and select **Open Terminal Here**.
 
 
 
@@ -181,14 +181,14 @@ First boot
 
 When you install Qubes OS, a number of qubes are pre-configured for you:
 
-- Templates:** ``fedora-XX`` (``XX`` being the version number)
+- **Templates:** ``fedora-XX`` (``XX`` being the version number)
 
-- Admin qube:** ``dom0``
+- **Admin qube:** ``dom0``
 
-- Service qubes:** ``sys-usb``, ``sys-net``, ``sys-firewall``, and
+- **Service qubes:** ``sys-usb``, ``sys-net``, ``sys-firewall``, and
   ``sys-whonix``
 
-- App qubes** configured to prioritize security by compartmentalizing
+- **App qubes** configured to prioritize security by compartmentalizing
   tasks and types of data: ``work``, ``personal``, ``untrusted``, and
   ``vault``. (There is nothing special about these qubes. If you were
   to create a black qube and name it ``vault``, it would be the same as
@@ -207,9 +207,9 @@ Adding, removing, and listing qubes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-You can easily create a new qube with the Create Qubes VM** option in
+You can easily create a new qube with the **Create Qubes VM** option in
 the App Menu. If you need to add or remove qubes, simply use the Qube
-Manager’s Add** and Remove** buttons. You can also add, remove, and
+Manager’s **Add** and **Remove** buttons. You can also add, remove, and
 list qubes from the command line using the following tools:
 
 - ``qvm-create``

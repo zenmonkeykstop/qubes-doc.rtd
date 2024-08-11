@@ -3,7 +3,7 @@ Qubes security pack (qubes-secpack)
 ===================================
 
 
-The Qubes security pack (qubes-secpack)** is a Git repository that
+The **Qubes security pack (qubes-secpack)** is a Git repository that
 contains:
 
 - `Qubes security bulletins (QSBs) <https://www.qubes-os.org/security/qsb/>`__
@@ -128,7 +128,7 @@ PGP key policies
 ----------------
 
 
-- Inclusion criteria.** The qubes-secpack generally includes only
+- **Inclusion criteria.** The qubes-secpack generally includes only
   those PGP keys used to sign some kind of official project asset, such
   as Qubes release ISOs (release signing keys), Git tags and commits
   (code signing, doc signing, and security team keys), and the
@@ -138,7 +138,7 @@ PGP key policies
   rule: the official :ref:`Qubes security team <project-security/security:qubes security team>` email address, which is used
   to report security vulnerabilities in Qubes OS to our security team.
 
-- Key signing (certification).** Only some keys in the qubes-secpack
+- **Key signing (certification).** Only some keys in the qubes-secpack
   are signed by the QMSK. Keys that are not signed directly by the QMSK
   are still signed indirectly by virtue of being included in the
   qubes-secpack, which is itself signed (via Git tags and/or commits)

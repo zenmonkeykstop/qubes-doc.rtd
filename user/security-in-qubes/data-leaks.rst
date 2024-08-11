@@ -7,7 +7,7 @@ The Role of the Firewall
 ------------------------
 
 
-:doc:`Firewalling in Qubes </user/security-in-qubes/firewall>` is not intended to be a leak-prevention mechanism.**
+:doc:`Firewalling in Qubes </user/security-in-qubes/firewall>` **is not intended to be a leak-prevention mechanism.**
 
 There are several reasons for this, which will be explained below.
 However, the main reason is that Qubes cannot prevent an attacker who
@@ -50,13 +50,13 @@ Types of Data Leaks
 In order to understand and attempt to prevent data leaks in Qubes, we
 must distinguish among three different types of relevant data leaks:
 
-1. Intentional leaks.** Malicious software which actively tries to
+1. **Intentional leaks.** Malicious software which actively tries to
    leak data out of an app qube, perhaps via cooperative covert channels
    established with other malicious software in another app qube or on
    some server via networking, if networking, even limited, is allowed
    for the app qube.
 
-2. Intentional sniffing.** Malicious software trying to use side
+2. **Intentional sniffing.** Malicious software trying to use side
    channels to, e.g., actively guess some key material used in another
    VM by some non-malicious software there (e.g., non-leak-proof GPG
    accidentally leaking out bits of the private key by generating some
@@ -67,7 +67,7 @@ must distinguish among three different types of relevant data leaks:
    no way to trigger the target crypto operation explicitly and it is
    normally required that the attacker trigger many such operations.
 
-3. Unintentional leaks.** Non-malicious software which is either buggy
+3. **Unintentional leaks.** Non-malicious software which is either buggy
    or doesn’t maintain the privacy of user data, whether by design or
    accident. For example, software which automatically sends error
    reports to a remote server, where these reports contain details about

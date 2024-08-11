@@ -11,7 +11,7 @@ If you’ve installed successfully in legacy mode but had to change some
 kernel parameters for it to work, you should try installing in UEFI mode
 with the same parameters.
 
-Change the xen configuration on a USB media**
+**Change the xen configuration on a USB media**
 
 1. Attach the usb disk, mount the EFI partition (second partition
    available on the disk)
@@ -33,7 +33,7 @@ Change the xen configuration on a USB media**
 
 
 
-Change xen configuration directly in an iso image** 01. Set up a loop
+**Change xen configuration directly in an iso image** 01. Set up a loop
 device (replacing ``X`` with your ISO’s version name):
 ``losetup -P /dev/loop0 Qubes-RX-x86_64.iso`` 02. Mount the loop device:
 ``sudo mount /dev/loop0p2 /mnt`` 03. Edit ``EFI/BOOT/BOOTX64.cfg`` to
@@ -226,7 +226,7 @@ process:
          noexitboot=1
 
 
-   Note:** You must add these parameters on two separate new lines
+   **Note:** You must add these parameters on two separate new lines
    (one parameter on each line) at the end of each section that includes
    a kernel line (i.e., all sections except the first one, since it
    doesn’t have a kernel line).
@@ -252,7 +252,7 @@ encountered this issue, by:
          noexitboot=1
 
 
-   Note:** You must add these parameters on two separate new lines
+   **Note:** You must add these parameters on two separate new lines
    (one parameter on each line) at the end of each section that includes
    a kernel line (i.e., all sections except the first one, since it
    doesn’t have a kernel line).

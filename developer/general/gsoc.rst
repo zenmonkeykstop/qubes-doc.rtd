@@ -161,9 +161,9 @@ Qubes as a Vagrant provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Qubes as a Vagrant provider
+**Project**: Qubes as a Vagrant provider
 
-Brief explanation**: Currently using Vagrant on Qubes requires finding
+**Brief explanation**: Currently using Vagrant on Qubes requires finding
 an image that uses Docker as isolation provider and running Docker in a
 qube, or downloading the Vagrantfile and manually setting up a qube
 according to the Vagrantfile. This project aims at simplifying this
@@ -171,7 +171,7 @@ workflow. Since introduction of Admin API, it’s possible for a qube to
 provision another qube - which is exactly what is needed for Vagrant.
 `Related discussion <https://groups.google.com/d/msgid/qubes-devel/535299ca-d16a-4a70-8223-a4ac6be4be41%40googlegroups.com>`__
 
-Expected results**:
+**Expected results**:
 
 - Design how Vagrant Qubes provider should look like, including:
 
@@ -190,9 +190,9 @@ Expected results**:
 
 
 
-Difficulty**: medium
+**Difficulty**: medium
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - Ruby
 
@@ -200,23 +200,23 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 350 hours
+**Size of the project**: 350 hours
 
-Mentor**: `Wojtek Porczyk <https://www.qubes-os.org/team/>`__, `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Wojtek Porczyk <https://www.qubes-os.org/team/>`__, `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 System health monitor
 ^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: System health monitor
+**Project**: System health monitor
 
-Brief explanation**: A tool that informs the user about common system
+**Brief explanation**: A tool that informs the user about common system
 and configuration issues. Some of this is already available, but
 scattered across different places. See related issues:
 `6663 <https://github.com/QubesOS/qubes-issues/issues/6663>`__,
 `2134 <https://github.com/QubesOS/qubes-issues/issues/2134>`__
 
-Expected results**:
+**Expected results**:
 
 - a tool / service that checks for common issues and things needing
   user attention, for example:
@@ -238,9 +238,9 @@ Expected results**:
 
 
 
-Difficulty**: medium
+**Difficulty**: medium
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - Python
 
@@ -250,21 +250,21 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 350 hours
+**Size of the project**: 350 hours
 
-Mentor**: `Marta Marczykowska-Górecka <https://www.qubes-os.org/team/>`__
+**Mentor**: `Marta Marczykowska-Górecka <https://www.qubes-os.org/team/>`__
 
 Mechanism for maintaining in-VM configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Mechanism for maintaining in-VM configuration
+**Project**: Mechanism for maintaining in-VM configuration
 
-Brief explanation**: Large number of VMs is hard to maintain.
+**Brief explanation**: Large number of VMs is hard to maintain.
 Templates helps with keeping them updated, but many applications have
 configuration in user home directory, which is not synchronized.
 
-Expected results**:
+**Expected results**:
 
 - Design a mechanism how to *safely* synchronize application
   configuration living in user home directory (``~/.config``, some
@@ -279,9 +279,9 @@ Expected results**:
 
 
 
-Difficulty**: medium
+**Difficulty**: medium
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - shell and/or python scripting
 
@@ -289,17 +289,17 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 175 hours
+**Size of the project**: 175 hours
 
-Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
+**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
 
 Qubes Live USB
 ^^^^^^^^^^^^^^
 
 
-Project**: Revive Qubes Live USB, integrate it with installer
+**Project**: Revive Qubes Live USB, integrate it with installer
 
-Brief explanation**: Qubes Live USB is based on Fedora tools to build
+**Brief explanation**: Qubes Live USB is based on Fedora tools to build
 live distributions. But for Qubes we need some adjustments: starting Xen
 instead of Linux kernel, smarter copy-on-write handling (we run there
 multiple VMs, so a lot more data to save) and few more. Additionally in
@@ -310,7 +310,7 @@ and installation image. More details:
 `#1552 <https://github.com/QubesOS/qubes-issues/issues/1552>`__,
 `#1965 <https://github.com/QubesOS/qubes-issues/issues/1965>`__.
 
-Expected results**:
+**Expected results**:
 
 - Adjust set of VMs and templates included in live edition.
 
@@ -329,9 +329,9 @@ Expected results**:
 
 
 
-Difficulty**: hard
+**Difficulty**: hard
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - System startup sequence: bootloaders (isolinux, syslinux, grub,
   UEFI), initramfs, systemd.
@@ -343,24 +343,24 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 350 hours
+**Size of the project**: 350 hours
 
-Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
+**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
 
 LogVM(s)
 ^^^^^^^^
 
 
-Project**: LogVM(s)
+**Project**: LogVM(s)
 
-Brief explanation**: Qubes AppVMs do not have persistent /var (on
+**Brief explanation**: Qubes AppVMs do not have persistent /var (on
 purpose). It would be useful to send logs generated by various VMs to a
 dedicated log-collecting VM. This way logs will not only survive VM
 shutdown, but also be immune to altering past entries. See
 `#830 <https://github.com/QubesOS/qubes-issues/issues/830>`__ for
 details.
 
-Expected results**:
+**Expected results**:
 
 - Design a *simple* protocol for transferring logs. The less metadata
   (parsed in log-collecting VM) the better.
@@ -379,9 +379,9 @@ Expected results**:
 
 
 
-Difficulty**: easy
+**Difficulty**: easy
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - syslog
 
@@ -391,19 +391,19 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 175 hours
+**Size of the project**: 175 hours
 
-Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
+**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__
 
 Whonix IPv6 and nftables support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Whonix IPv6 and nftables support
+**Project**: Whonix IPv6 and nftables support
 
-Brief explanation**: `T509 <https://phabricator.whonix.org/T509>`__
+**Brief explanation**: `T509 <https://phabricator.whonix.org/T509>`__
 
-Expected results**:
+**Expected results**:
 
 - Work at upstream Tor: An older version of
   `TransparentProxy <https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxy>`__
@@ -425,9 +425,9 @@ Expected results**:
 
 
 
-Difficulty**: medium
+**Difficulty**: medium
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - nftables
 
@@ -437,17 +437,17 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 175 hours
+**Size of the project**: 175 hours
 
-Mentor**: `Patrick Schleizer <https://www.qubes-os.org/team/>`__
+**Mentor**: `Patrick Schleizer <https://www.qubes-os.org/team/>`__
 
 GUI agent for Windows 8/10
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: GUI agent for Windows 8/10
+**Project**: GUI agent for Windows 8/10
 
-Brief explanation**: Add support for Windows 8+ to the Qubes GUI agent
+**Brief explanation**: Add support for Windows 8+ to the Qubes GUI agent
 and video driver. Starting from Windows 8, Microsoft requires all video
 drivers to conform to the WDDM display driver model which is
 incompatible with the current Qubes video driver. Unfortunately the WDDM
@@ -460,26 +460,26 @@ have access to system video memory and rendering surfaces (a key feature
 that would simplify seamless GUI mode).
 `#1861 <https://github.com/QubesOS/qubes-issues/issues/1861>`__
 
-Expected results**: Working display-only WDDM video driver or
+**Expected results**: Working display-only WDDM video driver or
 significant progress towards making the full WDDM driver work correctly.
 
-Difficulty**: hard
+**Difficulty**: hard
 
-Knowledge prerequisite**: C/C++ languages, familiarity with Windows
+**Knowledge prerequisite**: C/C++ languages, familiarity with Windows
 API, familiarity with the core Windows WDM driver model. Ideally
 familiarity with the WDDM display driver model.
 
-Size of the project**: 175 hours
+**Size of the project**: 175 hours
 
-Mentor**: `Rafał Wojdyła <https://www.qubes-os.org/team/>`__
+**Mentor**: `Rafał Wojdyła <https://www.qubes-os.org/team/>`__
 
 GNOME support in dom0 / GUI VM
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: GNOME support in dom0
+**Project**: GNOME support in dom0
 
-Brief explanation**: Integrating GNOME into Qubes dom0. This include:
+**Brief explanation**: Integrating GNOME into Qubes dom0. This include:
 
 - patching window manager to add colorful borders
 
@@ -494,7 +494,7 @@ Brief explanation**: Integrating GNOME into Qubes dom0. This include:
 
 
 
-Expected results**:
+**Expected results**:
 
 - Review existing support for other desktop environments (KDE, Xfce4,
   i3, awesome).
@@ -520,9 +520,9 @@ Expected results**:
 
 
 
-Difficulty**: hard
+**Difficulty**: hard
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - GNOME architecture
 
@@ -532,17 +532,17 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 175 hours
+**Size of the project**: 175 hours
 
-Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__, `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__, `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Generalize the Qubes PDF Converter to other types of files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Qubes Converters
+**Project**: Qubes Converters
 
-Brief explanation**: One of the pioneering ideas of Qubes is to use
+**Brief explanation**: One of the pioneering ideas of Qubes is to use
 disposable virtual machines to convert untrustworthy files (such as
 documents given to journalists by unknown and potentially malicious
 whistleblowers) into trustworthy files. See `Joanna’s blog on the Qubes PDF Convert <https://theinvisiblethings.blogspot.co.uk/2013/02/converting-untrusted-pdfs-into-trusted.html>`__
@@ -555,31 +555,31 @@ For example the Qubes PDF converter typically leads to lower quality
 PDFs (e.g. cut and paste is no longer possible), because this makes the
 conversion process safer.
 
-Expected results**: We expect that in the timeframe, it will be
+**Expected results**: We expect that in the timeframe, it will be
 possible to implement many converters for many file formats. However, if
 any unexpected difficulties arise, we would prioritise a small number of
 safe and high quality converters over a large number of unsafe or
 unuseful converters.
 
-Difficulty**: easy
+**Difficulty**: easy
 
-Knowledge prerequisite**: Most of the coding will probably be
+**Knowledge prerequisite**: Most of the coding will probably be
 implemented as shell scripts to interface with pre-existing converters
 (such as ImageMagick in the Qubes PDF converter). However, shell scripts
 are not safe for processing untrusted data, so any extra processing will
 need to be implemented in another language – probably Python.
 
-Size of the project**: 175 hours
+**Size of the project**: 175 hours
 
-Mentors**: Andrew Clausen and Jean-Philippe Ouellet
+**Mentors**: Andrew Clausen and Jean-Philippe Ouellet
 
 Progress towards reproducible builds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Progress towards reproducible builds
+**Project**: Progress towards reproducible builds
 
-Brief explanation**: A long-term goal is to be able to build the
+**Brief explanation**: A long-term goal is to be able to build the
 entire OS and installation media in a completely bit-wise deterministic
 manner, but there are many baby steps to be taken along that path. See:
 
@@ -593,31 +593,31 @@ manner, but there are many baby steps to be taken along that path. See:
 
 for more information and qubes-specific background.
 
-Expected results**: Significant progress towards making the Qubes
+**Expected results**: Significant progress towards making the Qubes
 build process deterministic. This would likely involve cooperation with
 and hacking on several upstream build tools to eliminate sources of
 variability.
 
-Difficulty**: medium
+**Difficulty**: medium
 
-Knowledge prerequisite**: qubes-builder :doc:`[1] </developer/building/qubes-builder>`
+**Knowledge prerequisite**: qubes-builder :doc:`[1] </developer/building/qubes-builder>`
 :doc:`[2] </developer/building/qubes-builder-details>`
 `[3] <https://github.com/QubesOS/qubes-builder/tree/master/doc>`__, and
 efficient at introspecting complex systems: comfortable with tracing and
 debugging tools, ability to quickly identify and locate issues within a
 large codebase (upstream build tools), etc.
 
-Size of the project**: 350 hours
+**Size of the project**: 350 hours
 
-Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Porting Qubes to ARM/aarch64
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Porting Qubes to ARM/aarch64
+**Project**: Porting Qubes to ARM/aarch64
 
-Brief explanation**:
+**Brief explanation**:
 
 Qubes currently only supports the x86_64 CPU architecture. Xen currently
 has additional support for ARM32/ARM64 processors, however work needs to
@@ -636,7 +636,7 @@ Some related discussion:
 
 
 
-Expected results**:
+**Expected results**:
 
 - Add cross-compilation support to qubes-builder and related
   components.
@@ -651,9 +651,9 @@ Expected results**:
 
 
 
-Difficulty**: hard
+**Difficulty**: hard
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - Libvirt and Qubes toolstacks (C and python languages).
 
@@ -663,24 +663,24 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 350 hours
+**Size of the project**: 350 hours
 
-Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Android development in Qubes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Research running Android in Qubes VM (probably HVM) and
+**Project**: Research running Android in Qubes VM (probably HVM) and
 connecting it to Android Studio
 
-Brief explanation**: The goal is to enable Android development (and
+**Brief explanation**: The goal is to enable Android development (and
 testing!) on Qubes OS. Currently it’s only possible using qemu-emulated
 Android for ARM. Since it’s software emulation it’s rather slow.
 Details, reference:
 `#2233 <https://github.com/QubesOS/qubes-issues/issues/2233>`__
 
-Expected results**:
+**Expected results**:
 
 - a simple way of setting up Android qubes with hardware emulation
   (distributed as a template or as a salt, handling various modern
@@ -693,22 +693,22 @@ Expected results**:
 
 
 
-Difficulty**: hard
+**Difficulty**: hard
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
-Size of the project**: 350 hours
+**Size of the project**: 350 hours
 
-Mentor**: Inquire on :ref:`qubes-devel <introduction/support:qubes-devel>`.
+**Mentor**: Inquire on :ref:`qubes-devel <introduction/support:qubes-devel>`.
 
 Admin API Fuzzer
 ^^^^^^^^^^^^^^^^
 
 
-Project**: Develop a
+**Project**: Develop a
 `Fuzzer <https://en.wikipedia.org/wiki/Fuzzing>`__ for the :doc:`Qubes OS Admin API </developer/services/admin-api>`.
 
-Brief explanation**: The :doc:`Qubes OS Admin API </developer/services/admin-api>`
+**Brief explanation**: The :doc:`Qubes OS Admin API </developer/services/admin-api>`
 enables VMs to execute privileged actions on other VMs or dom0 - if
 allowed by the Qubes OS RPC policy. Programming errors in the Admin API
 however may cause these access rights to be more permissive than
@@ -719,7 +719,7 @@ security assessments are required. A
 `Fuzzer <https://en.wikipedia.org/wiki/Fuzzing>`__ would help to
 automate part of these assessments.
 
-Expected results**:
+**Expected results**:
 
 - fully automated & extensible Fuzzer for parts of the Admin API
 
@@ -727,9 +727,9 @@ Expected results**:
 
 
 
-Difficulty**: medium
+**Difficulty**: medium
 
-Prerequisites**:
+**Prerequisites**:
 
 - basic Python understanding
 
@@ -740,25 +740,25 @@ Prerequisites**:
 
 
 
-Size of the project**: 175 hours
+**Size of the project**: 175 hours
 
-Mentor**: Inquire on :ref:`qubes-devel <introduction/support:qubes-devel>`.
+**Mentor**: Inquire on :ref:`qubes-devel <introduction/support:qubes-devel>`.
 
 Secure Boot support
 ^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Add support for protecting boot binaries with Secure Boot
+**Project**: Add support for protecting boot binaries with Secure Boot
 technology, using user-generated keys.
 
-Brief explanation**: Since recently, Xen supports “unified EFI boot”
+**Brief explanation**: Since recently, Xen supports “unified EFI boot”
 which allows to sign not only Xen binary itself, but also dom0 kernel
 and their parameters. While the base technology is there, enabling it is
 a painful and complex process. The goal of this project is to integrate
 configuration of this feature into Qubes, automating as much as
 possible. See discussion in `issue #4371 <https://github.com/QubesOS/qubes-issues/issues/4371>`__
 
-Expected results**:
+**Expected results**:
 
 - a tool to prepare relevant boot files for unified Xen EFI boot - this
   includes collecting Xen, dom0 kernel, initramfs, config file, and
@@ -774,9 +774,9 @@ Expected results**:
 
 
 
-Difficulty**: hard
+**Difficulty**: hard
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - basic understanding of Secure Boot
 
@@ -784,29 +784,29 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 175 hours
+**Size of the project**: 175 hours
 
-Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Reduce logging of Disposable VMs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Reduce logging of Disposable VMs
+**Project**: Reduce logging of Disposable VMs
 
-Brief explanation**: Partial metadata of a DisposableVM is stored in
+**Brief explanation**: Partial metadata of a DisposableVM is stored in
 the dom0 filesystem. This applies to various logs, GUI status files etc.
 There should be an option to hide as much of that as possible -
 including bypassing some logging, and removing various state files, or
 at the very least obfuscating any hints what is running inside
 DisposableVM. More details at `issue #4972 <https://github.com/QubesOS/qubes-issues/issues/4972>`__
 
-Expected results**: A DisposableVM should not leave logs hinting what
+**Expected results**: A DisposableVM should not leave logs hinting what
 was running inside.
 
-Difficulty**: medium
+**Difficulty**: medium
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - Python scripting
 
@@ -815,9 +815,9 @@ Knowledge prerequisite**:
 
 
 
-Size of the project**: 350 hours
+**Size of the project**: 350 hours
 
-Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 Past Projects
 -------------
@@ -835,9 +835,9 @@ Template manager, new template distribution mechanism
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Project**: Template manager, new template distribution mechanism
+**Project**: Template manager, new template distribution mechanism
 
-Brief explanation**: Template VMs currently are distributed using RPM
+**Brief explanation**: Template VMs currently are distributed using RPM
 packages. There are multiple problems with that, mostly related to
 static nature of RPM package (what files belong to the package). This
 means such Template VM cannot be renamed, migrated to another storage
@@ -848,7 +848,7 @@ details:
 `#2534 <https://github.com/QubesOS/qubes-issues/issues/2534>`__,
 `#3573 <https://github.com/QubesOS/qubes-issues/issues/3573>`__.
 
-Expected results**:
+**Expected results**:
 
 - Design new mechanism for distributing templates (possibly including
   some package format - either reuse something already existing, or
@@ -899,7 +899,7 @@ Expected results**:
 
 
 
-Knowledge prerequisite**:
+**Knowledge prerequisite**:
 
 - Large files (disk images) handling (sparse files, archive formats)
 
@@ -913,7 +913,7 @@ Knowledge prerequisite**:
 
 
 
-Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
+**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__
 
 
 ----

@@ -3,8 +3,8 @@ Autostart troubleshooting
 =========================
 
 
-The following instructions are valid for Qubes OS R4.0 legacy mode**
-and Qubes OS R4.1 legacy and UEFI modes**. For Qubes OS R4.0 in UEFI mode**, there is no GRUB, so manual boot from another operating system
+The following instructions are valid for **Qubes OS R4.0 legacy mode**
+and **Qubes OS R4.1 legacy and UEFI modes**. For **Qubes OS R4.0 in UEFI mode**, there is no GRUB, so manual boot from another operating system
 is needed.
 
 In several cases, there is a need to prevent ``autostart=True`` for

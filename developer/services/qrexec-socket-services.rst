@@ -103,7 +103,7 @@ Systemd unit files
 ^^^^^^^^^^^^^^^^^^
 
 
-/lib/systemd/user/qubes-qrexec-policy-agent.service**: This is the
+**/lib/systemd/user/qubes-qrexec-policy-agent.service**: This is the
 service configuration.
 
 .. code:: bash
@@ -123,7 +123,7 @@ service configuration.
 
 
 
-/lib/systemd/user/qubes-qrexec-policy-agent.socket**: This is the
+**/lib/systemd/user/qubes-qrexec-policy-agent.socket**: This is the
 socket file that will activate the service.
 
 .. code:: bash

@@ -3,7 +3,7 @@ Download mirrors
 ================
 
 
-Note:** The Qubes OS Project has no control over or access to data
+**Note:** The Qubes OS Project has no control over or access to data
 collected at these mirrors.
 
 List of Download Mirrors
@@ -23,7 +23,7 @@ instructions are helpful in streamlining the process.
 
 - We are happy to provide rsync or HTTP master.
 
-- Our preferred frequency is once every 24 hours**, but anything up
+- Our preferred frequency is **once every 24 hours**, but anything up
   to once every 6-8 hours is fine.
 
 - For technical accommodations, please contact
