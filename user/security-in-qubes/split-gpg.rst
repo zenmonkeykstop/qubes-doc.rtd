@@ -221,7 +221,9 @@ Thunderbird 78 and higher
 Starting with version 78, Thunderbird has a built-in PGP feature and no
 longer requires the Enigmail extension. For users coming from the
 Enigmail extension, the built-in functionality is more limited
-currently, including that public keys must live in your work-email qube with Thunderbird rather than your offline work-gpg qube**.
+currently, including that public keys must live in your**
+``work-email`` qube with Thunderbird rather than your offline**
+``work-gpg`` qube**.
 
 In ``work-email``, use the Thunderbird config editor (found at the
 bottom of preferences/options), and search for

@@ -217,7 +217,7 @@ and this operation can take some time. Moving profiles and, later on,
 updating a Windows installation, is performed in an early boot phase
 when ``qrexec`` is not yet running, so timeout may occur with the
 default value. To change the property use this command in ``dom0``:
-*(where is the name of your Windows VM)*
+*(where* ``<VMname>`` *is the name of your Windows VM)*
 
 .. code:: bash
 
@@ -335,7 +335,7 @@ availability breakdown.
    in the VM and will set appropriate properties for the VM, such as
    ``qrexec_installed``, ``guiagent_installed``, and ``default_user``.
    This can be verified (but is not required) using the ``qvm-prefs``
-   command *(where is the name of your Windows VM)*:
+   command *(where* ``<VMname>`` *is the name of your Windows VM)*:
 
    .. code:: bash
 
@@ -408,7 +408,8 @@ availability breakdown.
 10. Lastly to enable file copy operations to a Windows VM, the
     ``default_user`` property of this VM should be set to the
     ``<username>`` that you use to login to the Windows VM. This can be
-    done via the following command on a ``dom0`` terminal: *(where is the name of your Windows VM)*
+    done via the following command on a ``dom0`` terminal: *(where*
+    ``<VMname>`` *is the name of your Windows VM)*
     ``[user@dom0 ~] $ qvm-prefs <VMname> default_user <username>``
 
 
@@ -615,7 +616,7 @@ preparations have to be executed:
 - In the Qube Manager, refresh the applications of the newly created
   AppVM and select those applications that you want to make available
   from the disposable. Alternatively, in dom0 execute the command
-  ``qvm-sync-appmenus <VMname>``, *where is the name of your windows qube*.
+  ``qvm-sync-appmenus <VMname>``, *where* ``<VMname>`` *is the name of your windows qube*.
 
 - In the Qube Manager, go to the “Advanced” tab and enable the option
   ``Disposable template`` for your Windows qube. Alternatively, in dom0
@@ -641,7 +642,7 @@ disposable.
 
 For further information on usage of disposables, see :doc:`How to use disposables </user/how-to-guides/how-to-use-disposables>`.
 
-Caution:** *If a Windows-based disposable is used from another qube via the Open/Edit in DisposableVM command, this disposable may not close automatically, due to the command prompt window still running in this dispvm. In this case, the disposable has to be shut down manually.*
+Caution:** *If a Windows-based disposable is used from another qube via the* ``Open/Edit in DisposableVM`` *command, this disposable may not close automatically, due to the command prompt window still running in this dispvm. In this case, the disposable has to be shut down manually.*
 
 Installation logs
 -----------------

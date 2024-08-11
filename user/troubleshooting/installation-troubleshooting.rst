@@ -111,13 +111,11 @@ If you have one, follow the following instructions:
       nouveau.modeset=0 rd.driver.blacklist=nouveau video=vesa:off
 
 
-
 If the above code doesn’t fix the problem, replace it with:
 
 .. code:: bash
 
       noexitboot=1 modprobe.blacklist=nouveau rd.driver.blacklist=nouveau --- intitrd.img
-
 
 
 For more information, look at the `Nvidia Troubleshooting guide <https://forum.qubes-os.org/t/19021#disabling-nouveau>`__.
