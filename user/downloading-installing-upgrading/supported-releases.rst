@@ -52,14 +52,14 @@ releases, are available from our `download mirrors <https://www.qubes-os.org/dow
    * - Release 4.1
      - 2022-02-04
      - 2024-06-18
-     - Unsupported
+     - Supported
    * - Release 4.2
      - 2023-12-18
-     - TBD
+     - TBA
      - Supported
    * - Release 4.3
-     - TBD
-     - TBD
+     - TBA
+     - TBA
      - In development
    
 
@@ -158,8 +158,11 @@ status of an upstream release on the upstream distribution’s website
    * - Qubes OS
      - Fedora
      - Debian
+   * - Release 4.1
+     - 39
+     - 11, 12
    * - Release 4.2
-     - 39, 40
+     - 39
      - 12
    
 

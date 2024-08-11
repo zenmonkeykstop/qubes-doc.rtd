@@ -78,23 +78,36 @@ Windows Tools, it will probably contain incomplete private data;
 especially the folder ``AppData`` containing program configuration data
 will be missing. In this situation, it may be better to perform a new
 Windows installation, because repair may be difficult and trouble-prone.
+
 - First, be sure that the automatic repair function is disabled. In a
-command window, execute ``bcdedit /set recoveryenabled NO``, and check
-that this worked by issuing the command ``bcdedit``, without parameters,
-again. - Now, uninstall QWT 4.0.1.3, using the Apps and Features
-function of Windows. This will most likely result in a crash. - Restart
-Windows again, possibly two or three times, until repair options are
-offered. By hitting the F8 key, select the restart menu, and there
-select a start in safe mode (in German, it’s option number 4). - The
-system will start gain, but in a rather useless way. Just shut it down,
-and reboot again. - Now Windows will start normally. Check in the Apps
-and Features display, if there are any Xen drivers left. If so,
-uninstall them. - In the Windows device manager, check if there is still
-a (probably non working) Xen PV disk device. If so, uninstall it.
-Otherwise, QWT 4.1-68 will not install. - In the Apps and Features
-display, check again, if the Xen drivers are removed. A Xen Bus Package
-(version 8.2.1.8) may remain and cannot be removed, but does no harm.
-Any other Xen drivers should have disappeared.
+  command window, execute ``bcdedit /set recoveryenabled NO``, and
+  check that this worked by issuing the command ``bcdedit``, without
+  parameters, again.
+
+- Now, uninstall QWT 4.0.1.3, using the Apps and Features function of
+  Windows. This will most likely result in a crash.
+
+- Restart Windows again, possibly two or three times, until repair
+  options are offered. By hitting the F8 key, select the restart menu,
+  and there select a start in safe mode (in German, it’s option number
+  4).
+
+- The system will start gain, but in a rather useless way. Just shut it
+  down, and reboot again.
+
+- Now Windows will start normally. Check in the Apps and Features
+  display, if there are any Xen drivers left. If so, uninstall them.
+
+- In the Windows device manager, check if there is still a (probably
+  non working) Xen PV disk device. If so, uninstall it. Otherwise, QWT
+  4.1-68 will not install.
+
+- In the Apps and Features display, check again, if the Xen drivers are
+  removed. A Xen Bus Package (version 8.2.1.8) may remain and cannot be
+  removed, but does no harm. Any other Xen drivers should have
+  disappeared.
+
+
 
 Transferring the Windows Qube
 -----------------------------
@@ -120,13 +133,7 @@ BOOT DEVICE, which can be repaired as described above.
 
 After successful uninstallation of the PV disk drivers, the disks will
 appear as QEMU ATA disks.
-:warning: 
-   Caution:** This change may lead Windows to declare that the
 
-SYSTEM MESSAGE  for: /home/user/rst/qubes-doc-rst/user/templates/windows/migrate-to-4-1.rst:100: (WARNING/2) Field list ends without a blank line; unexpected unindent.
-Field list ends without a blank line; unexpected unindent.
-
-hardware has changed and that in consequence, the activation is no
-longer valid, possibly complaining that the use of the software is no
-longer lawful. It should be possible to reactivate the software if a
-valid product key is provided.
+.. warning::
+      
+      **Caution:**       This change may lead Windows to declare that the hardware has changed and that in consequence, the activation is no longer valid, possibly complaining that the use of the software is no longer lawful. It should be possible to reactivate the software if a valid product key is provided.

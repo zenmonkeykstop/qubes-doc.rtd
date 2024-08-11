@@ -23,8 +23,17 @@ with the ``qvm-device`` command and the Qubes Devices Widget. In Qubes
 functionality was moved to the Qubes Device Widget, the tool tray icon
 with a yellow square located in the top right of your screen by default.
 
-There are currently four categories of devices Qubes understands: -
-Microphones - Block devices - USB devices - PCI devices
+There are currently four categories of devices Qubes understands:
+
+- Microphones
+
+- Block devices
+
+- USB devices
+
+- PCI devices
+
+
 
 Microphones, block devices and USB devices can be attached with the
 GUI-tool. PCI devices can be attached using the Qube Settings, but

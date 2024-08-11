@@ -132,48 +132,56 @@ windows version:
      - Windows 7 x64
      - Windows 8.1/10/11 x64
    * - Qubes Video Driver
-     - 
-     - 
+     - y
+     - n
    * - Qubes Network Setup
-     - 
-     - 
+     - y
+     - y
    * - Private Volume Setup (move profiles)
-     - 
-     - 
+     - y
+     - y
    * - File sender/receiver
-     - 
-     - 
+     - y
+     - y
    * - Clipboard Copy/Paste
-     - 
-     - 
+     - y
+     - y
    * - Application shortcuts
-     - 
-     - 
+     - y
+     - y
    * - Copy/Edit in Disposable VM
-     - 
-     - 
+     - y
+     - y
    * - Block device
-     - 
-     - 
+     - y
+     - y
    * - USB device
-     - 
-     - 
+     - y
+     - y
    * - Audio
-     - 
-     - 
+     - y
+     - y
    
 
 
 Qubes Windows Tools are open source and are distributed under a GPL
 license.
 
-Notes:** - Currently only 64-bit versions of Windows 7, 8.1, 10 and 11
-are supported by Qubes Windows Tools. Only emulated SVGA GPU is
-supported (although `there has been reports <https://groups.google.com/forum/#!topic/qubes-users/cmPRMOkxkdA>`__
-on working GPU passthrough). - This page documents the process of
-installing Qubes Windows Tools in version R4.1**. - *In testing VMs only* it’s probably a good idea to install a VNC server before
-installing QWT. If something goes very wrong with the Qubes gui agent, a
-VNC server should still allow access to the OS.
+Notes:**
+
+- Currently only 64-bit versions of Windows 7, 8.1, 10 and 11 are
+  supported by Qubes Windows Tools. Only emulated SVGA GPU is supported
+  (although `there has been reports <https://groups.google.com/forum/#!topic/qubes-users/cmPRMOkxkdA>`__
+  on working GPU passthrough).
+
+- This page documents the process of installing Qubes Windows Tools in
+  version R4.1**.
+
+- *In testing VMs only* it’s probably a good idea to install a VNC
+  server before installing QWT. If something goes very wrong with the
+  Qubes gui agent, a VNC server should still allow access to the OS.
+
+
 
 Preparation
 -----------
@@ -217,7 +225,7 @@ and this operation can take some time. Moving profiles and, later on,
 updating a Windows installation, is performed in an early boot phase
 when ``qrexec`` is not yet running, so timeout may occur with the
 default value. To change the property use this command in ``dom0``:
-*(where ``<VMname>`` is the name of your Windows VM)*
+*(where is the name of your Windows VM)*
 
 .. code:: bash
 
@@ -335,7 +343,7 @@ availability breakdown.
    in the VM and will set appropriate properties for the VM, such as
    ``qrexec_installed``, ``guiagent_installed``, and ``default_user``.
    This can be verified (but is not required) using the ``qvm-prefs``
-   command *(where ``<VMname>`` is the name of your Windows VM)*:
+   command *(where is the name of your Windows VM)*:
 
    .. code:: bash
 
@@ -408,7 +416,7 @@ availability breakdown.
 10. Lastly to enable file copy operations to a Windows VM, the
     ``default_user`` property of this VM should be set to the
     ``<username>`` that you use to login to the Windows VM. This can be
-    done via the following command on a ``dom0`` terminal: *(where ``<VMname>`` is the name of your Windows VM)*
+    done via the following command on a ``dom0`` terminal: *(where is the name of your Windows VM)*
     ``[user@dom0 ~] $ qvm-prefs <VMname> default_user <username>``
 
 
@@ -436,23 +444,29 @@ the price of system stability (although Xen’s PV drivers on a Windows VM
 are usually very stable). They can be installed as an optional part of
 Qubes Windows Tools (QWT), which bundles Xen’s PV drivers.
 
-Notes** about using Xen’s VBD (storage) PV driver: - Windows 7:**
-Installing the driver requires a fully updated VM or else you’ll likely
-get a BSOD (“Blue Screen Of Death”) and a VM in a difficult to fix
-state. Updating Windows takes *hours* and for casual usage there isn’t
-much of a performance between the disk PV driver and the default one; so
-there is likely no need to go through the lengthy Windows Update process
-if your VM doesn’t have access to untrusted networks and if you don’t
-use I/O intensive apps or attach block devices. If you plan to update
-your newly installed Windows VM it is recommended that you do so
-*before* installing Qubes Windows Tools. Installing the driver will
-probably cause Windows 7 activation to become invalid, but the
-activation can be restored using the Microsoft telephone activation
-method. - The option to install the storage PV driver is disabled by
-default in Qubes Windows Tools - In case you already had QWT installed
-without the storage PV driver and you then updated the VM, you may then
-install the driver by again starting the QWT installer and selecting the
-change option.
+Notes** about using Xen’s VBD (storage) PV driver:
+
+- Windows 7:** Installing the driver requires a fully updated VM or
+  else you’ll likely get a BSOD (“Blue Screen Of Death”) and a VM in a
+  difficult to fix state. Updating Windows takes *hours* and for casual
+  usage there isn’t much of a performance between the disk PV driver
+  and the default one; so there is likely no need to go through the
+  lengthy Windows Update process if your VM doesn’t have access to
+  untrusted networks and if you don’t use I/O intensive apps or attach
+  block devices. If you plan to update your newly installed Windows VM
+  it is recommended that you do so *before* installing Qubes Windows
+  Tools. Installing the driver will probably cause Windows 7 activation
+  to become invalid, but the activation can be restored using the
+  Microsoft telephone activation method.
+
+- The option to install the storage PV driver is disabled by default in
+  Qubes Windows Tools
+
+- In case you already had QWT installed without the storage PV driver
+  and you then updated the VM, you may then install the driver by again
+  starting the QWT installer and selecting the change option.
+
+
 
 Using Windows AppVMs in seamless mode
 -------------------------------------
@@ -615,7 +629,7 @@ preparations have to be executed:
 - In the Qube Manager, refresh the applications of the newly created
   AppVM and select those applications that you want to make available
   from the disposable. Alternatively, in dom0 execute the command
-  ``qvm-sync-appmenus <VMname>``, *where ``<VMname>`` is the name of your windows qube*.
+  ``qvm-sync-appmenus <VMname>``, *where is the name of your windows qube*.
 
 - In the Qube Manager, go to the “Advanced” tab and enable the option
   ``Disposable template`` for your Windows qube. Alternatively, in dom0
@@ -641,7 +655,7 @@ disposable.
 
 For further information on usage of disposables, see :doc:`How to use disposables </user/how-to-guides/how-to-use-disposables>`.
 
-Caution:** *If a Windows-based disposable is used from another qube via the ``Open/Edit in DisposableVM`` command, this disposable may not close automatically, due to the command prompt window still running in this dispvm. In this case, the disposable has to be shut down manually.*
+Caution:** *If a Windows-based disposable is used from another qube via the `Open/Edit in DisposableVM` command, this disposable may not close automatically, due to the command prompt window still running in this dispvm. In this case, the disposable has to be shut down manually.*
 
 Installation logs
 -----------------
@@ -731,17 +745,17 @@ without ``.exe`` extension.
 Component-specific settings currently available:
 
 .. list-table:: 
-   :widths: 13 13 13 13 13 
+   :widths: 9 9 9 9 9 
    :align: center
    :header-rows: 1
 
-   * - /home/user/rst/qubes-doc-rst/user/templates/windows/qubes-windows-tools-4-1.rst:645: (INFO/1) Unexpected possible title overline or transition. Treating it as ordinary text because it's so short.  ** Component**
-     - /home/user/rst/qubes-doc-rst/user/templates/windows/qubes-windows-tools-4-1.rst:645: (INFO/1) Unexpected possible title overline or transition. Treating it as ordinary text because it's so short.  ** Setting**
-     - /home/user/rst/qubes-doc-rst/user/templates/windows/qubes-windows-tools-4-1.rst:645: (INFO/1) Unexpected possible title overline or transition. Treating it as ordinary text because it's so short.  ** Type**
-     - /home/user/rst/qubes-doc-rst/user/templates/windows/qubes-windows-tools-4-1.rst:645: (INFO/1) Unexpected possible title overline or transition. Treating it as ordinary text because it's so short.  ** Description**
+   * - Co mponent
+     - Se tting
+     - Type
+     - Description
      - Default value
    * - qga
-     - Disa bleCursor
+     - Dis ableC ursor
      - DWORD
      - Disable cursor in the VM. Useful for integration with Qubes desktop so you don’t see two cursors. Can be disabled if you plan to use the VM through a remote desktop connection of some sort. Needs gui agent restart to apply change (locking OS/logoff should be enough since qga is restarted on desktop change).
      - 1

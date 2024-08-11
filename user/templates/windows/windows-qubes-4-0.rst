@@ -12,38 +12,102 @@ Simple Windows install
 If you just want something simple and you can live without some
 features.
 
-Works: - display (1440x900 or 1280x1024 are a nice fit onto FHD hw
-display) - keyboard (incl. correct mapping), pointing device - network
-(emulated Realtek NIC)
+Works:
 
-Does not work: - copy & paste (the qubes way) - copying files into / out
-of the VM (the qubes way) - assigning USB devices (the qubes way via the
-tray applet) - audio output and input - PCI device 5853:0001 (Xen
-platform device) - no driver - all other features/hardware needing
-special tool/driver support
+- display (1440x900 or 1280x1024 are a nice fit onto FHD hw display)
 
-Installation procedure: - Have the Windows 10 ISO image (I used the
-64-bit version) downloaded in some qube. - Create a new Qube: - Name:
-Win10, Color: red - Standalone Qube not based on a template -
-Networking: sys-firewall (default) - Launch settings after creation:
-check - Click “OK”. - Settings: - Basic: - System storage: 30000+ MB -
-Advanced: - Include in memory balancing: uncheck - Initial memory: 4096+
-MB - Kernel: None - Mode: HVM - Click “Apply”. - Click “Boot from
-CDROM”: - “from file in qube”: - Select the qube that has the ISO. -
-Select ISO by clicking “…”. - Click “OK” to boot into the windows
-installer. - Windows Installer: - Mostly as usual, but automatic reboots
-will halt the qube - just restart it again and again until the
-installation is finished. - Install on first disk. - Windows license may
-be read from flash via root in dom0:
+- keyboard (incl. correct mapping), pointing device
 
-.. code:: bash
+- network (emulated Realtek NIC)
 
-      `strings < /sys/firmware/acpi/tables/MSDM`
-      
-      Alternatively, you can also try a Windows 7 license key (as of 2018/11
-      they are still accepted for a free upgrade).
-      
-      I first installed Windows and all updates, then entered the license key.
+
+
+Does not work:
+
+- copy & paste (the qubes way)
+
+- copying files into / out of the VM (the qubes way)
+
+- assigning USB devices (the qubes way via the tray applet)
+
+- audio output and input
+
+- PCI device 5853:0001 (Xen platform device) - no driver
+
+- all other features/hardware needing special tool/driver support
+
+
+
+Installation procedure:
+
+- Have the Windows 10 ISO image (I used the 64-bit version) downloaded
+  in some qube.
+
+- Create a new Qube:
+
+  - Name: Win10, Color: red
+
+  - Standalone Qube not based on a template
+
+  - Networking: sys-firewall (default)
+
+  - Launch settings after creation: check
+
+  - Click “OK”.
+
+
+
+- Settings:
+
+  - Basic:
+
+    - System storage: 30000+ MB
+
+
+
+  - Advanced:
+
+    - Include in memory balancing: uncheck
+
+    - Initial memory: 4096+ MB
+
+    - Kernel: None
+
+    - Mode: HVM
+
+
+
+  - Click “Apply”.
+
+  - Click “Boot from CDROM”:
+
+    - “from file in qube”:
+
+      - Select the qube that has the ISO.
+
+      - Select ISO by clicking “…”.
+
+
+
+    - Click “OK” to boot into the windows installer.
+
+
+
+
+
+- Windows Installer:
+
+  - Mostly as usual, but automatic reboots will halt the qube - just
+    restart it again and again until the installation is finished.
+
+  - Install on first disk.
+
+  - Windows license may be read from flash via root in dom0:
+    ``strings < /sys/firmware/acpi/tables/MSDM``
+    Alternatively, you can also try a Windows 7 license key (as of
+    2018/11 they are still accepted for a free upgrade).
+    I first installed Windows and all updates, then entered the
+    license key.
 
 
 
@@ -301,11 +365,16 @@ Windows as a template
 ---------------------
 
 
-Windows 7 and 10 can be installed as TemplateVM by selecting ~~~
-qvm-create –class TemplateVM –property virt_mode=HVM –property kernel=’’
-–label black Windows-template ~~~ when creating the VM. To have the user
-data stored in AppVMs depending on this template, Windows 7 and 10 have
-to be treated differently:
+Windows 7 and 10 can be installed as TemplateVM by selecting
+
+.. code:: bash
+
+      qvm-create --class TemplateVM --property virt_mode=HVM --property kernel='' --label black Windows-template
+
+
+
+when creating the VM. To have the user data stored in AppVMs depending
+on this template, Windows 7 and 10 have to be treated differently:
 
 - For Windows 7, the option to move the user directories from drive
   ``C`` to drive ``D`` works and causes any user data to be stored in
@@ -333,8 +402,13 @@ good idea to test them first in a cloned TemplateVM before applying them
 in the production VM.
 
 AppVMs based on these templates can be created the normal way by using
-the Qube Manager or by specifying ~~~ qvm-create –class=AppVM –template=
-~~~
+the Qube Manager or by specifying
+
+.. code:: bash
+
+      qvm-create --class=AppVM --template=<VMname>
+
+
 
 On starting the AppVM, sometimes a message is displayed that the Xen PV
 Network Class needs to restart the system. This message can be safely

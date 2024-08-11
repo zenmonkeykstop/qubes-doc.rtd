@@ -81,11 +81,19 @@ Example: ``qrexec-policy-agent``
 
 
 ``qrexec-policy-agent`` is the program that handles “ask” prompts for
-Qubes RPC calls. It is a good example of an application that: * Uses
-Python and asyncio. * Runs as a daemon, to save some overhead on
-starting process. * Runs as a normal user. This is achieved using
-user’s instance of systemd. * Uses systemd socket activation. This way
-it can be installed in all VMs, but started only if it’s ever needed.
+Qubes RPC calls. It is a good example of an application that:
+
+- Uses Python and asyncio.
+
+- Runs as a daemon, to save some overhead on starting process.
+
+- Runs as a normal user. This is achieved using user’s instance of
+  systemd.
+
+- Uses systemd socket activation. This way it can be installed in all
+  VMs, but started only if it’s ever needed.
+
+
 
 See the
 `qubes-core-qrexec <https://github.com/QubesOS/qubes-core-qrexec/>`__

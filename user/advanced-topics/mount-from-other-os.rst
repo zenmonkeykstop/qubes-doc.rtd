@@ -12,7 +12,13 @@ the system.
 
 These functions are manual and do not require any Qubes specific tools.
 All steps assume the default Qubes install with the following
-components: - LUKS encrypted disk - LVM based VM storage
+components:
+
+- LUKS encrypted disk
+
+- LVM based VM storage
+
+
 
 Before beginning, if attempting to access one Qubes system from another,
 it is recommended to pass the entire encrypted Qubes disk to an isolated

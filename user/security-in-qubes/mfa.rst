@@ -463,7 +463,7 @@ In dom0:
 
 In your USB VM:
 
-3. Create udev hook. Store it in ``/rw/config`` to have it persist
+1. Create udev hook. Store it in ``/rw/config`` to have it persist
    across VM restarts. For example name the file
    ``/rw/config/yubikey.rules``. Add the following line:
 
@@ -473,7 +473,7 @@ In your USB VM:
 
 
 
-4. Ensure that the udev hook is placed in the right place after VM
+2. Ensure that the udev hook is placed in the right place after VM
    restart. Append to ``/rw/config/rc.local``:
 
    .. code:: bash
@@ -483,7 +483,7 @@ In your USB VM:
 
 
 
-5. Then make ``/rw/config/rc.local`` executable.
+3. Then make ``/rw/config/rc.local`` executable.
 
    .. code:: bash
 
@@ -491,14 +491,12 @@ In your USB VM:
 
 
 
-6. For changes to take effect, you need to call this script manually for
+4. For changes to take effect, you need to call this script manually for
    the first time.
 
    .. code:: bash
 
          sudo /rw/config/rc.local
-
-
 
 
 

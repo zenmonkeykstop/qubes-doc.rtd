@@ -23,55 +23,6 @@ This diagram provides a general example of how disposables can be used
 to safely open untrusted links and attachments in disposables. See `this article <https://blog.invisiblethings.org/2010/06/01/disposable-vms.html>`__
 for more on why one would want to use a disposable.
 
-Named disposables and disposable templates
-------------------------------------------
-
-
-There is a difference between :ref:`named disposable qubes <user/reference/glossary:named disposable>` and :ref:`disposable templates <user/reference/glossary:disposable template>`.
-
-In a default QubesOS Installation, you would probably use the
-‘whonix-ws-16-dvm’ disposable template to, for example, browse the Tor
-network with an disposable qube. Every time you start an application
-using this disposable template, a new disposable qube - named ``dispX``
-(where X is a random number) starts. If you close the application
-window, the ``dispX`` qube shuts down and vanishes from your system.
-That is how disposable templates are used.
-
-Named disposables are also built upon disposable templates, but they
-have a fixed name. The named disposable seems to behave like an ordinary
-app qube - every application you open will start in the same qube, and
-you need to manually shutdown the qube. But when you shutdown *any changes you made in the named disposable will be lost*. Except for this
-non-persistance, they feel like usual app qubes.
-
-How to create disposable templates
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-First, you need to create an app qube. You can run it normally, set up
-any necessary settings (like browser settings) you wish to be applied to
-every disposable qube ran from this template. Next, go to ‘Qube
-Settings’ of the app qube, set it as a *Disposable template* in the
-*Advanced* section and apply the change.
-
-In Qubes 4.1, the entry in the Application menu is split into
-‘Disposable’ and ‘Template (disp)’. The settings for the disposable can
-be changed under ’Application Menu -> Template (disp) -> Template: Qubes Settings**
-
-In Qubes 4.2, the qube will now appear in the menu as a disposable
-template (in the Apps section), from which you can launch new disposable
-qubes. To change the settings of the template itself or run programs in
-it, use the menu item for the disposable template located in the
-Templates section.
-
-How to create named disposables
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-In Qubes 4.1: named disposables can be created under Application Menu -> Create Qubes VM**, set the qube type to be *DisposableVM*.
-
-In Qubes 4.2: named disposables can be created by Application Menu -> Settings -> Qubes Settings -> Create New Qube**. Set the qube type to
-Named disposable_
-
 Security
 --------
 
@@ -357,9 +308,15 @@ In dom0, add the following line at the beginning of the file
 
 
 
-This line means: - FROM: Any qube - TO: A disposable based on
-``<ONLINE_DISPOSABLE_TEMPLATE>`` - WHAT: Allow sending an “Open URL”
-request
+This line means:
+
+- FROM: Any qube
+
+- TO: A disposable based on ``<ONLINE_DISPOSABLE_TEMPLATE>``
+
+- WHAT: Allow sending an “Open URL” request
+
+
 
 In other words, any qube will be allowed to create a new disposable
 based on ``<ONLINE_DISPOSABLE_TEMPLATE>`` and open a URL inside of that

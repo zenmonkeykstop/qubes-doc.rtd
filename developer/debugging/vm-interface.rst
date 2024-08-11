@@ -25,8 +25,6 @@ Keys exposed by dom0 to VM
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-- ``/qubes-base-template`` - base template
-
 - ``/qubes-vm-type`` - VM type, the same as ``type`` field in
   ``qvm-prefs``. One of ``AppVM``, ``ProxyVM``, ``NetVM``,
   ``TemplateVM``, ``HVM``, ``TemplateHVM``
@@ -72,7 +70,7 @@ Keys exposed by dom0 to VM
   entry is missing, it means “use VM default”. A list of currently
   supported services is in the ``qvm-service`` man page.
 
-- ``/qubes-netm ask`` - network mask (only when VM has netvm set);
+- ``/qubes-netmask`` - network mask (only when VM has netvm set);
   currently hardcoded “255.255.255.0”
 
 - ``/qubes-ip`` - IP address for this VM (only when VM has netvm set)

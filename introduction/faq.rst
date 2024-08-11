@@ -250,11 +250,9 @@ some of the main pros and cons of this approach relative to Qubes:
 
 
 
-.. code:: bash
-
-      <i class="fa fa-times"></i> <strong>Cons</strong>
-
-
+.. important::
+      
+      Cons
 
 - Physical separation can be cumbersome and expensive, since we may
   have to obtain and set up a separate physical machine for each

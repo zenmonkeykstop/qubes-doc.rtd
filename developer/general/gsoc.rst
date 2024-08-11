@@ -842,19 +842,31 @@ a painful and complex process. The goal of this project is to integrate
 configuration of this feature into Qubes, automating as much as
 possible. See discussion in `issue #4371 <https://github.com/QubesOS/qubes-issues/issues/4371>`__
 
-Expected results**: - a tool to prepare relevant boot files for
-unified Xen EFI boot - this includes collecting Xen, dom0 kernel,
-initramfs, config file, and possibly few more (ucode update?); the tool
-should then sign the file with user provided key (preferably propose to
-generate it too) - integrate it with updates mechanism, so new Xen or
-dom0 kernel will be picked up automatically - include a fallback
-configuration that can be used for troubleshooting (main unified Xen EFI
-intentionally does not allow to manipulate parameters at boot time)
+Expected results**:
+
+- a tool to prepare relevant boot files for unified Xen EFI boot - this
+  includes collecting Xen, dom0 kernel, initramfs, config file, and
+  possibly few more (ucode update?); the tool should then sign the file
+  with user provided key (preferably propose to generate it too)
+
+- integrate it with updates mechanism, so new Xen or dom0 kernel will
+  be picked up automatically
+
+- include a fallback configuration that can be used for troubleshooting
+  (main unified Xen EFI intentionally does not allow to manipulate
+  parameters at boot time)
+
+
 
 Difficulty**: hard
 
-Knowledge prerequisite**: - basic understanding of Secure Boot - Bash
-and Python scripting
+Knowledge prerequisite**:
+
+- basic understanding of Secure Boot
+
+- Bash and Python scripting
+
+
 
 Size of the project**: 175 hours
 
@@ -878,8 +890,14 @@ was running inside.
 
 Difficulty**: medium
 
-Knowledge prerequisite**: - Python scripting - Basic knowledge of
-Linux system services management (systemd, syslog etc)
+Knowledge prerequisite**:
+
+- Python scripting
+
+- Basic knowledge of Linux system services management (systemd, syslog
+  etc)
+
+
 
 Size of the project**: 350 hours
 

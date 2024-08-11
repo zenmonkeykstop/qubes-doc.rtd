@@ -24,11 +24,10 @@ rest of the filesystem are lost when the app qube is shutdown. bind-dirs
 provides a mechanism whereby files usually taken from the template can
 be persisted across reboots.
 
-For example, in Whonix, `Tor’s data dir /var/lib/tor has been made
-persistent in the TemplateBased ProxyVM
-sys-whonix <https://github.com/Whonix/qubes-whonix/blob/8438d13d75822e9ea800b9eb6024063f476636ff/usr/lib/qubes-bind-dirs.d/40_qubes-whonix.conf#L5>`__
-In this way sys-whonix can benefit from the Tor anonymity feature
-‘persistent Tor entry guards’ but does not have to be a standalone.
+For example, in Whonix, Tor’s data dir ``/var/lib/tor`` `has been made persistent <https://github.com/Whonix/qubes-whonix/blob/8438d13d75822e9ea800b9eb6024063f476636ff/usr/lib/qubes-bind-dirs.d/40_qubes-whonix.conf#L5>`__
+in the TemplateBased ProxyVM sys-whonix. In this way sys-whonix can
+benefit from the Tor anonymity feature ‘persistent Tor entry guards’ but
+does not have to be a standalone.
 
 How to use bind-dirs.sh?
 ------------------------
@@ -163,7 +162,7 @@ Limitations
 - Some files are altered when a qube boots - e.g. ``/etc/hosts``. If
   you try to use bind-dirs on such files you may break your qube in
   unpredictable ways. You can add persistent rules to ``/etc/hosts``
-  using :doc:`rw/config/rc.local </user/advanced-topics/config-files>`
+  using ```\/rw/config/rc.local`` </doc/config-files>`__
 
 
 

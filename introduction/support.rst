@@ -611,9 +611,13 @@ Chat
 ----
 
 
-If you’d like to chat, join us on - the ``#qubes`` channel on
-``irc.libera.chat`` or - the ``#qubes:invisiblethingslab.com`` matrix
-channel.
+If you’d like to chat, join us on
+
+- the ``#qubes`` channel on ``irc.libera.chat`` or
+
+- the ``#qubes:invisiblethingslab.com`` matrix channel.
+
+
 
 these two should be linked/bridged, but for technical reasons currently
 are not.

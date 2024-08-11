@@ -41,35 +41,35 @@ windows version:
      - Windows 7 x64
      - Windows 10 x64
    * - Qubes Video Driver
-     - 
-     - 
+     - y
+     - n
    * - Qubes Network Setup
-     - 
-     - 
+     - y
+     - y
    * - Private Volume Setup (move profiles)
-     - 
-     - 
+     - y
+     - y
    * - File sender/receiver
-     - 
-     - 
+     - y
+     - y
    * - Clipboard Copy/Paste
-     - 
-     - 
+     - y
+     - y
    * - Application shortcuts
-     - 
-     - 
+     - y
+     - y
    * - Copy/Edit in Disposable VM
-     - 
-     - 
+     - y
+     - n
    * - Block device
-     - 
-     - 
+     - y
+     - y
    * - USB device
-     - 
-     - 
+     - y
+     - y
    * - Audio
-     - 
-     - 
+     - n
+     - n
    
 
 
@@ -654,17 +654,17 @@ level to Debug, set it like this:
 Component-specific settings currently available:
 
 .. list-table:: 
-   :widths: 13 13 13 13 13 
+   :widths: 9 9 9 9 9 
    :align: center
    :header-rows: 1
 
-   * - /home/user/rst/qubes-doc-rst/user/templates/windows/qubes-windows-tools-4-0.rst:569: (INFO/1) Unexpected possible title overline or transition. Treating it as ordinary text because it's so short.  ** Component**
-     - /home/user/rst/qubes-doc-rst/user/templates/windows/qubes-windows-tools-4-0.rst:569: (INFO/1) Unexpected possible title overline or transition. Treating it as ordinary text because it's so short.  ** Setting**
-     - /home/user/rst/qubes-doc-rst/user/templates/windows/qubes-windows-tools-4-0.rst:569: (INFO/1) Unexpected possible title overline or transition. Treating it as ordinary text because it's so short.  ** Type**
-     - /home/user/rst/qubes-doc-rst/user/templates/windows/qubes-windows-tools-4-0.rst:569: (INFO/1) Unexpected possible title overline or transition. Treating it as ordinary text because it's so short.  ** Description**
+   * - Co mponent
+     - Se tting
+     - Type
+     - Description
      - Default value
    * - qga
-     - Disa bleCursor
+     - Dis ableC ursor
      - DWORD
      - Disable cursor in the VM. Useful for integration with Qubes desktop so you don’t see two cursors. Can be disabled if you plan to use the VM through a remote desktop connection of some sort. Needs gui agent restart to apply change (locking OS/logoff should be enough since qga is restarted on desktop change).
      - 1
@@ -704,51 +704,33 @@ If a specific component is malfunctioning, you can increase its log
 verbosity as explained above to get more troubleshooting information.
 Below is a list of components:
 
-.. list-table::  
-      :widths: 40 40 
-      :align: center
-      :header-rows: 1
+.. list-table:: 
+   :widths: 5 5 
+   :align: center
+   :header-rows: 1
 
-      * - qrexec-agent
-        - Responsible for most communication with Qubes (dom0
-      * - and other domains), secure clipboard, file copying, qrexec services.
-      * - qrexec-wrapper
-        - Helper executable that’s responsible for launching
-      * - qrexec services, handling their I/O and vchan communication.
-      * - qrexec-client-vm
-        - Used for communications by the qrexec protocol.
-      * - qga
-        - Gui agent.
-        -  
-        - QgaWatchdog
-        - Service that monitors session/desktop
-      * - changes (logon/logoff/locking/UAC…) and simulates SAS sequence
-      * - (ctrl-alt-del).
-        -  
-        - qubesdb-daemon
-        - Service for accessing Qubes
-      * - configuration database.
-        -  
-        - network-setup
-        - Service that sets up network
-      * - parameters according to VM’s configuration.
-        -  
-        - prepare-volume
-        - Utility
-      * - that initializes and formats the disk backed by private.img file.
-      * - It’s registered to run on next system boot during QWT setup, if that
-      * - feature is selected (it can’t run during the setup because Xen block
-      * - device drivers are not yet active). It in turn registers move-profiles
-      * - (see below) to run at early boot.
-        -  
-        - relocate-dir
-        - Utility that moves
-      * - user profiles directory to the private disk. It’s registered as an early
-      * - boot native executable (similar to chkdsk) so it can run before any
-      * - profile files are opened by some other process. Its log is in a fixed
-      * - location: c:\move-profiles.log (it can’t use our common logger
-      * - library so none of the log settings apply).
-      
+   * - Com pon ent
+     - Description
+   * - qre xec -ag ent
+     - Responsible for most communication with Qubes (dom0 and other domains), secure clipboard, file copying, qrexec services.
+   * - qr exe c-w rap per
+     - Helper executable that’s responsible for launching qrexec services, handling their I/O and vchan communication.
+   * - q rex ec- cli ent -vm
+     - Used for communications by the qrexec protocol.
+   * - qga
+     - Gui agent.
+   * - Qg aWa tch dog
+     - Service that monitors session/desktop changes (logon/logoff/locking/UAC…) and simulates SAS sequence (ctrl-alt-del).
+   * - qu bes db- dae mon
+     - Service for accessing Qubes configuration database.
+   * - n etw ork -se tup
+     - Service that sets up network parameters according to VM’s configuration.
+   * - pr epa re- vol ume
+     - Utility that initializes and formats the disk backed by private.img file. It’s registered to run on next system boot during QWT setup, if that feature is selected (it can’t run during the setup because Xen block device drivers are not yet active). It in turn registers move-profiles (see below) to run at early boot.
+   * - rel oca te- dir
+     - Utility that moves user profiles directory to the private disk. It’s registered as an early boot native executable (similar to chkdsk) so it can run before any profile files are opened by some other process. Its log is in a fixed location: c:\move-profiles.log (it can’t use our common logger library so none of the log settings apply).
+   
+
 
 Updates
 -------

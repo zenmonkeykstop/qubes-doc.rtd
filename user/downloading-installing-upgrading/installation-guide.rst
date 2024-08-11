@@ -192,7 +192,7 @@ Select the option to test this media and install Qubes OS.
 
 .. note::
       
-      Note: If the latest stable release is not compatible with your hardware, you may wish to consider installing using the latest kernel. Be aware that this has not been as well tested as the standard kernel.
+      Note: If the latest stable release is not compatible with your hardware, you may wish to consider installing using the latest kernel. Be aware that this has not been as well testes as the standard kernel.
 
 If the boot screen does not appear, there are several options to
 troubleshoot. First, try rebooting your computer. If it still loads your

@@ -102,15 +102,15 @@ line, add:
 
 .. code:: bash
 
-      ```
       nouveau.modeset=0 rd.driver.blacklist=nouveau video=vesa:off
-      ```
-      
-      If the above code doesn't fix the problem, replace it with:
-      
-      ```
+
+
+
+If the above code doesn’t fix the problem, replace it with:
+
+.. code:: bash
+
       noexitboot=1 modprobe.blacklist=nouveau rd.driver.blacklist=nouveau --- intitrd.img
-      ```
 
 
 

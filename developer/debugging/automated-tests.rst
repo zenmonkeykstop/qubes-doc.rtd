@@ -347,9 +347,23 @@ plots. Here is an example:
 
    openqa-investigator-splitgpg-example.png
 
-Some outputs: - plot by tests - plot by errors - markdown
+Some outputs:
 
-Some filters: - filter by error - filter by test name
+- plot by tests
+
+- plot by errors
+
+- markdown
+
+
+
+Some filters:
+
+- filter by error
+
+- filter by test name
+
+
 
 Check out the script’s help with
 ``python3 openqa_investigator.py --help`` to see all available options.

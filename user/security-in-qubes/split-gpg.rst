@@ -41,7 +41,7 @@ and not from the user sitting in front of the monitor. (Similarly the
 smart card doesn’t make the process of digitally signing a document or a
 transaction in any way more secure – the user cannot know what the chip
 is really signing. Unfortunately this problem of signing reliability is
-not solvable by Split GPG.)
+not solvable by Split GPG)
 
 With Qubes Split GPG this problem is drastically minimized, because each
 time the key is to be used the user is asked for consent (with a
@@ -221,7 +221,7 @@ Thunderbird 78 and higher
 Starting with version 78, Thunderbird has a built-in PGP feature and no
 longer requires the Enigmail extension. For users coming from the
 Enigmail extension, the built-in functionality is more limited
-currently, including that public keys must live in your ``work-email`` qube with Thunderbird rather than your offline ``work-gpg`` qube**.
+currently, including that public keys must live in your work-email qube with Thunderbird rather than your offline work-gpg qube**.
 
 In ``work-email``, use the Thunderbird config editor (found at the
 bottom of preferences/options), and search for
