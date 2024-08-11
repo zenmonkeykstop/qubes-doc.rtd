@@ -94,11 +94,17 @@ then disable one and try the other. Visit the :doc:`UEFI Troubleshooting guide <
 booting.
 
 These errors may also occur due to an incompatible Nvidia graphics card.
-If you have one, follow the following instructions: 1. Disable
-secure/fast boot and use legacy mode 2. Enter GRUB, move the selection
-to the first choice, and then press the Tab key. 3. Now, you are in edit
-mode. Move the text cursor with your arrow key and after ``kernel=``
-line, add:
+If you have one, follow the following instructions:
+
+1. Disable secure/fast boot and use legacy mode
+
+2. Enter GRUB, move the selection to the first choice, and then press
+   the Tab key.
+
+3. Now, you are in edit mode. Move the text cursor with your arrow key
+   and after ``kernel=`` line, add:
+
+
 
 .. code:: bash
 
