@@ -224,7 +224,7 @@ command in dom0 in order to uninstall it:
 
 .. code:: bash
 
-      $ sudo dnf remove qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>
+      $ qvm-template remove qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>
 
 
 

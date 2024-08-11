@@ -60,7 +60,7 @@ windows version:
      - y
    * - Copy/Edit in Disposable VM
      - y
-     - n
+     - y
    * - Block device
      - y
      - y

@@ -725,6 +725,24 @@ Additional pillar data is available to ease targeting configurations
 
 Note:** This list is subject to change in future releases.
 
+``qubes:features``
+^^^^^^^^^^^^^^^^^^
+
+
+Features the qube has. Only some values are included:
+
+- ``service.*`` - services enabled or disabled in the qube
+
+- ``vm-config.*`` - features also exposed to qubesdb
+
+
+
+``qubes:tags``
+^^^^^^^^^^^^^^
+
+
+Tags the qube has.
+
 ``qubes:type``
 ^^^^^^^^^^^^^^
 

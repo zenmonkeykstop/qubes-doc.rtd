@@ -153,15 +153,10 @@ and *compressed*.
 
 
 9. Mount the private.img file and access your data.
-
-   .. code:: bash
-
-         [user@restore vm1]$ sudo mkdir /mnt/img
-         [user@restore vm1]$ sudo mount -o loop vm1/private.img /mnt/img/
-         [user@restore vm1]$ cat /mnt/img/home/user/your_data.txt
-         This data has been successfully recovered!
-
-
+   [ `user@restore <mailto:user@restore>`__ vm1]$ sudo mkdir /mnt/img [ `user@restore <mailto:user@restore>`__ vm1]$ sudo
+   mount -o loop vm1/private.img /mnt/img/ [ `user@restore <mailto:user@restore>`__ vm1]$ cat
+   /mnt/img/home/user/your_data.txt This data has been successfully
+   recovered!
 
 10. Success! If you wish to recover data from more than one VM in your
     backup, simply repeat steps 5–9 for each additional VM.

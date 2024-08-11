@@ -41,7 +41,7 @@ and not from the user sitting in front of the monitor. (Similarly the
 smart card doesn’t make the process of digitally signing a document or a
 transaction in any way more secure – the user cannot know what the chip
 is really signing. Unfortunately this problem of signing reliability is
-not solvable by Split GPG)
+not solvable by Split GPG.)
 
 With Qubes Split GPG this problem is drastically minimized, because each
 time the key is to be used the user is asked for consent (with a

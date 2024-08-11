@@ -79,23 +79,24 @@ Release-specific notes
 
 This section contains notes about specific Debian releases.
 
-Debian 10
+Debian 12
 ^^^^^^^^^
 
 
-Debian 10 (buster) - minimal:
+If you want to use a Debian 12 template for salting Qubes, you must**
+stop the salt-common and salt-ssh packages from being upgraded. Do this
+by marking these packages on hold *before* updating the template.
 
 .. code:: bash
 
-      [user@dom0 ~]$ sudo qubes-dom0-update --enablerepo=qubes-templates-itl qubes-template-debian-10-minimal
+      sudo apt-mark hold salt-common salt-ssh
+      sudo apt update
+      sudo apt upgrade
 
 
-Debian 10 (buster) - stable:
 
-.. code:: bash
-
-      [user@dom0 ~]$ sudo qubes-dom0-update --enablerepo=qubes-templates-itl qubes-template-debian-10
-
+This is a `known bug <https://github.com/QubesOS/qubes-issues/issues/9129>`__ in Salt
+which affects version 3006-5.
 
 Starting services
 ^^^^^^^^^^^^^^^^^

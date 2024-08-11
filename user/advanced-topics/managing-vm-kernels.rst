@@ -265,8 +265,7 @@ the following files there:
 
 
 
-All the files besides ``vmlinuz`` and ``initramfs`` are optional in
-Qubes R4.0 or newer.
+All the files besides ``vmlinuz`` are optional in Qubes R4.2 or newer.
 
 Using kernel installed in the VM
 --------------------------------
@@ -346,8 +345,11 @@ Notes:**
 - If you require ``PV`` mode, install ``grub2-xen-pvh`` in dom0 and
   change the template’s kernel to ``pvgrub2-pvh``.
 
-- Booting to a kernel inside the template is not supported under
-  ``PVH``.
+- If you require ``PVH`` mode, install ``grub2-xen-pvh`` in dom0 and
+  change the kernel to ``pvgrub2-pvh``.
+
+- To install ``grub2-xen-pvh`` run the command
+  ``sudo qubes-dom0-update pvgrub2-pvh`` in dom0.
 
 
 
@@ -411,7 +413,8 @@ Depends on ``Virtualization`` mode setting:
 
 
 
-- ``Virtualization`` mode ``PVH``: Possible.
+- ``Virtualization`` mode ``PVH``: Possible. Install ``grub2-xen-pvh``
+  in dom0.
 
 - ``Virtualization`` mode ``HVM``: Possible.
 

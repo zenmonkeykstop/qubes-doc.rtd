@@ -288,7 +288,7 @@ Qubes RPC internals
 (*This is about the implementation of qrexec v2. For the implementation of qrexec v3, see* :doc:`here </developer/services/qrexec-internals>` *. Note that the user API in v3 is backward compatible: qrexec apps written for Qubes R2 should run without modification on Qubes R3.*)
 
 Dom0 tools implementation
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 
 Players:
@@ -307,7 +307,7 @@ Players:
 Note:** None of the above tools are designed to be used by users.
 
 Linux VMs implementation
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 
 Players:
@@ -327,7 +327,7 @@ Note:** None of the above tools are designed to be used by users.
 ``qrexec-client-vm`` is designed to be wrapped up by Qubes apps.
 
 Windows VMs implementation
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 
 ``%QUBES_DIR%`` is the installation path
@@ -351,7 +351,7 @@ Note:** None of the above tools are designed to be used by users.
 ``qrexec-client-vm`` is designed to be wrapped up by Qubes apps.
 
 All the pieces together at work
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
 
 Note:** This section is not needed to use qrexec for writing Qubes

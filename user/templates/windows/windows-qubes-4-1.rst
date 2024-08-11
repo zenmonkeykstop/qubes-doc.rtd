@@ -216,17 +216,11 @@ These parameters are set for the following reasons:
   requested by the parameter settings described above.
 
 - The Windows’ installer requires a significant amount of memory or
-  else the VM will crash with such errors:
-
-  .. code:: bash
-
-        /var/log/xen/console/hypervisor.log:
-        
-        p2m_pod_demand_populate: Dom120 out of PoD memory! (tot=102411 ents=921600 dom120)
-        (XEN) domain_crash called from p2m-pod.c:1218
-        (XEN) Domain 120 (vcpu#0) crashed on cpu#3:
-
-
+  else the VM will crash with such errors: ~~~
+  /var/log/xen/console/hypervisor.log:
+  p2m_pod_demand_populate: Dom120 out of PoD memory! (tot=102411
+  ents=921600 dom120) (XEN) domain_crash called from p2m-pod.c:1218
+  (XEN) Domain 120 (vcpu#0) crashed on cpu#3: ~~~
   So, increase the VM’s memory to 4096MB (memory = maxmem because we
   don’t use memory balancing), or 6144MB / 8192MB, as recommended
   above.
