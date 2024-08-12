@@ -313,21 +313,28 @@ are usually very stable). There are two ways of installing the drivers:
 
 
 
-Notes about using Xen’s VBD (storage) PV driver: - **Windows 7:**
-installing the driver requires a fully updated VM or else you’ll likely
-get a BSOD and a VM in a difficult to fix state. Updating Windows takes
-*hours* and for casual usage there isn’t much of a performance between
-the disk PV driver and the default one; so there is likely no need to go
-through the lengthy Windows Update process if your VM doesn’t have
-access to untrusted networks and if you don’t use I/O intensive apps. If
-you plan to update your newly installed Windows VM it is recommended
-that you do so *before* installing Qubes Windows Tools (QWT). If QWT are
-installed, you should temporarily re-enable the standard VGA adapter in
-Windows and disable Qubes’ (see the section above). - the option to
-install the storage PV driver is disabled by default in Qubes Windows
-Tools - in case you already had QWT installed without the storage PV
-driver and you then updated the VM, you may then install the driver from
-Xen’s site (xenvbd.tar).
+Notes about using Xen’s VBD (storage) PV driver:
+
+- **Windows 7:** installing the driver requires a fully updated VM or
+  else you’ll likely get a BSOD and a VM in a difficult to fix state.
+  Updating Windows takes *hours* and for casual usage there isn’t much
+  of a performance between the disk PV driver and the default one; so
+  there is likely no need to go through the lengthy Windows Update
+  process if your VM doesn’t have access to untrusted networks and if
+  you don’t use I/O intensive apps. If you plan to update your newly
+  installed Windows VM it is recommended that you do so *before*
+  installing Qubes Windows Tools (QWT). If QWT are installed, you
+  should temporarily re-enable the standard VGA adapter in Windows and
+  disable Qubes’ (see the section above).
+
+- the option to install the storage PV driver is disabled by default in
+  Qubes Windows Tools
+
+- in case you already had QWT installed without the storage PV driver
+  and you then updated the VM, you may then install the driver from
+  Xen’s site (xenvbd.tar).
+
+
 
 **Caution:** Installing the version 9.0.0 Xen drivers on Windows 7 (a
 system without QWT - QWT uninstalled) leads to an unbootable system. The

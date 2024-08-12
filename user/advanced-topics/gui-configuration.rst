@@ -43,8 +43,13 @@ using xrandr.
       qvm-features dom0 gui-videoram-min $(xrandr --verbose | grep "Screen 0" | sed -e 's/.*current //' -e 's/\,.*//' | awk '{print $1*$3*4/1024}')
 
 
-The amount of memory allocated per qube is the maximum of: -
-``gui-videoram-min`` - current display + ``gui-videoram-overhead``
+The amount of memory allocated per qube is the maximum of:
+
+- ``gui-videoram-min``
+
+- current display + ``gui-videoram-overhead``
+
+
 
 Default overhead is about 8 MiB, which is enough for a 1080p display
 (see above). So, the ``gui-videoram-overhead`` zeroing is not strictly
