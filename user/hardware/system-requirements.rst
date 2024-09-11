@@ -111,7 +111,7 @@ Qubes OS:
 - `Community-recommended hardware <https://forum.qubes-os.org/t/5560>`__ — list curated and
   maintained by the community, unofficially recommended
 
-- `Hardware compatibility list (HCL) <https://www.qubes-os.org/hcl/>__` — community test
+- `Hardware compatibility list (HCL) <https://www.qubes-os.org/hcl/>`__ — community test
   results, neither recommended nor disrecommended
 
 

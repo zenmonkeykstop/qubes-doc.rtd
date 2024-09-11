@@ -170,7 +170,7 @@ Downloads
 ---------
 
 
-See `Qubes Downloads <https://www.qubes-os.org/downloads/>__`.
+See `Qubes Downloads <https://www.qubes-os.org/downloads/>`__.
 
 Installation instructions
 -------------------------

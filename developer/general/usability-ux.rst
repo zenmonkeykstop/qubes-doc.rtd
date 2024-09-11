@@ -10,7 +10,7 @@ priority!
 
 We ask anyone developing for Qubes OS to please read through this guide
 to better understand the user experience we strive to achieve. We also
-ask them to review `our visual style guide <https://www.qubes-os.org/doc/visual-style-guide/>__`
+ask them to review `our visual style guide <https://www.qubes-os.org/doc/visual-style-guide/>`__
 for other design related information.
 
 

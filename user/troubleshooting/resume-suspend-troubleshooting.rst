@@ -4,7 +4,7 @@ Suspend/resume troubleshooting
 
 
 First check if there are any remarks for similar devices in the
-`Hardware Compatibility List (HCL) <https://www.qubes-os.org/hcl/>__`.
+`Hardware Compatibility List (HCL) <https://www.qubes-os.org/hcl/>`__.
 
 Network-Manager says "Device not ready" on suspend/resume
 ---------------------------------------------------------

@@ -27,7 +27,7 @@ I see something that should be changed in the documentation.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-We encourage you to submit the change yourself! Please see the `how to edit the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>__` for
+We encourage you to submit the change yourself! Please see the `how to edit the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__ for
 instructions on how to do so. If it’s something you can’t do yourself,
 please proceed to open an issue.
 

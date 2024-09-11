@@ -29,7 +29,7 @@ Important
    package or misconfiguration) rather than a bug. In such cases, please
    do *not* file a bug report. Instead, please see :doc:`Help, Support, Mailing Lists, and Forum </introduction/support>` for the appropriate place to
    ask for help. Once you have learned how to solve your problem, please
-   `contribute what you learned to the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>__`.
+   `contribute what you learned to the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__.
 
 3. The minimal templates are intentionally *minimal*. :ref:`Do not ask for your favorite package to be added to the minimal template by default. <introduction/faq:could you please make my preference the default?>`
 

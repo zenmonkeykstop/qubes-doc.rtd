@@ -27,7 +27,7 @@ upgrading in-place:
    :ref:`backup <user/how-to-guides/how-to-back-up-restore-and-migrate:creating a backup>`
    of your current installation.
 
-2. `Download <https://www.qubes-os.org/downloads/>__` the latest 4.1 release.
+2. `Download <https://www.qubes-os.org/downloads/>`__ the latest 4.1 release.
 
 3. Follow the :doc:`installation guide </user/downloading-installing-upgrading/installation-guide>` to
    install Qubes 4.1.

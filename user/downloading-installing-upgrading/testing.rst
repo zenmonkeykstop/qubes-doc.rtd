@@ -19,7 +19,7 @@ Releases
 How to test upcoming Qubes OS releases:
 
 - Test the latest release candidate (RC) on the
-  `downloads <https://www.qubes-os.org/downloads/>__` page, if one is currently available. (Or
+  `downloads <https://www.qubes-os.org/downloads/>`__ page, if one is currently available. (Or
   try an older RC from our `FTP server <https://ftp.qubes-os.org/iso/>`__.)
 
 - Try the `signed weekly builds <https://qubes.notset.fr/iso/>`__.

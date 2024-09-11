@@ -157,7 +157,7 @@ Download
 
 
 All Qubes ISOs and associated :doc:`verification files </project-security/verifying-signatures>` are available on the
-`downloads <https://www.qubes-os.org/downloads/>__` page.
+`downloads <https://www.qubes-os.org/downloads/>`__ page.
 
 Installation instructions
 -------------------------

@@ -138,7 +138,7 @@ Download
 --------
 
 
-See `downloads <https://www.qubes-os.org/downloads/>__`.
+See `downloads <https://www.qubes-os.org/downloads/>`__.
 
 Installation instructions
 -------------------------

@@ -211,7 +211,7 @@ Migrating between two physical machines
 
 
 In order to migrate your Qubes system from one physical machine to
-another, simply follow the backup procedure on the old machine, `install Qubes <https://www.qubes-os.org/downloads/>__` on the new machine, and follow the restoration
+another, simply follow the backup procedure on the old machine, `install Qubes <https://www.qubes-os.org/downloads/>`__ on the new machine, and follow the restoration
 procedure on the new machine. All of your settings and data will be
 preserved!
 

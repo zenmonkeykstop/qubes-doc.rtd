@@ -400,7 +400,7 @@ ways to get the RSK for your Qubes release.
 
 
 - Download it as a file. You can find the RSK for your Qubes release on
-  the `downloads <https://www.qubes-os.org/downloads/>__` page. You can also download all the
+  the `downloads <https://www.qubes-os.org/downloads/>`__ page. You can also download all the
   currently used developers’ signing keys, RSKs, and the Qubes Master
   Signing Key from the :doc:`Qubes security pack </project-security/security-pack>` and
   the `Qubes keyserver <https://keys.qubes-os.org/keys/>`__. Once
@@ -484,7 +484,7 @@ steps:
 
 Each Qubes ISO is accompanied by a set of **cryptographic hash values**
 contained in a plain text file ending in ``.DIGESTS``, which can find on
-the `downloads <https://www.qubes-os.org/downloads/>__` page alongside the ISO. This file
+the `downloads <https://www.qubes-os.org/downloads/>`__ page alongside the ISO. This file
 contains the output of running several different cryptographic hash
 functions on the ISO (a process known as “hashing”) to obtain
 alphanumeric outputs known as “hash values” or “digests.”
@@ -494,7 +494,7 @@ any computer. This means, for example, that you can download a Qubes ISO
 on one computer, hash it, then visually compare that hash value to the
 one you generated or have saved on a different computer.
 
-In addition to the ``.DIGESTS`` files on the `downloads <https://www.qubes-os.org/downloads/>__`
+In addition to the ``.DIGESTS`` files on the `downloads <https://www.qubes-os.org/downloads/>`__
 page alongside each ISO, and you can always find all the digest files
 for every Qubes ISO in the :doc:`Qubes security pack </project-security/security-pack>`.
 
@@ -632,7 +632,7 @@ steps:
 
 
 Every Qubes ISO is released with a **detached PGP signature** file,
-which you can find on the `downloads <https://www.qubes-os.org/downloads/>__` page alongside the
+which you can find on the `downloads <https://www.qubes-os.org/downloads/>`__ page alongside the
 ISO. If the filename of your ISO is ``Qubes-RX-x86_64.iso``, then the
 name of the signature file for that ISO is ``Qubes-RX-x86_64.iso.asc``,
 where ``X`` is a specific release of Qubes. The signature filename is
@@ -750,7 +750,7 @@ bytes and enter it into the above command manually. You can, of course,
 obtain the size by simply using the ``stat -c %s /path/to/iso`` command
 from above on the machine that has the ISO. You can also obtain it from
 the Qubes website by hovering over any ISO download button on the
-`downloads page <https://www.qubes-os.org/downloads/>__`. (You can also view these values
+`downloads page <https://www.qubes-os.org/downloads/>`__. (You can also view these values
 directly in the downloads page’s `source data <https://github.com/QubesOS/qubesos.github.io/blob/master/_data/downloads.yml>`__.)
 Once you have the exact size of the ISO in bytes, simply insert it into
 the same command, for example:

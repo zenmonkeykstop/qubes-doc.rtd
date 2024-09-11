@@ -3,7 +3,7 @@ Getting started
 ===============
 
 
-After `downloading <https://www.qubes-os.org/downloads/>__` and
+After `downloading <https://www.qubes-os.org/downloads/>`__ and
 :doc:`installing </user/downloading-installing-upgrading/installation-guide>` Qubes OS, it’s time to dive in
 and get to work! (Already know your way around? Dive right in to
 :doc:`organizing your qubes </user/how-to-guides/how-to-organize-your-qubes>`.)
@@ -287,20 +287,20 @@ Compatible Hardware
 
 
 Make sure your hardware satisfies the :doc:`system requirements </user/hardware/system-requirements>`, as Qubes OS cannot run on
-every type of computer. You may also want to check out `Qubes-certified Hardware </user/hardware/certified-hardware>__` and take a look at the `Hardware Compatibility List (HCL) <https://www.qubes-os.org/hcl/>__`.
+every type of computer. You may also want to check out `Qubes-certified Hardware </user/hardware/certified-hardware>`__ and take a look at the `Hardware Compatibility List (HCL) <https://www.qubes-os.org/hcl/>`__.
 
 Downloads
 ---------
 
 
-`Download an ISO <https://www.qubes-os.org/downloads/>__`, learn how to `verify its authenticity </project-security/verifying-signatures>__`, and follow our `guide to install Qubes OS </user/downloading-installing-upgrading/installation-guide>__`. Looking for the `source code </developer/code/source-code>__`? You’ll find it `on GitHub <https://github.com/QubesOS>__`__.
+`Download an ISO <https://www.qubes-os.org/downloads/>`__, learn how to `verify its authenticity </project-security/verifying-signatures>`__, and follow our `guide to install Qubes OS </user/downloading-installing-upgrading/installation-guide>`__. Looking for the `source code </developer/code/source-code>`__? You’ll find it `on GitHub <https://github.com/QubesOS>`____.
 
 Documentation
 -------------
 
 
 Peruse our extensive library of :doc:`documentation </index>` for users and
-developers of Qubes OS. You can even `help us improve it <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>__`!
+developers of Qubes OS. You can even `help us improve it <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__!
 
 .. |snapshot_41.png| image:: /attachment/doc/r4.1-snapshot_40.png
    

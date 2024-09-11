@@ -23,7 +23,7 @@ Hardware requirements
 Qubes OS has very specific :doc:`system requirements </user/hardware/system-requirements>`. To ensure compatibility, we
 strongly recommend using :doc:`Qubes-certified hardware </user/hardware/certified-hardware>`. Other hardware may require you
 to perform significant troubleshooting. You may also find it helpful to
-consult the `Hardware Compatibility List <https://www.qubes-os.org/hcl/>__`.
+consult the `Hardware Compatibility List <https://www.qubes-os.org/hcl/>`__.
 
 Even on supported hardware, you must ensure that `IOMMU-based virtualization <https://en.wikipedia.org/wiki/Input%E2%80%93output_memory_management_unit#Virtualization>`__
 is activated in the BIOS or UEFI. Without it, Qubes OS won’t be able to
@@ -48,7 +48,7 @@ Copying the ISO onto the installation medium
 
 Pick the most secure existing computer and OS you have available for
 downloading and copying the Qubes ISO onto the installation medium.
-`Download <https://www.qubes-os.org/downloads/>__` a Qubes ISO.
+`Download <https://www.qubes-os.org/downloads/>`__ a Qubes ISO.
 
 .. DANGER::
       
@@ -57,7 +57,7 @@ downloading and copying the Qubes ISO onto the installation medium.
 Once the ISO has been verified as authentic, you should copy it onto the
 installation medium of your choice, such as a USB drive, dual-layer DVD,
 or Blu-ray disc. The size of each Qubes ISO is available on the
-`downloads <https://www.qubes-os.org/downloads/>__` page by hovering over the download button.
+`downloads <https://www.qubes-os.org/downloads/>`__ page by hovering over the download button.
 The instructions below assume you’ve chosen a USB drive as your medium.
 If you’ve chosen a different medium, please adapt the instructions
 accordingly.
@@ -526,7 +526,7 @@ Getting help
   comprehensive useful and user friendly. We urge you to read it! It
   may very well contain the answers to your questions. (Since the
   documentation is a community effort, we’d also greatly appreciate
-  your help in `improving <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>__` it!)
+  your help in `improving <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__ it!)
 
 - If issues arise during installation, see the :doc:`Installation Troubleshooting </user/troubleshooting/installation-troubleshooting>` guide.
 

@@ -19,20 +19,20 @@ the many ways in which you can help:
 
 - :doc:`Test new releases and updates </user/downloading-installing-upgrading/testing>`
 
-- Submit `HCL reports <https://www.qubes-os.org/hcl/>__` for your hardware
+- Submit `HCL reports <https://www.qubes-os.org/hcl/>`__ for your hardware
 
 - Record :doc:`video tours </introduction/video-tours>`
 
 - Create `artwork <https://github.com/QubesOS/qubes-artwork>`__
   (plymouth themes, installer themes, wallpapers, etc.)
 
-- `Write and edit the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>__`
+- `Write and edit the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__
 
 - `Donate <https://www.qubes-os.org/donate/>`__ to the project
 
 - If you represent an organization, become a `Qubes partner <https://www.qubes-os.org/partners/>`__
 
-- Add a `Qubes download mirror <https://www.qubes-os.org/downloads/mirrors/>__`
+- Add a `Qubes download mirror <https://www.qubes-os.org/downloads/mirrors/>`__
 
 - Answer questions and discuss Qubes on the :doc:`mailing lists </introduction/support>` and :ref:`forum <introduction/support:forum>`
 

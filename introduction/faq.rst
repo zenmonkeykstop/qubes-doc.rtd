@@ -493,7 +493,7 @@ How should I report documentation issues?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-If you can fix the problem yourself, please see `how to edit the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>__`. If not, please
+If you can fix the problem yourself, please see `how to edit the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__. If not, please
 see :doc:`issue tracking </introduction/issue-tracking>`.
 
 Will Qubes seek to get certified under the GNU Free System Distribution Guidelines (GNU FSDG)?
@@ -687,7 +687,7 @@ Is there a list of hardware that is compatible with Qubes OS?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-See the `Hardware Compatibility List <https://www.qubes-os.org/hcl/>__`.
+See the `Hardware Compatibility List <https://www.qubes-os.org/hcl/>`__.
 
 Is there any certified hardware for Qubes OS?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

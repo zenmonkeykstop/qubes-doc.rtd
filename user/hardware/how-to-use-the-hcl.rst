@@ -3,7 +3,7 @@ How to use the hardware compatibility list (HCL)
 ================================================
 
 
-The `HCL <https://www.qubes-os.org/hcl/>__` is a compilation of reports generated and submitted
+The `HCL <https://www.qubes-os.org/hcl/>`__ is a compilation of reports generated and submitted
 by users across various Qubes versions about their hardware’s
 compatibility with Qubes.
 
