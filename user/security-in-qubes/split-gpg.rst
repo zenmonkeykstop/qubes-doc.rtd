@@ -575,7 +575,7 @@ Subkey Tutorials and Discussions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-(Note: Although the tutorials below were not written with Qubes Split
+(**Note:** Although the tutorials below were not written with Qubes Split
 GPG in mind, they can be adapted with a few commonsense adjustments. As
 always, exercise caution and use your good judgment.)
 
@@ -617,7 +617,7 @@ Current limitations
   ``passwd`` to set an empty passphrase. Note that ``pinentry`` might
   show an error when you try to set an empty passphrase, but it will
   still make the change. (See `this StackExchange answer <https://unix.stackexchange.com/a/379373>`__ for more
-  information.) Note: The error shows only if you **do not** have
+  information.) **Note:** The error shows only if you **do not** have
   graphical pinentry installed.
 
 

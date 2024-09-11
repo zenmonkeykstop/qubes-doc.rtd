@@ -249,7 +249,7 @@ service.
 
 
 
-   Note: The syntax is the same as SSH tunnel handler. The first ``444``
+   **Note:** The syntax is the same as SSH tunnel handler. The first ``444``
    correspond to the localport destination of ``untrusted``,
    ``@default`` the remote machine and the second ``444`` to the remote
    machine port.
@@ -409,17 +409,17 @@ As an example we can take the use case of a web server listening on port
 443 that we want to expose on our physical interface eth0, but only to
 our local network 192.168.x.0/24.
 
-   Note: To have all interfaces available and configured, make sure the
+   **Note:** To have all interfaces available and configured, make sure the
    3 qubes are up and running
 
-   Note: `Issue #4028 <https://github.com/QubesOS/qubes-issues/issues/4028>`__
+   **Note:** `Issue #4028 <https://github.com/QubesOS/qubes-issues/issues/4028>`__
    discusses adding a command to automate exposing the port.
 
 **1. Identify the IP addresses you will need to use for sys-net, sys-firewall and the destination qube.**
 
 You can get this information from the Settings Window for the qube, or
 by running this command in each qube: ``ifconfig | grep -i cast`` Note
-the IP addresses you will need. > Note: The vifx.0 interface is the one
+the IP addresses you will need. > **Note:** The vifx.0 interface is the one
 used by qubes connected to this netvm so it is *not* an outside world
 interface.
 
@@ -466,7 +466,7 @@ counters (column 2)
 
 
 
-   Note: On Qubes R4, you can also check the nft counters
+   **Note:** On Qubes R4, you can also check the nft counters
 
 .. code:: bash
 
@@ -538,7 +538,7 @@ in ``/rw/config/rc.local`` so they get set on sys-net start-up
 
 
 
-   Note: Again in R4 the following needs to be added:
+   **Note:** Again in R4 the following needs to be added:
 
 .. code:: bash
 
@@ -580,10 +580,10 @@ connections for the service
 
 
 
-   Note: If you do not wish to limit the IP addresses connecting to the
+   **Note:** If you do not wish to limit the IP addresses connecting to the
    service, remove the ``-s 192.168.0.1/24``
 
-   Note: On Qubes R4
+   **Note:** On Qubes R4
 
 .. code:: bash
 

@@ -5,9 +5,9 @@ Qubes builder
 
 .. warning::
       
-      Note: These instructions concern the older Qubes builder (v1). It supports only building Qubes 4.2 or earlier.The build process has been completely rewritten in `qubes-builder v2 <https://github.com/QubesOS/qubes-builderv2/>`__      . This can be used for building Qubes R4.2 and later, and all related components.
+      **Note:** These instructions concern the older Qubes builder (v1). It supports only building Qubes 4.2 or earlier.The build process has been completely rewritten in `qubes-builder v2 <https://github.com/QubesOS/qubes-builderv2/>`__      . This can be used for building Qubes R4.2 and later, and all related components.
 
-**Note: See** :doc:`ISO building instructions </developer/building/qubes-iso-building>`
+****Note:** See** :doc:`ISO building instructions </developer/building/qubes-iso-building>`
 **for a streamlined overview on how to use the build system.**
 
 We have a fully automated build system for Qubes, that downloads, builds

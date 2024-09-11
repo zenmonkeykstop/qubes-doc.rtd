@@ -32,7 +32,7 @@ How is the userbase estimated?
 
 We simply count the number of unique IPv4 addresses that connect to the
 Qubes update servers each month (except for Tor connections; see
-`below <#how-are-tor-users-counted>`__). (Note: Users who have manually
+`below <#how-are-tor-users-counted>`__). (**Note:** Users who have manually
 configured their systems to bypass the metalink and connect directly to
 a mirror are not counted.)
 

@@ -18,7 +18,7 @@ Hardware requirements
 
 .. DANGER::
       
-      Warning: Qubes has no control over what happens on your computer before you install it. No software can provide security if it is installed on compromised hardware. Do not install Qubes on a computer you don’t trust. See :doc:`installation security </user/downloading-installing-upgrading/install-security>`       for more information.
+      **Warning:** Qubes has no control over what happens on your computer before you install it. No software can provide security if it is installed on compromised hardware. Do not install Qubes on a computer you don’t trust. See :doc:`installation security </user/downloading-installing-upgrading/install-security>`       for more information.
 
 Qubes OS has very specific :doc:`system requirements </user/hardware/system-requirements>`. To ensure compatibility, we
 strongly recommend using :doc:`Qubes-certified hardware </user/hardware/certified-hardware>`. Other hardware may require you
@@ -40,7 +40,7 @@ Security tab.
 
 .. warning::
       
-      Note: Qubes OS is not meant to be installed inside a virtual machine as a guest hypervisor. In other words, nested virtualization is not supported. In order for a strict compartmentalization to be enforced, Qubes OS needs to be able to manage the hardware directly.
+      **Note:** Qubes OS is not meant to be installed inside a virtual machine as a guest hypervisor. In other words, nested virtualization is not supported. In order for a strict compartmentalization to be enforced, Qubes OS needs to be able to manage the hardware directly.
 
 Copying the ISO onto the installation medium
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -52,7 +52,7 @@ downloading and copying the Qubes ISO onto the installation medium.
 
 .. DANGER::
       
-      Warning: Any file you download from the internet could be malicious, even if it appears to come from a trustworthy source. Our philosophy is to :ref:`distrust the infrastructure <introduction/faq:what does it mean to "distrust the infrastructure"?>`      . Regardless of how you acquire your Qubes ISO, :doc:`verify its authenticity </project-security/verifying-signatures>`       before continuing.
+      **Warning:** Any file you download from the internet could be malicious, even if it appears to come from a trustworthy source. Our philosophy is to :ref:`distrust the infrastructure <introduction/faq:what does it mean to "distrust the infrastructure"?>`      . Regardless of how you acquire your Qubes ISO, :doc:`verify its authenticity </project-security/verifying-signatures>`       before continuing.
 
 Once the ISO has been verified as authentic, you should copy it onto the
 installation medium of your choice, such as a USB drive, dual-layer DVD,
@@ -64,11 +64,11 @@ accordingly.
 
 .. warning::
       
-      Note: There are important :doc:`security considerations </user/downloading-installing-upgrading/install-security>`       to keep in mind when choosing an installation medium. Advanced users may wish to :ref:`re-verify their installation media after writing <project-security/verifying-signatures:how to re-verify installation media after writing>`      .
+      **Note:** There are important :doc:`security considerations </user/downloading-installing-upgrading/install-security>`       to keep in mind when choosing an installation medium. Advanced users may wish to :ref:`re-verify their installation media after writing <project-security/verifying-signatures:how to re-verify installation media after writing>`      .
 
 .. DANGER::
       
-      Warning: Be careful to choose the correct device when copying the ISO, or you may lose data. We strongly recommended making a full backup before modifying any devices.
+      **Warning:** Be careful to choose the correct device when copying the ISO, or you may lose data. We strongly recommended making a full backup before modifying any devices.
 
 Linux ISO to USB
 ^^^^^^^^^^^^^^^^
@@ -99,7 +99,7 @@ window.
 
 .. note::
       
-      Note: Using Rufus to create the installation medium means that you `won’t be able <https://github.com/QubesOS/qubes-issues/issues/2051>`__       to choose the “Test this media and install Qubes OS” option mentioned in the example below. Instead, choose the “Install Qubes OS” option.
+      **Note:** Using Rufus to create the installation medium means that you `won’t be able <https://github.com/QubesOS/qubes-issues/issues/2051>`__       to choose the “Test this media and install Qubes OS” option mentioned in the example below. Instead, choose the “Install Qubes OS” option.
 
 |Rufus menu|
 
@@ -192,7 +192,7 @@ Select the option to test this media and install Qubes OS.
 
 .. note::
       
-      Note: If the latest stable release is not compatible with your hardware, you may wish to consider installing using the latest kernel. Be aware that this has not been as well tested as the standard kernel.
+      **Note:** If the latest stable release is not compatible with your hardware, you may wish to consider installing using the latest kernel. Be aware that this has not been as well tested as the standard kernel.
 
 If the boot screen does not appear, there are several options to
 troubleshoot. First, try rebooting your computer. If it still loads your
@@ -280,7 +280,7 @@ Select the storage device on which you would like to install Qubes OS.
 
 .. DANGER::
       
-      Warning: Be careful to choose the correct installation target, or you may lose data. We strongly recommended making a full backup before proceeding.
+      **Warning:** Be careful to choose the correct installation target, or you may lose data. We strongly recommended making a full backup before proceeding.
 
 Your installation destination can be an internal or external storage
 drive, such as an SSD, HDD, or USB drive. The installation destination
@@ -288,7 +288,7 @@ must have a least 32 GiB of free space available.
 
 .. warning::
       
-      Note: The installation destination cannot be the same as the installation medium. For example, if you’re installing Qubes OS from a USB drive onto a USB drive, they must be two distinct USB drives, and they must both be plugged into your computer at the same time. (Note: This may not apply to advanced users who partition their devices appropriately.)
+      **Note:** The installation destination cannot be the same as the installation medium. For example, if you’re installing Qubes OS from a USB drive onto a USB drive, they must be two distinct USB drives, and they must both be plugged into your computer at the same time. (**Note:** This may not apply to advanced users who partition their devices appropriately.)
 
 Installing an operating system onto a USB drive can be a convenient way
 to try Qubes. However, USB drives are typically much slower than
@@ -312,7 +312,7 @@ using. When you’re finished, press **Done**.
 
 .. DANGER::
       
-      Warning: If you forget your encryption passphrase, there is no way to recover it.
+      **Warning:** If you forget your encryption passphrase, there is no way to recover it.
 
 |Select storage passphrase|
 

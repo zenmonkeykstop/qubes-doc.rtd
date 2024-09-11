@@ -5,7 +5,7 @@ How to upgrade a Debian template in-place
 
 .. DANGER::
       
-      Warning: This page is intended for advanced users only. Most users seeking to upgrade should instead install a new Debian template. Learn more about the two options here.
+      **Warning:** This page is intended for advanced users only. Most users seeking to upgrade should instead install a new Debian template. Learn more about the two options here.
 
 This page provides instructions for performing an in-place upgrade of an
 installed :doc:`Debian Template </user/templates/debian/debian>`. If you wish to

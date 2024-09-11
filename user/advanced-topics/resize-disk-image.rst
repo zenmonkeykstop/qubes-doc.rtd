@@ -73,7 +73,7 @@ OR
 
 
 
-Note: Size is the target size (i.e. 4096MB or 16GB, …), not the size to
+**Note:** Size is the target size (i.e. 4096MB or 16GB, …), not the size to
 add to the existing disk.
 
 If you have run out of space for software in your Template, you need to

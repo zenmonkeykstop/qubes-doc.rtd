@@ -42,7 +42,7 @@ complete) list of mechanisms depending on each of them:
 
    - Updates installation (``gpk-update-viewer``).
 
-   - User can use pkexec just like sudo Note: above is needed mostly
+   - User can use pkexec just like sudo **Note:** above is needed mostly
      because Qubes user GUI session isn’t treated by PolicyKit/logind
      as “local” session because of the way in which X server and
      session is started. Perhaps we will address this issue in the

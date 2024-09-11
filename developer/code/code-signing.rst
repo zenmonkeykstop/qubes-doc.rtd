@@ -10,7 +10,7 @@ Generating a Key
 ----------------
 
 
-(Note: If you already have a PGP key, you may skip this step.)
+(**Note:** If you already have a PGP key, you may skip this step.)
 
 Alex Cabal has written an excellent
 `guide <https://alexcabal.com/creating-the-perfect-gpg-keypair/>`__ on
@@ -27,7 +27,7 @@ further important details.
       
       gpg: directory '/home/user/.gnupg' created
       gpg: keybox '/home/user/.gnupg/pubring.kbx' created
-      Note: Use "gpg --full-generate-key" for a full featured key generation dialog.
+      **Note:** Use "gpg --full-generate-key" for a full featured key generation dialog.
       
       GnuPG needs to construct a user ID to identify your key.
       

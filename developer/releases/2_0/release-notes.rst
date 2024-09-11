@@ -112,7 +112,7 @@ VMs.
 Users of R2 beta 3 can upgrade using procedure that has been described
 :doc:`here </user/downloading-installing-upgrading/upgrade/2>`.
 
-Note: if the user has custom Template VMs (i.e. other than the default
+**Note:** if the user has custom Template VMs (i.e. other than the default
 template, e.g. created from it by cloning), or Standalone VMs, then the
 user should perform manual upgrade from R2B3 to R2rc1, as described
 under the link given above.
@@ -151,7 +151,7 @@ from scratch and use :doc:`qubes backup and restore tools </user/how-to-guides/h
 Users can also try a manual upgrade procedure that has been described
 :doc:`here </user/downloading-installing-upgrading/upgrade/2b3>`.
 
-Note: if the user has custom Template VMs (i.e. other than the default
+**Note:** if the user has custom Template VMs (i.e. other than the default
 template, e.g. created from it by cloning), or Standalone VMs, then the
 user should perform manual upgrade from R2B2 to R2B3, as described under
 the link given above.

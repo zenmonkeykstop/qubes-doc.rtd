@@ -16,7 +16,7 @@ corresponding GUI domain to setup. For example, pillar data for
 ``sys-gui`` located at ``/srv/pillar/base/qvm/sys-gui.sls``. Please note
 that each GUI domain has no ``NetVM``.
 
-   Note: The setup is done using ``SaltStack`` formulas with the
+   **Note:** The setup is done using ``SaltStack`` formulas with the
    ``qubesctl`` tool. When executing it, apply step can take time
    because it needs to download latest Fedora XFCE TemplateVM and
    install desktop dependencies.
@@ -59,7 +59,7 @@ top right corner, select ``lightdm`` session type to **GUI domain (sys-gui)**. O
 window and you can perform any operation as if you would be in ``dom0``
 desktop.
 
-   Note: In order to go back to ``dom0`` desktop, you need to logout and
+   **Note:** In order to go back to ``dom0`` desktop, you need to logout and
    then, select ``lightdm`` session to *Session Xfce*.
 
 GPU GUI domain (``sys-gui-gpu``)
@@ -106,7 +106,7 @@ The latter option assumes Intel graphics card (it has hardcoded PCI
 address). If you don’t have Intel graphics card, please use the former
 method with ``qvm-pci`` (see :doc:`How to use PCI devices </user/how-to-guides/how-to-use-pci-devices>`).
 
-   Note: Some platforms can have multiple GPU. For example on laptops,
+   **Note:** Some platforms can have multiple GPU. For example on laptops,
    it is usual to have HDMI or DISPLAY port linked to the secondary GPU
    (generally called *discrete GPU*). In such case, you have to also
    attach the secondary GPU to ``sys-gui-gpu`` with permissive option.
@@ -114,7 +114,7 @@ method with ``qvm-pci`` (see :doc:`How to use PCI devices </user/how-to-guides/h
 At this point, you need to reboot your Qubes OS machine in order to boot
 into ``sys-gui-gpu``.
 
-   Note: For some platforms, it can be sufficient to shutdown all the
+   **Note:** For some platforms, it can be sufficient to shutdown all the
    running qubes and starting ``sys-gui-gpu``. Unfortunately, it has
    been observed that detaching and attaching some GPU cards from
    ``dom0`` to ``sys-gui-gpu`` can freeze computer. We encourage reboot
@@ -180,7 +180,7 @@ for which you can log as ``user`` where ``user`` refers to the first
 ``dom0`` user in ``qubes`` group and with corresponding ``dom0``
 password.
 
-   Note: ``lightdm`` session remains logged even if you disconnect your
+   **Note:** ``lightdm`` session remains logged even if you disconnect your
    ``VNC`` client. Ensure to lock or log out before disconnecting your
    ``VNC`` client session.
 
@@ -210,7 +210,7 @@ Delete GUI domain
 
 The following commands have to be run in ``dom0``.
 
-   Note: For the case of ``sys-gui-gpu``, you need to prevent Qubes OS
+   **Note:** For the case of ``sys-gui-gpu``, you need to prevent Qubes OS
    autostart of any qube to reach ``dom0``. For that, you need to boot
    Qubes OS with ``qubes.skip_autostart`` GRUB parameter.
 

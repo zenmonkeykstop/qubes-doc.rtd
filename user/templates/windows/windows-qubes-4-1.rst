@@ -544,7 +544,7 @@ updates, but generally we do not recommend this way for security reasons
 - so, if you do it anyhow, check that you get this image from a source
 that you trust, which may be quite different from that one named here!
 
-Note: if you already have Qubes Windows Tools installed the video
+**Note:** if you already have Qubes Windows Tools installed the video
 adapter in Windows will be “Qubes video driver” and you won’t be able to
 see the Windows Update process when the VM is being powered off because
 Qubes services would have been stopped by then. Depending on the size of

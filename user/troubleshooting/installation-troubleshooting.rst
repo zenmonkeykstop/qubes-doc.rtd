@@ -48,7 +48,7 @@ more of the following:
 
 
 
-"Warning: dracut-initqueue timeout - starting timeout scripts" during installation
+"**Warning:** dracut-initqueue timeout - starting timeout scripts" during installation
 ----------------------------------------------------------------------------------
 
 

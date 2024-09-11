@@ -28,7 +28,7 @@ These qubes, which are implemented as :ref:`virtual machines VMs<user/reference/
    :alt: Qubes system diagram
 
 
-Note: See our :doc:`glossary </user/reference/glossary>` and :doc:`FAQ </introduction/faq>` for more information.
+**Note:** See our :doc:`glossary </user/reference/glossary>` and :doc:`FAQ </introduction/faq>` for more information.
 
 
 Features
@@ -59,7 +59,7 @@ Features
 - **Open-source** Users are free to use, copy, and modify Qubes OS and :doc:`are encouraged to do so! </introduction/contributing>`
 
 
-   Note: Given the technical nature of Qubes OS, prior experience with Linux can be helpful.
+   **Note:** Given the technical nature of Qubes OS, prior experience with Linux can be helpful.
 
 
 Why Qubes OS?

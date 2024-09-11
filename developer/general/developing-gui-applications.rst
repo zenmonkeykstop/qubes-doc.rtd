@@ -46,7 +46,7 @@ extend PYTHONPATH appropriately, for example:
 
 The mock object does not provide events (yet).
 
-Note: in order to see all qubes-relevant icons (like VM icons), install
+**Note:** in order to see all qubes-relevant icons (like VM icons), install
 the ``qubes-artwork`` package.
 
 How does it actually work

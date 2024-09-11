@@ -81,7 +81,7 @@ Creating a backup
    encryption/decryption and integrity verification.
    At this point, you may also choose whether to save your settings by
    checking or unchecking the **Save settings as default backup profile** box.
-   **Warning: Saving the settings will result in your backup passphrase being saved in plaintext in dom0, so consider your threat model before checking this box.**
+   ****Warning:** Saving the settings will result in your backup passphrase being saved in plaintext in dom0, so consider your threat model before checking this box.**
 
 4. You will now see the summary of VMs to be backed up. If there are any
    issues preventing the backup, they will be listed here and the

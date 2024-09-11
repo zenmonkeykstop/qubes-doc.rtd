@@ -450,7 +450,7 @@ goes wrong. This
 `comment <https://github.com/QubesOS/qubes-issues/issues/3585#issuecomment-366471111>`__
 provides useful links on updating a Windows 7 SP1 VM.
 
-Note: if you already have Qubes Windows Tools installed the video
+**Note:** if you already have Qubes Windows Tools installed the video
 adapter in Windows will be “Qubes video driver” and you won’t be able to
 see the Windows Update process when the VM is being powered off because
 Qubes services would have been stopped by then. Depending on the size of

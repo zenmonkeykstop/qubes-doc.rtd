@@ -326,7 +326,7 @@ template to the new template:
 
 
      With substitutions, your command should look similar to this
-     example. (Warning: This is just an example. Do not attempt to use
+     example. (**Warning:** This is just an example. Do not attempt to use
      it.)
 
      .. code:: bash

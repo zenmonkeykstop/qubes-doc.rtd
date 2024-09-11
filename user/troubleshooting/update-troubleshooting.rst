@@ -39,7 +39,7 @@ applied in recent versions of Qubes.
 
 Run ``systemctl enable NetworkManager-dispatcher.service`` in the
 template upon which your NetVM is based. You may have to reboot
-afterward for the change to take effect. (Note: This is an upstream
+afterward for the change to take effect. (**Note:** This is an upstream
 problem. See `this Redhat ticket <https://bugzilla.redhat.com/show_bug.cgi?id=974811>`__). For
 details, see the qubes-users mailing list threads
 `here <https://groups.google.com/d/topic/qubes-users/xPLGsAJiDW4/discussion>`__

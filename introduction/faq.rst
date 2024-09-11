@@ -1313,7 +1313,7 @@ report in *that* project’s issue tracker instead. Not only will you be
 helping all other affected Qubes users, you’ll also be helping *all*
 downstream users of that software!
 
-(Note: If you’re wondering about cases in which a bug has already been
+(**Note:** If you’re wondering about cases in which a bug has already been
 fixed upstream but hasn’t yet arrived in your Qubes OS release, please
 see :ref:`backports <introduction/issue-tracking:backports>`. These are *not*
 cases in which an issue is closed as “not our bug.”)
