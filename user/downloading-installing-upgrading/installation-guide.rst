@@ -273,7 +273,11 @@ others.
 Don’t forget to select your time and date by clicking on the Time & Date
 entry.
 
-|Time and date| ### Installation destination
+|Time and date|
+
+Installation destination
+^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 Under the System section, you must choose the installation destination.
 Select the storage device on which you would like to install Qubes OS.
