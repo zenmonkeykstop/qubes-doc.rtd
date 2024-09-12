@@ -287,13 +287,13 @@ Compatible Hardware
 
 
 Make sure your hardware satisfies the :doc:`system requirements </user/hardware/system-requirements>`, as Qubes OS cannot run on
-every type of computer. You may also want to check out `Qubes-certified Hardware </user/hardware/certified-hardware>`__ and take a look at the `Hardware Compatibility List (HCL) <https://www.qubes-os.org/hcl/>`__.
+every type of computer. You may also want to check out :doc:`Qubes-certified Hardware </user/hardware/certified-hardware>` and take a look at the `Hardware Compatibility List (HCL) <https://www.qubes-os.org/hcl/>`__.
 
 Downloads
 ---------
 
 
-`Download an ISO <https://www.qubes-os.org/downloads/>`__, learn how to `verify its authenticity </project-security/verifying-signatures>`__, and follow our `guide to install Qubes OS </user/downloading-installing-upgrading/installation-guide>`__. Looking for the `source code </developer/code/source-code>`__? You’ll find it `on GitHub <https://github.com/QubesOS>`____.
+`Download an ISO <https://www.qubes-os.org/downloads/>`__, learn how to :doc:`verify its authenticity </project-security/verifying-signatures>`, and follow our :doc:`guide to install Qubes OS </user/downloading-installing-upgrading/installation-guide>`. Looking for the :doc:`source code </developer/code/source-code>`? You’ll find it `on GitHub <https://github.com/QubesOS>`__.
 
 Documentation
 -------------

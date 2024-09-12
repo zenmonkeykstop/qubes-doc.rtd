@@ -129,7 +129,7 @@ individuals sign their messages with the same key as (or another key
 authenticated by) the one they use to :doc:`sign their contributions </developer/code/code-signing>`.
 
 For example, you might find it easier to trust advice from someone who
-has a proven track record of `contributing software packages </developer/general/package-contributions>`__ or `contributing to the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__. It’s unlikely
+has a proven track record of :doc:`contributing software packages </developer/general/package-contributions>` or `contributing to the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__. It’s unlikely
 that individuals who have worked hard to build good reputations for
 themselves through their contributions over the years would risk giving
 malicious advice in signed messages to public mailing lists. Since every
@@ -403,7 +403,7 @@ mailing lists before sending a question. In addition, please make sure
 that you have read and understood the following basic documentation
 prior to posting to the list:
 
-- The `Installation Guide </user/downloading-installing-upgrading/installation-guide>`__, `System Requirements </user/hardware/system-requirements>`__, and `HCL <https://www.qubes-os.org/hcl/>`__
+- The :doc:`Installation Guide </user/downloading-installing-upgrading/installation-guide>`, :doc:`System Requirements </user/hardware/system-requirements>`, and `HCL <https://www.qubes-os.org/hcl/>`__
   (for problems related to installing Qubes OS)
 
 - The :ref:`User FAQ <introduction/faq:users>`
