@@ -393,7 +393,7 @@ changes in the parent template.
    * - :ref:`template <user/reference/glossary:template>`
      - N/A (templates cannot be based on templates)
      - everything
-   * - :ref:`app qubes :superscript:`3` <user/reference/glossary:app qube>`
+   * - :ref:`app qubes <user/reference/glossary:app qube>`
      - /etc/skel to /home; /usr/local.orig to /usr/local
      - /rw (includes /home, /usr/local, and bind-dirs)
    * - :ref:`disposable <user/reference/glossary:disposable>`
