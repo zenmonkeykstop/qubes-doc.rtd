@@ -1,3 +1,6 @@
+.. warning::
+      This page is intended for advanced users.
+
 =========================================
 How to upgrade a Debian template in-place
 =========================================

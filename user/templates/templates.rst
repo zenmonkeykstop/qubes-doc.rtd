@@ -390,20 +390,20 @@ changes in the parent template.
    * - Qube Type
      - Inheritance1
      - Persistence2
-   * - t emplate
+   * - :ref:`template <user/reference/glossary:template>`
      - N/A (templates cannot be based on templates)
      - everything
-   * - app qube3
+   * - :ref:`app qubes :superscript:`3` <user/reference/glossary:app qube>`
      - /etc/skel to /home; /usr/local.orig to /usr/local
      - /rw (includes /home, /usr/local, and bind-dirs)
-   * - dispo sable
+   * - :ref:`disposable <user/reference/glossary:disposable>`
      - /rw (includes /home, /usr/local, and bind-dirs)
      - nothing
    
 
-| 1Upon creation
-| 2Following shutdown
-| 3Includes :ref:`disposable templates <user/reference/glossary:disposable template>`
+| :superscript:`1` Upon creation
+| :superscript:`2` Following shutdown
+| :superscript:`3` Includes :ref:`disposable templates <user/reference/glossary:disposable template>`
 
 
 Trusting your templates
@@ -527,7 +527,7 @@ Important Notes
 
 - ``qvm-trim-template`` is no longer necessary or available in Qubes
   4.0 and higher. All qubes are created in a thin pool and trimming is
-  handled automatically. No user action is required. See :doc:`Disk Trim <https://forum.qubes-os.org/t/19054>` for more information.
+  handled automatically. No user action is required. See `Disk Trim <https://forum.qubes-os.org/t/19054>`__ for more information.
 
 - RPM-installed templates are “system managed” and therefore cannot be
   backed up using Qubes’ built-in backup function. In order to ensure
