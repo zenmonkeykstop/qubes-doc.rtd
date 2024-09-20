@@ -95,5 +95,5 @@ already covered.
 
 Further details about how this system works can be found in :doc:`Qrexec: command execution in VMs </developer/services/qrexec>`.
 
-(**Note** *: the ``$`` character is deprecated in qrexec keywords – please use ``@`` instead (e.g. ``@anyvm``). For more information, see the bulletin*
+(**Note** *: the* ``$`` *character is deprecated in qrexec keywords – please use* ``@`` *instead (e.g.* ``@anyvm`` *). For more information, see the bulletin*
 `here <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-038-2018.txt>`__ *.*)

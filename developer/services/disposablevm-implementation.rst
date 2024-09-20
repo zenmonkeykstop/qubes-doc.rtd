@@ -3,7 +3,7 @@ Disposable implementation
 =========================
 
 
-****Note:** The content below applies to Qubes R3.2.**
+**Note: The content below applies to Qubes R3.2.**
 
 DisposableVM image preparation
 ------------------------------
