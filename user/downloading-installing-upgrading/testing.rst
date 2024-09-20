@@ -1,3 +1,6 @@
+.. warning::
+      This page is intended for advanced users.
+
 ================================
 Testing new releases and updates
 ================================
