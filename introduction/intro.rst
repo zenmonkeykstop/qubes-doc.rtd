@@ -63,7 +63,7 @@ Features
 
 
 Why Qubes OS?
-------------
+-------------
 
 
 Physical isolation is a given safeguard that the digital world lacks
@@ -123,7 +123,7 @@ fact, Qubes has `distinct advantages over physical air gaps <https://invisibleth
 
 
 Made to support vulnerable users and power users alike
------------------------------------------------------
+------------------------------------------------------
 
 
 Qubes provides practical, usable security to vulnerable and
